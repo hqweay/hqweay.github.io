@@ -1,0 +1,5 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect default Netlify subdomain to primary domain
+https://hqweay.netlify.com/* https://leay.net/:splat 301!
+https://master--hqweay.netlify.com/* https://leay.net/:splat 301!

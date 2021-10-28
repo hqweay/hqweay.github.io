@@ -101,7 +101,24 @@ window.addEventListener('pjax:success', () => {
         priority: true,
         ignores : [uri => uri.includes('#'),uri => uri === 'https://leay.net/2020/07/02/summer/',]
       });
-      });</script><script>NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+      });</script><script>var disqus_config = function() {
+    this.page.url = "https://leay.net/2020/07/02/summer/";
+    this.page.identifier = "2020/07/02/summer/";
+    this.page.title = "【图】青春の苦悩";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hqweay.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });</script><script>NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
     var guest = 'nick,mail,link';
@@ -125,21 +142,4 @@ window.addEventListener('pjax:success', () => {
       serverURLs : ''
     });
   }, window.Valine);
-});</script><script>var disqus_config = function() {
-    this.page.url = "https://leay.net/2020/07/02/summer/";
-    this.page.identifier = "2020/07/02/summer/";
-    this.page.title = "【图】青春の苦悩";
-    };
-  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
-    if (window.DISQUS) {
-      DISQUS.reset({
-        reload: true,
-        config: disqus_config
-      });
-    } else {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://hqweay.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', '' + +new Date());
-      (d.head || d.body).appendChild(s);
-    }
-  });</script></div></body></html>
+});</script></div></body></html>

@@ -101,24 +101,7 @@ window.addEventListener('pjax:success', () => {
         priority: true,
         ignores : [uri => uri.includes('#'),uri => uri === 'https://leay.net/2019/05/26/yo/',]
       });
-      });</script><script>var disqus_config = function() {
-    this.page.url = "https://leay.net/2019/05/26/yo/";
-    this.page.identifier = "2019/05/26/yo/";
-    this.page.title = "梦开始的地方";
-    };
-  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
-    if (window.DISQUS) {
-      DISQUS.reset({
-        reload: true,
-        config: disqus_config
-      });
-    } else {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://hqweay.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', '' + +new Date());
-      (d.head || d.body).appendChild(s);
-    }
-  });</script><script>NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+      });</script><script>NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
     var guest = 'nick,mail,link';
@@ -142,4 +125,21 @@ window.addEventListener('pjax:success', () => {
       serverURLs : ''
     });
   }, window.Valine);
-});</script></div></body></html>
+});</script><script>var disqus_config = function() {
+    this.page.url = "https://leay.net/2019/05/26/yo/";
+    this.page.identifier = "2019/05/26/yo/";
+    this.page.title = "梦开始的地方";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hqweay.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });</script></div></body></html>

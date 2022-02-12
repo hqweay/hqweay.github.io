@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leay.net/2019/02/02/spring-cloud/</loc>
+    
+    <lastmod>2022-02-12T05:27:14.738Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leay.net/2022/01/25/boat/</loc>
     
     <lastmod>2022-01-25T15:41:23.196Z</lastmod>
@@ -121,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://leay.net/2020/07/22/GNU-Linux/</loc>
+    <loc>https://leay.net/2020/07/22/gnu-linux/</loc>
     
     <lastmod>2021-11-02T15:17:31.209Z</lastmod>
     

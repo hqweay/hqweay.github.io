@@ -493,8 +493,8 @@
     
     <entry>
       <title>谈谈 Linux 与 GNU/Linux</title>
-      <link href="/2020/07/22/GNU-Linux/"/>
-      <url>/2020/07/22/GNU-Linux/</url>
+      <link href="/2020/07/22/gnu-linux/"/>
+      <url>/2020/07/22/gnu-linux/</url>
       
         <content type="html"><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2><p>之前看到提问「Linux 与 GNU/Linux 的区别」，当时刚好在读《自由软件，自由社会：理查德·斯托曼选集》这本书，里面提到了这个，就按着记忆写了个回答。</p><p>以下算是读书笔记吧……</p><p>虽然我常觉得对着一个定义深究它到底是啥玩意没太大意义，但是导致这种结果的这个过程还是很有趣的。就像是「这也太像我的叔叔奥斯卡了吧！」，没什么技术性质的偶然被民意裹携成为官方钦定的例子数不胜数……「动画」还是「动漫」？「ins」还是「IG」？</p><p>不过在当前的环境下，任何一个偶然都会被当作（背后势力）营销就是了……</p><hr><h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2><p>百科版：<a href="https://zh.wikipedia.org/wiki/GNU/Linux%E5%91%BD%E5%90%8D%E7%88%AD%E8%AD%B0" target="_blank" rel="noopener">WIKI_Linux 命名爭議</a></p><p>首先引入自由软件（free software）这个概念，注意是「自由软件」而非「免费软件」。自由软件意味着用户可以自由地对该软件进行使用、复制、修改等。</p><p>Richard 是个代码界的革命者，一生都在为「<strong>消灭代码私有制</strong>」这一目标奋斗，他倡导自由软件，那要做自由软件得先做个自由操作系统啊，你软件是自由的，运行在别人的非自由操作系统也不大合适吧。</p><p>为了这个目的，Richard 便尝试着组织开发一个自由的操作系统，这个操作系统被命名为 GNU。</p><p>实际上，GNU 往往指代着自由软件这一整个计划甚至思想 —— 即消灭代码私有制。</p><p>比如 GNU General Public License，缩写是 GPL，就是基于 GNU 的一种软件分发协议，用这个协议的话就代表你的代码遵循 GNU 的哲学，用户可以随意地使用、复制、巴拉巴拉……</p><p>GNU 是 「GNU is not Unix」的缩写，Unix 是当时的商业操作系统，GNU 这个名字就代表着与私有操作系统的界限划分。（有那味儿了）</p><p>GNU 开发到后面就差一个内核了，这个时候项目组也正在做自己的内核 Hurd，不过 Hurd 离可用还有一定距离，<strong>刚好 Linus 的 Linux 内核也发布一阵子了，完成度也不错，就使用了 Linux。</strong></p><blockquote><p>当时 GNU 已经完成了除操作系统内核外的大部分软件，比如 Bash、Glibc、Gcc……</p><p>Linus 在上面这些软件的基础上开发出 Linux。（GNU 兼容 Unix，所以虽然 GNU 操作系统尚未完成，但上述这些软件是可以运行的。）</p></blockquote><p>（PS：Richard 当时本来想提议命名项目组开发的内核为自己女朋友的名字，后来这事因为用了 Linux 就泡汤了，而且 Richard 后来也和女朋友分手了。）</p><p>使用了 Linux 内核的 GNU 便是 <strong>GNU/Linux</strong> —— 但这个称呼有争议，部分人提倡使用 Linux 命名。两个称呼的优劣以及由此产生的争议不多提。</p><p>现在的语境下，Linux 基本泛指一切使用 Linux 内核的操作系统。</p><p>我觉得，按哲学思想与功能来区分的话：Linux 指 Linux 内核，GNU/Linux 指 GNU 项目与 Linux 组成的操作系统。</p><blockquote><p>Linux 内核的开源协议是 GPL。</p></blockquote><p>GNU/Linux 遵循 GNU 的哲学，系统只使用自由软件。而现在的各种「基于 Linux 的发行版」，便是基于 GNU/Linux ，再打包一些其它软件（比如桌面环境），做一些配置，提供给用户。</p><p>打包些软件这一步骤，为了提供便利，可能就会打包些非自由软件。</p><p>如果打包了非自由软件，这时再称 GNU/Linux 其实也不大合适了。</p><p>啥是非自由软件呢？不遵循自由软件协议（GPL）的都是非自由软件……还是排除法好理解些。值得注意的是，开源不一定意味着自由 —— 虽然 GPL 是一种开源协议，但开源协议有好多种呢。开源只意味着公布源代码。</p><h2 id="richard-与-linus-对该命名的发言"><a class="markdownIt-Anchor" href="#richard-与-linus-对该命名的发言"></a> Richard 与 Linus 对该命名的发言</h2><p>对命名的讨论太多了，还是拿 GNU 与 Linux 各自的领袖人物的发言举例吧……</p><p>今天有数千万个用户，正在使用的这个操作系统，是早就已经开发好，让他们可以自由的使用。但是他们不晓得，因为他们以为这个系统是 Linux，而它是由一个学生“只是为了好玩”（just for fun）而发展出来的。 ——理查德·斯托曼</p><p>好的，我认为这个称呼是合理的，但只有你真的做了一个 Linux 的 GNU 发行版时，这才是合理的……这就像是我觉得“Red Hat Linux”，或“SuSE Linux” 或“Debian Linux”这些名称是很好的，因为如果你真的做了一个你自己的 Linux 发行版时，你必须要帮它取个名称，但是要把 Linux 全部通称“GNU Linux”，我觉得这很荒谬。——林纳斯·托瓦兹</p><p>上面是从 <a href="https://zh.wikipedia.org/wiki/GNU/Linux%E5%91%BD%E5%90%8D%E7%88%AD%E8%AD%B0" target="_blank" rel="noopener">WIKI_Linux 命名爭議</a> 摘取的两人发言，单独看可能有歧义。</p>]]></content>
       
@@ -1291,6 +1291,33 @@
         <tags>
             
             <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Spring Cloud 了解</title>
+      <link href="/2019/02/02/spring-cloud/"/>
+      <url>/2019/02/02/spring-cloud/</url>
+      
+        <content type="html"><![CDATA[<h2 id="spring-cloud-是啥"><a class="markdownIt-Anchor" href="#spring-cloud-是啥"></a> Spring Cloud 是啥</h2><p>Spring Cloud 是一个微服务框架，提供分布式系统操作的开发工具。</p><p>那啥是微服务呢?</p><p>比如在学习 Web 时会接触到<a href="https://www.ibm.com/cn-zh/cloud/learn/three-tier-architecture" target="_blank" rel="noopener">三层架构</a>：控制层、服务层、数据层。我们把这种抽象当作一个项目的纵向分层，那么微服务就相当于对项目进行横向分割。</p><p>比如在一开始我们将项目分为控制层、服务层、数据层来开发。随着项目的演进、复杂度的提高，将它横向以<strong>功能拆分</strong>为多个模块——每个模块再纵向分层开发。</p><p>以开发一个购书网站来看，我们可以先将项目划分为用户模块、书籍模块……甚至更细一点，一些优惠活动一个模块……而单独的每一个模块，都可以用 Spring boot 等方式来开发。</p><p>每个模块都可以独立部署。而「分布式」就可以先简单地理解为把模块部署到不同的环境上——你可以用传统方式如 Tomcat、命令脚本来部署，也可以用 Docker、云原生技术来部署。最后依然会有一个大家长（服务中心）来管理不同的模块，在这个大家庭里，每个模块就作为一个「服务」存在。</p><p>这就是微服务的概念（大概）。</p><p>以前后端分离的模式来开发，就会有这种感觉：前端无需关心数据、操作的来源，后端给前端提供 api 就行了。用微服务就相当于对 api 进行模块化，每个服务提供相应的 api 便于组织，也便于复用。事实上 Spring Cloud 也建议服务间通过 RESTful API 这样的方式调用。</p><p>Spring Cloud 基于 Spring Boot，用 Spring Cloud 搭建的微服务应用中的各个模块（服务）用 Spring Boot 开发。（用其它方式开发的模块只要遵循 Spring Cloud 的协议也可以被接入，例如：<a href="https://www.cnblogs.com/wudimanong/p/10943825.html" target="_blank" rel="noopener">Python写的微服务如何融入Spring Cloud体系？ - 无敌的码农 - 博客园</a>）</p><h2 id="spring-cloud-基本组织"><a class="markdownIt-Anchor" href="#spring-cloud-基本组织"></a> Spring Cloud 基本组织</h2><p>把应用拆分为多个服务后，如何组织服务间的调度呢？这个概念被称作<strong>服务治理</strong>。我们可以通过手动的方式来组织服务间的调度——但各个服务将会产生一个由调度与被调度而产生的复杂网状结构，如何优化呢？可以引入一个管理调度这些服务的中心组织，这样每个服务就只需要与这个服务中心交互。</p><p>这个中心被称为<strong>服务注册中心</strong>，它实现了各个微服务实例的自动注册与发现。</p><p>Spring Cloud 为服务治理做了一层抽象接口，支持多种不同的服务治理框架，如 ZooKeeper、Netflix Eureka……</p><p>而各种微服务呢，被分为<strong>服务提供者</strong>（提供接口供别人使用）和<strong>服务消费者</strong>（是用别人的接口）。但同时，一个服务既可以作为提供者也可以作为消费者使用。联系一下实际项目很好理解，一个模块既能使用别人的接口，同时也能提供接口给别人使用——这种场景很常见。</p><p>这也是抽象层面的说法，在 Spring Cloud 的各种教程中，都选用 Eureka 作为服务注册中心，我们以 Eureka 来具体谈谈……</p><h2 id="eureka-简单使用"><a class="markdownIt-Anchor" href="#eureka-简单使用"></a> Eureka 简单使用</h2><h3 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h3><p>这篇写的很详细了……</p><p><a href="https://www.kancloud.cn/fymod/springcloud2/784129" target="_blank" rel="noopener">SpringCloud2.0 入门指南</a></p><h3 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h3><p>Eureka 分为 Eureka Server、Eureka Client。</p><p>可以用 Idea 快速创建，见：<a href="https://my.oschina.net/u/3747963/blog/1593462" target="_blank" rel="noopener">Spring Cloud Eureka 快速创建 Client 和 Server </a>。</p><ul><li>Eureka Server : Spring Initializr -&gt; Cloud Discovery -&gt; Eureka Server</li><li>Eureka Client : Spring Initializr -&gt; Cloud Discovery -&gt; Eureka Discovery clien</li></ul><p>用 Gradle 可以这样创建：</p><ol><li>创建一个 Gradle 项目(SpringCloud-demo)，然后把里面内容删光光。</li><li>在这个项目引入 Module（idea 上右键项目名，new -&gt; Module），Spring Initializr -&gt; Cloud Discovery -&gt; Eureka Server。Module 命名为 eurekaserver。这样，创建一个 Eureka Server。</li><li>在这个项目引入 Module（idea 上右键项目名，new -&gt; Module)，Spring Initializr -&gt; Cloud Discovery -&gt; Eureka Discovery Client。Module 命名为 eurekaclient。这样，创建了一个 Eureka Client。</li></ol><p>执行 Gradle 导入包，启动这两个 Module，最后在网页打开 Eureka Server，成功发现了 Eureka Client。</p><h3 id="代码仓库"><a class="markdownIt-Anchor" href="#代码仓库"></a> 代码仓库</h3><p><a href="https://github.com/hqweay/learn-spring-cloud/tree/basic-demo" target="_blank" rel="noopener">hqweay/learn-spring-cloud at basic-demo</a></p><h2 id="eureka-server-和-eureka-client-到底啥区别"><a class="markdownIt-Anchor" href="#eureka-server-和-eureka-client-到底啥区别"></a> Eureka Server 和 Eureka Client 到底啥区别</h2><p>Eureka Server 是注册服务中心的服务端，有界面。</p><p>Eureka Client 是注册服务中心的客户端。</p><p>一个微服务项目包含这三者。：</p><ul><li>服务注册中心</li><li>服务提供者</li><li>服务消费者</li></ul><p>Eureka Server 就是服务注册中心。</p><p>Eureka Client 既可以做服务提供者，又可以做服务消费者。</p><p>在前文的项目里将 Eureka Client 模块作为服务提供者来使用，那么 Eureka Client 如何消费服务呢?</p><p>比方说我有个用户模块，需要调用数据维护服务的接口来获取用户的信息。在上面已经提到过，我可以直接调用数据维护服务的接口，也可以通过服务注册中心调用数据维护服务的接口。但若是考虑一些更复杂的情况，比方说做<a href="https://www.wikiwand.com/zh-hans/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1" target="_blank" rel="noopener">负载均衡</a>，就需要在服务的消费者与提供者之间再提供一个抽象层次。</p><p>Spring Cloud 提供了 Ribbon 来达到这一点。</p><h2 id="高可用注册中心"><a class="markdownIt-Anchor" href="#高可用注册中心"></a> 高可用注册中心</h2><p>在生产环境应该对每个节点做备用节点以应对主节点异常的情况，服务注册中心当然也可能异常，那也应该做备用。</p><p>实际上 Eureka 中的所有节点都既是服务提供方又是服务消费方，包括 Eureka Server。可以把 Eureka Server 作为一个服务，向其它的 Eureka Server 注册形成一个服务注册中心集群。Eureka 提供了配置达到这点，多个互相注册的 Eureka Server 会互相同步服务的注册信息。</p><p>具体到某个模块举例，可以将一个 Eureka Client 配置上多个 Eureka Server（多个 Server 会互相同步数据）的地址，当其中某个 Eureka Server 无法使用时，便尝试调用下一个。</p><p>[update on 2022-02-12]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 自己浅见 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Spring </tag>
             
         </tags>
       

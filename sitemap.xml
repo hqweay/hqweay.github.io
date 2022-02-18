@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leay.net/about/index.html</loc>
+    
+    <lastmod>2022-02-18T10:24:35.278Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leay.net/2019/01/14/kill/</loc>
     
     <lastmod>2022-02-13T15:58:12.849Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>https://leay.net/2022/01/25/boat/</loc>
     
     <lastmod>2022-01-25T15:41:23.196Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leay.net/about/index.html</loc>
-    
-    <lastmod>2022-01-06T11:11:19.099Z</lastmod>
     
   </url>
   

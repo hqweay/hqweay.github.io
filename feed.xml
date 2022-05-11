@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2022-05-09T13:50:43.428Z</updated>
+  <updated>2022-05-11T11:41:47.581Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://leay.net/2022/05/09/mail/"/>
     <id>https://leay.net/2022/05/09/mail/</id>
     <published>2022-05-08T16:00:00.000Z</published>
-    <updated>2022-05-09T13:50:43.428Z</updated>
+    <updated>2022-05-11T11:41:47.581Z</updated>
     
-    <content type="html"><![CDATA[<p>在使用邮箱订阅信息这个场景，有些人会新建邮箱账号或用上一堆规则来整理收到的邮件。比如<a href="https://rizime.substack.com/p/one2?s=r" target="_blank" rel="noopener">newsletter 邮件过滤规则 - Λ-Reading</a> 尝试了许多关键字后，建议使用「unsubscribe」（取消订阅）来过滤整理 Newsletter。</p><p>不如使用邮箱的别名来完成。</p><p>Gmail 支持用加号创建别名。对于 <a href="mailto:A@gmail.com">A@gmail.com</a> 来说，A+a@gmail.com、A+b@gmail.com 都是合法的别名，发送到后两个地址的邮件都能被 <a href="mailto:A@gmail.com">A@gmail.com</a> 接收。</p><p>可以用 <a href="mailto:A+sub@gmail.com">A+sub@gmail.com</a> 来订阅信息，然后新建规则将发送到该地址的邮件移动到某文件夹。同理用 <a href="mailto:A+reg@gmail.com">A+reg@gmail.com</a> 作为注册专用邮箱等。</p><p>其它邮箱服务也大多支持别名，域名邮箱也可以自定义许多邮箱地址，但似乎都没 Gmail 「+任意字符」方便。但对于「订阅信息」「注册账号」两个场景，手动建两个别名邮箱也还好，一劳永逸嘛。（虽然部分网站不能正常识别带「+」号的邮箱，遇到这种情况应向网站管理员布道。😂）</p>]]></content>
+    <content type="html"><![CDATA[<p>在使用邮箱订阅信息这个场景，有些人会新建邮箱账号或用上一堆规则来整理收到的邮件。比如<a href="https://rizime.substack.com/p/one2?s=r" target="_blank" rel="noopener">newsletter 邮件过滤规则 - Λ-Reading</a> 尝试了许多关键字后，建议使用「unsubscribe」（取消订阅）来过滤整理 Newsletter。</p><p>不如使用邮箱的别名来完成。</p><p>Gmail 支持用加号创建别名。对于 <a href="mailto:A@gmail.com">A@gmail.com</a> 来说，A+a@gmail.com、A+b@gmail.com 都是合法的别名，发送到后两个地址的邮件都能被 <a href="mailto:A@gmail.com">A@gmail.com</a> 接收。</p><p>可以用 <a href="mailto:A+sub@gmail.com">A+sub@gmail.com</a> 来订阅信息，然后新建规则将发送到该地址的邮件移动到某文件夹。同理用 <a href="mailto:A+reg@gmail.com">A+reg@gmail.com</a> 作为注册专用邮箱等。</p><p>其它邮箱服务也大多支持别名，域名邮箱也可以自定义许多邮箱地址，但似乎都没 Gmail 「+任意字符」方便。但对于「订阅信息」「注册账号」两个场景，手动建两个别名邮箱也还好，一劳永逸嘛。</p><p>部分网站不能正常识别带「+」号的邮箱，大概是用正则表达式校验邮箱格式了。<a href="https://www.yuque.com/jwenjian/reading-list/pk5md5" target="_blank" rel="noopener">在这</a>看到一篇建议不要使用正则表达式校验邮箱的<a href="https://davidcelis.micro.blog/2012/09/06/stop-validating-email.html" target="_blank" rel="noopener">博文</a>——因为即使把正则写得非常复杂也很难满足所有情况。不如向这个邮箱发封确认激活的邮件。</p><p>下次遇到正常邮箱校验不通过的情况，可用该理由向网站管理员布道。😂</p>]]></content>
     
     <summary type="html">
     

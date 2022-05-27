@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>代码过长，编译失败</title>
+      <link href="/2022/05/27/code-too-large/"/>
+      <url>/2022/05/27/code-too-large/</url>
+      
+        <content type="html"><![CDATA[<p>今天当发版工具人时遇到编译报错「代码过长（code too large）」，把这段说明发到工作群里，瞬间听到周围一片爽朗的笑声……</p><p>挺让我惊讶，原来 Java 里的方法大小是有限制的——编译后的字节码大小不能超过 64kb。</p><p>JVM 规范 <a href="https://docs.oracle.com/javase/specs/jvms/se13/html/jvms-4.html#jvms-4.7.3" target="_blank" rel="noopener">Chapter 4. The class File Format</a> 在 <code>class</code> 结构的 <code>method_info</code> （方法信息）里定义了一个 u1 类型<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>的数组来保存该 Java 方法编译后的数据，这个数组的大小由一个 u2 类型<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>的变量确定。</p><p>1 个 u2 类型的值占 2 byte， 2 byte 就是 16 bit（位），16 bit 所能表示的最大值是 2 的 16 次方——65536。因此一个 u2 类型的变量的最大值就是 65536，因此这个数组最多就只能保存 65536 byte，即 64kb 的数据。（1 kb = 1024 byte）</p><p>这个错误虽然可以在编译期间暴露，但 JVM 并不能保证它加载的 class 文件都是满足要求的，因此 JVM 在加载 class 文件的验证阶段，还会对该数组的长度进行检查。</p><hr><p>除了普通方法外，构造方法、初始化代码块也受到此限制。</p><p>初始化代码块为什么也受到此限制呢？<mark>我猜测初始化代码块在 JVM 层面还是当作一个方法来使用了。</mark></p><p>同时，如果一个 Java 类里有多个初始化代码块，虽然每个代码块里的代码没有超出此限制，但当它们之和超过该限制时，也会编译报错「代码过长」。<mark>我猜测多个初始化代码块在 JVM 层面会被优化成一个方法来使用。</mark></p><p>比如：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DayOne</span></span>&#123;</span><br><span class="line">  &#123;</span><br><span class="line">    System.out.println(<span class="string">"哈哈哈哈哈"</span>);</span><br><span class="line">    <span class="comment">// repeat 4000 times</span></span><br><span class="line">    System.out.println(<span class="string">"哈哈哈哈哈"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  &#123;</span><br><span class="line">    System.out.println(<span class="string">"哈哈哈哈哈"</span>);</span><br><span class="line">    <span class="comment">// repeat 4000 times</span></span><br><span class="line">    System.out.println(<span class="string">"哈哈哈哈哈"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  &#123;</span><br><span class="line">    System.out.println(<span class="string">"哈哈哈哈哈"</span>);</span><br><span class="line">    <span class="comment">// repeat 4000 times</span></span><br><span class="line">    System.out.println(<span class="string">"哈哈哈哈哈"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>更有趣的是，Java 中数组的大小理论上与<a href="https://stackoverflow.com/questions/31382531/why-i-cant-create-an-array-with-large-size" target="_blank" rel="noopener">int 的范围相关</a>，但当用上面的方式尝试初始化数组时，也会译报错「代码过长」：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">String[] arr = <span class="keyword">new</span> String[]&#123;</span><br><span class="line">            <span class="string">"哈哈哈含安安安安哈哈哈含安安安安哈哈哈含安安安安哈哈哈含安安安安"</span>,</span><br><span class="line">  <span class="comment">//…… repeat 10000 times</span></span><br><span class="line">  <span class="string">"哈哈哈含安安安安哈哈哈含安安安安哈哈哈含安安安安哈哈哈含安安安安"</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><p>类似的，<a href="https://docs.oracle.com/javase/specs/jvms/se13/html/jvms-4.html#jvms-4.11" target="_blank" rel="noopener">JVM 规范</a> 还介绍了「类或接口可以声明的字段数量限制在 65535」「方法参数的数量限制为 255」等情况。：）</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>1 byte （字节）的无符号数 <a href="#fnref1" class="footnote-backref">↩︎</a></p></li><li id="fn2" class="footnote-item"><p>2 byte 的无符号数 <a href="#fnref2" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 自己浅见 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用邮箱别名</title>
       <link href="/2022/05/09/mail/"/>
       <url>/2022/05/09/mail/</url>

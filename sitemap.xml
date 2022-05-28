@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://leay.net/2022/05/27/code-too-large/</loc>
+    <loc>https://leay.net/2022/05/28/concurrency/</loc>
     
-    <lastmod>2022-05-27T12:32:00.270Z</lastmod>
+    <lastmod>2022-05-28T09:01:36.157Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leay.net/2022/05/28/code-too-large/</loc>
+    
+    <lastmod>2022-05-28T08:54:03.709Z</lastmod>
     
   </url>
   

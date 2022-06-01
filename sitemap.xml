@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leay.net/2022/06/01/index-out-of-bounds/</loc>
+    
+    <lastmod>2022-06-01T16:07:11.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leay.net/2022/05/27/code-too-large/</loc>
+    
+    <lastmod>2022-06-01T15:43:31.014Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leay.net/2022/05/28/hero/</loc>
     
     <lastmod>2022-05-28T11:14:36.145Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://leay.net/2022/05/28/concurrency/</loc>
     
     <lastmod>2022-05-28T09:06:11.678Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leay.net/2022/05/27/code-too-large/</loc>
-    
-    <lastmod>2022-05-28T09:03:54.871Z</lastmod>
     
   </url>
   

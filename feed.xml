@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2022-06-13T15:35:52.525Z</updated>
+  <updated>2022-06-14T15:49:23.987Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>让我们再尝试下好好说话</title>
+    <link href="https://leay.net/2022/06/14/steelmanning/"/>
+    <id>https://leay.net/2022/06/14/steelmanning/</id>
+    <published>2022-06-13T16:00:00.000Z</published>
+    <updated>2022-06-14T15:49:23.987Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.wikiwand.com/zh-hans/%E7%A8%BB%E8%8D%89%E4%BA%BA%E8%AB%96%E8%AD%89" target="_blank" rel="noopener">稻草人论证</a> 是一种通过曲解对方的论点，并针对曲解后的论点（替身稻草人）攻击，再宣称已推翻对方论点的论证形式。与之相对的，<a href="https://www.wikiwand.com/en/Straw_man#Steelmanning" target="_blank" rel="noopener">钢铁侠策略</a> 是一种通过确定对方论点，甚至帮助对方构建出最恰当的论点，然后对此进行辩论的方式。前阵子聊过 <a href="/2022/03/19/how-to-discuss/">类似的想法</a>，没想到还有个专门的说法。</p><p>我觉得这对试图从对话中有所收获，而不是享受攻击的快感的人来说，确实是值得使用的讨论技巧。</p><p>比方说面对一篇文章，应当以最理性的方式<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>去理解作者的表达——想象这个常见的场景，读者批评作者「你怎么不说什么什么」——当遇到作者似乎漏掉什么时，最好合理地考虑「这点是不是对论证文章的核心观点无益？」而不是「你太无知了，这也不知道。」或者「你忽略了那些，所以这篇文章是在以偏概全。」</p><p>最近读到 <a href="https://mp.weixin.qq.com/s/tuXmRMRxH7rFBYGyEITbsw" target="_blank" rel="noopener">Not All Men 为什么这么糟糕？</a>，文章批评了在讨论女权主义议题时插嘴「不是所有男人」的对话者，因为这是在破坏对话。</p><p>我觉得文章写得很好，但它似乎并没有对「不是所有」这个说法做出回应，而是通过描绘一幅「这样会如何」的糟糕图景反过来说「不是所有」这种说法是不好的。因此文章读起来不是那么客气，而且似乎对它的标题本身避重就轻。</p><p>我觉得，严谨的用词在实践上并不是必须的——比方说讨论女权问题时表达者可以给所有涉及「男性」的地方加一个「有些」——「有些男性」，但同理倾听的人也可以去理解表达者，将词汇脑补一个限定词使之更「严谨」呀。从挑错的角度来讲，我们拥有无数种方式指责表达者「不够中立」或「挑拨情绪」——对于想要好好讨论的人来说，这样的批评并没有贡献任何价值；而对于那些真正激进地宣扬「所有男人都该死」的内容来说，也不会因为批评而把口号改成「部分男人该死」——后者搞不好在义正严辞地反驳后还会加重「果然对男人就是不能讲道理、就是应该拨乱反正」的信念。</p><p>这当然有可能是一种偷懒——我讨厌一些创作者用「我只写给部分人」的借口掩饰自己实则不肯求证或另有考虑，讨厌把它当作铠甲听不得半点批评，讨厌自己也常常以艰深文浅陋。但这种心虚的模糊很容易和求知所犯的错误区分开来的——通过你从文章读出的真诚。</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p><a href="https://www.wikiwand.com/en/Principle_of_charity" target="_blank" rel="noopener">慈善原则</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.wikiwand.com/zh-hans/%E7%A8%BB%E8%8D%89%E4%BA%BA%E8%AB%96%E8%AD%89&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;稻草人论证&lt;/a&gt; 是一种通过曲解
+      
+    
+    </summary>
+    
+    
+      <category term="生活志" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
+    
+      <category term="杂文" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>软件系统的复杂度</title>
@@ -226,34 +254,6 @@
       
       
         &lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://journal.psych.ac.cn/xlxb/CN/10.3724/SP.J.1041.2019.01068&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;“操作性定义”和“证伪标准”不足以为心理学奠基&lt;/a
-      
-    
-    </summary>
-    
-    
-      <category term="生活志" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
-    
-      <category term="观与感" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/%E8%A7%82%E4%B8%8E%E6%84%9F/"/>
-    
-    
-      <category term="阅读所思" scheme="https://leay.net/tags/%E9%98%85%E8%AF%BB%E6%89%80%E6%80%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>没有读书，只有生活</title>
-    <link href="https://leay.net/2022/04/24/read/"/>
-    <id>https://leay.net/2022/04/24/read/</id>
-    <published>2022-04-23T16:00:00.000Z</published>
-    <updated>2022-04-24T12:04:50.895Z</updated>
-    
-    <content type="html"><![CDATA[<p>我把这当作一个比喻——拿起书本意味着试图理解他人。不管一个人在寻找什么，有没有带着某种目的，当他寂寞或者困惑时，愿意花一段时间去体会别人编织的梦境、细密枯燥的论证、过于私人的呓语。选择以毫无顾忌的坦诚去倾听别人写在纸张里的长篇大论——这是如今难得一见的谦虚。</p><p>效率至上，时间宝贵，人们要评分最高的产品、在网红列举的清单挑礼物、转发评价对时事表态；容错率低，无暇他顾，大家购买真正的自己、询问微笑的最佳实践、在被安排好的与众不同里生活。如果事态严重到需要紧张的现代人亲自读书——那说明可能真的有大问题了。社交网络不能抚慰，意见领袖没法回答。</p><p>说自己的经验偶然和某个段落契合意识到「读书有用」；说读过却忘记了的书籍会成为气质的装饰。为读书正名，说通过它学习知识、增进理解力、娱乐放松、升职加薪；替阅读祛魅，说它再普通不过，不是争夺话语权的工具。辩论书籍的独特，说它信噪比更高、更能激发读者的联想、锻炼人集中注意力；呼吁大家「读书吧」！批评媒介，说短视频肤浅、网络真假难辨。讨论实体书与电子书、争辩胶版纸和轻型纸、收集断版书和精装本；拆腰封、包书皮、刷书边；吐槽出版、赞美译者；买如山倒、读似抽丝。</p><p>透过「读书」一词，能望到真挚和表演的来路，天真或好奇的去处。当抛开形式的浪漫，剩下的读书人往往都是可怜人。问题引出问题；越求知越无知。有时候「读书」像是厄运，无数的问题时不时冒出来敲打你的头盖骨；有时候带来痛苦，思想如爱人死去；有时候需要你赤身露体，将自己掰碎揉进字里行间。</p><p>互联网的便捷多残酷啊，轻而易举地把「读书」带来的部分优越感压得粉碎。新鲜的信息以秒速被推送至眼前，无数的聪明人推销着自己的观点。这个世界好像变得越来越简单了，一切事情都可以用几套流行的框架解释——问题出在这些人是好人，那些人是坏人；这件事情不言自明，那件事情太复杂没法讨论……</p><p>无数的，那些现实与书本的凿圆枘方被坦荡的利己主义自洽，好奇心抛弃了大人。只剩下自说自话和寻找认同，没有交流、没有讨论。现实的喜悦和痛苦要被降纬成数字才可以言说，争吵对词汇的理解，没有相通的体验。</p><p>是现在如此还是向来如此？张开嘴询问却发现还不如读书，书里有激昂和斥责，有更真实的反馈。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;我把这当作一个比喻——拿起书本意味着试图理解他人。不管一个人在寻找什么，有没有带着某种目的，当他寂寞或者困惑时，愿意花一段时间去体会别人编织的梦境、细密枯燥的论证、过于私人的呓语。选择以毫无顾忌的坦诚去倾听别人写在纸张里的长篇大论——这是如今难得一见的谦虚。&lt;/p&gt;&lt;p&gt;效
       
     
     </summary>

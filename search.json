@@ -908,7 +908,7 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/cats",
-        "date"     : "2022-06-25 21:42:17 +0800",
+        "date"     : "2022-06-25 21:52:52 +0800",
         "content"  : "This is a second note with a poem with cats.Here’s a link to a note that explains why it’s important to move your body every day.  I like my pillow, my fancy bed,  My cat tree and the bathroom sink.  Each has its time and fills a need,  but a box is best when I want to think.You can create as many notes as you want.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et risus at ipsum pharetra pellentesque vel in massa. Nam ornare, velit sed pulvinar gravida, justo ipsum eleifend augue, id porta velit eros vestibulum odio. Vestibulum dignissim malesuada sapien, eu volutpat lacus pellentesque et. Curabitur dui nisi, sagittis ut tempor ac, scelerisque in diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vitae euismod ex. Morbi lacinia iaculis tempor.Nunc porttitor lacus ullamcorper mauris porttitor feugiat. Vestibulum condimentum lacus vitae orci lobortis pellentesque in ac dolor. Nullam libero justo, suscipit id suscipit vel, tincidunt vitae lectus. Phasellus gravida iaculis ligula, at pharetra urna. Nunc vel tellus eleifend, aliquet magna non, condimentum est. Pellentesque vulputate posuere felis eget sodales. Cras finibus tortor porta libero bibendum, vel bibendum orci luctus. Donec ac eros vitae erat malesuada imperdiet at tempor turpis."
      
    } ,
@@ -919,7 +919,7 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/tigers",
-        "date"     : "2022-06-25 21:42:17 +0800",
+        "date"     : "2022-06-25 21:52:52 +0800",
         "content"  : "This is yet another note, this one about tigers."
      
    } ,
@@ -930,7 +930,7 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/your-first-note",
-        "date"     : "2022-06-25 21:42:17 +0800",
+        "date"     : "2022-06-25 21:52:52 +0800",
         "content"  : "Welcome!This is your first note. You’ll find it in the notes/ directory.Link syntaxTo link to another note, you can use multiple syntaxes. The following four use the “double-bracket” notation (view the Markdown source file to see the underlying syntax).  Using the note title: a note about cats  Using the note’s filename: cats  Using the note’s title, with a label: link to the note about cats using the note title  Using the note’s filename, with a label: link to the note about cats using the note’s filenameYou can organize notes in subdirectories and link them normally. For example, the links above all point to the _notes/animals/cats.md file. Here’s another example: tigers.Non-latin languages are supported too: 안녕하세요.Dashes and underscores in file names are supported, and may be omitted in the bracket link syntax. As an example, the your-first-note.md file can be linked to with your first note or your-first-note, or even yOuR-FiRsT Note.In all cases, if the double-bracket link does not point to a valid note, the double brackets will still be shown, like this:   [[  there is no note that matches this link  ]].Alternatively, you can use regular Markdown syntax for links, with a relative link to the other note, like this: this is a Markdown link to the note about cats. Don’t forget to use the .internal-link class to make sure the link is styled as an internal link (without the little arrow).Since the Web is all about HTML, you can always use plain HTML if you want, like this: This is a link to the note about cats with HTML.Of course, you can also link to external websites, like this: this is a link to Wikipedia. Again, you can use plain HTML if you prefer. Footnotes are also supported and will be treated like internal links.1 You can point to other notes in your footnotes.2Tweet embeddingNote: This behavior is disabled by default for privacy reasons. See “Site configuration” section below to enable it.You may include a tweet URL on its own line (like below), and it would be replaced with an official Twitter embed if the site configuration demands it.https://twitter.com/jack/status/20Site configurationSome behavior is configurable by tweaking the _config.yml file.use_html_extension: if you use a static host that doesn’t support URLs that don’t end with .html (such as Neocities), try changing the use_html_extension value to true in the _config.yml file and restart the Jekyll server (or re-build the site). This adds a .html extension to note URLs and may resolve issues with links. If you’re still having trouble, I recommend using Netlify to host your digital garden: it’s free, easy to use, and fully supports this template’s features out of the box.open_external_links_in_new_tab: when set to true, this makes external links open in new tabs. Set to false to open all links in the current tab.embed_tweets: when set to true, tweet URLs on their own lines will be replaced with a Twitter embed. Default value is false.Automatic bi-directional linksNotice in the “Notes mentioning this note” section that there is another note linking to this note. This is a bi-directional link, and those are automatically created when you create links to other notes.Link previewsIf you’re on a device with mouse support, try hovering your mouse on internal links to preview the notes: a note about cats.Images and other Markdown goodiesFinally, because you have the full power of Markdown in this template, you can use regular Markdown syntax for various formatting options.Lists work as expected:  List element A  List element B  List element C  List element  List element  List elementIf you’d like to quote other people, consider using quote blocks:  Lorem ipsum dolor sit ametAnd of course, images look great:You can also highlight some content by wrapping it with ==.我的天呐 哈哈啊っ f １这样 ff 分っ f １ 。  可以吗？初始化代码块为什么也受到此限制呢？我猜测初始化代码块在 JVM 层面还是当作方法来使用的。Code syntax highlightingYou can add code blocks with full syntax color highlighting by wrapping code snippet in triple backticks and specifying the type of the code (js, rb, sh, etc.):// Here&#39;s a bit of JavaScript:console.log(&quot;hello!&quot;);# And now some Rubydef foo(bar)  &quot;baz&quot;endpublic void test(){}$ cat /dev/urandom | grep &quot;the answer to life&quot; # shell scripts look nice tooNext stepsThis digital garden template is free, open-source, and available on GitHub here.The easiest way to build your own digital garden based on this template is to read this step-by-step guide explaining how to set this up from scratch.Go forth, have fun, and learn new something every day! ✌️            This is a footnote. For more information about using footnotes, check out the Markdown Guide. &amp;#8617;              This is another footnote that links to the note about cats. You may also point to   [[  notes that do not exist  ]] if you wish. &amp;#8617;      "
      
    } ,
@@ -941,7 +941,7 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94",
-        "date"     : "2022-06-25 21:42:17 +0800",
+        "date"     : "2022-06-25 21:52:52 +0800",
         "content"  : "This template supports any language. Come as you are! :)"
      
    } ,
@@ -952,7 +952,7 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/consistency",
-        "date"     : "2022-06-25 21:42:17 +0800",
+        "date"     : "2022-06-25 21:52:52 +0800",
         "content"  : "Show up. Do the work. Be consistent.Then go take a look at the first note."
      
    } ,
@@ -963,7 +963,7 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/move-your-body-every-day",
-        "date"     : "2022-06-25 21:42:17 +0800",
+        "date"     : "2022-06-25 21:52:52 +0800",
         "content"  : "#notes-entry-container {display: grid;grid-gap: 2em;grid-template-areas:“content”“side”;@media (min-width: 700px) {grid-template-columns: 3fr 1fr;grid-template-areas: “content side”;}}"
      
    } ,
@@ -974,7 +974,7 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/test",
-        "date"     : "2022-06-25 21:42:17 +0800",
+        "date"     : "2022-06-25 21:52:52 +0800",
         "content"  : "            ==+((\\w      [\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FA5\\uac00-\\ud7ff])(.*?)?[^ .=]?)==+        [[  学习  ]]"
      
    } 

@@ -1401,9 +1401,9 @@
       
         <tags>
             
-            <tag> 配置与操作 </tag>
-            
             <tag> 博客记录 </tag>
+            
+            <tag> 配置与操作 </tag>
             
             <tag> Hexo </tag>
             
@@ -1513,9 +1513,9 @@
       
         <tags>
             
-            <tag> 配置与操作 </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> 配置与操作 </tag>
             
             <tag> Manjaro </tag>
             
@@ -1571,9 +1571,9 @@
       
         <tags>
             
-            <tag> 配置与操作 </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> 配置与操作 </tag>
             
         </tags>
       
@@ -1737,9 +1737,9 @@
       
         <tags>
             
-            <tag> 配置与操作 </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> 配置与操作 </tag>
             
         </tags>
       
@@ -2040,9 +2040,9 @@
       
         <tags>
             
-            <tag> 配置与操作 </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> 配置与操作 </tag>
             
         </tags>
       
@@ -2824,33 +2824,6 @@
         <tags>
             
             <tag> 博客记录 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见镜像配置</title>
-      <link href="/1979/01/01/1979-01-01-%E9%95%9C%E5%83%8F%E9%85%8D%E7%BD%AE/"/>
-      <url>/1979/01/01/1979-01-01-%E9%95%9C%E5%83%8F%E9%85%8D%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<h2 id="pip"><a class="markdownIt-Anchor" href="#pip"></a> pip</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  numpy</span><br></pre></td></tr></table></figure><p>或</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install  xlrd  -i  https://pypi.tuna.tsinghua.edu.cn/simple/</span><br></pre></td></tr></table></figure><h2 id="go-modules"><a class="markdownIt-Anchor" href="#go-modules"></a> Go Modules</h2><p><a href="https://github.com/goproxy/goproxy.cn" target="_blank" rel="noopener">https://github.com/goproxy/goproxy.cn</a></p><p><a href="https://goproxy.io/" target="_blank" rel="noopener">https://goproxy.io</a></p><p><a href="https://goproxy.cn/" target="_blank" rel="noopener">https://goproxy.cn</a></p><h3 id="环境变量设置"><a class="markdownIt-Anchor" href="#环境变量设置"></a> 环境变量设置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bashrc</span></span><br><span class="line"><span class="comment"># 启用 Go Modules 功能</span></span><br><span class="line"><span class="built_in">export</span> GO111MODULE=on</span><br><span class="line"><span class="comment"># 配置 GOPROXY 环境变量</span></span><br><span class="line"><span class="built_in">export</span> GOPROXY=https://goproxy.io</span><br><span class="line"><span class="comment"># export GOPROXY=https://goproxy.cn</span></span><br></pre></td></tr></table></figure><h3 id="goland-设置"><a class="markdownIt-Anchor" href="#goland-设置"></a> GoLand 设置</h3><p>GoLand 设置：file-&gt;setting-&gt;Go Modelues-&gt;Proxy</p><h2 id="chrome-插件"><a class="markdownIt-Anchor" href="#chrome-插件"></a> Chrome 插件</h2><p><a href="http://yurl.sinaapp.com/crx.php" target="_blank" rel="noopener">http://yurl.sinaapp.com/crx.php</a></p><h1 id="阿里云镜像站"><a class="markdownIt-Anchor" href="#阿里云镜像站"></a> 阿里云镜像站</h1><p><a href="https://developer.aliyun.com/mirror" target="_blank" rel="noopener">https://developer.aliyun.com/mirror</a></p><h1 id="gitmoji"><a class="markdownIt-Anchor" href="#gitmoji"></a> Gitmoji</h1><p><a href="https://gitmoji.carloscuesta.me/" target="_blank" rel="noopener">https://gitmoji.carloscuesta.me/</a></p><h2 id="mvnrepository"><a class="markdownIt-Anchor" href="#mvnrepository"></a> mvnrepository</h2><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com</a></p><h1 id="若已有代理"><a class="markdownIt-Anchor" href="#若已有代理"></a> 若已有代理</h1><h2 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h2><p><a href="https://zhuanlan.zhihu.com/p/46973701" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/46973701</a></p><h2 id="废话一句"><a class="markdownIt-Anchor" href="#废话一句"></a> 废话一句</h2><p>v2rayN 自带 proxifier 开启 HTTP 代理，端口为 SOCKS 端口号 + 1。嘘～</p><h2 id="终端"><a class="markdownIt-Anchor" href="#终端"></a> 终端</h2><h3 id="仅当前终端生效"><a class="markdownIt-Anchor" href="#仅当前终端生效"></a> 仅当前终端生效</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> http_proxy=http://127.0.0.1:12333</span><br><span class="line"><span class="built_in">export</span> https_proxy=http://127.0.0.1:12333</span><br><span class="line"><span class="comment"># export ALL_PROXY=socks5://127.0.0.1:1080</span></span><br><span class="line"><span class="comment"># unset ALL_PROXY</span></span><br></pre></td></tr></table></figure><p>终端执行后生效，退出就失效。</p><h3 id="永久生效"><a class="markdownIt-Anchor" href="#永久生效"></a> 永久生效</h3><p>将命令写入<code>~/.bashrc</code>、<code>~/.profile</code> 或 <code>~/.zshrc</code>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> http_proxy=<span class="string">"socks5://127.0.0.1:1080"</span></span><br><span class="line"><span class="built_in">export</span> https_proxy=<span class="string">"socks5://127.0.0.1:1080"</span></span><br><span class="line"><span class="comment"># export ALL_PROXY=socks5://127.0.0.1:1080</span></span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br><span class="line"><span class="comment"># source ~/.profile</span></span><br><span class="line"><span class="comment"># source ~/.zshrc</span></span><br></pre></td></tr></table></figure><h3 id="创建链接方便使用"><a class="markdownIt-Anchor" href="#创建链接方便使用"></a> 创建链接方便使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias setproxy&#x3D;&quot;export ALL_PROXY&#x3D;socks5:&#x2F;&#x2F;127.0.0.1:1080&quot; alias unsetproxy&#x3D;&quot;unset ALL_PROXY&quot;</span><br></pre></td></tr></table></figure><h3 id="取消"><a class="markdownIt-Anchor" href="#取消"></a> 取消</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">unset</span> http_proxy</span><br><span class="line">$ <span class="built_in">unset</span> https_proxy</span><br><span class="line">$ <span class="built_in">unset</span> ALL_RPOXY</span><br></pre></td></tr></table></figure><h3 id="proxychains4"><a class="markdownIt-Anchor" href="#proxychains4"></a> proxychains4</h3><p>设置了就是全局代理，有时候会影响国内站的速度。可以需要的时候代理，不需要了就取消。</p><p>也可以安装 proxychains4 方便根据情况选择是否挂代理。</p><h2 id="git"><a class="markdownIt-Anchor" href="#git"></a> Git</h2><h3 id="仅-git-生效"><a class="markdownIt-Anchor" href="#仅-git-生效"></a> 仅 Git 生效</h3><p>以 Github 为例。注意若使用 SSH 操作，下面就无效了。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:1080</span><br><span class="line">git config --global http.proxy <span class="string">'socks5://127.0.0.1:1080'</span> </span><br><span class="line">git config --global https.proxy <span class="string">'socks5://127.0.0.1:1080'</span></span><br><span class="line"></span><br><span class="line">git config --global http.https://github.com.proxy http://127.0.0.1:1081</span><br></pre></td></tr></table></figure><h3 id="取消-2"><a class="markdownIt-Anchor" href="#取消-2"></a> 取消</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习折腾 </category>
-          
-          <category> 配置与操作 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 配置与操作 </tag>
             
         </tags>
       

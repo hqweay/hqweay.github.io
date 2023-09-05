@@ -3,3 +3,4 @@
 # Redirect default Netlify subdomain to primary domain
 https://hqweay.netlify.com/* https://leay.net/:splat 301!
 https://master--hqweay.netlify.com/* https://leay.net/:splat 301!
+/.well-known/webfinger /.well-known/webfinger

@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>思源笔记插件：一键双链转引用</title>
+      <link href="/2024/04/04/siyuan-plugin-wiki.md/"/>
+      <url>/2024/04/04/siyuan-plugin-wiki.md/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键双链转引用</a></p><p>一键将选中块内的双链转换为引用形式。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>思源笔记插件：自动获取网页标题</title>
+      <link href="/2024/04/04/siyuan-plugin-link/"/>
+      <url>/2024/04/04/siyuan-plugin-link/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a></p><p>在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>思源笔记排版插件，好耶？</title>
       <link href="/2024/03/31/siyuan-typography-go/"/>
       <url>/2024/03/31/siyuan-typography-go/</url>

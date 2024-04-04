@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2024-03-31T10:56:36.990Z</updated>
+  <updated>2024-04-04T10:40:04.386Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>思源笔记插件：一键双链转引用</title>
+    <link href="https://leay.net/2024/04/04/siyuan-plugin-wiki.md/"/>
+    <id>https://leay.net/2024/04/04/siyuan-plugin-wiki.md/</id>
+    <published>2024-04-03T16:00:00.000Z</published>
+    <updated>2024-04-04T10:40:04.386Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键双链转引用</a></p><p>一键将选中块内的双链转换为引用形式。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/hqweay/siyuan-href-to-ref&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;一键双链转引用&lt;/a&gt;&lt;/p&gt;&lt;p&gt;一键将选中块内的双链转换为引用形式。&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="学习折腾" scheme="https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="项目" scheme="https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>思源笔记插件：自动获取网页标题</title>
+    <link href="https://leay.net/2024/04/04/siyuan-plugin-link/"/>
+    <id>https://leay.net/2024/04/04/siyuan-plugin-link/</id>
+    <published>2024-04-03T16:00:00.000Z</published>
+    <updated>2024-04-04T10:39:00.040Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a></p><p>在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/hqweay/siyuan-auto-link-title&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;自动获取网页标题&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在文档内粘贴链接时，会自动获取标题并以 Markdown
+      
+    
+    </summary>
+    
+    
+      <category term="学习折腾" scheme="https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="项目" scheme="https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    
+  </entry>
   
   <entry>
     <title>思源笔记排版插件，好耶？</title>
@@ -209,62 +265,6 @@
     
     
       <category term="看片所想" scheme="https://leay.net/tags/%E7%9C%8B%E7%89%87%E6%89%80%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一种被世界认同的叛逆</title>
-    <link href="https://leay.net/2024/01/08/year/"/>
-    <id>https://leay.net/2024/01/08/year/</id>
-    <published>2024-01-07T16:00:00.000Z</published>
-    <updated>2024-03-31T10:56:36.951Z</updated>
-    
-    <content type="html"><![CDATA[<p>那阵子我躺在工地的长椅午休，看短视频解闷。天空中一个大得不真实的月亮，广角镜头，几个孩子在小路上跑、旱地里跳皮筋。乐此不疲。</p><p>我看到不少生活的细节，读书时和家人打电话身后喧哗的朋友、听到家长脚步声起身关电视的小孩、暧昧期洗漱不舍得放下手机的年轻人、分别时笑容渐渐消失的脸…</p><p>想起以前总感叹一些影视、文学作品里对生活细节的把握，而现在的短视频（平台）则方便地提供了舞台让我们挥霍坦诚。任何时代都有属于自己的媒介，任何媒介都塑造着人的心灵。当感动被批量生产成为快餐，我们就成为献祭灵魂的奴隶。</p><p>娱乐至死因为痛苦可以被方便地消除，一切负面的情绪都可以被放进新词；一切严肃的讨论都有一个对应的段子。</p><p>我们命名不再是为了保存。</p><p>所有的东西都会更快地过期，无论是流行词、一种道德、或者权力关系……只有跟不上变化的人还在怀念从前。我们学会了消解，比以往都要幸福，不再需要抵抗。</p><p>我们搜索微笑的最佳实践、跟踪意见领袖调整评价、询问网友该不该对朋友生气……</p><p>我们说被设计的脏话，过一种被世界认同的叛逆。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;那阵子我躺在工地的长椅午休，看短视频解闷。天空中一个大得不真实的月亮，广角镜头，几个孩子在小路上跑、旱地里跳皮筋。乐此不疲。&lt;/p&gt;&lt;p&gt;我看到不少生活的细节，读书时和家人打电话身后喧哗的朋友、听到家长脚步声起身关电视的小孩、暧昧期洗漱不舍得放下手机的年轻人、分别时笑容渐渐
-      
-    
-    </summary>
-    
-    
-      <category term="生活志" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
-    
-      <category term="杂文" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/%E6%9D%82%E6%96%87/"/>
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>新的一年</title>
-    <link href="https://leay.net/2024/01/07/life/"/>
-    <id>https://leay.net/2024/01/07/life/</id>
-    <published>2024-01-06T16:00:00.000Z</published>
-    <updated>2024-03-31T10:56:36.950Z</updated>
-    
-    <content type="html"><![CDATA[<p>有时候从重复中惊醒，带着年轻人的希望想象着「总会有的一天」。假如一辈子就这样的话，那也太无聊了吧。所以总有一天我会做些什么，做什么我还不知道，我期待着那一天。</p><p>我会扔掉塞满房间的纸箱、久违地清理书架上的灰尘、拿出吉他、铺好瑜伽垫、下载几个英语学习软件、邀约、告白、出门、读书、开始写作…</p><p>然后不甘的心在胆怯和懦弱里融化。</p><p>新年是一个制度性重置的时机，迎合我们试探命运的欲望。去改变，主动搭话、走平时不会走的路、选择更困难的方向…如果尝试能得出好的结果，现状的合理也许就不必再依靠想象一份痛苦来安慰。</p><p>沉浸在一种生活里，不停留就不会有悔恨。</p><p>否则日复一日，时间、精力、一切就都会被别的什么占据。然后年轻人长大，变得无聊、普通，最后连这份挣扎的心情也不再波澜。</p><p>新的一年，做个勇敢的人！没有能力兜底的勇敢只是鲁莽，这是区分童话可爱与否的界限。让我们做足准备为勇敢付出代价。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;有时候从重复中惊醒，带着年轻人的希望想象着「总会有的一天」。假如一辈子就这样的话，那也太无聊了吧。所以总有一天我会做些什么，做什么我还不知道，我期待着那一天。&lt;/p&gt;&lt;p&gt;我会扔掉塞满房间的纸箱、久违地清理书架上的灰尘、拿出吉他、铺好瑜伽垫、下载几个英语学习软件、邀约、告白
-      
-    
-    </summary>
-    
-    
-      <category term="生活志" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
-    
-      <category term="杂文" scheme="https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/%E6%9D%82%E6%96%87/"/>
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     
   </entry>
   

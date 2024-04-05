@@ -4,13 +4,27 @@
   
     
     <entry>
-      <title>siyuan-plugin</title>
+      <title>思源笔记插件或挂件几款</title>
       <link href="/2024/04/05/siyuan-plugin/"/>
       <url>/2024/04/05/siyuan-plugin/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight plain"><figcaption><span>post</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: &quot;思源笔记插件或挂件几款&quot;</span><br><span class="line">date: 2024-04-05</span><br><span class="line">categories:</span><br><span class="line">  - 学习折腾</span><br><span class="line">  - 项目</span><br><span class="line">toc: true</span><br><span class="line">tags: [Project]</span><br><span class="line">description:</span><br></pre></td></tr></table></figure><p>试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：</p><p>开发：</p><ul><li><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键双链转引用</a>：一键将选中块内的双链转换为引用形式。</li><li><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a>：在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</li><li><a href="https://github.com/hqweay/typography-go" target="_blank" rel="noopener">中文排版插件</a>：标点转换等。</li><li><a href="https://github.com/hqweay/widget-inline-extractor" target="_blank" rel="noopener">行内元素抓取</a>：获取文档内的行内元素并以列表形式作为挂件展示。</li></ul><p>修改：</p><ul><li><a href="https://github.com/leolee9086/importHelper" target="_blank" rel="noopener">leolee9086/importHelper</a>：调整转换逻辑，不再转换文档的 Wiki 链接。</li><li><a href="https://github.com/svtardust/Calendar-heatmap" target="_blank" rel="noopener">svtardust/Calendar-heatmap</a>：点击热力图方块支持跳转到对应的 Daily Note。</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：</p><p>开发：</p><ul><li><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键双链转引用</a>：一键将选中块内的双链转换为引用形式。</li><li><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a>：在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</li><li><a href="https://github.com/hqweay/typography-go" target="_blank" rel="noopener">中文排版插件</a>：标点转换等。</li><li><a href="https://github.com/hqweay/widget-inline-extractor" target="_blank" rel="noopener">行内元素抓取</a>：获取文档内的行内元素并以列表形式作为挂件展示。</li></ul><p>修改：</p><ul><li><a href="https://github.com/leolee9086/importHelper" target="_blank" rel="noopener">leolee9086/importHelper</a>：调整转换逻辑，不再转换文档的 Wiki 链接。</li><li><a href="https://github.com/svtardust/Calendar-heatmap" target="_blank" rel="noopener">svtardust/Calendar-heatmap</a>：点击热力图方块支持跳转到对应的 Daily Note。</li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
       
     </entry>
     

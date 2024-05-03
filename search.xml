@@ -107,13 +107,27 @@
     
     
     <entry>
-      <title>siyuan-plugin</title>
-      <link href="/siyuan-plugin/"/>
-      <url>/siyuan-plugin/</url>
+      <title>思源笔记插件或挂件几款——恐龙工具箱</title>
+      <link href="//2024/04/05/siyuan-plugin//"/>
+      <url>//2024/04/05/siyuan-plugin//</url>
       
-        <content type="html"><![CDATA[<h1 id="思源笔记插件或挂件几款"><a class="markdownIt-Anchor" href="#思源笔记插件或挂件几款"></a> 思源笔记插件或挂件几款</h1><p>试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：</p><p>开发</p><ul><li><p><a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">恐龙工具箱</a>：下列几个插件都整合进这里了</p><ul><li><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键对选中块内的引用或链接进行处理</a>：一键将选中块内的链接转换为引用、文本等。</li><li><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a>：在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</li><li><a href="https://github.com/hqweay/typography-go" target="_blank" rel="noopener">中文排版插件</a>：标点转换等。</li><li><a href="https://github.com/hqweay/siyuan-send-to" target="_blank" rel="noopener">发送到</a>：将块内容发送至某链接处理；卡片分享。</li></ul></li><li><p><a href="https://github.com/hqweay/widget-inline-extractor" target="_blank" rel="noopener">行内元素抓取</a>：获取文档内的行内元素并以列表形式作为挂件展示。</p></li></ul><p>有点用的修改</p><ul><li><p><a href="https://github.com/hqweay/siyuan-chrome" target="_blank" rel="noopener">GitHub - hqweay/siyuan-chrome: Chrome/Edge extension for SiYuan</a>​</p><ul><li>去掉摘要。</li><li>调整剪藏文章到 yyyy/MM/dd 目录下。</li></ul></li><li><p><a href="https://github.com/hqweay/Calendar-heatmap" target="_blank" rel="noopener">GitHub - hqweay/Calendar-heatmap: 思源笔记热力图插件</a>​</p><ul><li>支持点击跳转至 Daily Note。</li></ul></li><li><p><a href="https://github.com/hqweay/importHelper" target="_blank" rel="noopener">GitHub - hqweay/importHelper</a></p><ul><li>不转换双链。</li></ul></li></ul><p>‍</p>]]></content>
+        <content type="html"><![CDATA[<p>试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：</p><p>开发</p><ul><li><p><a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">恐龙工具箱</a>：下列几个插件都整合进这里了</p><ul><li><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键对选中块内的引用或链接进行处理</a>：一键将选中块内的链接转换为引用、文本等。</li><li><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a>：在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</li><li><a href="https://github.com/hqweay/typography-go" target="_blank" rel="noopener">中文排版插件</a>：标点转换等。</li><li><a href="https://github.com/hqweay/siyuan-send-to" target="_blank" rel="noopener">发送到</a>：将块内容发送至某链接处理；卡片分享。</li></ul></li><li><p><a href="https://github.com/hqweay/widget-inline-extractor" target="_blank" rel="noopener">行内元素抓取</a>：获取文档内的行内元素并以列表形式作为挂件展示。</p></li></ul><p>有点用的修改</p><ul><li><p><a href="https://github.com/hqweay/siyuan-chrome" target="_blank" rel="noopener">GitHub - hqweay/siyuan-chrome: Chrome/Edge extension for SiYuan</a>​</p><ul><li>去掉摘要。</li><li>调整剪藏文章到 yyyy/MM/dd 目录下。</li></ul></li><li><p><a href="https://github.com/hqweay/Calendar-heatmap" target="_blank" rel="noopener">GitHub - hqweay/Calendar-heatmap: 思源笔记热力图插件</a>​</p><ul><li>支持点击跳转至 Daily Note。</li></ul></li><li><p><a href="https://github.com/hqweay/importHelper" target="_blank" rel="noopener">GitHub - hqweay/importHelper</a></p><ul><li>不转换双链。</li></ul></li></ul><p>‍</p>]]></content>
       
       
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
       
     </entry>
     
@@ -228,33 +242,6 @@
     
     
     <entry>
-      <title>《进击的巨人》终章里阿尔敏和吉克的对话</title>
-      <link href="//2024/01/18/Titan//"/>
-      <url>//2024/01/18/Titan//</url>
-      
-        <content type="html"><![CDATA[<p>《巨人》最后章节，阿尔敏和吉克在「道路」里进行了一番有趣的对话。</p><p>阿说我还要去救伙伴。<br>吉说何必呢，活着就是为了繁衍，但生存（种族的延续）有那么重要吗？现在的惨状（外面在进行毁灭世界的地鸣）全都源于死亡带来的恐惧，人不总会死吗？不能抛弃这种恐惧就永远是生命（繁衍）的奴隶。</p><p>然后阿说他想起童年时和伙伴在黄昏下奔跑的瞬间，当时觉得自己简直是为了这一刻而出生的。<br>那种瞬间后来他还经历了很多次。</p><p>吉说啊是吗，他也想起和老师扔棒球的时刻。单纯地投球、接球、再投球。<br>虽然这样的循环没什么意义，也与繁衍无关，但他确实想永远这样玩下去。<br>要是能和老师玩投接球，这样的人生他也愿意再过一次。</p><p>俩人重新振作起来。</p><p>让我们不去讨论吉克的逻辑以及阿尔敏的回应是否足够有说服力，来聊聊阿尔敏尝试使用「生活的瞬间」来回应这一行为本身。</p><p>就，当回应「生活的无意义」时总是尝试举证「XXX 是有意义的」「没有意义本身就是一种意义」这样的话。</p><p>为什么我们非得找到些价值才能给自己支撑呢？会不会问题完全错位了，其实是有什么把这些瞬间的价值消解了？</p><p>换句话说，「意义」也许并不成问题，问题在于什么让它成了问题。是什么呢？</p><p>就像阿尔敏读书、喂松鼠、感受轻柔的风，吉克和老师投接球，小孩玩弹珠、泥堆里打滚…在那些瞬间里，他们会想到「意义」这回事嘛？「意义」这说法总是滞后，作为质疑与回应出现。</p><p>也许当我们使用「意义」这个词就已经掉进陷阱，对一种编码进行服从，越认真越误入歧途。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 看片所想 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>《宗教大法官》对自由的批判</title>
       <link href="//2024/01/18/Karamazov//"/>
       <url>//2024/01/18/Karamazov//</url>
@@ -274,6 +261,33 @@
         <tags>
             
             <tag> 阅读所思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《进击的巨人》终章里阿尔敏和吉克的对话</title>
+      <link href="//2024/01/18/Titan//"/>
+      <url>//2024/01/18/Titan//</url>
+      
+        <content type="html"><![CDATA[<p>《巨人》最后章节，阿尔敏和吉克在「道路」里进行了一番有趣的对话。</p><p>阿说我还要去救伙伴。<br>吉说何必呢，活着就是为了繁衍，但生存（种族的延续）有那么重要吗？现在的惨状（外面在进行毁灭世界的地鸣）全都源于死亡带来的恐惧，人不总会死吗？不能抛弃这种恐惧就永远是生命（繁衍）的奴隶。</p><p>然后阿说他想起童年时和伙伴在黄昏下奔跑的瞬间，当时觉得自己简直是为了这一刻而出生的。<br>那种瞬间后来他还经历了很多次。</p><p>吉说啊是吗，他也想起和老师扔棒球的时刻。单纯地投球、接球、再投球。<br>虽然这样的循环没什么意义，也与繁衍无关，但他确实想永远这样玩下去。<br>要是能和老师玩投接球，这样的人生他也愿意再过一次。</p><p>俩人重新振作起来。</p><p>让我们不去讨论吉克的逻辑以及阿尔敏的回应是否足够有说服力，来聊聊阿尔敏尝试使用「生活的瞬间」来回应这一行为本身。</p><p>就，当回应「生活的无意义」时总是尝试举证「XXX 是有意义的」「没有意义本身就是一种意义」这样的话。</p><p>为什么我们非得找到些价值才能给自己支撑呢？会不会问题完全错位了，其实是有什么把这些瞬间的价值消解了？</p><p>换句话说，「意义」也许并不成问题，问题在于什么让它成了问题。是什么呢？</p><p>就像阿尔敏读书、喂松鼠、感受轻柔的风，吉克和老师投接球，小孩玩弹珠、泥堆里打滚…在那些瞬间里，他们会想到「意义」这回事嘛？「意义」这说法总是滞后，作为质疑与回应出现。</p><p>也许当我们使用「意义」这个词就已经掉进陷阱，对一种编码进行服从，越认真越误入歧途。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 看片所想 </tag>
             
         </tags>
       

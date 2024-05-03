@@ -108,10 +108,10 @@
     
     <entry>
       <title>思源笔记插件或挂件几款</title>
-      <link href="//2024/04/05/siyuan-plugin//"/>
-      <url>//2024/04/05/siyuan-plugin//</url>
+      <link href="/siyuan-plugin/"/>
+      <url>/siyuan-plugin/</url>
       
-        <content type="html"><![CDATA[<p>试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：</p><ul><li><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键对选中块内的引用或链接进行处理</a>：一键将选中块内的链接转换为引用、文本等。</li><li><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a>：在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</li><li><a href="https://github.com/hqweay/typography-go" target="_blank" rel="noopener">中文排版插件</a>：标点转换等。</li><li><a href="https://github.com/hqweay/widget-inline-extractor" target="_blank" rel="noopener">行内元素抓取</a>：获取文档内的行内元素并以列表形式作为挂件展示。</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：</p><p>开发</p><ul><li><p><a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">恐龙工具箱</a>：下列几个插件都整合进这里了</p><ul><li><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键对选中块内的引用或链接进行处理</a>：一键将选中块内的链接转换为引用、文本等。</li><li><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a>：在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</li><li><a href="https://github.com/hqweay/typography-go" target="_blank" rel="noopener">中文排版插件</a>：标点转换等。</li><li><a href="https://github.com/hqweay/siyuan-send-to" target="_blank" rel="noopener">发送到</a>：将块内容发送至某链接处理；卡片分享。</li></ul></li><li><p><a href="https://github.com/hqweay/widget-inline-extractor" target="_blank" rel="noopener">行内元素抓取</a>：获取文档内的行内元素并以列表形式作为挂件展示。</p></li></ul><p>有点用的修改</p><ul><li><p><a href="https://github.com/hqweay/siyuan-chrome" target="_blank" rel="noopener">GitHub - hqweay/siyuan-chrome: Chrome/Edge extension for SiYuan</a>​</p><ul><li>去掉摘要。</li><li>调整剪藏文章到 yyyy/MM/dd 目录下。</li></ul></li><li><p><a href="https://github.com/hqweay/Calendar-heatmap" target="_blank" rel="noopener">GitHub - hqweay/Calendar-heatmap: 思源笔记热力图插件</a>​</p><ul><li>支持点击跳转至 Daily Note。</li></ul></li><li><p><a href="https://github.com/hqweay/importHelper" target="_blank" rel="noopener">GitHub - hqweay/importHelper</a></p><ul><li>不转换双链。</li></ul></li></ul><p>‍</p>]]></content>
       
       
       <categories>
@@ -782,33 +782,6 @@
     
     
     <entry>
-      <title>是永动机！我造出了永动机！</title>
-      <link href="//2023/07/16/crunch//"/>
-      <url>//2023/07/16/crunch//</url>
-      
-        <content type="html"><![CDATA[<div style="display:flex;justify-content:center">当膨胀的宇宙迎来反弹 你说<br>年轻人偏爱构建<br><br>小孩躲避假期<br>爱人逃离伴侣<br>物理法则倒置 时间也在逆转<br>诗人热爱<br>错误都回收<br>子弹孕育生命 马蹄下开出花朵<br>被焚烧的书籍 聚成伞的蒲公英<br>收回的承诺 正义<br>奶奶的呢喃 署名消失的明信片<br><br>星星全都想起一个名字<br>所有鸟儿失去墓碑<br>瀑布倒流 远方 工厂 或者故乡 死亡<br><br>擦掉眼泪吧 你说<br>宇宙开始坍缩<br>神灵回到土地<br>遗憾变成获得<br>失去都会再见<br></div><img src="2023-07-16-crunch/344805720_649639080328386_1955026184818186374_n.jpg" alt="IMG_5005.PNG" style="zoom:30%">]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 细碎 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 细碎 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>《天国大魔境》</title>
       <link href="//2023/07/16/Heavenly//"/>
       <url>//2023/07/16/Heavenly//</url>
@@ -828,6 +801,33 @@
         <tags>
             
             <tag> 看片所想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>是永动机！我造出了永动机！</title>
+      <link href="//2023/07/16/crunch//"/>
+      <url>//2023/07/16/crunch//</url>
+      
+        <content type="html"><![CDATA[<div style="display:flex;justify-content:center">当膨胀的宇宙迎来反弹 你说<br>年轻人偏爱构建<br><br>小孩躲避假期<br>爱人逃离伴侣<br>物理法则倒置 时间也在逆转<br>诗人热爱<br>错误都回收<br>子弹孕育生命 马蹄下开出花朵<br>被焚烧的书籍 聚成伞的蒲公英<br>收回的承诺 正义<br>奶奶的呢喃 署名消失的明信片<br><br>星星全都想起一个名字<br>所有鸟儿失去墓碑<br>瀑布倒流 远方 工厂 或者故乡 死亡<br><br>擦掉眼泪吧 你说<br>宇宙开始坍缩<br>神灵回到土地<br>遗憾变成获得<br>失去都会再见<br></div><img src="2023-07-16-crunch/344805720_649639080328386_1955026184818186374_n.jpg" alt="IMG_5005.PNG" style="zoom:30%">]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 细碎 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 细碎 </tag>
             
         </tags>
       

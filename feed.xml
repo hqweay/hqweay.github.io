@@ -41,30 +41,6 @@
   </entry>
   
   <entry>
-    <title>梨杏仁</title>
-    <link href="https://leay.net/z1jvfuw/"/>
-    <id>https://leay.net/z1jvfuw/</id>
-    <published>2024-05-18T13:54:20.000Z</published>
-    <updated>2024-05-18T14:04:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>理性、逻辑，虽然你觉得这很重要也偏向于这样去做事，实际上却没有——而之前一直以为自己是。说到底「理性」这个词总用于「目标」，目标确定了，生活便简化为对目标的追逐，人生就无非是不断的尝试、失败、尝试。要有持续下去的热情，要有接受自己确实无力的勇气。</p><p>但其实我们这类人吧，总是过着一种形式主义的生活。别人爱我们一次，我们就会爱对方两次。但让你去主动做些选择是做不到的，你看不出这样做的必要。</p><p>我们通过被动地反馈来生活。是啊，一旦自己没有目标，时间精力啊这些东西的就会被别的什么来占据，而我们并不排斥这一点。</p><p>我们立下细小甚至任意的规则，欺骗自己这当然是一种理性。</p><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;理性、逻辑，虽然你觉得这很重要也偏向于这样去做事，实际上却没有——而之前一直以为自己是。说到底「理性」这个词总用于「目标」，目标确定了，生活便简化为对目标的追逐，人生就无非是不断的尝试、失败、尝试。要有持续下去的热情，要有接受自己确实无力的勇气。&lt;/p&gt;&lt;p&gt;但其实我们这类
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
     <title>冲突与尴尬</title>
     <link href="https://leay.net/conflict-and-embarrassment-z2v4jj/"/>
     <id>https://leay.net/conflict-and-embarrassment-z2v4jj/</id>
@@ -233,6 +209,34 @@
     
     
       <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>思源笔记插件或挂件几款——恐龙工具箱</title>
+    <link href="https://leay.net/2024/04/05/siyuan-plugin/"/>
+    <id>https://leay.net/2024/04/05/siyuan-plugin/</id>
+    <published>2024-04-05T00:00:00.000Z</published>
+    <updated>2024-04-18T13:28:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：</p><p>开发</p><ul><li><p><a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">恐龙工具箱</a>：下列几个插件都整合进这里了</p><ul><li><a href="https://github.com/hqweay/siyuan-href-to-ref" target="_blank" rel="noopener">一键对选中块内的引用或链接进行处理</a>：一键将选中块内的链接转换为引用、文本等。</li><li><a href="https://github.com/hqweay/siyuan-auto-link-title" target="_blank" rel="noopener">自动获取网页标题</a>：在文档内粘贴链接时，会自动获取标题并以 Markdown 形式粘贴。</li><li><a href="https://github.com/hqweay/typography-go" target="_blank" rel="noopener">中文排版插件</a>：标点转换等。</li><li><a href="https://github.com/hqweay/siyuan-send-to" target="_blank" rel="noopener">发送到</a>：将块内容发送至某链接处理；卡片分享。</li></ul></li><li><p><a href="https://github.com/hqweay/widget-inline-extractor" target="_blank" rel="noopener">行内元素抓取</a>：获取文档内的行内元素并以列表形式作为挂件展示。</p></li></ul><p>有点用的修改</p><ul><li><p><a href="https://github.com/hqweay/siyuan-chrome" target="_blank" rel="noopener">GitHub - hqweay/siyuan-chrome: Chrome/Edge extension for SiYuan</a>​</p><ul><li>去掉摘要。</li><li>调整剪藏文章到 yyyy/MM/dd 目录下。</li></ul></li><li><p><a href="https://github.com/hqweay/Calendar-heatmap" target="_blank" rel="noopener">GitHub - hqweay/Calendar-heatmap: 思源笔记热力图插件</a>​</p><ul><li>支持点击跳转至 Daily Note。</li></ul></li><li><p><a href="https://github.com/hqweay/importHelper" target="_blank" rel="noopener">GitHub - hqweay/importHelper</a></p><ul><li>不转换双链。</li></ul></li></ul><p>‍</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;试着换用思源笔记，为了将之前的工作流迁移过来，这阵子爆肝，在阴暗的出租屋一边抠脚一边写插件。这里做个聚合：&lt;/p&gt;&lt;p&gt;开发&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/hqweay/siyuan-hqweay-go&quot; target=
+      
+    
+    </summary>
+    
+    
+      <category term="学习折腾" scheme="https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="项目" scheme="https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="Project" scheme="https://leay.net/tags/Project/"/>
     
   </entry>
   

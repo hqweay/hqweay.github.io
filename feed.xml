@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2024-06-08T07:43:52.000Z</updated>
+  <updated>2024-06-17T14:46:22.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>事情不会变得更好，只是有所不同。</title>
+    <link href="https://leay.net/things-will-not-be-better-just-different-ztf0yy/"/>
+    <id>https://leay.net/things-will-not-be-better-just-different-ztf0yy/</id>
+    <published>2024-06-17T14:23:31.000Z</published>
+    <updated>2024-06-17T14:46:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>当你还在母体时任何需求都能得到满足，因此出生便意味着一切不安的开始。你一声哭喊，宣告着自己的需要，运气好的话能得到回应。但这种沟通不可避免从一开始就错位了，你将自己纳入别人的表情、动作、语言里去确认自己的需要。这注定不能得到满足。</p><p>但你需要的是什么呢？不知道，或许是不曾来过吧。</p><p>于是这种需要自然地分成了两部分，一部分被包括语言在内的表达手段异化，成为「要求」。一部分则永远达不到，作为「欲望」。</p><p>那么前一部分的要求，就永远只是虚假的。我们拿传统意义上的说法比较，就是那些「我要」「我想」都很容易被归结为一个哲学病的问题。拿最短的路径来讲，「我要吃饭」——为什么要吃饭，因为要维持生命，那为什么要活着？</p><p>「你到底要什么？」</p><p>回到前一部分。我们的表达是通过确认外界的反应来达到的，所以我们那些异化的要求，往往都从来是他人他物的要求。</p><p>我们通过养育者的确认明白自己存活的依据，通过动画片学习怎么做一个小孩，通过与人交往学会怎么爱，通过体制、文化了解我们能做什么。我们在这拥有了梦想。</p><p>直到我们去了解「我」「做自己」…</p><p>什么是做自己呢？在这个意义上，「做自己」就意味追求我们不能把握的「欲望」之后的那个东西。而这是注定达不到的。那个对象是什么呢？什么都没有，一片虚无。</p><p>而另一层面，面具就是我们。我们表达出来的样子就是我们本身。</p><p>再回到生活。因此所有的「做自己」就都是非常邪恶的欺骗。它们通过售卖物品和观点满足人的追逐，但你因为并没有达到便不断陷入消费的循环。</p><p>为什么邪恶？因为它产生于你意识到自己处于一种不对劲的位置，却诱惑你走一条歧路。</p><blockquote><p>标题来源：<a href="https://music.163.com/song?id=1416664179&amp;userid=53822195" target="_blank" rel="noopener">BCKYRD - Hot Mulligan - 单曲 - 网易云音乐</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;当你还在母体时任何需求都能得到满足，因此出生便意味着一切不安的开始。你一声哭喊，宣告着自己的需要，运气好的话能得到回应。但这种沟通不可避免从一开始就错位了，你将自己纳入别人的表情、动作、语言里去确认自己的需要。这注定不能得到满足。&lt;/p&gt;&lt;p&gt;但你需要的是什么呢？不知道，或
+      
+    
+    </summary>
+    
+    
+    
+      <category term="阅读所思" scheme="https://leay.net/tags/%E9%98%85%E8%AF%BB%E6%89%80%E6%80%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>你总能看到过去</title>
@@ -205,30 +229,6 @@
     
     
       <category term="配置与操作" scheme="https://leay.net/tags/%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%93%8D%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AppleScript 助力 Arc 和 Gemini 实现类自定义 URL 查询</title>
-    <link href="https://leay.net/applescript-helps-arc-and-gemini-implementation-class-custom-url-query-zfwvmj/"/>
-    <id>https://leay.net/applescript-helps-arc-and-gemini-implementation-class-custom-url-query-zfwvmj/</id>
-    <published>2024-04-23T12:30:05.000Z</published>
-    <updated>2024-04-23T13:04:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><s>ChatGPT 等工具没有提供 Google</s> <s>​<code>https://www.google.com/search?q=[替换查询参数]</code>​</s> ​ <s>这样的 URL 自定义查询。</s></p><p>ChatGPT 接受查询参数，<code>https://chat.openai.com/chat?q=[替换查询参数]</code>​。</p><p>发现 RayCast 的 <a href="https://www.raycast.com/cyxn/query-chatgpt" target="_blank" rel="noopener">query-chatgpt</a> 插件利用 AppleScript 实现了自动跳转到 ChatGPT 页面，再操作网页填充查询信息并提交。</p><p>参考实现了 Arc + Gemini 版的快捷指令：<a href="https://www.icloud.com/shortcuts/efe058e53fdf42dfaf81b826d1932b56" target="_blank" rel="noopener">Gemini 总结剪贴板</a>。</p><p>TIP</p><ul><li>可以从 Raycast 的插件仓库了解应用暴露给 AppleScript 操作的接口，比如我操作 Arc 窗口的逻辑就是从 <a href="https://github.com/raycast/extensions/tree/67c5782a6ed36bd728f0da3ae0b5a808c99caa5c/extensions/arc/" target="_blank" rel="noopener">RayCast/Arc 插件</a> 复制的。</li><li>一开始以为 Chrome 系的浏览器使用 AppleScript 操作方法一样，实际上 Arc 与 Chrome 有差异。</li></ul><p>​<img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20240423210035-iscd5p8.png" alt="image">​</p><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;s&gt;ChatGPT 等工具没有提供 Google&lt;/s&gt; &lt;s&gt;​&lt;code&gt;https://www.google.com/search?q=[替换查询参数]&lt;/code&gt;​&lt;/s&gt; ​ &lt;s&gt;这样的 URL 自定义查询。&lt;/s&gt;&lt;/p&gt;&lt;p&gt;ChatGPT 接受查询参数
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
     
   </entry>
   

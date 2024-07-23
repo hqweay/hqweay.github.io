@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2024-07-23T14:23:56.000Z</updated>
+  <updated>2024-07-23T14:49:18.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《抓娃娃》</title>
+    <link href="https://leay.net/catch-the-doll-z1meixl/"/>
+    <id>https://leay.net/catch-the-doll-z1meixl/</id>
+    <published>2024-07-23T14:44:53.000Z</published>
+    <updated>2024-07-23T14:49:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>《抓娃娃》的预告片看着挺危险的，题材像是容易会搞成那种既得罪有钱人又得罪我们的故事。没想到还可以。</p><p>快结局时心想不出点意外怎么收尾。然后想起小时候看动画片里哪吒拿剑抵着自己的喉说，爹爹，这身体还给你。</p><p>这么多年看了好多亲子关系的故事都没这句话来得深刻。</p><p>这身体，大不了，是可以还你的。</p><p>喜剧的内核是悲剧的意思是：我们对情节熟识，但相信自己不会落到此境地。绿帽子笑话流行是因为我们无法控制别人，所以我们需要笑话来消解假装它不会发生。</p><p>所以当角色被鄙视，我们要让观众知道角色处在更高的鄙视链；当角色陷入危机，我们要用意外来解除；当故事变得严肃，我们需要角色出来打诨。</p><p>因为观众的心和瓷器一样脆弱。我们希望得到保证：我们可以勇敢地做自己、可以去爱，可以不用担心受到伤害。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;《抓娃娃》的预告片看着挺危险的，题材像是容易会搞成那种既得罪有钱人又得罪我们的故事。没想到还可以。&lt;/p&gt;&lt;p&gt;快结局时心想不出点意外怎么收尾。然后想起小时候看动画片里哪吒拿剑抵着自己的喉说，爹爹，这身体还给你。&lt;/p&gt;&lt;p&gt;这么多年看了好多亲子关系的故事都没这句话来得深刻
+      
+    
+    </summary>
+    
+    
+    
+      <category term="看片所想" scheme="https://leay.net/tags/%E7%9C%8B%E7%89%87%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>去，生活</title>
@@ -205,30 +229,6 @@
     
     
       <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客永久链接的调整</title>
-    <link href="https://leay.net/adjustment-of-blog-permanent-link-z1vmfbn/"/>
-    <id>https://leay.net/adjustment-of-blog-permanent-link-z1vmfbn/</id>
-    <published>2024-04-25T12:22:07.000Z</published>
-    <updated>2024-04-25T12:33:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>博客做了点调整，值得一提的是博文的链接由 <code>year/month/day/title/</code>​ 改成了 <code>/title/</code>​。原来链接内的时间戳和创建时间相关，因此如果调整创建时间（比如更新内容后想使之重新出现在首页）之前的链接会失效。</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="comment"># permalink: :year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:title/</span></span><br></pre></td></tr></table></figure><p>而更改后为了保持存量文章的永久链接，需要手动给以前的文章配上 <code>permalink</code>​ 属性。</p><p>像下面的 <code>permalink: &quot;/2024/03/06/life/&quot;</code>​：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">"/2024/03/06/life/"</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">动态的频率是生活的节奏</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2024</span><span class="number">-03</span><span class="number">-06</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">杂文</span></span><br><span class="line"><span class="attr">description:</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><p>也很好处理，思路：遍历文件，替换第一行加上 <code>permalink</code>​ 行，链接可以读文件名获取。</p><p>所以现在的博客文章会有两种链接，比如：</p><ul><li><a href="https://leay.net/i-fell-in-love-with-princess-peach-ulpfi/">https://leay.net/i-fell-in-love-with-princess-peach-ulpfi/</a></li><li><a href="https://leay.net/2024/03/16/normal/">https://leay.net/2024/03/16/normal/</a></li></ul><p>后面将博客当成倾倒的地方吧，写东西试着随性点。书写，发送，关闭。练习对感觉诚实。</p><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;博客做了点调整，值得一提的是博文的链接由 &lt;code&gt;year/month/day/title/&lt;/code&gt;​ 改成了 &lt;code&gt;/title/&lt;/code&gt;​。原来链接内的时间戳和创建时间相关，因此如果调整创建时间（比如更新内容后想使之重新出现在首页）之前的链接会失效
-      
-    
-    </summary>
-    
-    
-    
-      <category term="配置与操作" scheme="https://leay.net/tags/%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2024-09-11T11:29:27.000Z</updated>
+  <updated>2024-09-11T12:07:54.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>啊讲讲「爱」这回事</title>
+    <link href="https://leay.net/ah-talk-about-love-11pcct/"/>
+    <id>https://leay.net/ah-talk-about-love-11pcct/</id>
+    <published>2024-09-11T11:26:51.000Z</published>
+    <updated>2024-09-11T12:07:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>让我们想象在一段关系中，A 的手被划伤了，此时 B 可能会——及时关切——或者无动于衷。我们可以给出一些浅显的理由，比方说在 B 的概念下这种伤口可能算不得什么、很「正常」；或者 B 就是比较顿感；或者 B 有点冷漠。</p><p>我们可以诉诸「依附理论」这样看起来更合理的解释，说也许是因为 B 在幼年经历/看到或者缺少养育者对受伤的行为，从而习得这样的态度。比方养育者可能会说「你要勇敢」「别来烦我」……</p><p>那么有些行为对某些人来说就是先天的，那些在「正常家庭」里长大的孩子就是会（表现得）更有感情。</p><p>一旦社会秩序要求人更有同理心一点，鼓励你去「成为」一个更好的人，以及各种关系里的约束。另一部分在幼年有所缺失的人就不得不去做大量的练习以适应。</p><p>这种缺失很常见。</p><p>很容易想象，人们会自然地把「练习」当作去学习规则。一旦我们掌握了「爱」的规则，那么我们就可以根据形式去行动，从而也能成为一个可爱的人。</p><p>然而没有这样的规则。规则是达到某个状态后的回溯。想象会有这样的对话：</p><ul><li>你这是溺爱</li><li>这不是真正的爱</li><li>你只是控制欲</li></ul><p>或者我们说，爱是一场通过游玩了解规则的游戏，学习规则也是游戏的一部分。我们讲不出规则我们只是去玩它，而一旦我们能讲出规则，我们就已经掌握了它。但这种「掌握」依赖语境、依赖玩家对它的承认，「承认」需要勇气和耐心去达到。</p><p>所以，什么是爱——被承认的爱就是爱。如何爱人——让对方感受到爱。</p><h2 id="附录爱的规则"><a class="markdownIt-Anchor" href="#附录爱的规则"></a> 附录：爱的规则</h2><p>（1）被爱。</p><p>（2）我要成为一个值得被爱的人。</p><p>（3）我要去争取名利、权力、身材、打扮、关心他人、谦虚、谨慎。</p><p>（3.1）我不同意。我不是为了被爱去做这些事，这是我自己的选择。</p><p>（3.2）我自己的选择——这是假象。我要做自己——用和别人一样的方式做自己。</p><p>（4）我不必去「做」。每个人都值得被爱，会有人来爱我。</p><p>‍</p><p>（1）爱人。</p><p>（2）我爱这个世界，连带着世界爱陌生人，爱你，也爱我自己。</p><p>（2）我爱你，因此爱我自己，连带着这个世界也可爱。</p><p>（3）爱是一种给予，是一种牺牲。正因为牺牲是痛苦的，所以应该这么做。</p><p>（3.1）我的牺牲，期待着回报。</p><p>（3.2）我不求回报，爱对我来说是一种态度，性格上的倾向。</p><p>（3.3）不求回报的爱是一种病兆。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;让我们想象在一段关系中，A 的手被划伤了，此时 B 可能会——及时关切——或者无动于衷。我们可以给出一些浅显的理由，比方说在 B 的概念下这种伤口可能算不得什么、很「正常」；或者 B 就是比较顿感；或者 B 有点冷漠。&lt;/p&gt;&lt;p&gt;我们可以诉诸「依附理论」这样看起来更合理的
+      
+    
+    </summary>
+    
+    
+    
+      <category term="阅读所思" scheme="https://leay.net/tags/%E9%98%85%E8%AF%BB%E6%89%80%E6%80%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>给出不喜欢「原生家庭」这类说法的一个解释</title>
@@ -205,30 +229,6 @@
     
     
       <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>笔记软件中的「双链」</title>
-    <link href="https://leay.net/double-chain-in-the-note-software-1ajmqx/"/>
-    <id>https://leay.net/double-chain-in-the-note-software-1ajmqx/</id>
-    <published>2024-07-27T03:30:40.000Z</published>
-    <updated>2024-07-27T03:44:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>作为一定程度上社区驱动的产品，对产品来说，有品位的用户的限制是满足自己需求后失去反馈的动力；有能力的用户的限制是不满足自己需求后新启灶台。</p><p><a href="https://b3log.org/siyuan/download.html" target="_blank" rel="noopener">思源笔记</a>​走到今日离不开许多目光如炬的大佬们有理有据积极的反馈，其中不少真知灼见沉淀在论坛的回复和 issue 里。是难得的，对理解双链、理解笔记、理解一个产品为何是这样有帮助的材料。</p><p>分享一些与双链相关的讨论。</p><hr><p>首先是关于「文档粒度」和「反链转移」的两个 issue、以及关于双链与标签的评论。 <strong>这几篇讨论在理念上似乎遥遥领先于竞品。</strong></p><p>现在一些笔记软件都开始引入数据库，似乎缺少这样的哲学 🧐。</p><ul><li>文档粒度：<a href="https://GitHub.com/siyuan-note/siyuan/issues/556" target="_blank" rel="noopener">打通正文与文件树的壁障 · Issue #556 · siyuan-note/siyuan · GitHub</a></li><li>反链转移：<a href="https://GitHub.com/siyuan-note/siyuan/issues/4025" target="_blank" rel="noopener">支持转移引用 · Issue #4025 · siyuan-note/siyuan · GitHub</a></li><li>双链与标签：<a href="https://ld246.com/article/1633719399031#comments" target="_blank" rel="noopener">实践中对双链和写作的一些思考 - 链滴</a></li></ul><p>链接右键菜单「转换为」的设计：</p><ul><li><a href="https://ld246.com/article/1651764688259#comments" target="_blank" rel="noopener">探讨：划选而后新建被引用之文档，是否应默认设置静态锚文本 - 链滴</a></li><li><a href="https://github.com/siyuan-note/siyuan/issues/4793" target="_blank" rel="noopener">改进块引设置 · Issue #4793 · siyuan-note/siyuan · GitHub</a></li></ul><p>反链面板的改进：</p><ul><li><a href="https://GitHub.com/siyuan-note/siyuan/issues/3565" target="_blank" rel="noopener">编辑器式反链面板 · Issue #3565 · siyuan-note/siyuan · GitHub</a></li></ul><p>然后是剪切在粘贴时引用失效的原因：</p><ul><li>转移引用时使用拖拽：<a href="https://GitHub.com/siyuan-note/siyuan/issues/6807" target="_blank" rel="noopener">统一块剪切粘贴逻辑为生成新块 · Issue 6807 · siyuan-notesiyuan</a></li></ul><p>对搜索的改进：</p><ul><li><a href="https://GitHub.com/siyuan-note/siyuan/issues/586" target="_blank" rel="noopener">功能建议：常驻搜索面板 · Issue #586 · siyuan-note/siyuan · GitHub</a></li></ul><p>列表折叠改进：</p><ul><li><a href="https://ld246.com/article/1648886730560/comment/1648891073276#comments" target="_blank" rel="noopener">建议增加折叠 展开所有子项 - fangly 的回帖 - 链滴</a></li></ul><p>移动块到文档下等讨论：</p><ul><li><a href="https://ld246.com/article/1628672942107/comment/1629108049496#comments" target="_blank" rel="noopener">【共同探讨】移动块 / 反链 / 快速无压记录 / 标签</a></li></ul><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;作为一定程度上社区驱动的产品，对产品来说，有品位的用户的限制是满足自己需求后失去反馈的动力；有能力的用户的限制是不满足自己需求后新启灶台。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://b3log.org/siyuan/download.html&quot; target=&quot;_bla
-      
-    
-    </summary>
-    
-    
-    
-      <category term="配置与操作" scheme="https://leay.net/tags/%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   

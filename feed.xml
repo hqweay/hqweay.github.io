@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-01-22T11:09:24.000Z</updated>
+  <updated>2025-01-22T12:35:53.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一次用 Cursor——将豆坟的备份数据转 Markdown</title>
+    <link href="https://leay.net/use-cursor-for-the-first-time-to-switch-to-markdown-of-the-bean-grave-sco8t/"/>
+    <id>https://leay.net/use-cursor-for-the-first-time-to-switch-to-markdown-of-the-bean-grave-sco8t/</id>
+    <published>2025-01-22T12:24:13.000Z</published>
+    <updated>2025-01-22T12:35:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.doufen.org/" target="_blank" rel="noopener">豆坟</a> 是款豆瓣数据的备份工具，导出的格式是 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 <a href="https://www.cursor.com/" target="_blank" rel="noopener">Cursor</a> 写了段转换的程序。</p><p>输入要求，嗖嗖嗖就完成了。真厉害啊……</p><blockquote><p><a href="https://github.com/hqweay/doufen2md" target="_blank" rel="noopener">GitHub - hqweay/doufen2md: 将豆坟的备份转为markdown</a></p></blockquote><p>‍</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.doufen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;豆坟&lt;/a&gt; 是款豆瓣数据的备份工具，导出的格式是 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 &lt;a href=&quot;h
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    
+  </entry>
   
   <entry>
     <title>离开</title>
@@ -205,32 +229,6 @@
     
     
       <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>新年！美化自己的最好时机。</title>
-    <link href="https://leay.net/new-year-beautify-your-best-time-2nk7gb/"/>
-    <id>https://leay.net/new-year-beautify-your-best-time-2nk7gb/</id>
-    <published>2025-01-01T09:35:23.000Z</published>
-    <updated>2025-01-01T11:03:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>新年！美化自己的最好时机。要点是穿插还没遗忘的细节。</p><p>让我们在电梯里盯着陌生人的手机，让我们一边走路一边刷短视频，让我们看不见没扔进垃圾桶的纸屑。</p><p>让我们绕开热闹的年轻人，让懒得剥皮的橘子在桌角慢慢腐烂。</p><p>让我们忘记和半生不熟的人打招呼的尴尬，忘记回复同事的消息，忘记说谢谢，忘记今年也还没攒够回家的体面。</p><p>忘记冰箱里还有袋过期的水饺，忘记拿出过冬的衣服里有皱巴巴的纸条。忘记新开的理发店效果不行！忘记又一次接起推销电话礼貌地没有挂断。</p><p>忘记买牙膏，忘记洗碗时勺子摔进水池。</p><p>还有书架上的灰、沾了油渍的衣服、堆满半个屋子的纸箱、攒了两星期的垃圾！</p><p>忘记人生不只有淘汰。</p><p>不再斟酌刚刚是不是讲了让人不开心的话、不再送除了占位置外毫无价值的礼物。不再推荐那些要花很多时间才看得完的书、还有枯燥的烂电影，炫耀埋在角落的破玩具。</p><p>不再点进别人的主页小心地滑动，你是夜晚的士兵，点赞的按钮是地雷；不再花时间翻一首没人评论的歌；不再删除输入框里的词；不再为喜欢的人和其他人讲话生闷气。</p><p>不再假装伤害别人后自己有变得更成熟、听不懂家人的暗示，不在乎镜子里的脸。</p><p>不再假装真诚和脆弱，但从不表现得有所需要。</p><p>不再爱上一场天气、一个星座、一段季节，还有你经常路过的那条路上常见但还没了解名字的花！</p><p>不再像小孩模仿大人那样认真地做大人。</p><p>不再试图延长向命运屈服的界限。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;新年！美化自己的最好时机。要点是穿插还没遗忘的细节。&lt;/p&gt;&lt;p&gt;让我们在电梯里盯着陌生人的手机，让我们一边走路一边刷短视频，让我们看不见没扔进垃圾桶的纸屑。&lt;/p&gt;&lt;p&gt;让我们绕开热闹的年轻人，让懒得剥皮的橘子在桌角慢慢腐烂。&lt;/p&gt;&lt;p&gt;让我们忘记和半生不熟的人打招呼的
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-      <category term="生活" scheme="https://leay.net/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   

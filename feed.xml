@@ -23,13 +23,13 @@
     <published>2025-01-22T12:24:13.000Z</published>
     <updated>2025-01-22T12:35:53.000Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://blog.doufen.org/" target="_blank" rel="noopener">豆坟</a> 是款豆瓣数据的备份工具，导出的格式是 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 <a href="https://www.cursor.com/" target="_blank" rel="noopener">Cursor</a> 写了段转换的程序。</p><p>输入要求，嗖嗖嗖就完成了。真厉害啊……</p><blockquote><p><a href="https://github.com/hqweay/doufen2md" target="_blank" rel="noopener">GitHub - hqweay/doufen2md: 将豆坟的备份转为markdown</a></p></blockquote><p>‍</p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://blog.doufen.org/" target="_blank" rel="noopener">豆坟</a> 是款豆瓣数据的备份工具，导出格式为 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 <a href="https://www.cursor.com/" target="_blank" rel="noopener">Cursor</a> 写了段转换的程序。</p><p>输入要求，嗖嗖嗖就完成了。真厉害啊……</p><blockquote><p><a href="https://github.com/hqweay/doufen2md" target="_blank" rel="noopener">GitHub - hqweay/doufen2md: 将豆坟的备份转为markdown</a></p></blockquote><p>‍</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://blog.doufen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;豆坟&lt;/a&gt; 是款豆瓣数据的备份工具，导出的格式是 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 &lt;a href=&quot;h
+        &lt;p&gt;&lt;a href=&quot;https://blog.doufen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;豆坟&lt;/a&gt; 是款豆瓣数据的备份工具，导出格式为 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 &lt;a href=&quot;ht
       
     
     </summary>

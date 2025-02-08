@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-02-03T13:04:18.000Z</updated>
+  <updated>2025-02-08T16:10:37.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>避免被独立开发者当作试错成本</title>
+    <link href="https://leay.net/avoid-being-treated-as-trial-and-error-by-independent-developers-2srffv/"/>
+    <id>https://leay.net/avoid-being-treated-as-trial-and-error-by-independent-developers-2srffv/</id>
+    <published>2025-02-08T15:10:54.000Z</published>
+    <updated>2025-02-08T16:10:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>正话，反说。</p><p>UGC 平台上充斥着大量教人赚钱的内容，其中不少涉及独立开发者如何做推广。将这些技巧反过来不就是用户角度的避坑指南？</p><p>好哇！我也要教人赚钱——与其试图把这些炮制的秘籍售卖给最精明抠门的一群人（程序员），不如考虑下产品消费者这片红海！</p><p>比方说开发者会在定价方案的话术上吸引/刺激人（冲动）消费、通过「我们下周就要涨价了」来营销……反过来用户面对这样的策略就更应当权衡斟酌…</p><p>每个人每天都有无数想法，能将其中某几个精彩的构思落地做成产品（下文我们以 App 举例）已经超越了大多数人。然而任何产品毕竟要接受市场的检验，失败往往不可避免。</p><p>于是许多开发者选择了一个路径：快速试错。不断尝试、遭遇失败、及时调整，从概率上增加成功的可能性。</p><p>App 才建立了个文件夹不要紧，先做个落地页发小红书收集下看看有多少人愿意付费！</p><p>随着越来越多按这样思路生产的 App 涌现，用户对 App 的消费早就从简单的买断制和订阅制变成了「投资制」。</p><p>很少用户意识到这点。</p><p>对用户而言，开发者画在 Roadmap（甚至只有口头承诺）的饼要比 App 当前实际可用的功能更具吸引力。开发者利用这一点，但假装不知道这一点。</p><p>于是 App 的可维护性变得很重要——不然怎么「未来可期」？</p><p>但对独立开发的作品来讲，我们也从概率上讲——维护就很难保证。</p><p>一款 App 是否已经持续维护很多年？能否再维护很多年？它背后团队是否足以背书？盈利模式是否支撑它运营下去……</p><p>一旦 App 停止维护，我们能否接受沉没成本……</p><p>然而，既然 App 逐渐具备投资属性，就必须认识到：普通投资者最厌恶的就是损失。</p><p>任何购买都蕴含着对开发团队的信任。用户可以认识不到这点，开发者却不能忽视这点。</p><p>这份信任对小型开发团队至关重要。</p><p>如何建立这种信任？</p><p>稳定的迭代、超出预期的效果、坦诚且明确的承诺…</p><p>在如今的市场环境中，大量独立开发者怀揣热情涌入，极少数能凭借优质 App 获得（稳定）收益，少数寄希望于概率上的成功。所有最终有机会出现在用户面前的 App，就已经算是相对优质的了。但即便如此，我估计其中仍有超过一大半会在几个月内停止更新。</p><p>我并不反对这种趋势，甚至认为在这种模式下，反倒能让更优秀（符合市场）的 App 大浪淘沙。</p><p>但用户在消费这些 App 时，尤其是那些在付费策略上格外激进的 App，应该更加谨慎。毕竟，既然开发者在用「投资」思维运营，用户也应该用「投资」思维去消费。</p><p>‍</p><p>‍</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;正话，反说。&lt;/p&gt;&lt;p&gt;UGC 平台上充斥着大量教人赚钱的内容，其中不少涉及独立开发者如何做推广。将这些技巧反过来不就是用户角度的避坑指南？&lt;/p&gt;&lt;p&gt;好哇！我也要教人赚钱——与其试图把这些炮制的秘籍售卖给最精明抠门的一群人（程序员），不如考虑下产品消费者这片红海！&lt;/
+      
+    
+    </summary>
+    
+    
+    
+      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    
+      <category term="评论" scheme="https://leay.net/tags/%E8%AF%84%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>这个春节</title>
@@ -205,30 +231,6 @@
     
     
       <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>时机</title>
-    <link href="https://leay.net/opportunity-z1yq92a/"/>
-    <id>https://leay.net/opportunity-z1yq92a/</id>
-    <published>2025-01-09T15:32:24.000Z</published>
-    <updated>2025-01-09T15:41:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>时机很重要啊。之前用这句话安慰自己，总自恋地想着我还不够强大但没关系，等有一天我一定会拥有勇气、学会爱和关心，然后就有能力解决所有问题！</p><p>突然才意识到我也不过在拿这句话不断粉饰当初的愚蠢。</p><p>当我用尽全力，还是失败了、错过了，此时若仍能讲出「时机很重要」这种话，我才算真正强大吧～</p><p>加油！</p><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;时机很重要啊。之前用这句话安慰自己，总自恋地想着我还不够强大但没关系，等有一天我一定会拥有勇气、学会爱和关心，然后就有能力解决所有问题！&lt;/p&gt;&lt;p&gt;突然才意识到我也不过在拿这句话不断粉饰当初的愚蠢。&lt;/p&gt;&lt;p&gt;当我用尽全力，还是失败了、错过了，此时若仍能讲出「时机很重要
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     
   </entry>
   

@@ -8,7 +8,7 @@
       <link href="/the-colors-within/"/>
       <url>/the-colors-within/</url>
       
-        <content type="html"><![CDATA[<p>动画《你的颜色》的 OST <a href="https://music.163.com/#/album?id=248961703" target="_blank" rel="noopener">The Colors Within (Original Motion Picture Soundtrack)</a> 曲子使用 RGB 表示的颜色命名。将专辑里的曲名转换为对应的颜色～</p><!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>颜色与歌曲展示</title><style>.body-cl{font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;background-color:#f4f4f4;margin:0}.container-cl{display:grid;grid-template-columns:repeat(4,minmax(150px,1fr));gap:20px;max-width:900px;padding:20px}.item{display:flex;flex-direction:column;align-items:center;justify-content:center;width:180px;height:120px;border-radius:10px;box-shadow:2px 2px 10px rgba(0,0,0,.2);text-align:center;font-weight:700;cursor:pointer;transition:transform .2s;position:relative}.item:hover{transform:scale(1.05)}.item::after{content:attr(data-full-text);position:absolute;top:0;right:0;background-color:rgba(0,0,0,.5);color:#fff;display:none;padding:5px;font-size:12px;border-radius:5px}.item:hover::after{display:block}</style><link rel="alternate" href="/feed.xml" title="养恐龙" type="application/atom+xml"></head><body><div class="body-cl"><div class="container-cl"></div></div><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="0" height="0" src="//music.163.com/outchain/player?type=2&id=2630740035&auto=1"></iframe><script>const data = [            [2630740035, "244, 233, 227"], [2630740036, "247, 221, 111"], [2630740037, "75, 128, 253"],            [2630740883, "151, 192, 171"], [2630740038, "247, 175, 119"], [2630740039, "216, 227, 151"],            [2630740040, "131, 159, 155"], [2630740041, "169, 142, 94"], [2630740886, "252, 238, 191"],            [2630740887, "249, 196, 124"], [2630740889, "244, 132, 85"], [2630740045, "233, 159, 124"],            [2630740890, "128, 173, 231"], [2630740891, "153, 120, 80"], [2630740892, "124, 166, 104"],            [2630740893, "66, 59, 77"], [2630740050, "221, 199, 253"], [2630740051, "254, 238, 246"],            [2630740053, "51, 75, 92"], [2630740897, "160, 160, 148"], [2630740054, "15, 21, 52"],            [2630740900, "245, 234, 200"], [2630740902, "Born Slippy Nuxx"], [2630740903, "221, 225, 227"],            [2630740904, "94, 143, 159"], [2630740056, "75, 213, 232"], [2630740057, "210, 246, 253"],            [2630740058, "255, 254, 244"], [2630740905, "234, 242, 247"], [2630740907, "Apology Letter - The Good, the True, the Beautiful (Live Version)"],            [2630740059, "Walk (Live Version)"], [2630740908, "Amen, I'm Going Somewhere (Live Version)"],            [2630740060, "Giselle, Act I: Pas seul - Pas de deux des jeunes paysans"], [2630740061, "255, 255, 255"],            [2630740062, "Amen, I'm Going Somewhere（水金地火木土天アーメン） - (动画电影《你的颜色》 剧中歌)"],            [2630740063, "Walk"], [2630740064, "Apology Letter - The Good, the True, the Beautiful"],            [2630740909, "a place to pray"], [2630740910, "walk slowly"], [2630740911, "clouds"],            [2630740065, "passing by"], [2630740912, "looks like a small animal"], [2630740913, "street stroll"],            [2630740914, "film no. 9"], [2630740067, "the sound of waves"], [2630740068, "chill mood"],            [2630740069, "the plan b"], [2630740915, "the plan c"], [2630740070, "sketch comedy"],            [2630740071, "Amen, I'm Going Somewhere keep on'NUXX'"], [2630740072, "it's gonna snow"],            [2630740916, "three of us"]        ];                const container = document.querySelector('.container-cl');                let currentIframe = null;        data.forEach(([id, value]) => {            const div = document.createElement('div');            div.className = 'item';            div.addEventListener('click', () => {                window.open(`https://music.163.com/outchain/player?type=2&id=${id}&auto=1`, '_blank');            });            if (/^\d{1,3},\s*\d{1,3},\s*\d{1,3}$/.test(value)) { // 判断是否为 RGB 颜色                div.style.backgroundColor = `rgb(${value})`;                div.style.color = (eval(value.replace(/,/g, '+')) / 3) > 186 ? '#333' : '#fff';                div.innerHTML = `${value}`;                div.setAttribute('data-full-text', `${value}`); // 设置完整文本            } else {                // 生成更多的固定漂亮的颜色，每一个卡片都不同，并根据背景色调整文本颜色                const beautifulColors = ["#FF69B4", "#33CC33", "#66CCCC", "#FFCC00", "#CCFFCC", "#FF99CC", "#0099CC", "#99CC00", "#CC0099", "#0099FF"];                const randomIndex = Math.floor(Math.random() * beautifulColors.length);                div.style.backgroundColor = beautifulColors[randomIndex];                // 根据背景色调整文本颜色                const backgroundColor = beautifulColors[randomIndex];                const textContrast = (parseInt(backgroundColor.slice(-6, -4), 16) * 0.299 + parseInt(backgroundColor.slice(-4, -2), 16) * 0.587 + parseInt(backgroundColor.slice(-2), 16) * 0.114) / 255;                div.style.color = textContrast > 0.5 ? '#000' : '#fff'; // 根据背景色调整文本颜色                div.innerHTML = value.length > 30 ? `${value.substring(0, 30)}...` : value; // 如果文本太长，截断并显示省略号                div.setAttribute('data-full-text', value); // 设置完整文本            }                        container.appendChild(div);        });</script></body></html>]]></content>
+        <content type="html"><![CDATA[<p>在《你的颜色》的 OST <a href="https://music.163.com/#/album?id=248961703" target="_blank" rel="noopener">The Colors Within (Original Motion Picture Soundtrack)</a> 中，曲子使用 RGB 表示的颜色命名。将曲名转换为对应的颜色展示～点击可跳转播放。</p><!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>颜色与歌曲展示</title><style>.body-cl{font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;background-color:#f4f4f4;margin:0}.container-cl{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:40px;max-width:100%;padding:20px;justify-content:center}.item{display:flex;flex-direction:column;align-items:center;justify-content:center;width:180px;height:120px;border-radius:10px;box-shadow:2px 2px 10px rgba(0,0,0,.2);text-align:center;font-weight:700;cursor:pointer;transition:transform .2s;position:relative}.item:hover{transform:scale(1.05)}.item::after{content:attr(data-full-text);position:absolute;top:0;right:0;background-color:rgba(0,0,0,.5);color:#fff;display:none;padding:5px;font-size:12px;border-radius:5px}.item:hover::after{display:block}@media (max-width:768px){.container-cl{grid-template-columns:repeat(1,minmax(350px,1fr));gap:60px;max-width:100%;width:100%;justify-content:center;display:flex;flex-direction:column}.item{width:350px;height:200px}}</style><link rel="alternate" href="/feed.xml" title="养恐龙" type="application/atom+xml"></head><body><div class="body-cl"><div class="container-cl"></div></div><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="0" height="0" src="//music.163.com/outchain/player?type=2&id=2630740035&auto=1"></iframe><script>const data = [            [2630740035, "244, 233, 227"], [2630740036, "247, 221, 111"], [2630740037, "75, 128, 253"],            [2630740883, "151, 192, 171"], [2630740038, "247, 175, 119"], [2630740039, "216, 227, 151"],            [2630740040, "131, 159, 155"], [2630740041, "169, 142, 94"], [2630740886, "252, 238, 191"],            [2630740887, "249, 196, 124"], [2630740889, "244, 132, 85"], [2630740045, "233, 159, 124"],            [2630740890, "128, 173, 231"], [2630740891, "153, 120, 80"], [2630740892, "124, 166, 104"],            [2630740893, "66, 59, 77"], [2630740050, "221, 199, 253"], [2630740051, "254, 238, 246"],            [2630740053, "51, 75, 92"], [2630740897, "160, 160, 148"], [2630740054, "15, 21, 52"],            [2630740900, "245, 234, 200"], [2630740902, "Born Slippy Nuxx"], [2630740903, "221, 225, 227"],            [2630740904, "94, 143, 159"], [2630740056, "75, 213, 232"], [2630740057, "210, 246, 253"],            [2630740058, "255, 254, 244"], [2630740905, "234, 242, 247"], [2630740907, "Apology Letter - The Good, the True, the Beautiful (Live Version)"],            [2630740059, "Walk (Live Version)"], [2630740908, "Amen, I'm Going Somewhere (Live Version)"],            [2630740060, "Giselle, Act I: Pas seul - Pas de deux des jeunes paysans"], [2630740061, "255, 255, 255"],            [2630740062, "Amen, I'm Going Somewhere（水金地火木土天アーメン） - (动画电影《你的颜色》 剧中歌)"],            [2630740063, "Walk"], [2630740064, "Apology Letter - The Good, the True, the Beautiful"],            [2630740909, "a place to pray"], [2630740910, "walk slowly"], [2630740911, "clouds"],            [2630740065, "passing by"], [2630740912, "looks like a small animal"], [2630740913, "street stroll"],            [2630740914, "film no. 9"], [2630740067, "the sound of waves"], [2630740068, "chill mood"],            [2630740069, "the plan b"], [2630740915, "the plan c"], [2630740070, "sketch comedy"],            [2630740071, "Amen, I'm Going Somewhere keep on'NUXX'"], [2630740072, "it's gonna snow"],            [2630740916, "three of us"]        ];                const container = document.querySelector('.container-cl');                let currentIframe = null;        data.forEach(([id, value]) => {            const div = document.createElement('div');            div.className = 'item';            div.addEventListener('click', () => {                window.open(`https://music.163.com/outchain/player?type=2&id=${id}&auto=1`, '_blank');            });            if (/^\d{1,3},\s*\d{1,3},\s*\d{1,3}$/.test(value)) { // 判断是否为 RGB 颜色                div.style.backgroundColor = `rgb(${value})`;                div.style.color = (eval(value.replace(/,/g, '+')) / 3) > 186 ? '#333' : '#fff';                div.innerHTML = `${value}`;                div.setAttribute('data-full-text', `${value}`); // 设置完整文本            } else {                // 生成更多的固定漂亮的颜色，每一个卡片都不同，并根据背景色调整文本颜色                const beautifulColors = ["#FF69B4", "#33CC33", "#66CCCC", "#FFCC00", "#CCFFCC", "#FF99CC", "#0099CC", "#99CC00", "#CC0099", "#0099FF"];                const randomIndex = Math.floor(Math.random() * beautifulColors.length);                div.style.backgroundColor = beautifulColors[randomIndex];                // 根据背景色调整文本颜色                const backgroundColor = beautifulColors[randomIndex];                const textContrast = (parseInt(backgroundColor.slice(-6, -4), 16) * 0.299 + parseInt(backgroundColor.slice(-4, -2), 16) * 0.587 + parseInt(backgroundColor.slice(-2), 16) * 0.114) / 255;                div.style.color = textContrast > 0.5 ? '#000' : '#fff'; // 根据背景色调整文本颜色                div.innerHTML = value.length > 30 ? `${value.substring(0, 30)}...` : value; // 如果文本太长，截断并显示省略号                div.setAttribute('data-full-text', value); // 设置完整文本            }                        container.appendChild(div);        });</script></body></html>]]></content>
       
       
       
@@ -2150,33 +2150,6 @@
     
     
     <entry>
-      <title>《绝叫》</title>
-      <link href="//2023/04/02/sakebigoe//"/>
-      <url>//2023/04/02/sakebigoe//</url>
-      
-        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>你是哪一种女权主义者</title>
       <link href="//2023/04/02/feminist//"/>
       <url>//2023/04/02/feminist//</url>
@@ -2198,6 +2171,33 @@
             <tag> 阅读所思 </tag>
             
             <tag> 女性主义 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《绝叫》</title>
+      <link href="//2023/04/02/sakebigoe//"/>
+      <url>//2023/04/02/sakebigoe//</url>
+      
+        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       

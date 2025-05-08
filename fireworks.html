@@ -135,6 +135,21 @@
             text-shadow: 0 0 8px rgba(255,255,255,0.3);
         }
 
+        .congrats-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 32px;
+            text-align: center;
+            opacity: 0;
+            z-index: 1001;
+            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+            font-family: 'Ma Shan Zheng', 'ZCOOL XiaoWei', cursive;
+            animation: messageAppear 1s ease-out forwards;
+        }
+
         @keyframes pulse {
             0% { transform: translate(-50%, -50%) scale(1); opacity: 0.9; }
             50% { transform: translate(-50%, -50%) scale(1.08); opacity: 1; }
@@ -169,6 +184,21 @@
             100% {
                 transform: scale(2);
                 opacity: 0;
+            }
+        }
+
+        @keyframes messageAppear {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
             }
         }
 
@@ -207,7 +237,7 @@
         const SENTENCES = [
             "黄小梦同学！",
             "今天过得怎么样？",
-            "收集20个星星会有彩蛋噢！",
+            "收集50个星星会有彩蛋噢！",
             "我不睡觉了，走到花园里，和我的小小郁金香一起，我要和它们待一整个晚上，我只剩下不多的自由的夜晚了，一分钟都不能浪费。",
             "🌍🚀💔",
             "💌📨📜🆘🌏",
@@ -314,6 +344,42 @@
             collectCounts[elementIndex]++;
             document.getElementById(`collectCount${elementIndex + 1}`).textContent = collectCounts[elementIndex];
             elementsForNextChar++;
+            
+            // 检查是否收集到50颗星星
+            const totalStars = collectCounts.reduce((a, b) => a + b, 0);
+            if (totalStars >= 50) {
+                // 添加一个优雅的过渡效果
+                const overlay = document.createElement('div');
+                overlay.style.position = 'fixed';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.background = 'rgba(0,0,0,0.8)';
+                overlay.style.opacity = '0';
+                overlay.style.transition = 'opacity 1s';
+                overlay.style.zIndex = '1000';
+                document.body.appendChild(overlay);
+
+                // 创建恭喜消息
+                const message = document.createElement('div');
+                message.className = 'congrats-message';
+                message.innerHTML = `
+                    <div style="margin-bottom: 20px;">✨ 恭喜你！ ✨</div>
+                    <div style="font-size: 24px; margin-bottom: 30px;">收集到了足够的星星</div>
+                    <div style="font-size: 20px; opacity: 0.8;">即将为你打开新的世界...</div>
+                `;
+                document.body.appendChild(message);
+
+                // 淡入效果
+                setTimeout(() => {
+                    overlay.style.opacity = '1';
+                    // 2秒后跳转
+                    setTimeout(() => {
+                        window.location.href = 'https://my.voicenotes.com';
+                    }, 2000);
+                }, 100);
+            }
             
             // 每收集1个元素显示一个字
             if (elementsForNextChar >= 1) {

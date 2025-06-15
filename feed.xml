@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-04-29T12:08:23.000Z</updated>
+  <updated>2025-06-15T08:36:41.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>长大就是用约定代替本能</title>
+    <link href="https://leay.net/growing-up-is-to-replace-instinct-with-agreement-26pvcd/"/>
+    <id>https://leay.net/growing-up-is-to-replace-instinct-with-agreement-26pvcd/</id>
+    <published>2025-06-15T08:15:40.000Z</published>
+    <updated>2025-06-15T08:36:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>你忘记了，那个时候你还很小，所有的需求都通过哭闹来表达。母亲措手不及，耐心地重复「是不是要这样？还是这样？」</p><p>有一天你终于也学会了她的语气，带着疑惑确认「这样？」</p><p>「对，这样。 」</p><p>母亲演示了下。「像这样」</p><p>你咯咯地笑，与兴奋无关。</p><p>这种事你后来还会遇到很多次。</p><hr><p>你想起不知轻重地扯猫的耳朵，母亲说别这样，猫咪会痛噢。</p><p>「痛？什么是痛？」</p><p>「痛……就是你那天摔倒的感觉。你喜欢那种感觉吗？」</p><p>「我不喜欢。」</p><p>「那猫猫也不喜欢对不对？」</p><p>「猫猫不要痛。」</p><hr><p>你指着被剪枝的树说好痛。</p><p>母亲紧张地问你怎么了。你指着自己说怕痛，又指着树说怕痛。</p><p>宝贝，树是不会痛的。</p><p>为什么？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;你忘记了，那个时候你还很小，所有的需求都通过哭闹来表达。母亲措手不及，耐心地重复「是不是要这样？还是这样？」&lt;/p&gt;&lt;p&gt;有一天你终于也学会了她的语气，带着疑惑确认「这样？」&lt;/p&gt;&lt;p&gt;「对，这样。 」&lt;/p&gt;&lt;p&gt;母亲演示了下。「像这样」&lt;/p&gt;&lt;p&gt;你咯咯地笑，与兴奋
+      
+    
+    </summary>
+    
+    
+    
+      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>小猫喝水</title>
@@ -205,30 +229,6 @@
     
     
       <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一次用 Cursor——将豆坟的备份数据转 Markdown</title>
-    <link href="https://leay.net/use-cursor-for-the-first-time-to-switch-to-markdown-of-the-bean-grave-sco8t/"/>
-    <id>https://leay.net/use-cursor-for-the-first-time-to-switch-to-markdown-of-the-bean-grave-sco8t/</id>
-    <published>2025-01-22T12:24:13.000Z</published>
-    <updated>2025-01-22T12:35:53.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://blog.doufen.org/" target="_blank" rel="noopener">豆坟</a> 是款豆瓣数据的备份工具，导出格式为 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 <a href="https://www.cursor.com/" target="_blank" rel="noopener">Cursor</a> 写了段转换的程序。</p><p>输入要求，嗖嗖嗖就完成了。真厉害啊……</p><blockquote><p><a href="https://github.com/hqweay/doufen2md" target="_blank" rel="noopener">GitHub - hqweay/doufen2md: 将豆坟的备份转为markdown</a></p></blockquote><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://blog.doufen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;豆坟&lt;/a&gt; 是款豆瓣数据的备份工具，导出格式为 Excel。我需要将豆瓣日记以 Markdown 格式保存，于是尝试 &lt;a href=&quot;ht
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
     
   </entry>
   

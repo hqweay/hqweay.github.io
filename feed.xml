@@ -41,6 +41,30 @@
   </entry>
   
   <entry>
+    <title>将豆坟导出的豆瓣数据再处理为 md、epub</title>
+    <link href="https://leay.net/jiang-dou-fen-dao-chu-de-dou-ban-shu-ju-zai-chu-li-wei-md-epub-29yom8/"/>
+    <id>https://leay.net/jiang-dou-fen-dao-chu-de-dou-ban-shu-ju-zai-chu-li-wei-md-epub-29yom8/</id>
+    <published>2025-09-09T12:06:33.000Z</published>
+    <updated>2025-09-09T12:16:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.doufen.org/" target="_blank" rel="noopener">豆坟</a>能很完善导出豆瓣数据，不过对于日记、书评等文章内容导出结果为原始 html。如</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/CleanShot%202025-09-09%20at%2020.14.40%402x-20250909201453-isiyj6f.png" alt="CleanShot 2025-09-09 at 20.14.40@2x">​</p><p>此小脚本用于从豆坟的导出结果 excel 文件中将文章内容转换为 markdown 格式。</p><p>并支持将 markdown 导出为 epub。</p><p>项目地址：<a href="https://GitHub.com/hqweay/doufen2md" target="_blank" rel="noopener">https://GitHub.com/hqweay/doufen2md</a></p><p>‍</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.doufen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;豆坟&lt;/a&gt;能很完善导出豆瓣数据，不过对于日记、书评等文章内容导出结果为原始 html。如&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    
+  </entry>
+  
+  <entry>
     <title>两则</title>
     <link href="https://leay.net/two-z25vdi9/"/>
     <id>https://leay.net/two-z25vdi9/</id>
@@ -203,30 +227,6 @@
     
     
       <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>宇宙便利店</title>
-    <link href="https://leay.net/space-useful-shop-7pqii/"/>
-    <id>https://leay.net/space-useful-shop-7pqii/</id>
-    <published>2025-02-19T10:25:33.000Z</published>
-    <updated>2025-02-19T10:42:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>把感受拆分为事实，事实诉诸回忆。解释出因果就可以改变未来，怀旧作为手术刀。<br>将情绪用文字铺展，陌生化语言揭露熟悉的痛、生僻的喻体刺穿自尊心的墙，克服羞耻挤出的产物叫作命运。<br>可以依赖的成功，年轻的身体。腐朽。心怀美好，加油打劲的话。关心头发，好好吃饭。<br>不敢做的事情会被一次次推回。喜欢的东西永远买不起，会有新的爱。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;把感受拆分为事实，事实诉诸回忆。解释出因果就可以改变未来，怀旧作为手术刀。&lt;br&gt;将情绪用文字铺展，陌生化语言揭露熟悉的痛、生僻的喻体刺穿自尊心的墙，克服羞耻挤出的产物叫作命运。&lt;br&gt;可以依赖的成功，年轻的身体。腐朽。心怀美好，加油打劲的话。关心头发，好好吃饭。&lt;br&gt;不
-      
-    
-    </summary>
-    
-    
-    
-      <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
     
   </entry>
   

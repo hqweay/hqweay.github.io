@@ -23,6 +23,25 @@
     
     
     <entry>
+      <title>将豆坟导出的豆瓣数据再处理为 md、epub</title>
+      <link href="/jiang-dou-fen-dao-chu-de-dou-ban-shu-ju-zai-chu-li-wei-md-epub-29yom8/"/>
+      <url>/jiang-dou-fen-dao-chu-de-dou-ban-shu-ju-zai-chu-li-wei-md-epub-29yom8/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://blog.doufen.org/" target="_blank" rel="noopener">豆坟</a>能很完善导出豆瓣数据，不过对于日记、书评等文章内容导出结果为原始 html。如</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/CleanShot%202025-09-09%20at%2020.14.40%402x-20250909201453-isiyj6f.png" alt="CleanShot 2025-09-09 at 20.14.40@2x">​</p><p>此小脚本用于从豆坟的导出结果 excel 文件中将文章内容转换为 markdown 格式。</p><p>并支持将 markdown 导出为 epub。</p><p>项目地址：<a href="https://GitHub.com/hqweay/doufen2md" target="_blank" rel="noopener">https://GitHub.com/hqweay/doufen2md</a></p><p>‍</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>两则</title>
       <link href="/two-z25vdi9/"/>
       <url>/two-z25vdi9/</url>

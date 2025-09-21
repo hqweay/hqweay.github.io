@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-09-09T15:29:01.000Z</updated>
+  <updated>2025-09-21T06:15:30.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>思源笔记插件——移动端导航栏</title>
+    <link href="https://leay.net/siyuan-notes-pluginmobile-terminal-navigation-bar-z19skj4/"/>
+    <id>https://leay.net/siyuan-notes-pluginmobile-terminal-navigation-bar-z19skj4/</id>
+    <published>2025-09-21T06:02:22.000Z</published>
+    <updated>2025-09-21T06:15:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>效果：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/7F3FB2D0-82D1-450D-A8EC-4B395F487F98_1_201_a-20250921140756-6jl9bvd.jpeg" alt="7F3FB2D0-82D1-450D-A8EC-4B395F487F98_1_201_a">​</p><p>说明：</p><ul><li>后退、前进</li><li>上下文（感谢 <a href="https://GitHub.com/frostime/sy-f-misc/blob/a4915d2f6281503055529ff8e585a6d828089fd0/src/func/doc-context.tsx" target="_blank" rel="noopener">frostime/sy-f-misc</a>）</li><li>随机：默认随机文档库；可配置。</li><li>更多：支持根据配置的 SQL 跳转到某一个文档；支持配置将当前文档保存到某数据库。（感谢 <a href="https://ld246.com/article/1746153210116" target="_blank" rel="noopener">wilsons</a>）</li></ul><p>使用：</p><p>思源笔记市集插件安装「恐龙工具箱」启用「移动端助手」。</p><p>源码：<a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">GitHub - hqweay/siyuan-hqweay-go: 思源笔记插件：恐龙工具箱</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;效果：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/7F3FB2D0-82D1-450D-A8EC-4B395F487F98_1_201_a-2025092114075
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    
+  </entry>
   
   <entry>
     <title>授人以渔不如授人以鱼</title>
@@ -207,28 +231,6 @@
     
     
       <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小猫喝水</title>
-    <link href="https://leay.net/kitten-drinks-water-z1lk7yf/"/>
-    <id>https://leay.net/kitten-drinks-water-z1lk7yf/</id>
-    <published>2025-04-29T12:06:49.000Z</published>
-    <updated>2025-04-29T12:08:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/953DE005-3E8F-4C52-A0DC-01BF41D03A47_1_105_c-20250429200745-aav70ao.jpeg" alt="953DE005-3E8F-4C52-A0DC-01BF41D03A47_1_105_c">​</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/F782C962-62C0-489C-9B23-D660CCE1ED39_1_105_c-20250429200745-7g7vh7u.jpeg" alt="F782C962-62C0-489C-9B23-D660CCE1ED39_1_105_c">​</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/5E1FA031-9F7F-4434-855C-28F687EA29E2_1_105_c-20250429200745-hvuojol.jpeg" alt="5E1FA031-9F7F-4434-855C-28F687EA29E2_1_105_c">​</p><p>​​</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/B5C37337-96FA-4BFB-B12C-E16728D802E9_1_105_c-20250429200745-gtwe4n3.jpeg" alt="B5C37337-96FA-4BFB-B12C-E16728D802E9_1_105_c">​</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/CB3D4397-A1E0-4D63-8B52-67E6BEE90599_1_102_a-20250429200745-rvjty7s.jpeg" alt="CB3D4397-A1E0-4D63-8B52-67E6BEE90599_1_102_a">​</p><p>​​</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/953DE005-3E8F-4C52-A0DC-01BF41D03A47_1_105_c-20250429200745-aav70ao.
-      
-    
-    </summary>
-    
-    
     
   </entry>
   

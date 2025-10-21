@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-10-08T08:10:59.000Z</updated>
+  <updated>2025-10-21T15:47:10.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>标签不是解释，贴标签为什么仍然有必要。</title>
+    <link href="https://leay.net/labels-are-not-explanations-why-labels-are-still-necessary-d6qxw/"/>
+    <id>https://leay.net/labels-are-not-explanations-why-labels-are-still-necessary-d6qxw/</id>
+    <published>2025-10-21T14:55:50.000Z</published>
+    <updated>2025-10-21T15:47:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>试想这样的表达式：「没办法，A 就是个 XX 的人，不适合……」</p><p>比如：「他是文科生嘛，数学不好。」</p><p>在这个表达式里，「XX」作为一个标签在语法上成了「不适合……」的一个解释。</p><p>一个好的解释除了对问题做出回答，应当还能对未来做出准确的预测。</p><p>而「XX」这类标签往往模糊、含糊，没什么指导作用。</p><p>又如：</p><p>「这部电影的镜头语言很有塔可夫斯基的感觉。」</p><p>「你这个想法很马斯克。」</p><p>「那个人就是爱抬杠。」</p><p>……</p><p>这些句子用于「结束」——终止对「为什么不适合……」的思考、避免深入分析、拒绝交流。在这个层面它作为一种「结束」的手段当然有其必要性。</p><p>除此之外，与其说这是在进行解释，不如把它当作「承认缺乏理解」，因此才需要一个标签作为占位符。</p><p>例：</p><p>「他数学不大好，可能是时间主要分配在文史哲科目……」</p><p>「他这段描写让我想起萨特。就像《恶心》里主角对物体存在的那种生理性不适一样，他也把那种抽象的焦虑感通过非常具体、甚至有些黏腻的感官细节传达了出来，比如……」</p><p>把标签当作「开始」，看看我们能走多远。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;试想这样的表达式：「没办法，A 就是个 XX 的人，不适合……」&lt;/p&gt;&lt;p&gt;比如：「他是文科生嘛，数学不好。」&lt;/p&gt;&lt;p&gt;在这个表达式里，「XX」作为一个标签在语法上成了「不适合……」的一个解释。&lt;/p&gt;&lt;p&gt;一个好的解释除了对问题做出回答，应当还能对未来做出准确的预测
+      
+    
+    </summary>
+    
+    
+    
+      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>drafts Action - send your draft to voicenotesai</title>
@@ -207,30 +231,6 @@
     
     
       <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>两则</title>
-    <link href="https://leay.net/two-z25vdi9/"/>
-    <id>https://leay.net/two-z25vdi9/</id>
-    <published>2025-09-04T14:12:45.000Z</published>
-    <updated>2025-09-04T14:14:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>and now we are tamed as a mirror</strong></p><p>translated by PLS</p><p>let the ambition-less youngsters die quickly</p><p>so that those who should be normal can grow normally</p><p>the world has given you a diagnosis: an illness of innocence</p><p>which has all the symptoms forbidden to be discussed</p><p>those who agree to be treated pretend to be strangers</p><p>explaining the past as they want to fight against remorse</p><p>we are fattening, bulletproof</p><hr><p><strong>going home I</strong></p><p>translated by PLS</p><p>the poem hides itself in the dictionary</p><p>the youngsters hide themselves in books</p><p>you don’t exist if no one reads</p><p>the punctuation marks left behind</p><p>unable to find a place in the city, nor return to the village</p><p>losing newline losing metres losing the ambition to reform languages</p><p>losing a comma,</p><p>once,</p><p>a permit to breathe</p><p>to tear a manuscript is to harvest a courage</p><p>therefore yearning is a privilege too</p><p>those who have earned enough dignity</p><p>please get on the returning bus home for me</p><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;and now we are tamed as a mirror&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;translated by PLS&lt;/p&gt;&lt;p&gt;let the ambition-less youngsters die quickly&lt;/p&gt;&lt;p&gt;so tha
-      
-    
-    </summary>
-    
-    
-    
-      <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
     
   </entry>
   

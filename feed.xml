@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-10-21T15:47:10.000Z</updated>
+  <updated>2025-10-27T13:24:46.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>你根本不懂我</title>
+    <link href="https://leay.net/you-don-t-understand-me-at-all-1edkui/"/>
+    <id>https://leay.net/you-don-t-understand-me-at-all-1edkui/</id>
+    <published>2025-10-27T13:20:48.000Z</published>
+    <updated>2025-10-27T13:24:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>知道：对事物有所了解，认识。（现代汉语词典）</p></blockquote><p>在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。</p><p>「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是很复杂、很难懂的因果关系吗？</p><p>「你不懂…」「你不知道…」<br>「我当然知道…」<br>「那你为什么还…」「那你就不会…」</p><p>「……不知道…」在这不是一个判断句，而是一个祈使句。</p><p>它意味着，「请别这样对待我。」</p><p>笨蛋不会逻辑，聪明人不懂生命。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;知道：对事物有所了解，认识。（现代汉语词典）&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。&lt;/p&gt;&lt;p&gt;「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是
+      
+    
+    </summary>
+    
+    
+    
+      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>标签不是解释，贴标签为什么仍然有必要。</title>
@@ -200,30 +224,6 @@
       
       
         &lt;blockquote&gt;&lt;p&gt;已上传至 &lt;a href=&quot;http://greasyfork.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;greasyfork.org&lt;/a&gt;，&lt;a href=&quot;https://greasyfork.org/zh-CN/
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>将豆坟导出的豆瓣数据再处理为 md、epub</title>
-    <link href="https://leay.net/jiang-dou-fen-dao-chu-de-dou-ban-shu-ju-zai-chu-li-wei-md-epub-29yom8/"/>
-    <id>https://leay.net/jiang-dou-fen-dao-chu-de-dou-ban-shu-ju-zai-chu-li-wei-md-epub-29yom8/</id>
-    <published>2025-09-09T12:06:33.000Z</published>
-    <updated>2025-09-09T12:16:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://blog.doufen.org/" target="_blank" rel="noopener">豆坟</a>能很完善导出豆瓣数据，不过对于日记、书评等文章内容导出结果为原始 html。如</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/CleanShot%202025-09-09%20at%2020.14.40%402x-20250909201453-isiyj6f.png" alt="CleanShot 2025-09-09 at 20.14.40@2x">​</p><p>此小脚本用于从豆坟的导出结果 excel 文件中将文章内容转换为 markdown 格式。</p><p>并支持将 markdown 导出为 epub。</p><p>项目地址：<a href="https://GitHub.com/hqweay/doufen2md" target="_blank" rel="noopener">https://GitHub.com/hqweay/doufen2md</a></p><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://blog.doufen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;豆坟&lt;/a&gt;能很完善导出豆瓣数据，不过对于日记、书评等文章内容导出结果为原始 html。如&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r
       
     
     </summary>

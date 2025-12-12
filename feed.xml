@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-11-13T14:42:05.000Z</updated>
+  <updated>2025-12-12T15:18:29.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在思源笔记中对阅读和回顾的一点探索</title>
+    <link href="https://leay.net/a-little-exploration-of-reading-and-review-in-siyuan-notes-z1dndia/"/>
+    <id>https://leay.net/a-little-exploration-of-reading-and-review-in-siyuan-notes-z1dndia/</id>
+    <published>2025-12-12T13:46:33.000Z</published>
+    <updated>2025-12-12T15:18:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2><a class="markdownIt-Anchor" href="#"></a> 😇😇😇</h2><p>经过一番折腾，我使用<a href="https://github.com/siyuan-note/siyuan/issues" target="_blank" rel="noopener">思源笔记</a>​阅读的书籍及文章达到了惊人的 0！<s>你也快来试试叭。</s></p><h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>本文是我自使用思源笔记以来对「阅读」「回顾」的一些尝试，结果可以在插件「恐龙工具箱」中体验。如果你感兴趣可以参考<a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">源码</a>。最近做了一次重构，插件里的模块应该可以很方便地被复制到其它项目使用。项目的实现离不开社区各种分享和开源实现，可详见<a href="https://leay.net/dinosaur-toolbox-18rwa5/">这里</a>，此处不一一列出。感谢🙏。</p><h2 id="阅读时直接标注然后统一提取标注到新文档做加工"><a class="markdownIt-Anchor" href="#阅读时直接标注然后统一提取标注到新文档做加工"></a> 阅读时直接标注，然后统一提取标注到新文档做加工</h2><p>1.阅读时标注</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212215116-ngz7cih.png" alt="image"></p><p>2.读完提取<img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212215159-uzhgcra.png" alt="image"></p><p>3.对提取的标注结果加工<img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212215300-s5mn03n.png" alt="image"></p><blockquote><p>恐龙工具箱「提取行内元素至新文档」</p></blockquote><h2 id="阅读时一键标注并复制块引"><a class="markdownIt-Anchor" href="#阅读时一键标注并复制块引"></a> 阅读时一键标注并复制块引</h2><p>1.标注并复制块引<img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212215437-krejwot.png" alt="image"></p><p>2.使用固定记录笔记的悬浮窗或侧边窗口记录</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212215751-whvv4if.png" alt="image"></p><blockquote><p>恐龙工具箱「阅读增强」</p></blockquote><h2 id="pdf-阅读时粘贴矩形标注为-ocr-文本"><a class="markdownIt-Anchor" href="#pdf-阅读时粘贴矩形标注为-ocr-文本"></a> PDF 阅读时粘贴矩形标注为 OCR 文本</h2><p>1.矩形标注<img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212215944-slqw4te.png" alt="image"></p><p>2.粘贴为 OCR 文本</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212220121-vda1bbp.png" alt="image"></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212220138-vkydj1f.png" alt="image"></p><blockquote><p>恐龙工具箱「粘贴时对数据预处理」并配置「OCR 图片识别」</p></blockquote><h2 id="epub-阅读并支持双链做笔记"><a class="markdownIt-Anchor" href="#epub-阅读并支持双链做笔记"></a> EPUB 阅读，并支持双链做笔记</h2><p>1.划选文本后点击笔记按钮</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212220715-010m2fk.png" alt="image"></p><p>2.文本会被标注至绑定文档，并弹窗标注所在块，方便做笔记。<img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212220743-cp4yevq.png" alt="image"></p><p>支持移动端：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/F5078F66-C83B-419E-909B-778A93A0BCE3_1_105_c-20251212221748-ltqof3v.jpeg" alt="F5078F66-C83B-419E-909B-778A93A0BCE3_1_105_c"></p><blockquote><p>恐龙工具箱「EPUB 阅读器」</p></blockquote><h2 id="阅读材料的格式化"><a class="markdownIt-Anchor" href="#阅读材料的格式化"></a> 阅读材料的格式化</h2><p>导入的网页或其他材料往往有很多我不关心的富文本格式，或者与我行文不一致的标点使用。</p><p>1.清理文本格式：将所有富文本样式转为纯文本</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212221226-2oq2prs.png" alt="image"></p><p>2.标点等格式的统一</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212221323-npprk6s.png" alt="image"></p><blockquote><p>恐龙工具箱「行内元素转换」「中文排版优化」</p></blockquote><h2 id="回顾移动端导航"><a class="markdownIt-Anchor" href="#回顾移动端导航"></a> 回顾：移动端导航</h2><p>使用随机和上下文跳转，方便在文档间漫游。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212221700-q1394qf.png" alt="image"></p><p>导航支持 PC：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212221856-e8l2fex.png" alt="image"></p><p>可以配置自定义的随机 SQL，以及配置数据库将浏览的文档快捷加入数据库：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212222018-a10no56.png" alt="image"></p><blockquote><p>恐龙工具箱「导航助手」</p></blockquote><h2 id="回顾仪表盘"><a class="markdownIt-Anchor" href="#回顾仪表盘"></a> 回顾：仪表盘</h2><p>使用仪表盘对文档数据进行简单的可视化回顾。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212222153-7i332ex.png" alt="image"></p><p>支持移动端</p><blockquote><p>恐龙工具箱「仪表盘」</p></blockquote><h2 id="回顾流式回顾记录的内容"><a class="markdownIt-Anchor" href="#回顾流式回顾记录的内容"></a> 回顾：流式回顾记录的内容</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212222323-6ve4yyb.png" alt="image"></p><blockquote><p>恐龙工具箱「仪表盘」</p></blockquote><h2 id="回顾快捷方式"><a class="markdownIt-Anchor" href="#回顾快捷方式"></a> 回顾：快捷方式</h2><p>在边栏添加快捷按钮实现打开随机🔀文档或者配合「流式回顾内容」。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212231608-po3ro9m.png" alt="image"></p><blockquote><p>恐龙工具箱「边栏扩充」</p></blockquote><h2 id="搭配快捷指令做提醒"><a class="markdownIt-Anchor" href="#搭配快捷指令做提醒"></a> 搭配快捷指令做提醒</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212223817-q2m6wsb.png" alt="image"></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251212223838-f0gzsj9.png" alt="image"></p><blockquote><p>恐龙工具箱「发送到」</p></blockquote><p>‍</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#&quot;&gt;&lt;/a&gt; 😇😇😇&lt;/h2&gt;&lt;p&gt;经过一番折腾，我使用&lt;a href=&quot;https://github.com/siyuan-note/siyuan/issues&quot; target=&quot;_blank
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>当交流充斥着「我把 XXX 发给 AI，它是这么说的」并将其当作仲裁，语言会被改造成什么样子呢。</title>
@@ -198,30 +220,6 @@
       
       
         &lt;p&gt;为未来的某一天传递信息是双链的常见用法。比方今天是 12 月 11 日，我想把一块内容（比如任务）指定给 12 月 26 日，当我在 12 月 26 日打开日记后，就能从反链面板看到之前指定的信息。&lt;/p&gt;&lt;p&gt;通常的写法是：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https:/
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>思源笔记插件——移动端导航栏</title>
-    <link href="https://leay.net/siyuan-notes-pluginmobile-terminal-navigation-bar-z19skj4/"/>
-    <id>https://leay.net/siyuan-notes-pluginmobile-terminal-navigation-bar-z19skj4/</id>
-    <published>2025-09-21T06:02:22.000Z</published>
-    <updated>2025-09-21T06:15:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>效果：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/7F3FB2D0-82D1-450D-A8EC-4B395F487F98_1_201_a-20250921140756-6jl9bvd.jpeg" alt="7F3FB2D0-82D1-450D-A8EC-4B395F487F98_1_201_a">​</p><p>说明：</p><ul><li>后退、前进</li><li>上下文（感谢 <a href="https://GitHub.com/frostime/sy-f-misc/blob/a4915d2f6281503055529ff8e585a6d828089fd0/src/func/doc-context.tsx" target="_blank" rel="noopener">frostime/sy-f-misc</a>）</li><li>随机：默认随机文档库；可配置。</li><li>更多：支持根据配置的 SQL 跳转到某一个文档；支持配置将当前文档保存到某数据库。（感谢 <a href="https://ld246.com/article/1746153210116" target="_blank" rel="noopener">wilsons</a>）</li></ul><p>使用：</p><p>思源笔记市集插件安装「恐龙工具箱」启用「移动端助手」。</p><p>源码：<a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">GitHub - hqweay/siyuan-hqweay-go: 思源笔记插件：恐龙工具箱</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;效果：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/7F3FB2D0-82D1-450D-A8EC-4B395F487F98_1_201_a-2025092114075
       
     
     </summary>

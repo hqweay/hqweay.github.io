@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-12-12T15:18:29.000Z</updated>
+  <updated>2025-12-15T16:41:59.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在虎鲸笔记中导入其它软件的数据库／多维表格</title>
+    <link href="https://leay.net/import-databases-multidimensional-tables-from-other-software-into-orca-notes-za3abj/"/>
+    <id>https://leay.net/import-databases-multidimensional-tables-from-other-software-into-orca-notes-za3abj/</id>
+    <published>2025-12-15T11:43:41.000Z</published>
+    <updated>2025-12-15T16:41:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/orca-plugin-import" target="_blank" rel="noopener">GitHub - hqweay/orca-plugin-import: 虎鲸笔记导入其它笔记软件的数据库、多维表格</a></p><p>尝试了下<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>，难得的一款粒度统一的本地双链笔记软件。比起类 notion 类软件的 database，这也是我目前看到的第一款基于块的 property 做出了多种视图的笔记软件。</p><p>何为粒度统一？比方说传统笔记软件会有「文档」「段落」的概念，而在这类软件中「文档」和「段落」被统一为一回事——「块」。统一的好处是什么？比方说用户在打开软件时就不用担心要不要先建立文档——直接开写，因为文档和段落是一回事，用户可以后面方便地将段落转为文档。</p><p>既然都是「块」，那么怎么区分「文档」呢？在这类软件中，通过给块赋值一个 property 实现，相当于给块一个标记——你是文档了，那么这个块被当作文档了。</p><p>既然能给块赋值「文档」的属性，也就能赋值各种其它的属性。当许多块拥有了属性，就可以通过属性将这些块聚合起来——构成一个 database。</p><p>在 notion 类软件的 database 中，database 是一个单独的块，要使用它就需要先建立一个 database，然后将块加入其中。</p><p>而在虎鲸笔记这类软件中，通过属性聚合起来的 database 只是一种块呈现方式的视图。</p><p>在我看来，后者在开发的工作量上以及设计的统一性上都要更好，后期开发别的视图也更容易……不知道为啥好像真正实现的软件并不多。</p><p>同样的，「通过属性聚合」这一操作中的「通过属性」也不是必须的，property 只是给了不同的块一个公共的属性。其它方式也可以达到这一点，比如说「通过标题聚合」「通过缩进层级聚合」。</p><p>举个例子，下面只是几种视图，本质上是一个东西。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251216003936-n1nn41w.png" alt="image"></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251216004026-3ld1jfh.png" alt="image"></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251216004118-62km4qv.png" alt="image"></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251216004140-0jvjle7.png" alt="image"></p><hr><p>然而此文并非要讨论双链笔记软件的设计，只是基于体验虎鲸笔记，我写了一个将其它笔记软件的 database 导入进来的插件。效果还是不错的，只是数据量在一页达到 700 条（存在图片）后，会有些卡顿。</p><p>再 PS：可惜目前虎鲸笔记的查询不支持随机，这真是有点遗憾。随机对于笔记软件，尤其是双链笔记软件来说，对于「回顾环节」起着很大的作用。这类软件的一大优势是记录的无压，然后在这种无压背后如果没有「随机」来为回顾兜底，那么很多记录下来的信息就仅仅是记下来，然后吃灰～</p><p>‍</p><ul><li><p>这是大纲噢</p><ul><li>嘻嘻</li></ul></li><li><p>这是大纲耶</p><ul><li>哈哈</li></ul></li></ul><p>‍</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/hqweay/orca-plugin-import&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub - hqweay/orca-plugin-import: 虎鲸笔记导入其它笔记软件的数据
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>在思源笔记中对阅读和回顾的一点探索</title>
@@ -196,30 +218,6 @@
       
       
         &lt;blockquote&gt;&lt;p&gt;这是一只恐龙，路过的人必须夸它可爱。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;「恐龙工具箱」是&lt;a href=&quot;https://b3log.org/siyuan/download.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>思源笔记时间旅行式双链：向未来日期传递信息</title>
-    <link href="https://leay.net/siyuan-notes-time-travel-double-chain-transmitting-information-to-future-dates-z11gtdi/"/>
-    <id>https://leay.net/siyuan-notes-time-travel-double-chain-transmitting-information-to-future-dates-z11gtdi/</id>
-    <published>2025-09-24T16:34:24.000Z</published>
-    <updated>2025-12-10T17:39:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>为未来的某一天传递信息是双链的常见用法。比方今天是 12 月 11 日，我想把一块内容（比如任务）指定给 12 月 26 日，当我在 12 月 26 日打开日记后，就能从反链面板看到之前指定的信息。</p><p>通常的写法是：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251211013504-4tdea6i.png" alt="image"></p><p>这样在 12 月 26 日当我打开日记，就可以从反链面板看到：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251211013451-4aek989.png" alt="image"></p><p>不过<a href="https://github.com/siyuan-note/siyuan" target="_blank" rel="noopener">思源笔记</a>目前并没有简单的办法创建未来、或者指定日期的日记并引用。</p><p>尝试新增一个 slash 项，即输入「/cdn」后，弹出日期选择窗，选择日期后自动创建当天的日记并插入选中日期日记的块引。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20250925003953-miroikv.png" alt="image"></p><p>‍</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20250925003949-4itmbna.png" alt="image">思路：</p><ul><li>根据选中日期查询笔记本是否存在该天日记，若存在获取一条并插入块引</li><li>若无，根据笔记的存放路径新建一条 Daily Note，插入该文档块引</li></ul><p>使用：插件「<a href="https://github.com/hqweay/siyuan-hqweay-go" target="_blank" rel="noopener">思源笔记插件：恐龙工具箱</a>」「日记相关工具中开启」。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251211013734-h3i55nv.png" alt="image"></p><p>‍</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;为未来的某一天传递信息是双链的常见用法。比方今天是 12 月 11 日，我想把一块内容（比如任务）指定给 12 月 26 日，当我在 12 月 26 日打开日记后，就能从反链面板看到之前指定的信息。&lt;/p&gt;&lt;p&gt;通常的写法是：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https:/
       
     
     </summary>

@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2025-12-20T13:00:02.000Z</updated>
+  <updated>2025-12-20T20:10:32.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>你的反链面板何必只有反链</title>
+    <link href="https://leay.net/why-does-your-antilink-panel-only-have-antilinks-2a5rhh/"/>
+    <id>https://leay.net/why-does-your-antilink-panel-only-have-antilinks-2a5rhh/</id>
+    <published>2025-12-20T19:23:09.000Z</published>
+    <updated>2025-12-20T20:10:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221035705-rrixosp.png" alt="image"></p><h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>灵感来自于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221034447-uiiigb0.png" alt="image"></p><p>感觉是很好的思路，反链面板可以抽象当作汇聚/传送信息的入口/方式。🤔</p><p>我在 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">GitHub - Misuzu2027/syplugin-backlink-panel</a> 的基础上用 AI 实现了一版，感谢 Misuzu2027 和 AI。由于开发过于敏捷，此版本仅作为一次探索。</p><p>如能带来任何启发，皆归功于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>和 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">Misuzu2027</a>。</p><p>感兴趣的朋友可以在插件「恐龙工具箱-【实验】关联信息面板」启用，然后在 topbar 配置打开体验。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;效果&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#效果&quot;&gt;&lt;/a&gt; 效果&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/imag
+      
+    
+    </summary>
+    
+    
+    
+      <category term="折腾" scheme="https://leay.net/tags/%E6%8A%98%E8%85%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>虎鲸笔记体验</title>
@@ -201,30 +225,6 @@
     
     
       <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你往何处去</title>
-    <link href="https://leay.net/where-are-you-going-zzlmyv/"/>
-    <id>https://leay.net/where-are-you-going-zzlmyv/</id>
-    <published>2025-10-06T14:28:01.000Z</published>
-    <updated>2025-10-06T14:32:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>往前走 这里是一站台<br>风贴着铁轨飘<br>方言摔得细碎<br>停十分钟<br>（可以抽支烟）<br>（呼吸新鲜空气）<br>听广播喊起另一个城市的名字<br>等夜被撕开 像没人拆的信<br>时间在车厢乱窜 窗口是间老房子<br>乘客都是过去的自己<br>你要往前走<br>你被带向别处</p><blockquote><p>标题取自：<a href="https://book.douban.com/subject/1448782/" target="_blank" rel="noopener">你往何处去</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;往前走 这里是一站台&lt;br&gt;风贴着铁轨飘&lt;br&gt;方言摔得细碎&lt;br&gt;停十分钟&lt;br&gt;（可以抽支烟）&lt;br&gt;（呼吸新鲜空气）&lt;br&gt;听广播喊起另一个城市的名字&lt;br&gt;等夜被撕开 像没人拆的信&lt;br&gt;时间在车厢乱窜 窗口是间老房子&lt;br&gt;乘客都是过去的自己&lt;br&gt;你要往前走&lt;b
-      
-    
-    </summary>
-    
-    
-    
-      <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
     
   </entry>
   

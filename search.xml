@@ -8,7 +8,7 @@
       <link href="/why-does-your-antilink-panel-only-have-antilinks-2a5rhh/"/>
       <url>/why-does-your-antilink-panel-only-have-antilinks-2a5rhh/</url>
       
-        <content type="html"><![CDATA[<h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221134512-emp25pw.png" alt="image"></p><h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>灵感来自于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221034447-uiiigb0.png" alt="image"></p><p>感觉是很好的思路，反链面板可以抽象当作汇聚/传送信息的入口/方式。🤔</p><p>我在 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">GitHub - Misuzu2027/syplugin-backlink-panel</a> 的基础上用 AI 实现了一版，感谢 Misuzu2027 和 AI。由于开发过于敏捷，此版本仅作为一次探索。</p><p>如能带来任何启发，皆归功于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>和 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">Misuzu2027</a>。</p><p>感兴趣的朋友可以在插件「恐龙工具箱-【实验】关联信息面板」启用，然后在 topbar 的小恐龙图标配置打开体验。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221134512-emp25pw.png" alt="image"></p><h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>灵感来自于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221034447-uiiigb0.png" alt="image"></p><p>感觉是很好的思路，反链面板可以抽象当作汇聚/传送信息的入口/方式。🤔</p><p>我在 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">GitHub - Misuzu2027/syplugin-backlink-panel</a> 的基础上用 AI 实现了一版，感谢 Misuzu2027 和 AI。由于开发过于敏捷，此版本仅作为一次探索。</p><p>如能带来任何启发，皆归功于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>和 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">Misuzu2027</a>。</p><p>感兴趣的朋友可以在插件「恐龙工具箱-【实验】关联信息面板」启用，然后在 topbar 的小恐龙图标配置打开体验。</p><h2 id="changelog"><a class="markdownIt-Anchor" href="#changelog"></a> changelog</h2><ul><li><p>2026-01-10 21:05:08</p><ul><li><p>底部面板支持持久化打开的 tab，下次进入文档会加载上次打开的tab</p></li><li><p>对文档流进行了调整，现在 tab 栏和文档栏会固定展示在屏幕上方，方便操作</p><ul><li><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20260110210736-gfftw27.png" alt="image"></li></ul></li></ul></li></ul>]]></content>
       
       
       
@@ -2571,6 +2571,33 @@
     
     
     <entry>
+      <title>《绝叫》</title>
+      <link href="//2023/04/02/sakebigoe//"/>
+      <url>//2023/04/02/sakebigoe//</url>
+      
+        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>你是哪一种女权主义者</title>
       <link href="//2023/04/02/feminist//"/>
       <url>//2023/04/02/feminist//</url>
@@ -2592,33 +2619,6 @@
             <tag> 阅读所思 </tag>
             
             <tag> 女性主义 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《绝叫》</title>
-      <link href="//2023/04/02/sakebigoe//"/>
-      <url>//2023/04/02/sakebigoe//</url>
-      
-        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -3361,35 +3361,6 @@
     
     
     <entry>
-      <title>心理学作为科学</title>
-      <link href="//2022/05/02/psychology//"/>
-      <url>//2022/05/02/psychology//</url>
-      
-        <content type="html"><![CDATA[<p>广义上讲，一切系统的知识均可称之为科学；狭义上的科学，则专指西方文艺复兴以来出现的探索知识的一种方式，这种方式是以物理学为榜样，是由伽利略所开创的、牛顿奠基的科学原理和方法体系，强调以实验和数学的方法观察总结客观事物发展过程中具有普遍性的本质及联系。通常对科学的理解，是指狭义的科学。事实上，<mark>并非所有的知识都能称为科学。</mark> 因为在「知识」、「学科」和「科学」之间，存在包含关系。具体而言，系统的知识构成学科 (discipline)，学科包括人文学科 (humanities)、自然科学 (science)、社会科学 (social science) 等。在各学科中，只有那些以实证精神为核心，基于近代自然科学构建的探究方法所形成的学科体系，才能被称为科学，因此，科学主要指实证意义上的自然科学和社会科学。</p><p>依据狭义科学的定义，哲学、逻辑学都被排除在科学的范畴之外。</p><p>对心理学知识的科学性的划界，不能等同于对心理学与伪心理学的划界，这个划界标准不能作为判定心理学知识合法性的标准。正是从这个意义上讲，精神分析属于非科学心理学，但却不属于伪心理学。<mark>心理学作为一个独立的学科体系，它的合理结构既需要「科学」成分，也需要「非科学」成分。</mark></p><p>在心理学科内部，导致方法论误用的根本原因，在于将科学心理学的知识视为了心理学知识的全部，并用评判科学与非科学的标准，来评判所有心理学知识的「真伪」。</p><p>对心理学而言，要走出这个困境，首先要改变通过方法来界定学科的现状。<mark>本学科的独特价值不取决于共有的方法，而是独特的研究对象。</mark> 人性论取向才构成心理学作为独立学科的合法前提，而不是方法论。</p><p><mark>人性论为心理学提供了属于本学科的本体论承诺<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</mark> 要获得这个本体论承诺，心理学需要重新审视「人性」与「物性」的本质区别，才能在此基础上重新审视并设计出更加适合探究人性的方法论基础和具体的研究技术，才能让本学科在本体论承诺方面实现理论自觉，才会让心理学不会满足于对其他成熟自然科学的外在模仿，从而建构起作为独立学科的坚实基础。</p><p>至于<mark>本体论承诺从何而得</mark>，除了考察「人性」与「物性」的区别之外，借助历史上重要心理学思想家们的观点，可能为我们提供更多的启发。</p><blockquote><p>摘录自 <a href="https://journal.psych.ac.cn/xlxb/CN/10.3724/SP.J.1041.2019.01068" target="_blank" rel="noopener">「操作性定义」和「证伪标准」不足以为心理学奠基</a></p></blockquote><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>蒯因《论何物存在》 <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
-            
-            <tag> 心理治疗 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>《地下室手记》——哲学病</title>
       <link href="//2022/05/02/problem//"/>
       <url>//2022/05/02/problem//</url>
@@ -3411,6 +3382,35 @@
             <tag> 阅读所思 </tag>
             
             <tag> 人生的意义 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>心理学作为科学</title>
+      <link href="//2022/05/02/psychology//"/>
+      <url>//2022/05/02/psychology//</url>
+      
+        <content type="html"><![CDATA[<p>广义上讲，一切系统的知识均可称之为科学；狭义上的科学，则专指西方文艺复兴以来出现的探索知识的一种方式，这种方式是以物理学为榜样，是由伽利略所开创的、牛顿奠基的科学原理和方法体系，强调以实验和数学的方法观察总结客观事物发展过程中具有普遍性的本质及联系。通常对科学的理解，是指狭义的科学。事实上，<mark>并非所有的知识都能称为科学。</mark> 因为在「知识」、「学科」和「科学」之间，存在包含关系。具体而言，系统的知识构成学科 (discipline)，学科包括人文学科 (humanities)、自然科学 (science)、社会科学 (social science) 等。在各学科中，只有那些以实证精神为核心，基于近代自然科学构建的探究方法所形成的学科体系，才能被称为科学，因此，科学主要指实证意义上的自然科学和社会科学。</p><p>依据狭义科学的定义，哲学、逻辑学都被排除在科学的范畴之外。</p><p>对心理学知识的科学性的划界，不能等同于对心理学与伪心理学的划界，这个划界标准不能作为判定心理学知识合法性的标准。正是从这个意义上讲，精神分析属于非科学心理学，但却不属于伪心理学。<mark>心理学作为一个独立的学科体系，它的合理结构既需要「科学」成分，也需要「非科学」成分。</mark></p><p>在心理学科内部，导致方法论误用的根本原因，在于将科学心理学的知识视为了心理学知识的全部，并用评判科学与非科学的标准，来评判所有心理学知识的「真伪」。</p><p>对心理学而言，要走出这个困境，首先要改变通过方法来界定学科的现状。<mark>本学科的独特价值不取决于共有的方法，而是独特的研究对象。</mark> 人性论取向才构成心理学作为独立学科的合法前提，而不是方法论。</p><p><mark>人性论为心理学提供了属于本学科的本体论承诺<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</mark> 要获得这个本体论承诺，心理学需要重新审视「人性」与「物性」的本质区别，才能在此基础上重新审视并设计出更加适合探究人性的方法论基础和具体的研究技术，才能让本学科在本体论承诺方面实现理论自觉，才会让心理学不会满足于对其他成熟自然科学的外在模仿，从而建构起作为独立学科的坚实基础。</p><p>至于<mark>本体论承诺从何而得</mark>，除了考察「人性」与「物性」的区别之外，借助历史上重要心理学思想家们的观点，可能为我们提供更多的启发。</p><blockquote><p>摘录自 <a href="https://journal.psych.ac.cn/xlxb/CN/10.3724/SP.J.1041.2019.01068" target="_blank" rel="noopener">「操作性定义」和「证伪标准」不足以为心理学奠基</a></p></blockquote><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>蒯因《论何物存在》 <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
+            
+            <tag> 心理治疗 </tag>
             
         </tags>
       

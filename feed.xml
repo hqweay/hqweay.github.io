@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-01-12T16:01:35.000Z</updated>
+  <updated>2026-01-19T18:10:08.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://leay.net/20260120021008/"/>
+    <id>https://leay.net/20260120021008/</id>
+    <published>2026-01-19T18:10:08.000Z</published>
+    <updated>2026-01-19T18:10:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>22</p><p>3</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;22&lt;/p&gt;&lt;p&gt;3&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>宇宙、哲学、心理治疗——从民科到民哲再到好好生活</title>
@@ -194,30 +216,6 @@
       
       
         &lt;blockquote&gt;&lt;p&gt;知道：对事物有所了解，认识。（现代汉语词典）&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。&lt;/p&gt;&lt;p&gt;「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>标签不是解释，贴标签为什么仍然有必要。</title>
-    <link href="https://leay.net/labels-are-not-explanations-why-labels-are-still-necessary-d6qxw/"/>
-    <id>https://leay.net/labels-are-not-explanations-why-labels-are-still-necessary-d6qxw/</id>
-    <published>2025-10-21T14:55:50.000Z</published>
-    <updated>2025-10-21T15:47:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>试想这样的表达式：「没办法，A 就是个 XX 的人，不适合……」</p><p>比如：「他是文科生嘛，数学不好。」</p><p>在这个表达式里，「XX」作为一个标签在语法上成了「不适合……」的一个解释。</p><p>一个好的解释除了对问题做出回答，应当还能对未来做出准确的预测。</p><p>而「XX」这类标签往往模糊、含糊，没什么指导作用。</p><p>又如：</p><p>「这部电影的镜头语言很有塔可夫斯基的感觉。」</p><p>「你这个想法很马斯克。」</p><p>「那个人就是爱抬杠。」</p><p>……</p><p>这些句子用于「结束」——终止对「为什么不适合……」的思考、避免深入分析、拒绝交流。在这个层面它作为一种「结束」的手段当然有其必要性。</p><p>除此之外，与其说这是在进行解释，不如把它当作「承认缺乏理解」，因此才需要一个标签作为占位符。</p><p>例：</p><p>「他数学不大好，可能是时间主要分配在文史哲科目……」</p><p>「他这段描写让我想起萨特。就像《恶心》里主角对物体存在的那种生理性不适一样，他也把那种抽象的焦虑感通过非常具体、甚至有些黏腻的感官细节传达了出来，比如……」</p><p>把标签当作「开始」，看看我们能走多远。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;试想这样的表达式：「没办法，A 就是个 XX 的人，不适合……」&lt;/p&gt;&lt;p&gt;比如：「他是文科生嘛，数学不好。」&lt;/p&gt;&lt;p&gt;在这个表达式里，「XX」作为一个标签在语法上成了「不适合……」的一个解释。&lt;/p&gt;&lt;p&gt;一个好的解释除了对问题做出回答，应当还能对未来做出准确的预测
       
     
     </summary>

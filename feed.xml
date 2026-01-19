@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-01-19T15:42:58.000Z</updated>
+  <updated>2026-01-19T15:43:44.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试3</title>
+    <link href="https://leay.net/20260119234344-2537/"/>
+    <id>https://leay.net/20260119234344-2537/</id>
+    <published>2026-01-19T15:43:44.000Z</published>
+    <updated>2026-01-19T15:43:44.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>测试4</title>
@@ -192,30 +207,6 @@
     
     
       <category term="阅读所思" scheme="https://leay.net/tags/%E9%98%85%E8%AF%BB%E6%89%80%E6%80%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你的反链面板何必只有反链</title>
-    <link href="https://leay.net/why-does-your-antilink-panel-only-have-antilinks-2a5rhh/"/>
-    <id>https://leay.net/why-does-your-antilink-panel-only-have-antilinks-2a5rhh/</id>
-    <published>2025-12-20T19:23:09.000Z</published>
-    <updated>2026-01-10T13:07:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221134512-emp25pw.png" alt="image"></p><h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>灵感来自于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251221034447-uiiigb0.png" alt="image"></p><p>感觉是很好的思路，反链面板可以抽象当作汇聚/传送信息的入口/方式。🤔</p><p>我在 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">GitHub - Misuzu2027/syplugin-backlink-panel</a> 的基础上用 AI 实现了一版，感谢 Misuzu2027 和 AI。由于开发过于敏捷，此版本仅作为一次探索。</p><p>如能带来任何启发，皆归功于<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>和 <a href="https://GitHub.com/Misuzu2027/syplugin-backlink-panel/tree/main" target="_blank" rel="noopener">Misuzu2027</a>。</p><p>感兴趣的朋友可以在插件「恐龙工具箱-【实验】关联信息面板」启用，然后在 topbar 的小恐龙图标配置打开体验。</p><h2 id="changelog"><a class="markdownIt-Anchor" href="#changelog"></a> changelog</h2><ul><li><p>2026-01-10 21:05:08</p><ul><li><p>底部面板支持持久化打开的 tab，下次进入文档会加载上次打开的tab</p></li><li><p>对文档流进行了调整，现在 tab 栏和文档栏会固定展示在屏幕上方，方便操作</p><ul><li><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20260110210736-gfftw27.png" alt="image"></li></ul></li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;效果&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#效果&quot;&gt;&lt;/a&gt; 效果&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/imag
-      
-    
-    </summary>
-    
-    
-    
-      <category term="折腾" scheme="https://leay.net/tags/%E6%8A%98%E8%85%BE/"/>
     
   </entry>
   

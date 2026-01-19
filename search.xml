@@ -8,7 +8,7 @@
       <link href="//20260119232737-2527//"/>
       <url>//20260119232737-2527//</url>
       
-        <content type="html"><![CDATA[<p>1</p><p>2</p><p>3</p>]]></content>
+        <content type="html"><![CDATA[<p>1</p><p>2</p><p>3</p><p>4</p>]]></content>
       
       
       
@@ -5310,6 +5310,33 @@
     
     
     <entry>
+      <title>Spring Boot 项目打包为 Docker 镜像</title>
+      <link href="//2019/04/02/springboot-docker//"/>
+      <url>//2019/04/02/springboot-docker//</url>
+      
+        <content type="html"><![CDATA[<h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>先提一下整个流程。</p><p>Spring Boot 项目构建 jar 包，Docker 再把 jar 包打包为 Docker image。</p><p>流程是这样，再提一下细节。</p><ul><li>jar 包可以在 java 环境直接执行 <code>java -jar appname.jar</code> 启动。而 Docker 的任务就相当于封装 jar 包，java 环境， 以及 <code>java -jar appname.jar</code> 这条指令。</li><li>Docker 打包 jar 包需要一个 Dockerfile 文件，这个文件相当于一个配置，告诉 Docker 应该如何打包，如何启动 jar 包。</li><li>本地生成了 Docker image，想要把这个镜像部署到服务器，需要把 image 导出。这属于 Docker 命令了，这里不提。</li></ul><p>既然知道流程了，怎么实现呢?</p><p>两种方式，第一种很直观，自己构建 jar 包，然后在本地手动打包镜像。</p><p>第二种，则是通过配置（这里使用 Gradle），实现整个打包的流程。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><p>流程大致可以分为两步，生成 jar 包，生成镜像。每一步都会遇到坑，慢慢来……</p><p>首先确保生成的 jar 包可以通过 <code>java -jar appname.jar</code> 执行。</p><blockquote><p>可能会遇到 找不到主类等错误……</p></blockquote><h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一"></a> 方式一</h2><h3 id="一-构建-jar-包"><a class="markdownIt-Anchor" href="#一-构建-jar-包"></a> 一 构建 jar 包</h3><p>首先构建 jar 包，</p><p>可以 build artifacts。</p><p>建议在根目录下执行 <code>gradle build</code> 或者 <code>gradlew build</code> 。</p><p>先测试一下 jar 包能不能正常运行。</p><p><code>java -jar appname.jar</code></p><p>可能会出现找不到主类之类的问题。</p><h3 id="二-创建镜像"><a class="markdownIt-Anchor" href="#二-创建镜像"></a> 二 创建镜像</h3><p>然后把 jar 包与 Dockerfile 放在同一目录下</p><p>如</p><p>docker/blog.jar</p><p>docker/Dockerfile</p><p>执行</p><blockquote><p>docker build -t [要生成的镜像名] .</p></blockquote><p>注意哈，后面有个点「.」。</p><p>Dockerfile 是打包 docker image 所需的配置文件</p><p>比如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">## Dockerfile</span><br><span class="line">FROM aglover&#x2F;java8-pier</span><br><span class="line">VOLUME [&quot;&#x2F;tmp&quot;]</span><br><span class="line">ADD blog.jar app.jar</span><br><span class="line">## blog.jar 是目录下的 jar 包</span><br><span class="line">## app.jar 是 jar 包存放在 Docker 里的名字</span><br><span class="line">ENTRYPOINT [&quot;java&quot;, &quot;-Djava.security.egd&#x3D;file:&#x2F;dev&#x2F;.&#x2F;urandom&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]</span><br><span class="line">## 这一条就是 Docker 里执行 jar 包，相应的 后面的 app.jar 就是 Docker 内 jar 包名</span><br><span class="line">EXPOSE 8082</span><br><span class="line">## 暴露端口 无所谓吧，Docker 启动容器可以自定义</span><br></pre></td></tr></table></figure><p>这里很明显也能看出 Docker 内部还是用的 <code>java -jar appname.jar</code> 来运行。</p><h3 id="三-运行"><a class="markdownIt-Anchor" href="#三-运行"></a> 三 运行</h3><p>注意，运行需要指明 REPOSITORY TAG，</p><p><code>docker run -p 8082:8082 -t REPOSITORY:TAG</code></p><p>如</p><p><code>docker run -p 8082:8082 -t cn.hqweay/blog-backend:1.0</code></p><blockquote><p>注意啊，不这样会启动失败……这问题搞了好久。</p></blockquote><h3 id="疑问"><a class="markdownIt-Anchor" href="#疑问"></a> 疑问</h3><p>我在操作过程中去除了创建 Spring Boot 项目时自带的 Tomcat 依赖，不去不知道能不能行。</p><h2 id="方式二"><a class="markdownIt-Anchor" href="#方式二"></a> 方式二</h2><h3 id="springboot-gradle-docker-配置"><a class="markdownIt-Anchor" href="#springboot-gradle-docker-配置"></a> springboot + gradle + docker 配置</h3><h3 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h3><p><a href="https://juejin.im/post/5b27b7ac51882574c32c6588" target="_blank" rel="noopener"><a href="https://juejin.im/post/5b27b7ac51882574c32c6588" target="_blank" rel="noopener">https://juejin.im/post/5b27b7ac51882574c32c6588</a></a></p><h3 id="说明-2"><a class="markdownIt-Anchor" href="#说明-2"></a> 说明</h3><p>这里配置可以根据项目信息自动生成 Dockerfile，也可以指定本地 Dockerfile。</p><p>配置的主要目的是解决了手动把 jar 包打包为镜像。</p><h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3><p>见仓库配置文件 <a href="https://github.com/hqweay/blog-backend/blob/master/build.gradle" target="_blank" rel="noopener">https://github.com/hqweay/blog-backend/blob/master/build.gradle</a></p><p>根目录执行</p><p><code>./gradlew clean build dockerBuilder --info</code></p><p>即可打包。</p><p><code>./gradlew build</code> 这条命令是构建 jar 包。</p><p>能看出，整条命令就是先打 jar 包，再执行 dockerBuilder 生成 Dockerfile 文件（或者使用指定的 Dockerfile 文件），再打包为 Docker image。</p><p>当然，本地安装了 Docker，就会使用本地 Docker 来完成打包。</p><p>如果本地没有 Docker ，idea 可能会自动引入吧。我没试过……</p><h3 id="注意-2"><a class="markdownIt-Anchor" href="#注意-2"></a> 注意</h3><p>理解打包的这个流程，配置中的各项就很清晰了……照搬配置会出很多问题的……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 配置与操作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 配置与操作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue CLI3 使用 Marked 渲染 Markdown 格式数据</title>
       <link href="//2019/04/02/marked//"/>
       <url>//2019/04/02/marked//</url>
@@ -5331,33 +5358,6 @@
             <tag> 配置与操作 </tag>
             
             <tag> 前端 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Spring Boot 项目打包为 Docker 镜像</title>
-      <link href="//2019/04/02/springboot-docker//"/>
-      <url>//2019/04/02/springboot-docker//</url>
-      
-        <content type="html"><![CDATA[<h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>先提一下整个流程。</p><p>Spring Boot 项目构建 jar 包，Docker 再把 jar 包打包为 Docker image。</p><p>流程是这样，再提一下细节。</p><ul><li>jar 包可以在 java 环境直接执行 <code>java -jar appname.jar</code> 启动。而 Docker 的任务就相当于封装 jar 包，java 环境， 以及 <code>java -jar appname.jar</code> 这条指令。</li><li>Docker 打包 jar 包需要一个 Dockerfile 文件，这个文件相当于一个配置，告诉 Docker 应该如何打包，如何启动 jar 包。</li><li>本地生成了 Docker image，想要把这个镜像部署到服务器，需要把 image 导出。这属于 Docker 命令了，这里不提。</li></ul><p>既然知道流程了，怎么实现呢?</p><p>两种方式，第一种很直观，自己构建 jar 包，然后在本地手动打包镜像。</p><p>第二种，则是通过配置（这里使用 Gradle），实现整个打包的流程。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><p>流程大致可以分为两步，生成 jar 包，生成镜像。每一步都会遇到坑，慢慢来……</p><p>首先确保生成的 jar 包可以通过 <code>java -jar appname.jar</code> 执行。</p><blockquote><p>可能会遇到 找不到主类等错误……</p></blockquote><h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一"></a> 方式一</h2><h3 id="一-构建-jar-包"><a class="markdownIt-Anchor" href="#一-构建-jar-包"></a> 一 构建 jar 包</h3><p>首先构建 jar 包，</p><p>可以 build artifacts。</p><p>建议在根目录下执行 <code>gradle build</code> 或者 <code>gradlew build</code> 。</p><p>先测试一下 jar 包能不能正常运行。</p><p><code>java -jar appname.jar</code></p><p>可能会出现找不到主类之类的问题。</p><h3 id="二-创建镜像"><a class="markdownIt-Anchor" href="#二-创建镜像"></a> 二 创建镜像</h3><p>然后把 jar 包与 Dockerfile 放在同一目录下</p><p>如</p><p>docker/blog.jar</p><p>docker/Dockerfile</p><p>执行</p><blockquote><p>docker build -t [要生成的镜像名] .</p></blockquote><p>注意哈，后面有个点「.」。</p><p>Dockerfile 是打包 docker image 所需的配置文件</p><p>比如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">## Dockerfile</span><br><span class="line">FROM aglover&#x2F;java8-pier</span><br><span class="line">VOLUME [&quot;&#x2F;tmp&quot;]</span><br><span class="line">ADD blog.jar app.jar</span><br><span class="line">## blog.jar 是目录下的 jar 包</span><br><span class="line">## app.jar 是 jar 包存放在 Docker 里的名字</span><br><span class="line">ENTRYPOINT [&quot;java&quot;, &quot;-Djava.security.egd&#x3D;file:&#x2F;dev&#x2F;.&#x2F;urandom&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]</span><br><span class="line">## 这一条就是 Docker 里执行 jar 包，相应的 后面的 app.jar 就是 Docker 内 jar 包名</span><br><span class="line">EXPOSE 8082</span><br><span class="line">## 暴露端口 无所谓吧，Docker 启动容器可以自定义</span><br></pre></td></tr></table></figure><p>这里很明显也能看出 Docker 内部还是用的 <code>java -jar appname.jar</code> 来运行。</p><h3 id="三-运行"><a class="markdownIt-Anchor" href="#三-运行"></a> 三 运行</h3><p>注意，运行需要指明 REPOSITORY TAG，</p><p><code>docker run -p 8082:8082 -t REPOSITORY:TAG</code></p><p>如</p><p><code>docker run -p 8082:8082 -t cn.hqweay/blog-backend:1.0</code></p><blockquote><p>注意啊，不这样会启动失败……这问题搞了好久。</p></blockquote><h3 id="疑问"><a class="markdownIt-Anchor" href="#疑问"></a> 疑问</h3><p>我在操作过程中去除了创建 Spring Boot 项目时自带的 Tomcat 依赖，不去不知道能不能行。</p><h2 id="方式二"><a class="markdownIt-Anchor" href="#方式二"></a> 方式二</h2><h3 id="springboot-gradle-docker-配置"><a class="markdownIt-Anchor" href="#springboot-gradle-docker-配置"></a> springboot + gradle + docker 配置</h3><h3 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h3><p><a href="https://juejin.im/post/5b27b7ac51882574c32c6588" target="_blank" rel="noopener"><a href="https://juejin.im/post/5b27b7ac51882574c32c6588" target="_blank" rel="noopener">https://juejin.im/post/5b27b7ac51882574c32c6588</a></a></p><h3 id="说明-2"><a class="markdownIt-Anchor" href="#说明-2"></a> 说明</h3><p>这里配置可以根据项目信息自动生成 Dockerfile，也可以指定本地 Dockerfile。</p><p>配置的主要目的是解决了手动把 jar 包打包为镜像。</p><h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3><p>见仓库配置文件 <a href="https://github.com/hqweay/blog-backend/blob/master/build.gradle" target="_blank" rel="noopener">https://github.com/hqweay/blog-backend/blob/master/build.gradle</a></p><p>根目录执行</p><p><code>./gradlew clean build dockerBuilder --info</code></p><p>即可打包。</p><p><code>./gradlew build</code> 这条命令是构建 jar 包。</p><p>能看出，整条命令就是先打 jar 包，再执行 dockerBuilder 生成 Dockerfile 文件（或者使用指定的 Dockerfile 文件），再打包为 Docker image。</p><p>当然，本地安装了 Docker，就会使用本地 Docker 来完成打包。</p><p>如果本地没有 Docker ，idea 可能会自动引入吧。我没试过……</p><h3 id="注意-2"><a class="markdownIt-Anchor" href="#注意-2"></a> 注意</h3><p>理解打包的这个流程，配置中的各项就很清晰了……照搬配置会出很多问题的……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习折腾 </category>
-          
-          <category> 配置与操作 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 配置与操作 </tag>
             
         </tags>
       

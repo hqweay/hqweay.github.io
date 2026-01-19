@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-01-19T17:08:41.000Z</updated>
+  <updated>2026-01-19T17:12:37.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Untitled</title>
+    <link href="https://leay.net/20260120011237-2565/"/>
+    <id>https://leay.net/20260120011237-2565/</id>
+    <published>2026-01-19T17:12:37.000Z</published>
+    <updated>2026-01-19T17:12:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>吃点好的</p><p>OK</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;吃点好的&lt;/p&gt;&lt;p&gt;OK&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Untitled</title>
@@ -186,30 +208,6 @@
       
       
         &lt;h2 id=&quot;效果&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#效果&quot;&gt;&lt;/a&gt; 效果&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/imag
-      
-    
-    </summary>
-    
-    
-    
-      <category term="折腾" scheme="https://leay.net/tags/%E6%8A%98%E8%85%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>虎鲸笔记体验</title>
-    <link href="https://leay.net/killer-whale-notes-experience-zv2e75/"/>
-    <id>https://leay.net/killer-whale-notes-experience-zv2e75/</id>
-    <published>2025-12-20T06:46:36.000Z</published>
-    <updated>2025-12-22T15:51:35.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>中度体验了一两周<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>，尝试了软件内各种功能，并通过基于（利用）软件本体的设计以及开发插件的方式实现一些工作流，最后决定暂且搁置将其放在观望状态。</p><p>比起目前使用的<a href="https://b3log.org/siyuan/download.html" target="_blank" rel="noopener">思源笔记</a>，虎鲸笔记对我来说，优势在于设计的统一，以及基于此双链操作的一致性，比方说：</p><ul><li><p>块的粒度统一：页面、块、标签 可以当作一回事</p></li><li><p>可以自底向上构建视图：卡片、看板、日历、表格……</p><ul><li>在任意位置记录数据并打上标签，可以通过查询块汇总信息并以某种视图展示<br>​<img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251220151134-5w3ulil.png" alt="image"></li></ul></li><li><p>镜像块：思源目前没有镜像块。但这点其实是双链笔记的基操。</p></li><li><p>对「反链面板」的改进：虎鲸笔记的「反链面板」支持分 tab 展示，并且可以保存自定义查询。这样它的功能就不仅是「反链」的面板，同时也是任何汇总信息的面板。【这点与底层架构关系不大，思源倒是可以通过插件实现】</p><ul><li><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251220150829-96rxwqe.png" alt="image"></li></ul></li></ul><p>不过我感觉虎鲸笔记对标的是 Logseq，然后参考 Tana 引入了一些新特性。如果之前是 Logseq 的用户，可能解决了不少痛点并提供了不少新功能。（不过 Logseq 的 DB 版本发布后可能差距就不大了）</p><p>但在「双链」方面其实缺少一些基本操作，比如：</p><p>双链笔记的开创者 Roam Research 有一个 Replace with 的功能：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251220151511-r4lx2ro.png" alt="image"></p><p>这个功能和目前虎鲸笔记中的「内联页面」「转化为-镜像」的作用很相似：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-20251220151658-7asal7b.png" alt="image"></p><p>由此我想，作者在开发时可能没有参考过类似应用，甚至双链开创者的设计——这是最好的情况。如果作者参考了，但是觉得这个功能不重要，那可能没有很深入地使用双链的一些场景。</p><p>不过这也不是什么问题，<a href="https://github.com/sethyuan/orca-note/issues/311" target="_blank" rel="noopener">我提了个 issue</a>，作者也表示有机会会改进。</p><p>除了双链的基本操作，作者对双链的改进也避免尝试。比方说<a href="https://github.com/sethyuan/orca-note/issues/312" target="_blank" rel="noopener">关于链接与引用的转换</a>，作者以「这违反了双链笔记的初衷」回复。</p><p>这个说法就稍微有点原教旨了……但也不是什么问题。</p><p>从软件的设计就能看出，作者本身确实是一个资深、至少有深度使用双链的用户。开发者有自己的品味是好事，我使用了太多国内的产品，有品味的开发者太少了。这能保证应用的下限——至少都能满足和作者想法类似的用户。</p><p>但作者对双链的应用同时缺少一些「基础用法」以及「改进用法」，我想它短时间可能不会有太高的上限。</p><p>我也可以尝试说服，争取作者开发方向上的调整，但是：</p><p>一方面，软件的设计有作者自己的品味与考量。我的想法可能有局限。比方说也许我提到的工作流，可以使用目前软件的设计用其它方式实现。如果开发者有足够的品味，其实忘记自己的工作流，去体会软件的设计，按照开发者的思路去使用应用是最合适的。不过我尝试了下，目前还是有点别扭。</p><p>另一方面，这种反馈太费劲了。而且虎鲸笔记是一款闭源、收费的应用，且由一人维护。自双链流行以来，我也尝试、关注过不少应用，很多都昙花一现。RoamEdit、葫芦笔记……<a href="https://www.bilibili.com/video/BV1i4u8zUEbf/" target="_blank" rel="noopener">虎鲸笔记的宣传视频</a>下有人评论「<a href="https://arc.net/l/quote/ncxjdqne" target="_blank" rel="noopener">我不愿再陪哪个笔记成长了，太累了。</a>」</p><p>投入一款应用也得考虑沉没成本……</p><hr><p>不过这些都是基于个人体验的「增量感受」，对不同人来说感受肯定不一样。任何产品还是得自己体验下，只有合不合适，没有好不好。对我来说，「虎鲸笔记」的好还是很显眼了，不然我也不会关注。</p><p>最后列一下对我来说，目前缺少的点吧。如果设计上能满足，其它其实都可以自己写插件实现……不过这种投入是否值得还得观望观望。</p><ul><li>缺少与服务端通信的接口：目前可以包装 mcp API 使用，问题不大</li><li>剪藏网页：目前 mcp 提供的 API 可以实现</li><li>收藏网站聚合数据库：目前还需要一个插入标签的 API</li><li>图片图床：目前插件 API 可实现</li><li>发布博客：目前插件 API 可实现</li><li>笔记导入：目前可自己定制化利用插件 API 实现</li><li>笔记导出：目前可自己定制化利用插件 API 实现</li><li>格式化文本：目前有插件，也可自己再实现</li><li>移动端</li><li>同步 voicenotesai 的数据：目前插件 API 可实现</li><li>标签的属性不支持公式：问题不大？</li><li>标签的属性不支持默认值</li><li>不能达到随机 SQL 的效果：给开发者提了，说排序会增加一个随机字段。【 <strong>v1.56.0 更新：查询增加随机排序</strong> 】</li><li>replace with 的设计：给开发者提了，可能会改进【 <strong>v1.56.0 更新：「内联页面」功能改为「内联/交换页面」，如果被内联的块不是顶级块的话会在原地留一个引用，也就是交换行为</strong> 】</li><li>属性的网络图片目前不能一键转本地</li><li>没有找到方法查询所有的二级标题块</li><li>组合使用块引时，反链列表不能方便地排除某些块引</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;中度体验了一两周&lt;a href=&quot;https://www.orca-studio.com/orcanote/zh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;虎鲸笔记&lt;/a&gt;，尝试了软件内各种功能，并通过基于（利用）软件本体的设计以及开发插件的方式实现
       
     
     </summary>

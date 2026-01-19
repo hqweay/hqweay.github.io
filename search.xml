@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>恐龙工具箱（虎鲸笔记版）</title>
+      <link href="//20260120023137//"/>
+      <url>//20260120023137//</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本文用于测试发布到 GitHub</p></blockquote><p>虎鲸笔记：<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">https://www.orca-studio.com/orcanote/zh/</a></p><p>本插件：<a href="https://github.com/hqweay/orca-hqweay-go" target="_blank" rel="noopener">https://github.com/hqweay/orca-hqweay-go</a></p><p>这是一个为 Orca Note（虎鲸笔记）开发的增强插件集合，提供了一系列实用的工具来提升笔记体验。</p><h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2><ol><li><p>下载 Release 包，<a href="mailto:package.zip">package.zip</a>。</p></li><li><p>解压后，将文件夹复制到 Orca Note 的插件目录。</p></li></ol><h2 id="功能列表"><a class="markdownIt-Anchor" href="#功能列表"></a> 功能列表</h2><p>此插件集包含以下子插件，均可在设置中单独开启或是使用：</p><h3 id="1-一键格式化format-block"><a class="markdownIt-Anchor" href="#1-一键格式化format-block"></a> 1. 📝 一键格式化（Format Block）</h3><p>标准化当前块及其子块的文本格式：</p><ul><li><p>自动修正中英文标点符号。</p></li><li><p>优化中英文混排空格。</p></li><li><p>规范化全角/半角字符。</p></li></ul><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>将<a href="https://voicenotes.com/" target="_blank" rel="noopener">VoiceNotes</a>的录音笔记同步到虎鲸笔记中：</p><ul><li><p>支持增量同步和全量同步。</p></li><li><p>自动归档到指定的「VoiceNotes Inbox」。</p></li></ul><h3 id="3-导入工具import"><a class="markdownIt-Anchor" href="#3-导入工具import"></a> 3. 📂 导入工具（Import）</h3><ul><li><p><strong>文件夹导入</strong>：支持批量导入文件夹中的 Markdown 文件。</p></li><li><p><strong>CSV 导入</strong>：支持将 CSV 数据导入为笔记块。</p></li></ul><h3 id="4-样式清除remove-style"><a class="markdownIt-Anchor" href="#4-样式清除remove-style"></a> 4. 🧹 样式清除（Remove Style）</h3><p>快速清理笔记内容的格式：</p><ul><li><p><strong>移除行内样式</strong>：清除加粗、高亮等富文本样式。</p></li><li><p><strong>移除链接</strong>：将链接转换为纯文本。</p></li><li><p><strong>移除空格</strong>：将空行（且无子节点）删除。</p></li></ul><h3 id="5-块排序sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序sort-blocks"></a> 5. 🔃 块排序（Sort Blocks）</h3><p>对选中的多个块进行智能排序：</p><ul><li><p><strong>可配置顺序</strong>：支持自定义排序规则（默认：空块 -&gt; 普通块 -&gt; 已完成任务 -&gt; 未完成任务）。</p></li><li><p><strong>字典序排列</strong>：同类块内部按文本内容字典序排列。</p></li><li><p><strong>多选触发</strong>：仅当选中 2 个及以上块时才显示菜单。</p></li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>将 Orca 笔记一键发布为 Markdown 博客文章：</p><ul><li><p><strong>图床集成</strong>：自动提取文中图片并上传到指定的 GitHub 仓库（支持去重复用）。</p></li><li><p><strong>博客部署</strong>：将 Markdown 内容推送到博客仓库（适配 Hexo/Jekyll/Hugo 等）。</p></li><li><p><strong>智能元数据</strong>：</p></li></ul><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>本项目采用模块化架构：</p><ul><li><p><code>src/lets-*</code>：每个目录对应一个子插件。</p></li><li><p><code>BasePlugin</code>：所有插件继承自基类，统一管理加载、卸载和日志。</p></li><li><p><a href="mailto:main.tsx">main.tsx</a>：负责动态加载所有子插件。</p></li></ul><h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2><p>WTFPL</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>宇宙、哲学、心理治疗——从民科到民哲再到好好生活</title>
       <link href="/universe-philosophy-psychotherapy-from-folk-science-to-folk-philosophy-to-living-a-good-life-z2nu9gg/"/>
       <url>/universe-philosophy-psychotherapy-from-folk-science-to-folk-philosophy-to-living-a-good-life-z2nu9gg/</url>
@@ -2059,33 +2072,6 @@
     
     
     <entry>
-      <title>回家</title>
-      <link href="//2023/09/26/home//"/>
-      <url>//2023/09/26/home//</url>
-      
-        <content type="html"><![CDATA[<div style="display:flex;justify-content:center">我以火车的速度远离<br>像一件被城市退回的货物<br>装满耻辱与乡愁<br></div><blockquote><p><a href="http://www.chinawriter.com.cn/n1/2023/0727/c418989-40045137.html" target="_blank" rel="noopener">《草原》2023年第6期｜王计兵 ：退行的火车（组诗）–新作品–中国作家网</a></p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 细碎 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 细碎 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人生其中的一页罢了</title>
       <link href="//2023/09/26/leaping//"/>
       <url>//2023/09/26/leaping//</url>
@@ -2107,6 +2093,33 @@
             <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>回家</title>
+      <link href="//2023/09/26/home//"/>
+      <url>//2023/09/26/home//</url>
+      
+        <content type="html"><![CDATA[<div style="display:flex;justify-content:center">我以火车的速度远离<br>像一件被城市退回的货物<br>装满耻辱与乡愁<br></div><blockquote><p><a href="http://www.chinawriter.com.cn/n1/2023/0727/c418989-40045137.html" target="_blank" rel="noopener">《草原》2023年第6期｜王计兵 ：退行的火车（组诗）–新作品–中国作家网</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 细碎 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 细碎 </tag>
             
         </tags>
       
@@ -3668,6 +3681,37 @@
     
     
     <entry>
+      <title>还能说什么</title>
+      <link href="//2022/02/27/hai-neng-shuo-shen-me//"/>
+      <url>//2022/02/27/hai-neng-shuo-shen-me//</url>
+      
+        <content type="html"><![CDATA[<p>吃饭时同事聊到一件时事，然后吐槽说对象如何如何，被什么什么洗脑了。——常在影视剧里见到夫妻两人揶揄对方的政治观点来着，还是第一次在生活中见到这种吐槽。</p><p>既然已经建立了亲密关系，那么就说明两人要么之前能接受这种不一致，要么建立关系时没考虑过这一点——不觉得这一点很重要。但这一点究竟重不重要呢？在已建立的亲密关系里，会不会出现因意识到双方意识形态不一样而分别的情况呢？</p><p>会有。但就大部分情况来说，应该没那么重要。</p><p>网络上的讨论总给我一种政治很重要的感觉，这种感觉也渐渐在现实生活里感受到了。我猜测这是因为我随着年龄的增长不可避免地会接触到关心它们的人。政治重要吗？当然重要。难道我不关心吗？难道我不对它感到热血或者困惑吗？当然不是。只是我觉得对它的讨论不需要在生活中达到一个非常高的精度——有些模糊是可以接受的。</p><p>一群人甩开膀子在烧烤摊讨论国际形势——难道我会觉得他们肤浅吗？不，我觉得这个场面很生活。</p><p>我的困惑在于，当我参与进这类游戏后，稀里糊涂地花去几个小时，有得出什么新鲜的结论吗？对我有什么实质的影响吗？</p><p>即便没有那些事件，大家也都能说出些类似的陈词滥调；光是看到一些文章的标题就能想象到作者会举出什么例子，得到何种结论，有怎样的反驳。</p><p>把视角拉向我自己，除了情绪在不断地起伏——我还得到什么？</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂文 </tag>
+            
+            <tag> 理性主义 </tag>
+            
+            <tag> 讲道理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>评《花束》与《雨天》</title>
       <link href="//2022/02/27/rain-flower//"/>
       <url>//2022/02/27/rain-flower//</url>
@@ -3714,37 +3758,6 @@
         <tags>
             
             <tag> 看片所想 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>还能说什么</title>
-      <link href="//2022/02/27/hai-neng-shuo-shen-me//"/>
-      <url>//2022/02/27/hai-neng-shuo-shen-me//</url>
-      
-        <content type="html"><![CDATA[<p>吃饭时同事聊到一件时事，然后吐槽说对象如何如何，被什么什么洗脑了。——常在影视剧里见到夫妻两人揶揄对方的政治观点来着，还是第一次在生活中见到这种吐槽。</p><p>既然已经建立了亲密关系，那么就说明两人要么之前能接受这种不一致，要么建立关系时没考虑过这一点——不觉得这一点很重要。但这一点究竟重不重要呢？在已建立的亲密关系里，会不会出现因意识到双方意识形态不一样而分别的情况呢？</p><p>会有。但就大部分情况来说，应该没那么重要。</p><p>网络上的讨论总给我一种政治很重要的感觉，这种感觉也渐渐在现实生活里感受到了。我猜测这是因为我随着年龄的增长不可避免地会接触到关心它们的人。政治重要吗？当然重要。难道我不关心吗？难道我不对它感到热血或者困惑吗？当然不是。只是我觉得对它的讨论不需要在生活中达到一个非常高的精度——有些模糊是可以接受的。</p><p>一群人甩开膀子在烧烤摊讨论国际形势——难道我会觉得他们肤浅吗？不，我觉得这个场面很生活。</p><p>我的困惑在于，当我参与进这类游戏后，稀里糊涂地花去几个小时，有得出什么新鲜的结论吗？对我有什么实质的影响吗？</p><p>即便没有那些事件，大家也都能说出些类似的陈词滥调；光是看到一些文章的标题就能想象到作者会举出什么例子，得到何种结论，有怎样的反驳。</p><p>把视角拉向我自己，除了情绪在不断地起伏——我还得到什么？</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 杂文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 杂文 </tag>
-            
-            <tag> 理性主义 </tag>
-            
-            <tag> 讲道理 </tag>
             
         </tags>
       

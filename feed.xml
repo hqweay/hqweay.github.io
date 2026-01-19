@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-01-12T16:01:35.000Z</updated>
+  <updated>2026-01-19T18:31:37.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>恐龙工具箱（虎鲸笔记版）</title>
+    <link href="https://leay.net/20260120023137/"/>
+    <id>https://leay.net/20260120023137/</id>
+    <published>2026-01-19T18:31:37.000Z</published>
+    <updated>2026-01-19T18:31:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文用于测试发布到 GitHub</p></blockquote><p>虎鲸笔记：<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">https://www.orca-studio.com/orcanote/zh/</a></p><p>本插件：<a href="https://github.com/hqweay/orca-hqweay-go" target="_blank" rel="noopener">https://github.com/hqweay/orca-hqweay-go</a></p><p>这是一个为 Orca Note（虎鲸笔记）开发的增强插件集合，提供了一系列实用的工具来提升笔记体验。</p><h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2><ol><li><p>下载 Release 包，<a href="mailto:package.zip">package.zip</a>。</p></li><li><p>解压后，将文件夹复制到 Orca Note 的插件目录。</p></li></ol><h2 id="功能列表"><a class="markdownIt-Anchor" href="#功能列表"></a> 功能列表</h2><p>此插件集包含以下子插件，均可在设置中单独开启或是使用：</p><h3 id="1-一键格式化format-block"><a class="markdownIt-Anchor" href="#1-一键格式化format-block"></a> 1. 📝 一键格式化（Format Block）</h3><p>标准化当前块及其子块的文本格式：</p><ul><li><p>自动修正中英文标点符号。</p></li><li><p>优化中英文混排空格。</p></li><li><p>规范化全角/半角字符。</p></li></ul><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>将<a href="https://voicenotes.com/" target="_blank" rel="noopener">VoiceNotes</a>的录音笔记同步到虎鲸笔记中：</p><ul><li><p>支持增量同步和全量同步。</p></li><li><p>自动归档到指定的「VoiceNotes Inbox」。</p></li></ul><h3 id="3-导入工具import"><a class="markdownIt-Anchor" href="#3-导入工具import"></a> 3. 📂 导入工具（Import）</h3><ul><li><p><strong>文件夹导入</strong>：支持批量导入文件夹中的 Markdown 文件。</p></li><li><p><strong>CSV 导入</strong>：支持将 CSV 数据导入为笔记块。</p></li></ul><h3 id="4-样式清除remove-style"><a class="markdownIt-Anchor" href="#4-样式清除remove-style"></a> 4. 🧹 样式清除（Remove Style）</h3><p>快速清理笔记内容的格式：</p><ul><li><p><strong>移除行内样式</strong>：清除加粗、高亮等富文本样式。</p></li><li><p><strong>移除链接</strong>：将链接转换为纯文本。</p></li><li><p><strong>移除空格</strong>：将空行（且无子节点）删除。</p></li></ul><h3 id="5-块排序sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序sort-blocks"></a> 5. 🔃 块排序（Sort Blocks）</h3><p>对选中的多个块进行智能排序：</p><ul><li><p><strong>可配置顺序</strong>：支持自定义排序规则（默认：空块 -&gt; 普通块 -&gt; 已完成任务 -&gt; 未完成任务）。</p></li><li><p><strong>字典序排列</strong>：同类块内部按文本内容字典序排列。</p></li><li><p><strong>多选触发</strong>：仅当选中 2 个及以上块时才显示菜单。</p></li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>将 Orca 笔记一键发布为 Markdown 博客文章：</p><ul><li><p><strong>图床集成</strong>：自动提取文中图片并上传到指定的 GitHub 仓库（支持去重复用）。</p></li><li><p><strong>博客部署</strong>：将 Markdown 内容推送到博客仓库（适配 Hexo/Jekyll/Hugo 等）。</p></li><li><p><strong>智能元数据</strong>：</p></li></ul><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>本项目采用模块化架构：</p><ul><li><p><code>src/lets-*</code>：每个目录对应一个子插件。</p></li><li><p><code>BasePlugin</code>：所有插件继承自基类，统一管理加载、卸载和日志。</p></li><li><p><a href="mailto:main.tsx">main.tsx</a>：负责动态加载所有子插件。</p></li></ul><h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2><p>WTFPL</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;本文用于测试发布到 GitHub&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;虎鲸笔记：&lt;a href=&quot;https://www.orca-studio.com/orcanote/zh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ht
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>宇宙、哲学、心理治疗——从民科到民哲再到好好生活</title>
@@ -194,30 +216,6 @@
       
       
         &lt;blockquote&gt;&lt;p&gt;知道：对事物有所了解，认识。（现代汉语词典）&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。&lt;/p&gt;&lt;p&gt;「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>标签不是解释，贴标签为什么仍然有必要。</title>
-    <link href="https://leay.net/labels-are-not-explanations-why-labels-are-still-necessary-d6qxw/"/>
-    <id>https://leay.net/labels-are-not-explanations-why-labels-are-still-necessary-d6qxw/</id>
-    <published>2025-10-21T14:55:50.000Z</published>
-    <updated>2025-10-21T15:47:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>试想这样的表达式：「没办法，A 就是个 XX 的人，不适合……」</p><p>比如：「他是文科生嘛，数学不好。」</p><p>在这个表达式里，「XX」作为一个标签在语法上成了「不适合……」的一个解释。</p><p>一个好的解释除了对问题做出回答，应当还能对未来做出准确的预测。</p><p>而「XX」这类标签往往模糊、含糊，没什么指导作用。</p><p>又如：</p><p>「这部电影的镜头语言很有塔可夫斯基的感觉。」</p><p>「你这个想法很马斯克。」</p><p>「那个人就是爱抬杠。」</p><p>……</p><p>这些句子用于「结束」——终止对「为什么不适合……」的思考、避免深入分析、拒绝交流。在这个层面它作为一种「结束」的手段当然有其必要性。</p><p>除此之外，与其说这是在进行解释，不如把它当作「承认缺乏理解」，因此才需要一个标签作为占位符。</p><p>例：</p><p>「他数学不大好，可能是时间主要分配在文史哲科目……」</p><p>「他这段描写让我想起萨特。就像《恶心》里主角对物体存在的那种生理性不适一样，他也把那种抽象的焦虑感通过非常具体、甚至有些黏腻的感官细节传达了出来，比如……」</p><p>把标签当作「开始」，看看我们能走多远。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;试想这样的表达式：「没办法，A 就是个 XX 的人，不适合……」&lt;/p&gt;&lt;p&gt;比如：「他是文科生嘛，数学不好。」&lt;/p&gt;&lt;p&gt;在这个表达式里，「XX」作为一个标签在语法上成了「不适合……」的一个解释。&lt;/p&gt;&lt;p&gt;一个好的解释除了对问题做出回答，应当还能对未来做出准确的预测
       
     
     </summary>

@@ -132,6 +132,19 @@
     
     
     <entry>
+      <title>测试2</title>
+      <link href="//20260119234814-2527//"/>
+      <url>//20260119234814-2527//</url>
+      
+        <content type="html"><![CDATA[<p>1</p><p>2</p><p>3</p><p>4</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试</title>
       <link href="//20260119234710-2492//"/>
       <url>//20260119234710-2492//</url>
@@ -4617,9 +4630,9 @@
             
             <tag> 杂文 </tag>
             
-            <tag> 观点 </tag>
-            
             <tag> 电影 </tag>
+            
+            <tag> 观点 </tag>
             
         </tags>
       

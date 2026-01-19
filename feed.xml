@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-01-19T14:29:08.000Z</updated>
+  <updated>2026-01-19T14:47:35.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有点东西</title>
+    <link href="https://leay.net/2509-2509/"/>
+    <id>https://leay.net/2509-2509/</id>
+    <published>2026-01-19T14:47:35.000Z</published>
+    <updated>2026-01-19T14:47:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>有点东西</p><p>测试1</p><p>测试2</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;有点东西&lt;/p&gt;&lt;p&gt;测试1&lt;/p&gt;&lt;p&gt;测试2&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="博客" scheme="https://leay.net/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>测试</title>
@@ -194,30 +218,6 @@
       
       
         &lt;p&gt;词语的使用遵循社会的规则。&lt;/p&gt;&lt;p&gt;当别人使用一个我们不甚明了的词汇，更好的方式是询问「你为什么用这个词？」而不是「这个词是什么意思/定义是什么？」&lt;/p&gt;&lt;p&gt;比如对方用一些模糊的词表达情绪：&lt;/p&gt;&lt;p&gt;「我觉得他太油腻了。」&lt;/p&gt;&lt;p&gt;「油腻是什么意思？」/「你
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你根本不懂我</title>
-    <link href="https://leay.net/you-don-t-understand-me-at-all-1edkui/"/>
-    <id>https://leay.net/you-don-t-understand-me-at-all-1edkui/</id>
-    <published>2025-10-27T13:20:48.000Z</published>
-    <updated>2025-10-27T13:24:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>知道：对事物有所了解，认识。（现代汉语词典）</p></blockquote><p>在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。</p><p>「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是很复杂、很难懂的因果关系吗？</p><p>「你不懂…」「你不知道…」<br>「我当然知道…」<br>「那你为什么还…」「那你就不会…」</p><p>「……不知道…」在这不是一个判断句，而是一个祈使句。</p><p>它意味着，「请别这样对待我。」</p><p>笨蛋不会逻辑，聪明人不懂生命。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;知道：对事物有所了解，认识。（现代汉语词典）&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。&lt;/p&gt;&lt;p&gt;「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是
       
     
     </summary>

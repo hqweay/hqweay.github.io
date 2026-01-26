@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-01-25T16:08:34.000Z</updated>
+  <updated>2026-01-26T12:26:52.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2026年1月26日</title>
+    <link href="https://leay.net/20260126202652/"/>
+    <id>https://leay.net/20260126202652/</id>
+    <published>2026-01-26T12:26:52.000Z</published>
+    <updated>2026-01-26T12:26:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>对恐龙工具箱又进行了一番改造，提取了添加标签的公共方法，以后再做类似操作就方便了。尝试做了个获取网址元数据的插件，但是解决请求 403、302 的问题太麻烦了……就废弃了。因此才尝试去开发快捷插入标签的功能，目前支持从剪贴板解析结构化的数据，一键插入文本及标签（包括）数据。这样我在其它地方可以通过赋值结构化的数据，在虎鲸笔记一键粘贴为带属性值的标签。</p><p>这主要是为了解决目前虎鲸笔记没有 http 的 API，而 mcp 的 API 目前不能为标签插入属性的问题。</p><p>优化了csv导入的UI及功能，目前导入已经很强大了。但问题是——我有必要将数据都导入进来吗？</p><p><a href="https://github.com/sethyuan/orca-note/issues/354" target="_blank" rel="noopener">【性能】一个块下有数百个块，每个块有一个标签，每个标签有一个属性存在图片时很卡顿 · Issue #354 · sethyuan/orca-note · GitHub</a></p><p><a href="https://github.com/sethyuan/orca-note/issues/355" target="_blank" rel="noopener">【功能请求】引述块录入是支持中文标点「》」 · Issue #355 · sethyuan/orca-note · GitHub</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;对恐龙工具箱又进行了一番改造，提取了添加标签的公共方法，以后再做类似操作就方便了。尝试做了个获取网址元数据的插件，但是解决请求 403、302 的问题太麻烦了……就废弃了。因此才尝试去开发快捷插入标签的功能，目前支持从剪贴板解析结构化的数据，一键插入文本及标签（包括）数据。
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>恐龙工具箱（虎鲸笔记版）</title>
@@ -192,30 +214,6 @@
       
       
         &lt;p&gt;词语的使用遵循社会的规则。&lt;/p&gt;&lt;p&gt;当别人使用一个我们不甚明了的词汇，更好的方式是询问「你为什么用这个词？」而不是「这个词是什么意思/定义是什么？」&lt;/p&gt;&lt;p&gt;比如对方用一些模糊的词表达情绪：&lt;/p&gt;&lt;p&gt;「我觉得他太油腻了。」&lt;/p&gt;&lt;p&gt;「油腻是什么意思？」/「你
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你根本不懂我</title>
-    <link href="https://leay.net/you-don-t-understand-me-at-all-1edkui/"/>
-    <id>https://leay.net/you-don-t-understand-me-at-all-1edkui/</id>
-    <published>2025-10-27T13:20:48.000Z</published>
-    <updated>2025-10-27T13:24:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>知道：对事物有所了解，认识。（现代汉语词典）</p></blockquote><p>在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。</p><p>「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是很复杂、很难懂的因果关系吗？</p><p>「你不懂…」「你不知道…」<br>「我当然知道…」<br>「那你为什么还…」「那你就不会…」</p><p>「……不知道…」在这不是一个判断句，而是一个祈使句。</p><p>它意味着，「请别这样对待我。」</p><p>笨蛋不会逻辑，聪明人不懂生命。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;知道：对事物有所了解，认识。（现代汉语词典）&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;在采访节目里看到这样的话「他们根本不知道我们背后付出了多少」。&lt;/p&gt;&lt;p&gt;「知道」在这里是什么意思？是指承认那指向背后的逻辑关联？——「台上一分钟台下十年功」难道是
       
     
     </summary>

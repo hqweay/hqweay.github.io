@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>2026年1月26日</title>
-      <link href="//20260126222058//"/>
-      <url>//20260126222058//</url>
-      
-        <content type="html"><![CDATA[<p>对恐龙工具箱又进行了一番改造，提取了添加标签的公共方法，以后再做类似操作就方便了。尝试做了个获取网址元数据的插件，但是解决请求 403、302 的问题太麻烦了……就废弃了。因此才尝试去开发快捷插入标签的功能，目前支持从剪贴板解析结构化的数据，一键插入文本及标签（包括）数据。这样我在其它地方可以通过赋值结构化的数据，在虎鲸笔记一键粘贴为带属性值的标签。</p><p>这主要是为了解决目前虎鲸笔记没有 http 的 API，而 mcp 的 API 目前不能为标签插入属性的问题。</p><p>优化了csv导入的UI及功能，目前导入已经很强大了。但问题是——我有必要将数据都导入进来吗？</p><p><a href="https://github.com/sethyuan/orca-note/issues/354" target="_blank" rel="noopener">【性能】一个块下有数百个块，每个块有一个标签，每个标签有一个属性存在图片时很卡顿 · Issue #354 · sethyuan/orca-note · GitHub</a></p><p><a href="https://github.com/sethyuan/orca-note/issues/355" target="_blank" rel="noopener">【功能请求】引述块录入是支持中文标点「》」 · Issue #355 · sethyuan/orca-note · GitHub</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>恐龙工具箱（虎鲸笔记版）</title>
       <link href="//20260120023137//"/>
       <url>//20260120023137//</url>
@@ -994,9 +981,9 @@
       
         <tags>
             
-            <tag> 爱 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -1036,9 +1023,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 生活 </tag>
             
@@ -1246,11 +1233,11 @@
       
         <tags>
             
+            <tag> 杂文 </tag>
+            
             <tag> 阅读所思 </tag>
             
             <tag> 心理治疗 </tag>
-            
-            <tag> 杂文 </tag>
             
             <tag> 理性主义 </tag>
             
@@ -1626,9 +1613,9 @@
       
         <tags>
             
-            <tag> 爱 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -2833,9 +2820,9 @@
       
         <tags>
             
-            <tag> 爱 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -3482,9 +3469,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 观点 </tag>
             

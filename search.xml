@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>在虎鲸笔记中实现间隔重复与卡片漫游</title>
+      <link href="//zai-hu-jing-bi-ji-zhong-shi-xian-jian-ge-chong-fu-yu-ka-pian-man-you-29761//"/>
+      <url>//zai-hu-jing-bi-ji-zhong-shi-xian-jian-ge-chong-fu-yu-ka-pian-man-you-29761//</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-jxikfbwz7snhf.avif" alt=""></p><p>灵感：<a href="https://ld246.com/article/1773097707973" target="_blank" rel="noopener">SiYuanMemo 神经漫游：双链和间隔重复系统的未来</a></p><p>使用：在<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>中安装<a href="https://github.com/hqweay/orca-hqweay-go" target="_blank" rel="noopener">恐龙工具箱</a>并启用 SRS 功能。</p><h2 id="闪卡"><a class="markdownIt-Anchor" href="#闪卡"></a> 闪卡</h2><p>基于虎鲸笔记的原生标签制卡，为块打上<code>Card</code>标签（可自定义配置被识别为闪卡的标签），该块即被识别为闪卡，进入回顾队列。</p><p>目前仅支持：</p><ul><li><p>Item: 列表卡。父块作为问题，子块作为答案。</p></li><li><p>Topic: 材料卡。单面，可作为（渐进）阅读材料。</p></li></ul><p>由于通过虎鲸笔记的原生标签保存闪卡信息，可以使用虎鲸笔记的原生视图能力回顾管理卡片：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-t9bxm133xx2r8.avif" alt=""></p><h2 id="漫游"><a class="markdownIt-Anchor" href="#漫游"></a> 漫游</h2><p>传入一组块，即可基于闪卡界面进行漫游，目前支持三种方式：</p><ul><li><p>查询块<br><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-tea1gq2xc4xk2.avif" alt=""></p><ul><li>新建一个查询块，在块菜单中启用漫游。</li><li>以查询块列表的排序作为漫游顺序，如果<mark>配置为随机排序则漫游时也随机展示</mark>。</li></ul></li><li><p>多选块</p><ul><li>以多选的块作为范围漫游。</li></ul></li><li><p>单个块上下文</p><ul><li>在单个块的块菜单启用漫游，会<mark>查询这个块及父子块的引用和反链作为上下文</mark>进行漫游。</li><li>PS: 这一点是<a href="https://ld246.com/article/1773097707973" target="_blank" rel="noopener">SiYuanMemo 神经漫游：双链和间隔重复系统的未来</a>中最给我启发的观念。有机会完善一下。</li></ul></li></ul><p>漫游过程中，如果块非卡片，可以一键转换为卡片，进入回顾队列。</p><h2 id="制卡"><a class="markdownIt-Anchor" href="#制卡"></a> 制卡</h2><p>搭配<a href="https://github.com/hqweay/orca-hqweay-go" target="_blank" rel="noopener">恐龙工具箱</a>的标签快捷键功能，快捷为块打上标签，一键制卡。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-w9kbb1dd2196u.avif" alt=""></p><p>另，漫游过程中也可快捷转换为闪卡。（或者直接使用「标记为已读」等功能也可将块快捷转换为闪卡）</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-us1tv9j3ua9nu.avif" alt=""></p><h2 id="其它"><a class="markdownIt-Anchor" href="#其它"></a> 其它</h2><p>该功能仅作概念验证，不保证稳定性。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我们对「正常世界」的想象越来越低</title>
       <link href="//wo-men-dui-zheng-chang-shi-jie-de-xiang-xiang-yue-lai-yue-di-29509//"/>
       <url>//wo-men-dui-zheng-chang-shi-jie-de-xiang-xiang-yue-lai-yue-di-29509//</url>

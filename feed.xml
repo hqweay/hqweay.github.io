@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-05-09T17:30:59.000Z</updated>
+  <updated>2026-05-10T17:11:17.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在双链笔记中「归集子块到引用源」</title>
+    <link href="https://leay.net/zai-shuang-lian-bi-ji-zhong-gui-ji-zi-kuai-dao-yin-yong-yuan--39064/"/>
+    <id>https://leay.net/zai-shuang-lian-bi-ji-zhong-gui-ji-zi-kuai-dao-yin-yong-yuan--39064/</id>
+    <published>2026-05-10T17:11:17.000Z</published>
+    <updated>2026-05-10T17:11:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用双链笔记的朋友可能会遇到类似的问题。</p><p>前期为某个主题积累了一些「传递型引用」的笔记，在尝试进入主题进行整理时，如果直接从反链面板拖动整个块到正文，会丢失这个块记录时的上下文。</p><p>比如我在 12 月 19 日的日记里随手记了一条关于虎鲸的灵感，下面列了三个子要点。三个月后我打开 [[虎鲸]] 页面整理反链，想把这条笔记拖进正文——结果发现拖过来之后，它变成了孤零零的一段话，跟日记里其他内容的关联全断了。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-8wi02szpo2pkl.avif" alt=""></p><p>并且，移动后的块在主题内，仍然会保留主题的引用。需要手动处理。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-foaj7gukydi7b.avif" alt=""></p><p>所谓「传递型引用」，就是你在 daily notes 里写下的那种 [[主题页]] 加上一堆子节点的笔记——它的唯一目的就是把内容传递给主题页（可以在反链面板查看）。</p><p>其实我们想要达到的效果只是：</p><ol><li><p>将「传递型引用」需要传递的信息归集到引用块下</p></li><li><p>清理传递型引用避免整理后的引用仍然污染反链面板</p></li><li><p>最好能将传递的信息在原来的位置留痕</p></li></ol><p>在<a href="https://roamresearch.com/" target="_blank" rel="noopener">Roam </a>及模仿者中都有提供「Replace with Original」的功能，针对的是单纯的引用：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-bqrs8k6mzpup9.avif" alt=""></p><p>比如我在 2025-12-19 日志页面下写了一段文字 A，然后在主题 Page 里使用块引引用 A。</p><p>对于引用 A 的引用块，就可以使用「Replace with Original」，将 A 从日志页面移动到主题下，并在主题下建立一个引用指向主题 Page 下的 A。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-mn9wj0fn12zac.avif" alt="转换前效果"></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-0jl4ai0idy5vu.avif" alt="转换后效果"></p><p>受这个思路启发，我在<a href="https://www.orca-studio.com/orcanote/zh/" target="_blank" rel="noopener">虎鲸笔记</a>的插件<a href="https://github.com/hqweay/orca-hqweay-go" target="_blank" rel="noopener">恐龙工具箱</a>里实现了传递型引用的版本。</p><p>我们对传递型引用做类似处理，将传递型引用下的子块转移到主题内，再在原来的传递型引用下保留主体内转移后的块的引用。然后，由于这个传递型引用已经完成了它的使命，我们可以将其转换为文本，避免污染反链面板。（如果需要，此时仍能在「提及」或「候选引用」看到原来的信息。）</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-agaayk93zg9be.avif" alt="进行整理"></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-gi2sb241so64i.avif" alt="整理后"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用双链笔记的朋友可能会遇到类似的问题。&lt;/p&gt;&lt;p&gt;前期为某个主题积累了一些「传递型引用」的笔记，在尝试进入主题进行整理时，如果直接从反链面板拖动整个块到正文，会丢失这个块记录时的上下文。&lt;/p&gt;&lt;p&gt;比如我在 12 月 19 日的日记里随手记了一条关于虎鲸的灵感，下面列
+      
+    
+    </summary>
+    
+    
+    
+      <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>AI 总结正在成为我信息消费的「元解法」</title>
@@ -205,30 +229,6 @@
     
     
       <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>语音笔记</title>
-    <link href="https://leay.net/yu-yin-bi-ji-28252/"/>
-    <id>https://leay.net/yu-yin-bi-ji-28252/</id>
-    <published>2026-02-03T14:03:25.000Z</published>
-    <updated>2026-02-03T14:03:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>得益于语音转录的精确性在 AI 加持下不断提升，去年很积极地使用语音笔记来记录日记和想法。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-v85cbm1f815te.avif" alt=""></p><p>语音输入在合适的环境下很方便，而且有 AI 兜底，减小了整理的压力。</p><p>但感觉自己表达能力在下降。依赖语音输入的这一年，我斟词酌句的时候少了，不会考虑用这个词还是那个词，段落要不要调整位置。</p><p>形式都试图建立惯性，而书写是种练习——那么，这篇文章，即产出这篇文本，也就是最无关紧要的事情。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;得益于语音转录的精确性在 AI 加持下不断提升，去年很积极地使用语音笔记来记录日记和想法。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/image-v85cbm1f81
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     
   </entry>
   

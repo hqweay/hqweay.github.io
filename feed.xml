@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-05-31T18:13:14.000Z</updated>
+  <updated>2026-06-01T16:07:42.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Roam Research 设计之美【ing】</title>
+    <link href="https://leay.net/roam-research-she-ji-zhi-mei-ing-47223/"/>
+    <id>https://leay.net/roam-research-she-ji-zhi-mei-ing-47223/</id>
+    <published>2026-06-01T16:07:42.000Z</published>
+    <updated>2026-06-01T16:07:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Roam Research 的 Roam 服务于 Research。整个产品设计得很自洽。作为「双链笔记」的开创者，我觉得 RR 对「双链」的应用至今没有竞品吃透。我想写篇文章好好聊聊……不过能力有限，写到哪是哪吧。慢慢更新。</p></blockquote><p>产品往往都有个 slogan, slogan 真正作为设计哲学而非包装话术的产品很少。</p><p><a href="https://roamresearch.com/" target="_blank" rel="noopener">Roam Reseach</a>名称就是 slogan，产品的各种设计完全服务于这一点。</p><p>许多笔记软件或者用户都会认同该观点：笔记重要的是能准确找回。而 RR 专门提到会<a href="https://roamresearch.com/#/app/help/page/66ttLxMTp" target="_blank" rel="noopener">根据用户意愿在搜索等操作时，提供一些干扰信息</a>，支持用户「漫游」（Roam）。</p><p>「漫游」时会遇到原本可能已经遗忘的内容、无关信息、能激发灵感的笔记，在积累中挖掘出独特的洞见（Research）。</p><p>在 RR 中，支撑这一点的设计基于节点，也就是块，一个块就是一个信息单元。通过块引用（双链）来构建关联信息之间的有向图。</p><p>有向图的呈现方式则是图谱（Graph Overview）和反链面板。</p><p>没错，图谱和反链面板是一回事，是块通过反链关联后的关系的不同呈现形式。用户可以在图谱和反链面板使用展开块、搜索过滤、控制关联深度等方式 Roam 内容。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-ifysl3gkx2laj.avif" alt=""></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-s2i8cwt0vebj5.avif" alt=""></p><p>当 roam（浏览）时，反链面板就是关联信息。点击面包屑，可以直接展开反链的上下文——为什么将面包屑设计成可展开而不是跳转打开——也是服务于前文提到的根据用户意愿（这里是点击展开）提供一些干扰信息。</p><p>反链面板的信息本质是有向图的呈现方式，有向图可以理解成相关，也可以理解成传递。</p><p>当 research（写作）时，反链面板就可以当作传递信息。</p><p>传递信息时，RR 在反链面板做了一点处理。</p><p>当引用拥有上下文时，子节点默认折叠；反之默认展开。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-vam0rebzi1cb7.avif" alt=""></p><p>很容易想象，当引用没有上下文时，子节点就是对引用内容的补充，此时默认展开，就相当于正文一样。</p><p>当引用有上下文，那这块内容往往只是一种被提及的关联关系，子块不一定是关于引用内容的，而是关于这块内容的。所以此时默认折叠。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;Roam Research 的 Roam 服务于 Research。整个产品设计得很自洽。作为「双链笔记」的开创者，我觉得 RR 对「双链」的应用至今没有竞品吃透。我想写篇文章好好聊聊……不过能力有限，写到哪是哪吧。慢慢更新。&lt;/p&gt;&lt;/blockq
+      
+    
+    </summary>
+    
+    
+    
+      <category term="折腾" scheme="https://leay.net/tags/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="观点" scheme="https://leay.net/tags/%E8%A7%82%E7%82%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>AI 时代笔记软件的隐私性</title>
@@ -201,30 +227,6 @@
     
     
       <category term="翻译" scheme="https://leay.net/tags/%E7%BF%BB%E8%AF%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>春夜喜雨</title>
-    <link href="https://leay.net/chun-ye-xi-yu-30674/"/>
-    <id>https://leay.net/chun-ye-xi-yu-30674/</id>
-    <published>2026-03-27T19:21:33.000Z</published>
-    <updated>2026-03-27T19:21:33.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>好像总是这个时节，成都就开始下雨。如果是工作日，上班路途会变得仓促，我一只手撑伞另一只手掌握共享单车的方向，要小心，注意安全，特别是路口，成都的斑马线只有公交车会礼让行人。经常裤子被打湿，但无妨，我很习惯忍耐狼狈。写字楼下排着长长的队伍，文明有素。而我是某组织给电脑安排的零件，雷打不动地在熟悉的时间接入，神圣的使命。下班后我仍然会走回去，刚来的那两年常踩到坏了的地砖，装满一鞋子水。不要抱怨，好在回去可以换。有段时间我积极地想应该有途径反馈这些问题的，但随着经验增长能熟练地躲避后，就失去了动力。总是自足。有一类路很少会踩到空砖，就是经常遇到车辆挡路，后来才知道那是盲道。</p><p>夜雨常助长焦虑，担心次日的早晨，除非周末。一般来说周五总可以让人原谅一切，雨水嘀嗒也可爱，窗外有车辆过的时候发出轮胎溅水的声音，水花一朵一朵。距离产生美，润物有声。第二天应该会落下不少花瓣吧。花总是美的，无论有没有落下。我看到有新闻讲环卫工人为了避免经常打扫会主动把树上的花摇下来，现代性不兼容春泥。我喜欢这里的街道在不同的路段种着不同的花，所以不同的季节可以走不同的路。蓝花楹、三角梅、桂花、月季、鼠尾草……偶尔也绕下路，别着急，走路不要看手机。</p><p>我小的时候上下学会翻一座山，经常在回家的路上乱窜，避开本就狭隘的小路，穿过灌木丛就像士兵穿越丛林，骄傲地闯进谁家的庄稼地。如果季节合适，会帮人家尝尝豌豆的味道。和同行的小伙伴比拼一些关于勇气的游戏。我从小胆子小，但也经常受伤，一起约好不要告诉家长，拉钩上吊，这是我们第一次学习关于秘密和承诺的意义。</p><p>也是年纪增长的原因吗，不同的路也不再有新鲜感。上一次让我感到惊异的是在不同街道闻到了陌生的味道。人在行走时总是处于自动模式，脑子里想着这些那些，突然之间，被陌生的味道唤醒，然后想到是啊，平常走到某段路总会闻到的水果气味今天也没闻到呢……不同路段不同季节总会有熟悉的商贩卖不同的水果，尽量不要买，他们称很少有准头。</p><p>嗅觉、味觉很难被唤醒，于是一旦触发就显得记忆很长。有时候突然吃到一顿食物，想起这不是小时候熟悉的味道吗。美好不可思议。眼泪开始打转，味道又总关联人事。快三十岁我才怀疑奶奶煮面条的精髓是不是那勺猪油。奶奶，菜谱也是一首诗吗，你总不舍得我读。我又在风里弄断了竹竿，那是你砍的拐杖。你还担心老房子会漏雨，虽然早就没人住。那些大雨，早上装满水的桶和盆。不要怀旧，但生命就是记忆不断回溯，后知后觉是成长最残忍的部分。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;好像总是这个时节，成都就开始下雨。如果是工作日，上班路途会变得仓促，我一只手撑伞另一只手掌握共享单车的方向，要小心，注意安全，特别是路口，成都的斑马线只有公交车会礼让行人。经常裤子被打湿，但无妨，我很习惯忍耐狼狈。写字楼下排着长长的队伍，文明有素。而我是某组织给电脑安排的零
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     
   </entry>
   

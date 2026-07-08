@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>熊猫总会带你回家——AI Native 导航栏的样子（思源笔记导航插件）</title>
+      <link href="//xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322//"/>
+      <url>//xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322//</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/siyuan-panda-navigation" target="_blank" rel="noopener">GitHub - hqweay/siyuan-panda-navigation: 思源插件：熊猫导航 · GitHub</a></p><h2 id="tldr"><a class="markdownIt-Anchor" href="#tldr"></a> TLDR</h2><p><img src="https://private-user-images.githubusercontent.com/23608642/618935235-e38886d1-bf0f-4c03-95fc-914b25b09d3b.mov?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUyMzUtZTM4ODg2ZDEtYmYwZi00YzAzLTk1ZmMtOTE0YjI1YjA5ZDNiLm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU2YzhkNzU3MWViZDA3NzIyMzZiNjBjZTg2ZGRhM2YwNzVhYzE0NTQwZjMzMmU4MTRhZWY2N2NiZDM4MjQ3YjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRnF1aWNrdGltZSJ9.DAUN1dYjPYqa50jJDOQH7pp0wiGJ0tM_5AnkXzYluHQ" alt=""></p><p><img src="https://private-user-images.githubusercontent.com/23608642/618935014-bfaf6d18-b34c-497d-a9a3-9bb7958c9b3f.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUwMTQtYmZhZjZkMTgtYjM0Yy00OTdkLWE5YTMtOWJiNzk1OGM5YjNmLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkMDdlMmI1OGE4MzZkNjBmODdlMTg1OTJhYWQ3MGE3YmQyZDQ1ZmM5OGI3ZjlhMDFlMzdmZjlmMGU0ZmM4MzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRm1wNCJ9.Ql3yobKv5t_n27Mhj2Q-RgsVyqgSheo2kg5PavNEAa4" alt=""></p><h2 id="其它"><a class="markdownIt-Anchor" href="#其它"></a> 其它</h2><p>这是我最喜欢的设计，系统内的元素应该是统一的，然后以家族相似的方式区分。</p><p>比如一个导航栏上的一级按钮（菜单）、二级按钮是一回事，只是放在不同位置配上不同功能。</p><p>既然它们是一回事，直觉上就理应可以任意交换、删改。</p><p>虽然它们是一回事，但不代表它们有一个本质。</p><p>本质——正是那些极简主义美学所推崇的——试卷、书籍本质上都是纸，任何笔记底层都是纯文本……来吧，Skill 不就是 Prompt？</p><p>随便在网上逛都能看到，现在推崇将一切都压缩、本质、简单化，显得人聪明。</p><p>用一种模式压缩一种生活，用一个词替代感受。于是生命变成了标本，不能被流行媒介表达的情绪都不存在。</p><p>对心智的减负早就成了精神羸弱的借口。</p><p>区别在哪呢？统一是在释放可能性，简化却在压缩可能性。</p><p>就像我们选择一个身份，一定是为了拥有更多选择。</p><p>试想两种表达：</p><p>「我才 X 岁，我不能……」</p><p>「我已经 Y 岁，我可以……」</p><p>一个相同的东西（按钮）进入不同的语境（位置）就成了另一种东西，拥有了另外的能力。</p><p>然而，它们是一回事，并不代表有一样的重要性——在不同场景下不同按钮自然有不同使用频率。</p><p>「不做设计决策，把复杂度丢给用户」当然不可取。</p><p>于是在这种统一之上提供一套默认约定，适应一些场景——如果需要，也完全可以自己配置。</p><p>约定大于配置。约定的是边界，不是内容。</p><p>再来看按钮——一套点击-反馈机制。点击按钮，然后它给出一些反馈。</p><p>比如点击菜单，展开菜单栏。</p><p>点击圆点，圆点爆炸出烟花。</p><p>点击一个按钮，执行了一堆步骤达到某个结果。</p><p>聚焦到这个插件场景，按钮就理应当可以拥有任何用户想要的功能——得益于思源笔记本体良好的设计，首先可以将软件本体的功能和第三方其它插件的功能暴露出来，绑定到按钮上。</p><p>再往后，插件本身可以提供一些原生未实现的内部功能。</p><p>再往后，用户应当可以拥有任何——好在 AI 时代来了，插件本身只需要做好组织，向 AI 暴露配置，AI 就可以操作实现用户想要的功能。</p><p>于是一个 AI Native 的导航栏得以实现。</p><p>「新增一个按钮，点击随机打开一篇日记。」</p><p>「配置一个适合写作的导航栏。」</p><p>在限制范围内，AI 可以利用插件暴露的 mcp tools 对导航栏进行组织，在这个小小的界面上实现了 AI 动态生成 UI。然后编写、组织一些复杂的功能绑定到按钮上。</p><p>然而这一切都只是基于「导航栏」这个概念的基础上来聊，抛开它，换个视角，按钮也可以看作「能力」的载体。这个插件无非将「能力」做了些通用点的扩展，扩展到 AI 实现。</p><p>它在不同场景是否是最佳的选择呢？拿 PC 端来看，键盘快捷键、鼠标宏……先到这吧。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>慢慢来</title>
       <link href="//man-man-lai-49632//"/>
       <url>//man-man-lai-49632//</url>

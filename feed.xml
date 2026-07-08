@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://leay.net/"/>
-  <updated>2026-06-22T13:35:14.000Z</updated>
+  <updated>2026-07-08T18:38:13.000Z</updated>
   <id>https://leay.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>熊猫总会带你回家——AI Native 导航栏的样子（思源笔记导航插件）</title>
+    <link href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/"/>
+    <id>https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/</id>
+    <published>2026-07-08T18:38:13.000Z</published>
+    <updated>2026-07-08T18:38:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/siyuan-panda-navigation" target="_blank" rel="noopener">GitHub - hqweay/siyuan-panda-navigation: 思源插件：熊猫导航 · GitHub</a></p><h2 id="tldr"><a class="markdownIt-Anchor" href="#tldr"></a> TLDR</h2><p><img src="https://private-user-images.githubusercontent.com/23608642/618935235-e38886d1-bf0f-4c03-95fc-914b25b09d3b.mov?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUyMzUtZTM4ODg2ZDEtYmYwZi00YzAzLTk1ZmMtOTE0YjI1YjA5ZDNiLm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU2YzhkNzU3MWViZDA3NzIyMzZiNjBjZTg2ZGRhM2YwNzVhYzE0NTQwZjMzMmU4MTRhZWY2N2NiZDM4MjQ3YjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRnF1aWNrdGltZSJ9.DAUN1dYjPYqa50jJDOQH7pp0wiGJ0tM_5AnkXzYluHQ" alt=""></p><p><img src="https://private-user-images.githubusercontent.com/23608642/618935014-bfaf6d18-b34c-497d-a9a3-9bb7958c9b3f.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUwMTQtYmZhZjZkMTgtYjM0Yy00OTdkLWE5YTMtOWJiNzk1OGM5YjNmLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkMDdlMmI1OGE4MzZkNjBmODdlMTg1OTJhYWQ3MGE3YmQyZDQ1ZmM5OGI3ZjlhMDFlMzdmZjlmMGU0ZmM4MzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRm1wNCJ9.Ql3yobKv5t_n27Mhj2Q-RgsVyqgSheo2kg5PavNEAa4" alt=""></p><h2 id="其它"><a class="markdownIt-Anchor" href="#其它"></a> 其它</h2><p>这是我最喜欢的设计，系统内的元素应该是统一的，然后以家族相似的方式区分。</p><p>比如一个导航栏上的一级按钮（菜单）、二级按钮是一回事，只是放在不同位置配上不同功能。</p><p>既然它们是一回事，直觉上就理应可以任意交换、删改。</p><p>虽然它们是一回事，但不代表它们有一个本质。</p><p>本质——正是那些极简主义美学所推崇的——试卷、书籍本质上都是纸，任何笔记底层都是纯文本……来吧，Skill 不就是 Prompt？</p><p>随便在网上逛都能看到，现在推崇将一切都压缩、本质、简单化，显得人聪明。</p><p>用一种模式压缩一种生活，用一个词替代感受。于是生命变成了标本，不能被流行媒介表达的情绪都不存在。</p><p>对心智的减负早就成了精神羸弱的借口。</p><p>区别在哪呢？统一是在释放可能性，简化却在压缩可能性。</p><p>就像我们选择一个身份，一定是为了拥有更多选择。</p><p>试想两种表达：</p><p>「我才 X 岁，我不能……」</p><p>「我已经 Y 岁，我可以……」</p><p>一个相同的东西（按钮）进入不同的语境（位置）就成了另一种东西，拥有了另外的能力。</p><p>然而，它们是一回事，并不代表有一样的重要性——在不同场景下不同按钮自然有不同使用频率。</p><p>「不做设计决策，把复杂度丢给用户」当然不可取。</p><p>于是在这种统一之上提供一套默认约定，适应一些场景——如果需要，也完全可以自己配置。</p><p>约定大于配置。约定的是边界，不是内容。</p><p>再来看按钮——一套点击-反馈机制。点击按钮，然后它给出一些反馈。</p><p>比如点击菜单，展开菜单栏。</p><p>点击圆点，圆点爆炸出烟花。</p><p>点击一个按钮，执行了一堆步骤达到某个结果。</p><p>聚焦到这个插件场景，按钮就理应当可以拥有任何用户想要的功能——得益于思源笔记本体良好的设计，首先可以将软件本体的功能和第三方其它插件的功能暴露出来，绑定到按钮上。</p><p>再往后，插件本身可以提供一些原生未实现的内部功能。</p><p>再往后，用户应当可以拥有任何——好在 AI 时代来了，插件本身只需要做好组织，向 AI 暴露配置，AI 就可以操作实现用户想要的功能。</p><p>于是一个 AI Native 的导航栏得以实现。</p><p>「新增一个按钮，点击随机打开一篇日记。」</p><p>「配置一个适合写作的导航栏。」</p><p>在限制范围内，AI 可以利用插件暴露的 mcp tools 对导航栏进行组织，在这个小小的界面上实现了 AI 动态生成 UI。然后编写、组织一些复杂的功能绑定到按钮上。</p><p>然而这一切都只是基于「导航栏」这个概念的基础上来聊，抛开它，换个视角，按钮也可以看作「能力」的载体。这个插件无非将「能力」做了些通用点的扩展，扩展到 AI 实现。</p><p>它在不同场景是否是最佳的选择呢？拿 PC 端来看，键盘快捷键、鼠标宏……先到这吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/hqweay/siyuan-panda-navigation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub - hqweay/siyuan-panda-navigation: 思源插件：
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    
+  </entry>
   
   <entry>
     <title>慢慢来</title>
@@ -207,32 +231,6 @@
       <category term="人生的意义" scheme="https://leay.net/tags/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89/"/>
     
       <category term="阅读所思" scheme="https://leay.net/tags/%E9%98%85%E8%AF%BB%E6%89%80%E6%80%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Roam Research 设计之美【ing】</title>
-    <link href="https://leay.net/roam-research-she-ji-zhi-mei-ing-47223/"/>
-    <id>https://leay.net/roam-research-she-ji-zhi-mei-ing-47223/</id>
-    <published>2026-06-01T16:07:42.000Z</published>
-    <updated>2026-06-01T16:07:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Roam Research 的 Roam 服务于 Research。整个产品设计得很自洽。作为「双链笔记」的开创者，我觉得 RR 对「双链」的应用至今没有竞品吃透。我想写篇文章好好聊聊……不过能力有限，写到哪是哪吧。慢慢更新。</p></blockquote><p>产品往往都有个 slogan, slogan 真正作为设计哲学而非包装话术的产品很少。</p><p><a href="https://roamresearch.com/" target="_blank" rel="noopener">Roam Reseach</a>名称就是 slogan，产品的各种设计完全服务于这一点。</p><p>许多笔记软件或者用户都会认同该观点：笔记重要的是能准确找回。而 RR 专门提到会<a href="https://roamresearch.com/#/app/help/page/66ttLxMTp" target="_blank" rel="noopener">根据用户意愿在搜索等操作时，提供一些干扰信息</a>，支持用户「漫游」（Roam）。</p><p>「漫游」时会遇到原本可能已经遗忘的内容、无关信息、能激发灵感的笔记，在积累中挖掘出独特的洞见（Research）。</p><p>在 RR 中，支撑这一点的设计基于节点，也就是块，一个块就是一个信息单元。通过块引用（双链）来构建关联信息之间的有向图。</p><p>有向图的呈现方式则是图谱（Graph Overview）和反链面板。</p><p>没错，图谱和反链面板是一回事，是块通过反链关联后的关系的不同呈现形式。用户可以在图谱和反链面板使用展开块、搜索过滤、控制关联深度等方式 Roam 内容。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-ifysl3gkx2laj.avif" alt=""></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-s2i8cwt0vebj5.avif" alt=""></p><p>当 roam（浏览）时，反链面板就是关联信息。点击面包屑，可以直接展开反链的上下文——为什么将面包屑设计成可展开而不是跳转打开——也是服务于前文提到的根据用户意愿（这里是点击展开）提供一些干扰信息。</p><p>反链面板的信息本质是有向图的呈现方式，有向图可以理解成相关，也可以理解成传递。</p><p>当 research（写作）时，反链面板就可以当作传递信息。</p><p>传递信息时，RR 在反链面板做了一点处理。</p><p>当引用拥有上下文时，子节点默认折叠；反之默认展开。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-vam0rebzi1cb7.avif" alt=""></p><p>很容易想象，当引用没有上下文时，子节点就是对引用内容的补充，此时默认展开，就相当于正文一样。</p><p>当引用有上下文，那这块内容往往只是一种被提及的关联关系，子块不一定是关于引用内容的，而是关于这块内容的。所以此时默认折叠。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;Roam Research 的 Roam 服务于 Research。整个产品设计得很自洽。作为「双链笔记」的开创者，我觉得 RR 对「双链」的应用至今没有竞品吃透。我想写篇文章好好聊聊……不过能力有限，写到哪是哪吧。慢慢更新。&lt;/p&gt;&lt;/blockq
-      
-    
-    </summary>
-    
-    
-    
-      <category term="折腾" scheme="https://leay.net/tags/%E6%8A%98%E8%85%BE/"/>
-    
-      <category term="观点" scheme="https://leay.net/tags/%E8%A7%82%E7%82%B9/"/>
     
   </entry>
   

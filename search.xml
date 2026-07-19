@@ -8,9 +8,15 @@
       <link href="//kai-shi-shi-jian-jie-shu-shi-jian-zi-dong-sheng-cheng-ren-wu-zhuang-tai-51936//"/>
       <url>//kai-shi-shi-jian-jie-shu-shi-jian-zi-dong-sheng-cheng-ren-wu-zhuang-tai-51936//</url>
       
-        <content type="html"><![CDATA[<p>虎鲸笔记 v1.86.0，标签的计算属性支持日期计算了。</p><p>本文仅展示一种可能性：通过「开始时间」「结束时间」两个时间戳属性使用「计算属性」生成任务的状态描述，以践行任务管理。</p><h2 id="核心思路"><a class="markdownIt-Anchor" href="#核心思路"></a> 核心思路</h2><p>三个字段：</p><p>开始时间（日期与时间类型）</p><p>结束时间（日期与时间类型）</p><p>状态（计算类型）</p><h2 id="完整逻辑六种情况"><a class="markdownIt-Anchor" href="#完整逻辑六种情况"></a> 完整逻辑（六种情况）</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>当前时间关系</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>任意</td><td>—</td><td>未设置</td></tr><tr><td>有值</td><td>有值，且 ≤ 现在</td><td>已结束</td><td>用时 X 天 X 小时 X 分钟</td></tr><tr><td>有值（≤ 现在）</td><td>有值，且 &gt; 现在</td><td>进行中，有截止日</td><td>进行中，剩余 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>有值（&gt; 现在）</td><td>全在未来</td><td>还有 X 天 X 小时 X 分钟开始</td></tr><tr><td>有值（≤ 现在）</td><td>空</td><td>已开始，无截止日</td><td>已过 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>空</td><td>尚未开始</td><td>还有 X 天 X 小时 X 分钟开始</td></tr></tbody></table><h2 id="实际效果预览"><a class="markdownIt-Anchor" href="#实际效果预览"></a> 实际效果预览</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>2026-07-20</td><td>未设置</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-19 12:00（已过）</td><td>用时 1 天 2 小时 0 分钟</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-20 12:00（未到）</td><td>进行中，剩余 0 天 21 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>2026-07-21 12:00（全在未来）</td><td>还有 0 天 19 小时 0 分钟开始</td></tr><tr><td>2026-07-18 10:00</td><td>空</td><td>已过 1 天 5 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>空</td><td>还有 0 天 19 小时 0 分钟开始</td></tr></tbody></table><h2 id="公式"><a class="markdownIt-Anchor" href="#公式"></a> 公式</h2><figure class="highlight plain"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IF(DATETIME([开始时间])&#x3D;0,&quot;未设置&quot;,IF(DATETIME([结束时间])!&#x3D;0,IF(DATETIME([结束时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;用时&quot;,((DATETIME([结束时间])-DATETIME([开始时间]))&#x2F;86400)-(((DATETIME([结束时间])-DATETIME([开始时间]))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%86400)&#x2F;3600)-((((DATETIME([结束时间])-DATETIME([开始时间]))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%3600)&#x2F;60)-((((DATETIME([结束时间])-DATETIME([开始时间]))%3600)&#x2F;60)%1),&quot;分钟&quot;),IF(DATETIME([开始时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;进行中，剩余&quot;,((DATETIME([结束时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;))),IF(DATETIME([开始时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;已过&quot;,((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))&#x2F;86400)-(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)&#x2F;3600)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)&#x2F;60)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)&#x2F;60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;))))</span><br></pre></td></tr></table></figure><h2 id="使用建议"><a class="markdownIt-Anchor" href="#使用建议"></a> 使用建议</h2><ul><li><p>开始时间：计划启动日期</p></li><li><p>结束时间：有值且 ≤ 现在时，自动视为「实际完成日」；有值且 &gt; 现在时，自动视为「截止日期」</p></li></ul><h2 id="更多可能性"><a class="markdownIt-Anchor" href="#更多可能性"></a> 更多可能性</h2><ul><li><p>会议记录：距离下次会议还有多久</p></li><li><p>项目甘特图：任务处于什么阶段</p></li><li><p>习惯打卡：上次执行到现在过了几天</p></li></ul><h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-hm62pl59jojzv.avif" alt=""></p>]]></content>
+        <content type="html"><![CDATA[<p>虎鲸笔记 v1.86.0，标签的计算属性支持日期计算了。</p><p>本文仅展示一种可能性：通过「开始时间」「结束时间」两个时间戳属性使用「计算属性」生成任务的状态描述，以践行任务管理。</p><h2 id="核心思路ß"><a class="markdownIt-Anchor" href="#核心思路ß"></a> 核心思路ß</h2><p>三个字段：</p><p>开始时间（日期与时间类型）</p><p>结束时间（日期与时间类型）</p><p>状态（计算类型）</p><h2 id="完整逻辑六种情况"><a class="markdownIt-Anchor" href="#完整逻辑六种情况"></a> 完整逻辑（六种情况）</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>当前时间关系</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>任意</td><td>—</td><td>未设置</td></tr><tr><td>有值</td><td>有值，且 ≤ 现在</td><td>已结束</td><td>用时 X 天 X 小时 X 分钟</td></tr><tr><td>有值（≤ 现在）</td><td>有值，且 &gt; 现在</td><td>进行中，有截止日</td><td>进行中，剩余 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>有值（&gt; 现在）</td><td>全在未来</td><td>还有 X 天 X 小时 X 分钟开始</td></tr><tr><td>有值（≤ 现在）</td><td>空</td><td>已开始，无截止日</td><td>已过 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>空</td><td>尚未开始</td><td>还有 X 天 X 小时 X 分钟开始</td></tr></tbody></table><h2 id="实际效果预览"><a class="markdownIt-Anchor" href="#实际效果预览"></a> 实际效果预览</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>2026-07-20</td><td>未设置</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-19 12:00（已过）</td><td>用时 1 天 2 小时 0 分钟</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-20 12:00（未到）</td><td>进行中，剩余 0 天 21 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>2026-07-21 12:00（全在未来）</td><td>还有 0 天 19 小时 0 分钟开始</td></tr><tr><td>2026-07-18 10:00</td><td>空</td><td>已过 1 天 5 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>空</td><td>还有 0 天 19 小时 0 分钟开始</td></tr></tbody></table><h2 id="公式"><a class="markdownIt-Anchor" href="#公式"></a> 公式</h2><figure class="highlight plain"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IF(DATETIME([开始时间])&#x3D;0,&quot;未设置&quot;,IF(DATETIME([结束时间])!&#x3D;0,IF(DATETIME([结束时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;用时&quot;,((DATETIME([结束时间])-DATETIME([开始时间]))&#x2F;86400)-(((DATETIME([结束时间])-DATETIME([开始时间]))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%86400)&#x2F;3600)-((((DATETIME([结束时间])-DATETIME([开始时间]))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%3600)&#x2F;60)-((((DATETIME([结束时间])-DATETIME([开始时间]))%3600)&#x2F;60)%1),&quot;分钟&quot;),IF(DATETIME([开始时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;进行中，剩余&quot;,((DATETIME([结束时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;))),IF(DATETIME([开始时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;已过&quot;,((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))&#x2F;86400)-(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)&#x2F;3600)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)&#x2F;60)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)&#x2F;60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;))))</span><br></pre></td></tr></table></figure><h2 id="使用建议"><a class="markdownIt-Anchor" href="#使用建议"></a> 使用建议</h2><ul><li><p>开始时间：计划启动日期</p></li><li><p>结束时间：有值且 ≤ 现在时，自动视为「实际完成日」；有值且 &gt; 现在时，自动视为「截止日期」</p></li></ul><h2 id="更多可能性"><a class="markdownIt-Anchor" href="#更多可能性"></a> 更多可能性</h2><ul><li><p>会议记录：距离下次会议还有多久</p></li><li><p>项目甘特图：任务处于什么阶段</p></li><li><p>习惯打卡：上次执行到现在过了几天</p></li></ul><h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-hm62pl59jojzv.avif" alt=""></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
       
     </entry>
     
@@ -1978,9 +1984,9 @@
       
         <tags>
             
-            <tag> 理性主义 </tag>
-            
             <tag> 翻译 </tag>
+            
+            <tag> 理性主义 </tag>
             
         </tags>
       
@@ -3159,6 +3165,33 @@
     
     
     <entry>
+      <title>《绝叫》</title>
+      <link href="//2023/04/02/sakebigoe//"/>
+      <url>//2023/04/02/sakebigoe//</url>
+      
+        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>你是哪一种女权主义者</title>
       <link href="//2023/04/02/feminist//"/>
       <url>//2023/04/02/feminist//</url>
@@ -3180,33 +3213,6 @@
             <tag> 阅读所思 </tag>
             
             <tag> 女性主义 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《绝叫》</title>
-      <link href="//2023/04/02/sakebigoe//"/>
-      <url>//2023/04/02/sakebigoe//</url>
-      
-        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
             
         </tags>
       

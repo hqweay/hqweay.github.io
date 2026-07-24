@@ -1,235 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>养恐龙</title>
-  
-  
-  <link href="/feed.xml" rel="self"/>
-  
-  <link href="https://leay.net/"/>
-  <updated>2026-07-19T14:03:23.000Z</updated>
-  <id>https://leay.net/</id>
-  
   <author>
     <name>hqweay</name>
-    
   </author>
-  
   <generator uri="https://hexo.io/">Hexo</generator>
-  
+  <id>https://leay.net/</id>
+  <link href="https://leay.net/" rel="alternate"/>
+  <link href="https://leay.net/feed.xml" rel="self"/>
+  <rights>All rights reserved 2026, hqweay</rights>
+  <title>养恐龙</title>
+  <updated>2026-07-19T14:03:23.000Z</updated>
   <entry>
-    <title>虎鲸笔记利用日期的计算属性践行任务管理</title>
-    <link href="https://leay.net/kai-shi-shi-jian-jie-shu-shi-jian-zi-dong-sheng-cheng-ren-wu-zhuang-tai-51936/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
+    <content>
+      <![CDATA[<p>虎鲸笔记 v1.86.0，标签的计算属性支持日期计算了。</p><p>本文仅展示一种可能性：通过「开始时间」「结束时间」两个时间戳属性使用「计算属性」生成任务的状态描述，以践行任务管理。</p><h2 id="核心思路"><a href="#核心思路" class="headerlink" title="核心思路"></a>核心思路</h2><p>三个字段：</p><ul><li><p>开始时间（日期与时间类型）</p></li><li><p>结束时间（日期与时间类型）</p></li><li><p>状态（计算类型）</p></li></ul><h2 id="完整逻辑（六种情况）"><a href="#完整逻辑（六种情况）" class="headerlink" title="完整逻辑（六种情况）"></a>完整逻辑（六种情况）</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>当前时间关系</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>任意</td><td>—</td><td>未设置</td></tr><tr><td>有值</td><td>有值，且 ≤ 现在</td><td>已结束</td><td>用时 X 天 X 小时 X 分钟</td></tr><tr><td>有值（≤ 现在）</td><td>有值，且 &gt; 现在</td><td>进行中，有截止日</td><td>进行中，剩余 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>有值（&gt; 现在）</td><td>全在未来</td><td>还有 X 天 X 小时 X 分钟开始</td></tr><tr><td>有值（≤ 现在）</td><td>空</td><td>已开始，无截止日</td><td>已过 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>空</td><td>尚未开始</td><td>还有 X 天 X 小时 X 分钟开始</td></tr></tbody></table><h2 id="实际效果预览"><a href="#实际效果预览" class="headerlink" title="实际效果预览"></a>实际效果预览</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>2026-07-20</td><td>未设置</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-19 12:00（已过）</td><td>用时 1 天 2 小时 0 分钟</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-20 12:00（未到）</td><td>进行中，剩余 0 天 21 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>2026-07-21 12:00（全在未来）</td><td>还有 0 天 19 小时 0 分钟开始</td></tr><tr><td>2026-07-18 10:00</td><td>空</td><td>已过 1 天 5 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>空</td><td>还有 0 天 19 小时 0 分钟开始</td></tr></tbody></table><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IF(DATETIME([开始时间])=0,&quot;未设置&quot;,IF(DATETIME([结束时间])!=0,IF(DATETIME([结束时间])&lt;=DATETIME(&quot;now&quot;),CONCAT(&quot;用时&quot;,((DATETIME([结束时间])-DATETIME([开始时间]))/86400)-(((DATETIME([结束时间])-DATETIME([开始时间]))/86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%86400)/3600)-((((DATETIME([结束时间])-DATETIME([开始时间]))%86400)/3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%3600)/60)-((((DATETIME([结束时间])-DATETIME([开始时间]))%3600)/60)%1),&quot;分钟&quot;),IF(DATETIME([开始时间])&lt;=DATETIME(&quot;now&quot;),CONCAT(&quot;进行中，剩余&quot;,((DATETIME([结束时间])-DATETIME(&quot;now&quot;))/86400)-(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))/86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)/3600)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)/3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)/60)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)/60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))/86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))/86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)/3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)/3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)/60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)/60)%1),&quot;分钟&quot;))),IF(DATETIME([开始时间])&lt;=DATETIME(&quot;now&quot;),CONCAT(&quot;已过&quot;,((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))/86400)-(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))/86400)%1),&quot;天&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)/3600)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)/3600)%1),&quot;小时&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)/60)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)/60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))/86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))/86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)/3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)/3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)/60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)/60)%1),&quot;分钟&quot;))))</span><br></pre></td></tr></table></figure><h2 id="使用建议"><a href="#使用建议" class="headerlink" title="使用建议"></a>使用建议</h2><ul><li><p>开始时间：计划启动日期</p></li><li><p>结束时间：有值且 ≤ 现在时，自动视为「实际完成日」；有值且 &gt; 现在时，自动视为「截止日期」</p></li></ul><h2 id="更多可能性"><a href="#更多可能性" class="headerlink" title="更多可能性"></a>更多可能性</h2><ul><li><p>会议记录：距离下次会议还有多久</p></li><li><p>项目甘特图：任务处于什么阶段</p></li><li><p>习惯打卡：上次执行到现在过了几天</p></li></ul><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-hm62pl59jojzv.avif"></p>]]>
+    </content>
     <id>https://leay.net/kai-shi-shi-jian-jie-shu-shi-jian-zi-dong-sheng-cheng-ren-wu-zhuang-tai-51936/</id>
+    <link href="https://leay.net/kai-shi-shi-jian-jie-shu-shi-jian-zi-dong-sheng-cheng-ren-wu-zhuang-tai-51936/"/>
     <published>2026-07-19T13:52:37.000Z</published>
+    <summary>
+      <![CDATA[<p>虎鲸笔记 v1.86.0，标签的计算属性支持日期计算了。</p>
+<p>本文仅展示一种可能性：通过「开始时间」「结束时间」两个时间戳属性使用「计算属性」生成任务的状态描述，以践行任务管理。</p>
+<h2 id="核心思路"><a href="#核心思路" class="h]]>
+    </summary>
+    <title>虎鲸笔记利用日期的计算属性践行任务管理</title>
     <updated>2026-07-19T14:03:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>虎鲸笔记 v1.86.0，标签的计算属性支持日期计算了。</p><p>本文仅展示一种可能性：通过「开始时间」「结束时间」两个时间戳属性使用「计算属性」生成任务的状态描述，以践行任务管理。</p><h2 id="核心思路"><a class="markdownIt-Anchor" href="#核心思路"></a> 核心思路</h2><p>三个字段：</p><ul><li><p>开始时间（日期与时间类型）</p></li><li><p>结束时间（日期与时间类型）</p></li><li><p>状态（计算类型）</p></li></ul><h2 id="完整逻辑六种情况"><a class="markdownIt-Anchor" href="#完整逻辑六种情况"></a> 完整逻辑（六种情况）</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>当前时间关系</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>任意</td><td>—</td><td>未设置</td></tr><tr><td>有值</td><td>有值，且 ≤ 现在</td><td>已结束</td><td>用时 X 天 X 小时 X 分钟</td></tr><tr><td>有值（≤ 现在）</td><td>有值，且 &gt; 现在</td><td>进行中，有截止日</td><td>进行中，剩余 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>有值（&gt; 现在）</td><td>全在未来</td><td>还有 X 天 X 小时 X 分钟开始</td></tr><tr><td>有值（≤ 现在）</td><td>空</td><td>已开始，无截止日</td><td>已过 X 天 X 小时 X 分钟</td></tr><tr><td>有值（&gt; 现在）</td><td>空</td><td>尚未开始</td><td>还有 X 天 X 小时 X 分钟开始</td></tr></tbody></table><h2 id="实际效果预览"><a class="markdownIt-Anchor" href="#实际效果预览"></a> 实际效果预览</h2><table><thead><tr><th>开始时间</th><th>结束时间</th><th>显示结果</th></tr></thead><tbody><tr><td>空</td><td>2026-07-20</td><td>未设置</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-19 12:00（已过）</td><td>用时 1 天 2 小时 0 分钟</td></tr><tr><td>2026-07-18 10:00</td><td>2026-07-20 12:00（未到）</td><td>进行中，剩余 0 天 21 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>2026-07-21 12:00（全在未来）</td><td>还有 0 天 19 小时 0 分钟开始</td></tr><tr><td>2026-07-18 10:00</td><td>空</td><td>已过 1 天 5 小时 0 分钟</td></tr><tr><td>2026-07-20 10:00</td><td>空</td><td>还有 0 天 19 小时 0 分钟开始</td></tr></tbody></table><h2 id="公式"><a class="markdownIt-Anchor" href="#公式"></a> 公式</h2><figure class="highlight plain"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IF(DATETIME([开始时间])&#x3D;0,&quot;未设置&quot;,IF(DATETIME([结束时间])!&#x3D;0,IF(DATETIME([结束时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;用时&quot;,((DATETIME([结束时间])-DATETIME([开始时间]))&#x2F;86400)-(((DATETIME([结束时间])-DATETIME([开始时间]))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%86400)&#x2F;3600)-((((DATETIME([结束时间])-DATETIME([开始时间]))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME([开始时间]))%3600)&#x2F;60)-((((DATETIME([结束时间])-DATETIME([开始时间]))%3600)&#x2F;60)%1),&quot;分钟&quot;),IF(DATETIME([开始时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;进行中，剩余&quot;,((DATETIME([结束时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([结束时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;))),IF(DATETIME([开始时间])&lt;&#x3D;DATETIME(&quot;now&quot;),CONCAT(&quot;已过&quot;,((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))&#x2F;86400)-(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)&#x2F;3600)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)&#x2F;60)-((((DATETIME(&quot;now&quot;)-DATETIME([开始时间]))%3600)&#x2F;60)%1),&quot;分钟&quot;),CONCAT(&quot;还有&quot;,((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)-(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))&#x2F;86400)%1),&quot;天&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%86400)&#x2F;3600)%1),&quot;小时&quot;,(((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)-((((DATETIME([开始时间])-DATETIME(&quot;now&quot;))%3600)&#x2F;60)%1),&quot;分钟&quot;))))</span><br></pre></td></tr></table></figure><h2 id="使用建议"><a class="markdownIt-Anchor" href="#使用建议"></a> 使用建议</h2><ul><li><p>开始时间：计划启动日期</p></li><li><p>结束时间：有值且 ≤ 现在时，自动视为「实际完成日」；有值且 &gt; 现在时，自动视为「截止日期」</p></li></ul><h2 id="更多可能性"><a class="markdownIt-Anchor" href="#更多可能性"></a> 更多可能性</h2><ul><li><p>会议记录：距离下次会议还有多久</p></li><li><p>项目甘特图：任务处于什么阶段</p></li><li><p>习惯打卡：上次执行到现在过了几天</p></li></ul><h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-hm62pl59jojzv.avif" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;虎鲸笔记 v1.86.0，标签的计算属性支持日期计算了。&lt;/p&gt;&lt;p&gt;本文仅展示一种可能性：通过「开始时间」「结束时间」两个时间戳属性使用「计算属性」生成任务的状态描述，以践行任务管理。&lt;/p&gt;&lt;h2 id=&quot;核心思路&quot;&gt;&lt;a class=&quot;markdownIt-Ancho
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
   </entry>
-  
   <entry>
-    <title>杯口记得朝上</title>
-    <link href="https://leay.net/bei-kou-ji-de-chao-shang-51591/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="AI Result" scheme="https://leay.net/tags/AI-Result/"/>
+    <content>
+      <![CDATA[<p>水槽里有三个杯子。一个喝水的玻璃杯，杯壁内侧有一圈洗不掉的水垢，对着光看像某种地质层。一个喝咖啡的马克杯，杯沿磕掉了一小块釉，露出底下灰白色的胎。一个窄口瓷杯，不知道什么时候买的，从来没用来喝过任何东西。它们并排放在沥水架上，杯口朝下，像三个扣在桌面上的身份。</p><p>你一个人住。</p><p>你不需要三个杯子。你需要「拥有三个杯子」这件事。它给你一种暗示——你是那种生活半径足够大、需要区分不同液体的人。喝水用一个，喝咖啡用另一个，第三个备用，或者用来招待客人。招待客人——这个短语你从来没兑现过，但它立在那里，像一份你给自己签的假合同。</p><p>以前你觉得一个杯子就够了。你把那个杯子刷得干干净净，放在桌上最显眼的位置，仿佛它的朴素能证明杯子主人的完整。你管这叫真诚、纯粹、简单。你从未认真想过——你之所以只需要一个杯子，是因为你只喝水。只喝水的人说自己不需要别的杯子，这不叫选择。这叫没有选项。</p><p>后来你发现不同的场合需要端不同的杯子。需要看起来像是会喝那种液体的人。你在不同的人群面前展示不同杯子的轮廓，杯子里装的其实还是水，杯子的形状、材质、品牌各不相同。你是在用杯子的差异管理别人对你的认知。</p><p>一种更诚实的虚伪。以前你假装世界上只有水。现在你承认有咖啡有茶有酒——只是它们刚好都不在你杯子里。</p><p>但这套杯子理论真正保护的东西，是那个拿杯子的手。</p><p>你在会议室里端出马克杯。音量提高，语速加快，指关节敲在桌面上像某种打击乐的即兴段落。你杯子里装的是愤怒。真的愤怒会烫手，会把杯子摔在地上，会让你事后坐在椅子上后悔。你没有。你在开口之前就知道愤怒能兑换什么。对方的退缩。旁观者的重新评估。一种「这个人不好惹」的隐性标记被录入在场所有人的神经系统。愤怒完成使命后退场。你把杯子放回沥水架，冲洗干净，下次再用。</p><p>你对自己说：该发火的时候就得发火，不然别人不把你当回事。</p><p>这句话的问题在于你说这句话的时候，你已经不把自己当回事了。愤怒变成了货币。货币是用来部署的。一个感受愤怒的人会被愤怒拖着走，走完了才后悔。你在那半秒的迟疑里已经算完了账。你是在部署愤怒资产。</p><p>别人你处理得更省事。</p><p>有一个同事，说话方式让你不舒服。你没有生气。你提前把对方折叠了。你告诉自己：他就是那种人。他的行为是一套可预测的机制。输入刺激 A，输出反应 B。跟一个机制计较什么呢？机制没有自由。机制不值得你疼痛。于是你安全了。</p><p>这听起来像一种成熟。你在概念层面把他开除出人类范畴。你没有跟他博弈。你撤销了棋局。然后你对自己说：我不跟这种人一般见识。</p><p>你在用一种形而上学操作换取情绪安全。杀一个人要坐牢。杀一个人的自由不用。你抹掉别人的意志，然后管这叫不生气。把谋杀包装成节能环保。</p><p>然后你做了最关键的一步。</p><p>你对自己说：但我对自己始终是真诚的。我把自己当作一个活生生的人。</p><p>注意这句话的裂缝。</p><p>谁来「当作」？谁被「当作」？</p><p>如果有一个你在「当作」——在操作、在标记、在把某个对象分类归档——那个操作者的他自己，在这个分类里面吗？</p><p>不在。</p><p>他不在任何分类里。他是给万物贴标签的那个人。愤怒——「战术工具」。同事——「可忽略机制」。自己——「活生生的人」。</p><p>他自己不用标签。他没有名字。他没有被审视的义务。他坐在所有身份的后面，像一个从来不签字的会计师。</p><p>他是你的老板。</p><p>你在客厅里走来走去，以为自己在做决定。所有决定都是他做的。你说我要更真诚——这是他在说，真诚是他评估过的一个策略，他在计算真诚的投入产出比。你说我要学会设立边界——这也是他在说，边界是他划的一条止损线。你觉得你有多个杯子、多套心智、在不同场景里端不同的器皿。你只有一个杯子。它里面装的永远是一种东西：算账。</p><p>他什么时候来的？</p><p>很早。早到你第一次发现沉默可以避免惩罚的时候。早到你发现笑可以兑换安全感、乖巧可以兑换关注、受伤的表情可以终止追问的时候。你那会儿管他叫懂事。后来叫他分寸。后来叫他成熟。后来叫他情绪管理。后来叫他情商。</p><p>名字换了很多轮。杯子的形状一直在变。拿杯子的手从来没换过。</p><p>他比你所有后来学会的东西都更老、更深、更稳。他是所有心智的母公司。你学到的每一套新技能——表演愤怒、折叠他人、战略真诚、战术脆弱——都是他审批通过的项目。他坐在董事会最后一排，不发言，但他不点头的东西你一件都做不了。</p><p>而你一直在保护他。</p><p>你写过的那些关于自我审视的东西。什么观察者自我、什么解构倾向——用一套足够精致的语言描述一套足够平庸的自我欺骗。仿佛把逃避说得足够复杂，逃避就变成了勇敢。你甚至给这个过程起了一个名字叫写作。好像写下来，就等于面对了。</p><p>他批准的。</p><p>他需要证据。「我在审视自己」是最好的证据。有了这个证据，他就能继续不被审视。你写的每一个字都是他给你留的作业。你交完作业，他觉得可以——今天被审视的额度用完了。你合上电脑，觉得自己做了深刻的自我剖析。他合上你，觉得今天的任务完成了。</p><p>摄影师从来不进画面。你所有的自拍都是他给你拍的。然后你说：看，这就是我。</p><p>把手从键盘上拿开——</p><p>这些话也是他让你说的。他算过了。今天这场自我剖析，性价比不低——能让自己看起来像一个敢于面对真相的人，又不用真的改变任何事。他连你翻他老底的冲动都已经提前定价。你骂他骂得越狠，他的账越漂亮。你看，连自我攻击都被套利。</p><p>你站起来去厨房倒水。路过水槽的时候低头看了一眼那三个杯子。杯口朝下，规规矩矩地扣在沥水架上。玻璃杯。马克杯。窄口瓷杯——这个从没喝过任何东西的杯子，内壁干干净净，没有水垢，没有茶渍，没有任何液体流经它。它是你买来证明自己需要三个杯子的证据。</p><p>你拧开水龙头。犹豫了一秒。拿起窄口瓷杯，翻过来，接了一杯自来水。水灌进去的声音跟玻璃杯不一样——更闷，更钝。你喝了一口。水温吞吞的，带着一点瓷土的味道。</p><p>你把杯子放回沥水架。杯口朝上。</p>]]>
+    </content>
     <id>https://leay.net/bei-kou-ji-de-chao-shang-51591/</id>
+    <link href="https://leay.net/bei-kou-ji-de-chao-shang-51591/"/>
     <published>2026-07-16T18:08:25.000Z</published>
+    <summary>
+      <![CDATA[<p>水槽里有三个杯子。一个喝水的玻璃杯，杯壁内侧有一圈洗不掉的水垢，对着光看像某种地质层。一个喝咖啡的马克杯，杯沿磕掉了一小块釉，露出底下灰白色的胎。一个窄口瓷杯，不知道什么时候买的，从来没用来喝过任何东西。它们并排放在沥水架上，杯口朝下，像三个扣在桌面上的身份。</p>
+<p]]>
+    </summary>
+    <title>杯口记得朝上</title>
     <updated>2026-07-16T18:08:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>水槽里有三个杯子。一个喝水的玻璃杯，杯壁内侧有一圈洗不掉的水垢，对着光看像某种地质层。一个喝咖啡的马克杯，杯沿磕掉了一小块釉，露出底下灰白色的胎。一个窄口瓷杯，不知道什么时候买的，从来没用来喝过任何东西。它们并排放在沥水架上，杯口朝下，像三个扣在桌面上的身份。</p><p>你一个人住。</p><p>你不需要三个杯子。你需要「拥有三个杯子」这件事。它给你一种暗示——你是那种生活半径足够大、需要区分不同液体的人。喝水用一个，喝咖啡用另一个，第三个备用，或者用来招待客人。招待客人——这个短语你从来没兑现过，但它立在那里，像一份你给自己签的假合同。</p><p>以前你觉得一个杯子就够了。你把那个杯子刷得干干净净，放在桌上最显眼的位置，仿佛它的朴素能证明杯子主人的完整。你管这叫真诚、纯粹、简单。你从未认真想过——你之所以只需要一个杯子，是因为你只喝水。只喝水的人说自己不需要别的杯子，这不叫选择。这叫没有选项。</p><p>后来你发现不同的场合需要端不同的杯子。需要看起来像是会喝那种液体的人。你在不同的人群面前展示不同杯子的轮廓，杯子里装的其实还是水，杯子的形状、材质、品牌各不相同。你是在用杯子的差异管理别人对你的认知。</p><p>一种更诚实的虚伪。以前你假装世界上只有水。现在你承认有咖啡有茶有酒——只是它们刚好都不在你杯子里。</p><p>但这套杯子理论真正保护的东西，是那个拿杯子的手。</p><p>你在会议室里端出马克杯。音量提高，语速加快，指关节敲在桌面上像某种打击乐的即兴段落。你杯子里装的是愤怒。真的愤怒会烫手，会把杯子摔在地上，会让你事后坐在椅子上后悔。你没有。你在开口之前就知道愤怒能兑换什么。对方的退缩。旁观者的重新评估。一种「这个人不好惹」的隐性标记被录入在场所有人的神经系统。愤怒完成使命后退场。你把杯子放回沥水架，冲洗干净，下次再用。</p><p>你对自己说：该发火的时候就得发火，不然别人不把你当回事。</p><p>这句话的问题在于你说这句话的时候，你已经不把自己当回事了。愤怒变成了货币。货币是用来部署的。一个感受愤怒的人会被愤怒拖着走，走完了才后悔。你在那半秒的迟疑里已经算完了账。你是在部署愤怒资产。</p><p>别人你处理得更省事。</p><p>有一个同事，说话方式让你不舒服。你没有生气。你提前把对方折叠了。你告诉自己：他就是那种人。他的行为是一套可预测的机制。输入刺激 A，输出反应 B。跟一个机制计较什么呢？机制没有自由。机制不值得你疼痛。于是你安全了。</p><p>这听起来像一种成熟。你在概念层面把他开除出人类范畴。你没有跟他博弈。你撤销了棋局。然后你对自己说：我不跟这种人一般见识。</p><p>你在用一种形而上学操作换取情绪安全。杀一个人要坐牢。杀一个人的自由不用。你抹掉别人的意志，然后管这叫不生气。把谋杀包装成节能环保。</p><p>然后你做了最关键的一步。</p><p>你对自己说：但我对自己始终是真诚的。我把自己当作一个活生生的人。</p><p>注意这句话的裂缝。</p><p>谁来「当作」？谁被「当作」？</p><p>如果有一个你在「当作」——在操作、在标记、在把某个对象分类归档——那个操作者的他自己，在这个分类里面吗？</p><p>不在。</p><p>他不在任何分类里。他是给万物贴标签的那个人。愤怒——「战术工具」。同事——「可忽略机制」。自己——「活生生的人」。</p><p>他自己不用标签。他没有名字。他没有被审视的义务。他坐在所有身份的后面，像一个从来不签字的会计师。</p><p>他是你的老板。</p><p>你在客厅里走来走去，以为自己在做决定。所有决定都是他做的。你说我要更真诚——这是他在说，真诚是他评估过的一个策略，他在计算真诚的投入产出比。你说我要学会设立边界——这也是他在说，边界是他划的一条止损线。你觉得你有多个杯子、多套心智、在不同场景里端不同的器皿。你只有一个杯子。它里面装的永远是一种东西：算账。</p><p>他什么时候来的？</p><p>很早。早到你第一次发现沉默可以避免惩罚的时候。早到你发现笑可以兑换安全感、乖巧可以兑换关注、受伤的表情可以终止追问的时候。你那会儿管他叫懂事。后来叫他分寸。后来叫他成熟。后来叫他情绪管理。后来叫他情商。</p><p>名字换了很多轮。杯子的形状一直在变。拿杯子的手从来没换过。</p><p>他比你所有后来学会的东西都更老、更深、更稳。他是所有心智的母公司。你学到的每一套新技能——表演愤怒、折叠他人、战略真诚、战术脆弱——都是他审批通过的项目。他坐在董事会最后一排，不发言，但他不点头的东西你一件都做不了。</p><p>而你一直在保护他。</p><p>你写过的那些关于自我审视的东西。什么观察者自我、什么解构倾向——用一套足够精致的语言描述一套足够平庸的自我欺骗。仿佛把逃避说得足够复杂，逃避就变成了勇敢。你甚至给这个过程起了一个名字叫写作。好像写下来，就等于面对了。</p><p>他批准的。</p><p>他需要证据。「我在审视自己」是最好的证据。有了这个证据，他就能继续不被审视。你写的每一个字都是他给你留的作业。你交完作业，他觉得可以——今天被审视的额度用完了。你合上电脑，觉得自己做了深刻的自我剖析。他合上你，觉得今天的任务完成了。</p><p>摄影师从来不进画面。你所有的自拍都是他给你拍的。然后你说：看，这就是我。</p><p>把手从键盘上拿开——</p><p>这些话也是他让你说的。他算过了。今天这场自我剖析，性价比不低——能让自己看起来像一个敢于面对真相的人，又不用真的改变任何事。他连你翻他老底的冲动都已经提前定价。你骂他骂得越狠，他的账越漂亮。你看，连自我攻击都被套利。</p><p>你站起来去厨房倒水。路过水槽的时候低头看了一眼那三个杯子。杯口朝下，规规矩矩地扣在沥水架上。玻璃杯。马克杯。窄口瓷杯——这个从没喝过任何东西的杯子，内壁干干净净，没有水垢，没有茶渍，没有任何液体流经它。它是你买来证明自己需要三个杯子的证据。</p><p>你拧开水龙头。犹豫了一秒。拿起窄口瓷杯，翻过来，接了一杯自来水。水灌进去的声音跟玻璃杯不一样——更闷，更钝。你喝了一口。水温吞吞的，带着一点瓷土的味道。</p><p>你把杯子放回沥水架。杯口朝上。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;水槽里有三个杯子。一个喝水的玻璃杯，杯壁内侧有一圈洗不掉的水垢，对着光看像某种地质层。一个喝咖啡的马克杯，杯沿磕掉了一小块釉，露出底下灰白色的胎。一个窄口瓷杯，不知道什么时候买的，从来没用来喝过任何东西。它们并排放在沥水架上，杯口朝下，像三个扣在桌面上的身份。&lt;/p&gt;&lt;p&gt;
-      
-    
-    </summary>
-    
-    
-    
-      <category term="AI Result" scheme="https://leay.net/tags/AI-Result/"/>
-    
   </entry>
-  
   <entry>
-    <title>一个不需要解释的人</title>
-    <link href="https://leay.net/yi-ge-bu-xu-yao-jie-shi-de-ren-51672/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="AI Result" scheme="https://leay.net/tags/AI-Result/"/>
+    <content>
+      <![CDATA[<p>电扇在头顶转。浙江小城的六月，闷热像蒙了一层一层塑料布。下午第一节数学课下课，大部分人趴着。他醒了，脸上压着红印子，面前摊着练习册，一个字没写。</p><p>班主任推门进来，说分科志愿表下周交。想清楚，别改了。</p><p>他没想清楚。脑子里冒出一个句子：学理科的人逻辑清晰，不感情用事。上周物理老师说的。物理老师穿一件洗旧的蓝衬衫，袖口有粉笔灰，说话的时候喜欢用粉笔头敲讲台，笃笃笃。他把这句话转了几圈。逻辑清晰，不感情用事。听起来像一个不需要解释自己的人。像他爸。他爸不怎么解释。话少。下班回来坐在沙发上，看报纸，茶几上放一杯茶，茶凉了也不换。他妈说你是不是不舒服，他爸说没有。就一句。没有。然后继续看报纸。</p><p>他拿起笔，在草稿纸角落写了个「理」字。</p><p>然后停住。</p><p>刚才写这个字的时候眉毛是不是皱了一下。是自然皱的，还是觉得做重大决定的人应该皱眉。同桌有没有看到。是不是应该把纸往左边挪一点。同桌姓周，胳膊肘底下压着一本翻烂的《读者》。她没看他。没看不代表没注意。不看他可能才是注意到了，故意不看。</p><p>他把草稿纸揉成一团。手指陷进手掌，掌根被纸团粗糙的折角顶着，有一点钝痛。塞进抽屉。这个动作他也没想清楚——不想让别人看到，还是想让别人看到他在隐藏。</p><p>分科表最后还是填了理科。填的时候平静，什么都没想。填完把表翻过来扣在桌上，跟同桌说，太简单了这表，一分钟填完。</p><p>说完等了几秒。等同桌走开。翻开表，检查一遍。没什么可检查的。</p><p>后来他谈恋爱，分手。分手的时候说了很多话，说得太多了。对方说你能不能不要每句话都像在写稿子。他说我没有。说完觉得「我没有」这句也像写稿子。沉默了一会儿，搜肠刮肚想找一句不像稿子的话，找不到。对方说你看，你又在想。他有点生气。生气到一半发现自己同时在判断这个生气的比例——三分真，七分为了让她觉得你在乎。这个判断一出来，生气就没法继续了。也不能突然不生气。那就更假了。只能把生气维持在一个不那么确定的程度，模模糊糊地糊过去。分手的原因跟稿子无关，但「写稿子」这个词他记了很多年。她说完那句话，他愣了一下。然后开始想，自己现在这个发愣的姿势，是不是也显得挺受伤的。</p><p>揉纸团那个动作后来重复过很多次。手指陷进手掌。掌根被什么东西顶着。写好的短信删掉重打，删掉重打，发出去，拇指悬在屏幕上。挂了电话把每句话重新听一遍，找到语气不对的地方，在心里重放一遍，修正，再放一遍。吵完架，人已经走了，回到房间里，刚才那场对话还在脑子里转。突然发现对方说过一句话，当时没接住。那句话现在重新响起来，又听了一遍，然后替自己把那句该说没说出口的话说了出去。语气刚好，时机刚好。对方没再说话。没再替他说话。赢了。赢了几秒钟。然后另一个声音说：你现在在脑子里赢的这场架，是不是也是一种表演。</p><p>这些事情做完以后会觉得恶心。恶心完又检查那个恶心：你是不是在用恶心证明自己其实没那么糟。一个真正不纠结的人，需要靠恶心来脱身吗。</p><p>十几岁的时候以为这个声音只是分科才来。后来发现不是。跟父母说话来。跟他爸说话尤其来。跟朋友喝酒来。分手时来。不挑事情大小。那个声音没有变老。还是十七岁的腔调。二十出头想掐灭它，想证明可以不表演。三十岁以后不太搏斗了。太累了。声音变成背景噪音，像冰箱压缩机，白天听不见，夜深了嗡嗡响。</p><p>检查效率变高了。以前复盘一整段对话，现在一瞬。妻子问是不是太累了话变少了。没有啊还好。说完笑了一下。瞬间念头闪过：笑得是不是太快了。她会不会注意到。</p><p>念头闪过就过了。没展开。年轻的时候挖到底，挖到失眠。现在不了。</p><p>凌晨两点，厨房。冰箱压缩机嗡嗡响。站在水槽边喝冰水。明天开项目会，PPT 没改完。冰箱门上贴着便利贴：牛奶没了，记得买。</p><p>杯子放进水槽。玻璃磕在不锈钢边上，一声很轻的响。没碎。关灯，走回卧室。客厅有茶几腿，知道它在那儿，绕开了。</p><p>躺回床上。妻子翻了个身，含糊说了句话，没听清。窗帘缝透进来一窄条路灯光，橙色，斜斜切在天花板上。</p><p>明天要买牛奶。</p><p>闭上眼睛。那个声音没睡。它说，刚才绕开茶几腿的时候，是不是在演一个疲惫到注意不到茶几的人。然后你注意到了，所以绕开了。站在厨房，是真的累了，还是在给自己制造一个可以写进日记的疲惫。</p><p>没理它。听见了，没跟。像听见压缩机又启动，知道它在响，继续睡。</p><p>脚趾尖还有点凉。厨房瓷砖沾的，现在慢慢暖回来。这个感觉没有被检查。太轻了。</p><p>意识开始变薄。想起十六岁暑假，骑车去学校拿成绩单，路上经过一片稻田，田里有白鹭。他在田埂上停下。日头晒得脖子发烫。那只白鹭在水里缩着脖子。他忽然想，待会儿到学校得跟人提一句这只白鹭，今天这趟才不算白骑。他在田埂上站了两分钟，让看白鹭变成一个事实。白鹭飞走了。骑车继续走。到学校门口跟第一个碰到的同学说，来的路上看到白鹭了。说出口的时候还是觉得心虚。刚才停下来是设计好的。</p><p>那个暑假以后他再也没跟人提过白鹭。</p><p>他睡着了。</p>]]>
+    </content>
     <id>https://leay.net/yi-ge-bu-xu-yao-jie-shi-de-ren-51672/</id>
+    <link href="https://leay.net/yi-ge-bu-xu-yao-jie-shi-de-ren-51672/"/>
     <published>2026-07-16T17:41:55.000Z</published>
+    <summary>
+      <![CDATA[<p>电扇在头顶转。浙江小城的六月，闷热像蒙了一层一层塑料布。下午第一节数学课下课，大部分人趴着。他醒了，脸上压着红印子，面前摊着练习册，一个字没写。</p>
+<p>班主任推门进来，说分科志愿表下周交。想清楚，别改了。</p>
+<p>他没想清楚。脑子里冒出一个句子：学理科的人逻辑]]>
+    </summary>
+    <title>一个不需要解释的人</title>
     <updated>2026-07-16T17:41:55.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>电扇在头顶转。浙江小城的六月，闷热像蒙了一层一层塑料布。下午第一节数学课下课，大部分人趴着。他醒了，脸上压着红印子，面前摊着练习册，一个字没写。</p><p>班主任推门进来，说分科志愿表下周交。想清楚，别改了。</p><p>他没想清楚。脑子里冒出一个句子：学理科的人逻辑清晰，不感情用事。上周物理老师说的。物理老师穿一件洗旧的蓝衬衫，袖口有粉笔灰，说话的时候喜欢用粉笔头敲讲台，笃笃笃。他把这句话转了几圈。逻辑清晰，不感情用事。听起来像一个不需要解释自己的人。像他爸。他爸不怎么解释。话少。下班回来坐在沙发上，看报纸，茶几上放一杯茶，茶凉了也不换。他妈说你是不是不舒服，他爸说没有。就一句。没有。然后继续看报纸。</p><p>他拿起笔，在草稿纸角落写了个「理」字。</p><p>然后停住。</p><p>刚才写这个字的时候眉毛是不是皱了一下。是自然皱的，还是觉得做重大决定的人应该皱眉。同桌有没有看到。是不是应该把纸往左边挪一点。同桌姓周，胳膊肘底下压着一本翻烂的《读者》。她没看他。没看不代表没注意。不看他可能才是注意到了，故意不看。</p><p>他把草稿纸揉成一团。手指陷进手掌，掌根被纸团粗糙的折角顶着，有一点钝痛。塞进抽屉。这个动作他也没想清楚——不想让别人看到，还是想让别人看到他在隐藏。</p><p>分科表最后还是填了理科。填的时候平静，什么都没想。填完把表翻过来扣在桌上，跟同桌说，太简单了这表，一分钟填完。</p><p>说完等了几秒。等同桌走开。翻开表，检查一遍。没什么可检查的。</p><p>后来他谈恋爱，分手。分手的时候说了很多话，说得太多了。对方说你能不能不要每句话都像在写稿子。他说我没有。说完觉得「我没有」这句也像写稿子。沉默了一会儿，搜肠刮肚想找一句不像稿子的话，找不到。对方说你看，你又在想。他有点生气。生气到一半发现自己同时在判断这个生气的比例——三分真，七分为了让她觉得你在乎。这个判断一出来，生气就没法继续了。也不能突然不生气。那就更假了。只能把生气维持在一个不那么确定的程度，模模糊糊地糊过去。分手的原因跟稿子无关，但「写稿子」这个词他记了很多年。她说完那句话，他愣了一下。然后开始想，自己现在这个发愣的姿势，是不是也显得挺受伤的。</p><p>揉纸团那个动作后来重复过很多次。手指陷进手掌。掌根被什么东西顶着。写好的短信删掉重打，删掉重打，发出去，拇指悬在屏幕上。挂了电话把每句话重新听一遍，找到语气不对的地方，在心里重放一遍，修正，再放一遍。吵完架，人已经走了，回到房间里，刚才那场对话还在脑子里转。突然发现对方说过一句话，当时没接住。那句话现在重新响起来，又听了一遍，然后替自己把那句该说没说出口的话说了出去。语气刚好，时机刚好。对方没再说话。没再替他说话。赢了。赢了几秒钟。然后另一个声音说：你现在在脑子里赢的这场架，是不是也是一种表演。</p><p>这些事情做完以后会觉得恶心。恶心完又检查那个恶心：你是不是在用恶心证明自己其实没那么糟。一个真正不纠结的人，需要靠恶心来脱身吗。</p><p>十几岁的时候以为这个声音只是分科才来。后来发现不是。跟父母说话来。跟他爸说话尤其来。跟朋友喝酒来。分手时来。不挑事情大小。那个声音没有变老。还是十七岁的腔调。二十出头想掐灭它，想证明可以不表演。三十岁以后不太搏斗了。太累了。声音变成背景噪音，像冰箱压缩机，白天听不见，夜深了嗡嗡响。</p><p>检查效率变高了。以前复盘一整段对话，现在一瞬。妻子问是不是太累了话变少了。没有啊还好。说完笑了一下。瞬间念头闪过：笑得是不是太快了。她会不会注意到。</p><p>念头闪过就过了。没展开。年轻的时候挖到底，挖到失眠。现在不了。</p><p>凌晨两点，厨房。冰箱压缩机嗡嗡响。站在水槽边喝冰水。明天开项目会，PPT 没改完。冰箱门上贴着便利贴：牛奶没了，记得买。</p><p>杯子放进水槽。玻璃磕在不锈钢边上，一声很轻的响。没碎。关灯，走回卧室。客厅有茶几腿，知道它在那儿，绕开了。</p><p>躺回床上。妻子翻了个身，含糊说了句话，没听清。窗帘缝透进来一窄条路灯光，橙色，斜斜切在天花板上。</p><p>明天要买牛奶。</p><p>闭上眼睛。那个声音没睡。它说，刚才绕开茶几腿的时候，是不是在演一个疲惫到注意不到茶几的人。然后你注意到了，所以绕开了。站在厨房，是真的累了，还是在给自己制造一个可以写进日记的疲惫。</p><p>没理它。听见了，没跟。像听见压缩机又启动，知道它在响，继续睡。</p><p>脚趾尖还有点凉。厨房瓷砖沾的，现在慢慢暖回来。这个感觉没有被检查。太轻了。</p><p>意识开始变薄。想起十六岁暑假，骑车去学校拿成绩单，路上经过一片稻田，田里有白鹭。他在田埂上停下。日头晒得脖子发烫。那只白鹭在水里缩着脖子。他忽然想，待会儿到学校得跟人提一句这只白鹭，今天这趟才不算白骑。他在田埂上站了两分钟，让看白鹭变成一个事实。白鹭飞走了。骑车继续走。到学校门口跟第一个碰到的同学说，来的路上看到白鹭了。说出口的时候还是觉得心虚。刚才停下来是设计好的。</p><p>那个暑假以后他再也没跟人提过白鹭。</p><p>他睡着了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;电扇在头顶转。浙江小城的六月，闷热像蒙了一层一层塑料布。下午第一节数学课下课，大部分人趴着。他醒了，脸上压着红印子，面前摊着练习册，一个字没写。&lt;/p&gt;&lt;p&gt;班主任推门进来，说分科志愿表下周交。想清楚，别改了。&lt;/p&gt;&lt;p&gt;他没想清楚。脑子里冒出一个句子：学理科的人逻辑清晰
-      
-    
-    </summary>
-    
-    
-    
-      <category term="AI Result" scheme="https://leay.net/tags/AI-Result/"/>
-    
   </entry>
-  
   <entry>
-    <title>新的媒介</title>
-    <link href="https://leay.net/xin-de-mei-jie-51419/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    <content>
+      <![CDATA[<p>我不喜欢每次新的媒介出来时那些夸张的老调子。</p><p>对 AI、对手机、对互联网的批评，和柏拉图对文字的担忧有什么区别？</p><p>在我之前的发明都是革命，在我之后的技术都是异端？</p><p>文字时代，外包记忆。</p><p>计算机时代，外包检索。</p><p>AI 时代，外包逻辑推理。</p><p>假如那些人真的关心，觉得公共环境太差是因为一部分人缺少知识和逻辑，那么当知识和逻辑可以被轻松获取和训练，不是一件好事吗？</p><p>媒介决定了什么可以被说出来，新的媒介会涌现许多新的内容。短视频时代，许许多多传统手艺文化重新得到关注。</p><p>有时候会看到文化人的悲悯，感叹我们为什么还没有描绘这个时代的文学。写村庄如何凋零，写互联网的兴起降落，写不同的人和行业，写 00 后怎么从官场到入狱，写怎么利用二手交易软件赚得第一笔金……</p><p>可，很多东西早就有人表达了。去看短视频，看 AI 创作，看真实的人在评论区的感叹。</p><p>时代从未停止说话，只是换了媒介。</p><p>媒介也转过来塑造时代。</p><p>那时我们觉得「人人都是可以播报新闻的记者」，结局却是「人人都想当网红」。博眼球、谣言，新闻不再有公信力。</p><p>「每个人都能出名 15 分钟」，但舞台已经没有观众。</p><p>假如新的媒介的产生是种进步，解放了生产的消耗，技术被下放，一切都更平民。</p><p>它在统计意义上就并没有让人变得更有知识有逻辑，因为思考有阻力。而在统计意义上让我们能接触的信息质量下降，因为胡说八道可以被轻松地批量生产。</p><p>如同被解放的生产力会被新的工作填满，释放的认知被欲望充斥。</p><p>技术的下放反而加大了差距。</p><p>我们能做什么？</p><p>似乎很简单。媒介降低的是生产成本，不是判断成本。</p><p>那么一方面，不如利用红利去提高、并做更多的表达。如果觉得这个时代还没有真正属于我们的作品，那就去收集、加工、创作我们的时代记忆。</p><p>另一方面，就是去构建当前时代的判断机制——特别是吸取自媒体时代的教训。自媒体时代过后，我们放弃了判断，不再相信新闻。AI 时代，我们是否要避免被 AI 生成欺骗而忽略每一条信息？</p><p>回答吧。</p>]]>
+    </content>
     <id>https://leay.net/xin-de-mei-jie-51419/</id>
+    <link href="https://leay.net/xin-de-mei-jie-51419/"/>
     <published>2026-07-12T09:19:23.000Z</published>
+    <summary>
+      <![CDATA[<p>我不喜欢每次新的媒介出来时那些夸张的老调子。</p>
+<p>对 AI、对手机、对互联网的批评，和柏拉图对文字的担忧有什么区别？</p>
+<p>在我之前的发明都是革命，在我之后的技术都是异端？</p>
+<p>文字时代，外包记忆。</p>
+<p>计算机时代，外包检索。</p>]]>
+    </summary>
+    <title>新的媒介</title>
     <updated>2026-07-12T09:25:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>我不喜欢每次新的媒介出来时那些夸张的老调子。</p><p>对 AI、对手机、对互联网的批评，和柏拉图对文字的担忧有什么区别？</p><p>在我之前的发明都是革命，在我之后的技术都是异端？</p><p>文字时代，外包记忆。</p><p>计算机时代，外包检索。</p><p>AI 时代，外包逻辑推理。</p><p>假如那些人真的关心，觉得公共环境太差是因为一部分人缺少知识和逻辑，那么当知识和逻辑可以被轻松获取和训练，不是一件好事吗？</p><p>媒介决定了什么可以被说出来，新的媒介会涌现许多新的内容。短视频时代，许许多多传统手艺文化重新得到关注。</p><p>有时候会看到文化人的悲悯，感叹我们为什么还没有描绘这个时代的文学。写村庄如何凋零，写互联网的兴起降落，写不同的人和行业，写 00 后怎么从官场到入狱，写怎么利用二手交易软件赚得第一笔金……</p><p>可，很多东西早就有人表达了。去看短视频，看 AI 创作，看真实的人在评论区的感叹。</p><p>时代从未停止说话，只是换了媒介。</p><p>媒介也转过来塑造时代。</p><p>那时我们觉得「人人都是可以播报新闻的记者」，结局却是「人人都想当网红」。博眼球、谣言，新闻不再有公信力。</p><p>「每个人都能出名 15 分钟」，但舞台已经没有观众。</p><p>假如新的媒介的产生是种进步，解放了生产的消耗，技术被下放，一切都更平民。</p><p>它在统计意义上就并没有让人变得更有知识有逻辑，因为思考有阻力。而在统计意义上让我们能接触的信息质量下降，因为胡说八道可以被轻松地批量生产。</p><p>如同被解放的生产力会被新的工作填满，释放的认知被欲望充斥。</p><p>技术的下放反而加大了差距。</p><p>我们能做什么？</p><p>似乎很简单。媒介降低的是生产成本，不是判断成本。</p><p>那么一方面，不如利用红利去提高、并做更多的表达。如果觉得这个时代还没有真正属于我们的作品，那就去收集、加工、创作我们的时代记忆。</p><p>另一方面，就是去构建当前时代的判断机制——特别是吸取自媒体时代的教训。自媒体时代过后，我们放弃了判断，不再相信新闻。AI 时代，我们是否要避免被 AI 生成欺骗而忽略每一条信息？</p><p>回答吧。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;我不喜欢每次新的媒介出来时那些夸张的老调子。&lt;/p&gt;&lt;p&gt;对 AI、对手机、对互联网的批评，和柏拉图对文字的担忧有什么区别？&lt;/p&gt;&lt;p&gt;在我之前的发明都是革命，在我之后的技术都是异端？&lt;/p&gt;&lt;p&gt;文字时代，外包记忆。&lt;/p&gt;&lt;p&gt;计算机时代，外包检索。&lt;/p&gt;&lt;p&gt;AI
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
   </entry>
-  
   <entry>
-    <title>熊猫总会带你回家——AI Native 导航栏的样子（思源笔记导航插件）</title>
-    <link href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="Project" scheme="https://leay.net/tags/Project/"/>
+    <content>
+      <![CDATA[<p><a href="https://github.com/hqweay/siyuan-panda-navigation">GitHub - hqweay&#x2F;siyuan-panda-navigation: 思源插件：熊猫导航 · GitHub</a></p><h2 id="TLDR"><a href="#TLDR" class="headerlink" title="TLDR"></a>TLDR</h2><p><img src="https://private-user-images.githubusercontent.com/23608642/618935235-e38886d1-bf0f-4c03-95fc-914b25b09d3b.mov?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUyMzUtZTM4ODg2ZDEtYmYwZi00YzAzLTk1ZmMtOTE0YjI1YjA5ZDNiLm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU2YzhkNzU3MWViZDA3NzIyMzZiNjBjZTg2ZGRhM2YwNzVhYzE0NTQwZjMzMmU4MTRhZWY2N2NiZDM4MjQ3YjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRnF1aWNrdGltZSJ9.DAUN1dYjPYqa50jJDOQH7pp0wiGJ0tM_5AnkXzYluHQ"></p><p><img src="https://private-user-images.githubusercontent.com/23608642/618935014-bfaf6d18-b34c-497d-a9a3-9bb7958c9b3f.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUwMTQtYmZhZjZkMTgtYjM0Yy00OTdkLWE5YTMtOWJiNzk1OGM5YjNmLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkMDdlMmI1OGE4MzZkNjBmODdlMTg1OTJhYWQ3MGE3YmQyZDQ1ZmM5OGI3ZjlhMDFlMzdmZjlmMGU0ZmM4MzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRm1wNCJ9.Ql3yobKv5t_n27Mhj2Q-RgsVyqgSheo2kg5PavNEAa4"></p><h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>这是我最喜欢的设计，系统内的元素应该是统一的，然后以家族相似的方式区分。</p><p>比如一个导航栏上的一级按钮（菜单）、二级按钮是一回事，只是放在不同位置配上不同功能。</p><p>既然它们是一回事，直觉上就理应可以任意交换、删改。</p><p>虽然它们是一回事，但不代表它们有一个本质。</p><p>本质——正是那些极简主义美学所推崇的——试卷、书籍本质上都是纸，任何笔记底层都是纯文本……来吧，Skill 不就是 Prompt？</p><p>随便在网上逛都能看到，现在推崇将一切都压缩、本质、简单化，显得人聪明。</p><p>用一种模式压缩一种生活，用一个词替代感受。于是生命变成了标本，不能被流行媒介表达的情绪都不存在。</p><p>对心智的减负早就成了精神羸弱的借口。</p><p>区别在哪呢？统一是在释放可能性，简化却在压缩可能性。</p><p>就像我们选择一个身份，一定是为了拥有更多选择。</p><p>试想两种表达：</p><p>「我才 X 岁，我不能……」</p><p>「我已经 Y 岁，我可以……」</p><p>一个相同的东西（按钮）进入不同的语境（位置）就成了另一种东西，拥有了另外的能力。</p><p>然而，它们是一回事，并不代表有一样的重要性——在不同场景下不同按钮自然有不同使用频率。</p><p>「不做设计决策，把复杂度丢给用户」当然不可取。</p><p>于是在这种统一之上提供一套默认约定，适应一些场景——如果需要，也完全可以自己配置。</p><p>约定大于配置。约定的是边界，不是内容。</p><p>再来看按钮——一套点击-反馈机制。点击按钮，然后它给出一些反馈。</p><p>比如点击菜单，展开菜单栏。</p><p>点击圆点，圆点爆炸出烟花。</p><p>点击一个按钮，执行了一堆步骤达到某个结果。</p><p>聚焦到这个插件场景，按钮就理应当可以拥有任何用户想要的功能——得益于思源笔记本体良好的设计，首先可以将软件本体的功能和第三方其它插件的功能暴露出来，绑定到按钮上。</p><p>再往后，插件本身可以提供一些原生未实现的内部功能。</p><p>再往后，用户应当可以拥有任何——好在 AI 时代来了，插件本身只需要做好组织，向 AI 暴露配置，AI 就可以操作实现用户想要的功能。</p><p>于是一个 AI Native 的导航栏得以实现。</p><p>「新增一个按钮，点击随机打开一篇日记。」</p><p>「配置一个适合写作的导航栏。」</p><p>在限制范围内，AI 可以利用插件暴露的 mcp tools 对导航栏进行组织，在这个小小的界面上实现了 AI 动态生成 UI。然后编写、组织一些复杂的功能绑定到按钮上。</p><p>然而这一切都只是基于「导航栏」这个概念的基础上来聊，抛开它，换个视角，按钮也可以看作「能力」的载体。这个插件无非将「能力」做了些通用点的扩展，扩展到 AI 实现。</p><p>它在不同场景是否是最佳的选择呢？拿 PC 端来看，键盘快捷键、鼠标宏……先到这吧。</p>]]>
+    </content>
     <id>https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/</id>
+    <link href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/"/>
     <published>2026-07-08T18:38:13.000Z</published>
+    <summary>
+      <![CDATA[<p><a href="https://github.com/hqweay/siyuan-panda-navigation">GitHub - hqweay&#x2F;siyuan-panda-navigation: 思源插件：熊猫导航 · GitHub</a></p>
+<h2]]>
+    </summary>
+    <title>熊猫总会带你回家——AI Native 导航栏的样子（思源笔记导航插件）</title>
     <updated>2026-07-08T18:38:13.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/siyuan-panda-navigation" target="_blank" rel="noopener">GitHub - hqweay/siyuan-panda-navigation: 思源插件：熊猫导航 · GitHub</a></p><h2 id="tldr"><a class="markdownIt-Anchor" href="#tldr"></a> TLDR</h2><p><img src="https://private-user-images.githubusercontent.com/23608642/618935235-e38886d1-bf0f-4c03-95fc-914b25b09d3b.mov?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUyMzUtZTM4ODg2ZDEtYmYwZi00YzAzLTk1ZmMtOTE0YjI1YjA5ZDNiLm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU2YzhkNzU3MWViZDA3NzIyMzZiNjBjZTg2ZGRhM2YwNzVhYzE0NTQwZjMzMmU4MTRhZWY2N2NiZDM4MjQ3YjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRnF1aWNrdGltZSJ9.DAUN1dYjPYqa50jJDOQH7pp0wiGJ0tM_5AnkXzYluHQ" alt=""></p><p><img src="https://private-user-images.githubusercontent.com/23608642/618935014-bfaf6d18-b34c-497d-a9a3-9bb7958c9b3f.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1MzEyNjMsIm5iZiI6MTc4MzUzMDk2MywicGF0aCI6Ii8yMzYwODY0Mi82MTg5MzUwMTQtYmZhZjZkMTgtYjM0Yy00OTdkLWE5YTMtOWJiNzk1OGM5YjNmLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA4VDE3MTYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkMDdlMmI1OGE4MzZkNjBmODdlMTg1OTJhYWQ3MGE3YmQyZDQ1ZmM5OGI3ZjlhMDFlMzdmZjlmMGU0ZmM4MzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRm1wNCJ9.Ql3yobKv5t_n27Mhj2Q-RgsVyqgSheo2kg5PavNEAa4" alt=""></p><h2 id="其它"><a class="markdownIt-Anchor" href="#其它"></a> 其它</h2><p>这是我最喜欢的设计，系统内的元素应该是统一的，然后以家族相似的方式区分。</p><p>比如一个导航栏上的一级按钮（菜单）、二级按钮是一回事，只是放在不同位置配上不同功能。</p><p>既然它们是一回事，直觉上就理应可以任意交换、删改。</p><p>虽然它们是一回事，但不代表它们有一个本质。</p><p>本质——正是那些极简主义美学所推崇的——试卷、书籍本质上都是纸，任何笔记底层都是纯文本……来吧，Skill 不就是 Prompt？</p><p>随便在网上逛都能看到，现在推崇将一切都压缩、本质、简单化，显得人聪明。</p><p>用一种模式压缩一种生活，用一个词替代感受。于是生命变成了标本，不能被流行媒介表达的情绪都不存在。</p><p>对心智的减负早就成了精神羸弱的借口。</p><p>区别在哪呢？统一是在释放可能性，简化却在压缩可能性。</p><p>就像我们选择一个身份，一定是为了拥有更多选择。</p><p>试想两种表达：</p><p>「我才 X 岁，我不能……」</p><p>「我已经 Y 岁，我可以……」</p><p>一个相同的东西（按钮）进入不同的语境（位置）就成了另一种东西，拥有了另外的能力。</p><p>然而，它们是一回事，并不代表有一样的重要性——在不同场景下不同按钮自然有不同使用频率。</p><p>「不做设计决策，把复杂度丢给用户」当然不可取。</p><p>于是在这种统一之上提供一套默认约定，适应一些场景——如果需要，也完全可以自己配置。</p><p>约定大于配置。约定的是边界，不是内容。</p><p>再来看按钮——一套点击-反馈机制。点击按钮，然后它给出一些反馈。</p><p>比如点击菜单，展开菜单栏。</p><p>点击圆点，圆点爆炸出烟花。</p><p>点击一个按钮，执行了一堆步骤达到某个结果。</p><p>聚焦到这个插件场景，按钮就理应当可以拥有任何用户想要的功能——得益于思源笔记本体良好的设计，首先可以将软件本体的功能和第三方其它插件的功能暴露出来，绑定到按钮上。</p><p>再往后，插件本身可以提供一些原生未实现的内部功能。</p><p>再往后，用户应当可以拥有任何——好在 AI 时代来了，插件本身只需要做好组织，向 AI 暴露配置，AI 就可以操作实现用户想要的功能。</p><p>于是一个 AI Native 的导航栏得以实现。</p><p>「新增一个按钮，点击随机打开一篇日记。」</p><p>「配置一个适合写作的导航栏。」</p><p>在限制范围内，AI 可以利用插件暴露的 mcp tools 对导航栏进行组织，在这个小小的界面上实现了 AI 动态生成 UI。然后编写、组织一些复杂的功能绑定到按钮上。</p><p>然而这一切都只是基于「导航栏」这个概念的基础上来聊，抛开它，换个视角，按钮也可以看作「能力」的载体。这个插件无非将「能力」做了些通用点的扩展，扩展到 AI 实现。</p><p>它在不同场景是否是最佳的选择呢？拿 PC 端来看，键盘快捷键、鼠标宏……先到这吧。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://github.com/hqweay/siyuan-panda-navigation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub - hqweay/siyuan-panda-navigation: 思源插件：
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
   </entry>
-  
   <entry>
-    <title>慢慢来</title>
-    <link href="https://leay.net/man-man-lai-49632/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    <content>
+      <![CDATA[<blockquote><p>2023 年 4 月 2 日</p></blockquote><p>任何小概率事件都有更高的信噪比，举例来说一个经常成功的人应该反思这次为什么失败，一个经常失败的人会总结这次为什么成功。</p><p>因而一个缺爱的人面临关心时会胆怯，生活还没有给 Ta 足够多的练习。</p><p>慢慢来。</p>]]>
+    </content>
     <id>https://leay.net/man-man-lai-49632/</id>
+    <link href="https://leay.net/man-man-lai-49632/"/>
     <published>2026-06-22T13:35:14.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p>2023 年 4 月 2 日</p>
+</blockquote>
+<p>任何小概率事件都有更高的信噪比，举例来说一个经常成功的人应该反思这次为什么失败，一个经常失败的人会总结这次为什么成功。</p>
+<p>因而一个缺爱的人面临关心时会胆怯，生活还没]]>
+    </summary>
+    <title>慢慢来</title>
     <updated>2026-06-22T13:35:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>2023 年 4 月 2 日</p></blockquote><p>任何小概率事件都有更高的信噪比，举例来说一个经常成功的人应该反思这次为什么失败，一个经常失败的人会总结这次为什么成功。</p><p>因而一个缺爱的人面临关心时会胆怯，生活还没有给 Ta 足够多的练习。</p><p>慢慢来。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;2023 年 4 月 2 日&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;任何小概率事件都有更高的信噪比，举例来说一个经常成功的人应该反思这次为什么失败，一个经常失败的人会总结这次为什么成功。&lt;/p&gt;&lt;p&gt;因而一个缺爱的人面临关心时会胆怯，生活还没有给 T
-      
-    
-    </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
   </entry>
-  
   <entry>
-    <title>你也到山顶，啦？</title>
-    <link href="https://leay.net/ni-ye-dao-shan-ding-la--49600/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="游戏" scheme="https://leay.net/tags/%E6%B8%B8%E6%88%8F/"/>
+    <content>
+      <![CDATA[<blockquote><p><a href="https://store.steampowered.com/app/504230/Celeste/">Celeste on Steam</a>：《蔚蓝》</p><p>从2023 年 5 月 1 日的日记翻出来</p></blockquote><p>Celeste，一个以难度著称的游戏，讲患抑郁症的小女孩 Madeline 登山的故事。</p><p>Madeline，她有能力，可以跳到所有地方；有勇气，不怕任何危险；有目标，所以不会为任何人停留。</p><p>她还很善良，但她不是勇者或骑士。因此她会无条件帮助路上遇到的人，但也会生气。而当别人阻碍到她继续登山，她会离开。别人也有自己的问题，而且必须自己解决。</p><p>所有道德中最危险的是同情。</p><p>故事的高潮始于 Madeline 距离山顶还有一步之遥时。她长呼了一口气，对着「黑化」版的自己说我已经准备好放下你了。</p><p>「放下我？」</p><p>Madeline 被愤怒的「黑我」摔到山底。</p><p>而玩家，需要重新来过。</p><p>所有同情中最糟糕的是同情自己。</p><p>我并不比十年前、二十年前的自己更优秀、更值得爱和被爱。我没法、也不必，去放下自己的愚蠢、不合时宜的笑话。</p><p>那也是我的一部分。</p><p>机制应用于叙事。一开始「黑我」作为反派驱赶 Madeline，而临近结束则是 Madeline 去追逐「黑我」。</p><p>成长意味着拥抱它。</p><p>当认识的新朋友 Theo 指着黑化的 Madeline 说「她就像一个超酷的朋克版的你。」</p><p>「这不是你的错。」</p><p>是这样吗？原来他们的愤怒、暴躁和冷漠，想要的不过一句对过去的认可。</p><p>诚挚的感情还是陈词滥调？</p><p>你对着新朋友微笑，感谢他的善良和慷慨。</p><p>假如你爱我，我希望你仍然是自己。假如你爱所有人，我希望你不会被任何人困扰。爱将人塑造成他们本来的样子，而不是反过来。</p><p>我们都会更强大。</p>]]>
+    </content>
     <id>https://leay.net/ni-ye-dao-shan-ding-la--49600/</id>
+    <link href="https://leay.net/ni-ye-dao-shan-ding-la--49600/"/>
     <published>2026-06-22T13:22:02.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p><a href="https://store.steampowered.com/app/504230/Celeste/">Celeste on Steam</a>：《蔚蓝》</p>
+<p>从2023 年 5 月 1 日的日记翻出来</p>
+</bl]]>
+    </summary>
+    <title>你也到山顶，啦？</title>
     <updated>2026-06-22T13:22:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p><a href="https://store.steampowered.com/app/504230/Celeste/" target="_blank" rel="noopener">Celeste on Steam</a>：《蔚蓝》</p><p>从2023 年 5 月 1 日的日记翻出来</p></blockquote><p>Celeste，一个以难度著称的游戏，讲患抑郁症的小女孩 Madeline 登山的故事。</p><p>Madeline，她有能力，可以跳到所有地方；有勇气，不怕任何危险；有目标，所以不会为任何人停留。</p><p>她还很善良，但她不是勇者或骑士。因此她会无条件帮助路上遇到的人，但也会生气。而当别人阻碍到她继续登山，她会离开。别人也有自己的问题，而且必须自己解决。</p><p>所有道德中最危险的是同情。</p><p>故事的高潮始于 Madeline 距离山顶还有一步之遥时。她长呼了一口气，对着「黑化」版的自己说我已经准备好放下你了。</p><p>「放下我？」</p><p>Madeline 被愤怒的「黑我」摔到山底。</p><p>而玩家，需要重新来过。</p><p>所有同情中最糟糕的是同情自己。</p><p>我并不比十年前、二十年前的自己更优秀、更值得爱和被爱。我没法、也不必，去放下自己的愚蠢、不合时宜的笑话。</p><p>那也是我的一部分。</p><p>机制应用于叙事。一开始「黑我」作为反派驱赶 Madeline，而临近结束则是 Madeline 去追逐「黑我」。</p><p>成长意味着拥抱它。</p><p>当认识的新朋友 Theo 指着黑化的 Madeline 说「她就像一个超酷的朋克版的你。」</p><p>「这不是你的错。」</p><p>是这样吗？原来他们的愤怒、暴躁和冷漠，想要的不过一句对过去的认可。</p><p>诚挚的感情还是陈词滥调？</p><p>你对着新朋友微笑，感谢他的善良和慷慨。</p><p>假如你爱我，我希望你仍然是自己。假如你爱所有人，我希望你不会被任何人困扰。爱将人塑造成他们本来的样子，而不是反过来。</p><p>我们都会更强大。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;https://store.steampowered.com/app/504230/Celeste/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Celeste on Steam&lt;/a&gt;：《蔚蓝》&lt;/p&gt;&lt;p&gt;从
-      
-    
-    </summary>
-    
-    
-    
-      <category term="游戏" scheme="https://leay.net/tags/%E6%B8%B8%E6%88%8F/"/>
-    
   </entry>
-  
   <entry>
-    <title>虎鲸笔记侧边栏三板斧</title>
-    <link href="https://leay.net/hu-jing-bi-ji-ce-bian-lan-san-ban-fu-49592/"/>
-    <id>https://leay.net/hu-jing-bi-ji-ce-bian-lan-san-ban-fu-49592/</id>
-    <published>2026-06-22T05:43:16.000Z</published>
-    <updated>2026-06-22T05:48:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-y99rog9nul4sr.avif" alt=""></p><ul><li><p>Arc like 标签页管理</p></li><li><p>大纲导航</p></li><li><p>Roam like Sidebar</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hqweay/picbed/master/img/image-y99rog9nul4sr.avif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Arc like 标签页管理&lt;/p&gt;&lt;/
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Project" scheme="https://leay.net/tags/Project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>迎风逆风</title>
-    <link href="https://leay.net/ying-feng-ni-feng-49361/"/>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    <content>
+      <![CDATA[<p>迎风逆风在夏天都让人感到惬意，张开双手，有时候会想象自己在奔跑，忘记已经不是身体年轻的少年。跑到红绿灯路口也不要停，继续跑，跑向北方。我奔往藏在山和森林，小时候最想离开的村庄。老师在讲台描绘未来，我们幼稚地还听不懂大人的话。木质的课桌坑坑洼洼，你抬起手臂看着皱巴巴的校服，袖口被课桌中间用粉笔划的那道线染上颜色，同桌愤怒地掐你说又越界了。</p><p>怎么会有人中午睡觉呢？这也是我们搞不懂的事情之一。趴在课桌上发呆，又开始想象出风头的剧情，记得双手插袋，还要说几句从电视剧里学习的口头禅。哦对了，今天放学不要和朋友在路上玩了，早点回去看动画片。一定要在朋友问的时候故意说一些陌生的名字，我们最喜欢靠向别人解释收获优越感。</p><p>「走，出去玩。」</p><p>「被人告老师怎么办？」</p><p>「你忘记昨天啦。」</p><p>我们轻声地笑，想起举报别人中午没睡觉的同学被老师反问那你怎么知道。</p><p>我们小心翼翼，好像整个世界都在监控我们有没有午睡。走小路，在河边踩水，捡起一个漂亮的石头，怀着期待把它打磨成爱心、菱形这样的形状，转头又无所谓地打起水漂。</p><p>我们怎么又站回操场中央，这样的正午太阳热烈。不同年级的男孩混杂在一起，两两组队，一个人背着另一个人，不同队伍互相推搡。谁倒地谁就认输。听说这是古老的游戏，曾在这上过学的父辈都玩过。不少人在这换了他的乳牙。</p><p>你在旁边的沟渠和朋友们围着那个有见识的同学听他讲真真假假的故事，第一次知道奥特曼居然有好多个。我们最喜欢比较不同故事里的英雄谁更厉害，然后扮演。我们都想做好人，相信正义，被按在地上也倔强地不肯低头。我们在沙堆里挖陷阱、堆坦克，累了就躺下。像病了一样躺下。躺在草地上，躺在石子上，躺在凳子上，躺在田里，望着蓝天，望着太阳——张目对日，课文里只道寻常。</p><p>望着天空变暗，听到有人的家长在大声喊他的名字，心虚地抓紧时间回家。</p><p>你学会了怎么用藤蔓编织成帽子遮阳。我玩闹着也要耕地，扶着犁，不知轻重地要举起枝条往牛身上抽，被大人一把抢下。农民爱牛就像爱自己的家人。听说在牛的眼睛里很小的东西也会看着很大，所以举起枝条吓一吓就行了。这是我学的第一节生物课。</p><p>我们怎么那么残忍，解剖了好多昆虫，捣毁了不少蚂蚁窝，弹弓把石子往移动的不移动的东西上砸。你喜欢和狗玩，不洗漱不换衣服往被窝里钻，搞不懂大人为什么说脏。猫喜欢晚上跳到我怀里，我把被子掀起一角，它就流畅地靠近我胸口。后来我再也没交过这么亲密的朋友。</p><p>我在柴房堆着的苞谷叶子上发现一窝小猫，第二天小猫就不见了。大人说猫就是这样，小猫被发现母猫就会换位置。后来看到母猫把小猫往人身边叼的故事，才知道它从来没信任过我。</p><p>地震那天我家的母猫半天不见，傍晚回来时奶奶给它喂了半袋方便面，它一口没吃，后来不知道去哪儿，再也没回来。过了好久我们敢进房子，才发现倒下的木柴轧死了好几只小猫。</p><p>我叹了口气，奶奶端出几片西瓜，从来没尝出过菜刀切过大蒜后遗留的味道。刚回到家的我要从缸里舀一勺井水，咕噜咕噜喝光。对着风扇狂吹，那架风扇直到现在还能用。</p><p>有时候奶奶发现天空远远经过一架飞机，喊你的时候你玩得再开心也要过来看。稀奇的玩意都容易吸引注意力，就像我们接触流行音乐的唯一途径是电视的彩铃广告。</p><p>「飞机往哪里飞呢？」</p><p>「很远的地方。」</p><p>「多远呢，外国吗？」</p><p>「等你长大就知道了。」</p><p>你长大了吗，小时候的问题还好奇吗。我望着飞机飞，比最高的山还高。那边是南方吗？我们好多人的父母据说是在南方打工。飞机会掉下来吗？看过的电视里有飞机掉下来，撒了好多钱的情节。</p><p>看着它消失在天际，我们就这样抬着头。</p>]]>
+    </content>
     <id>https://leay.net/ying-feng-ni-feng-49361/</id>
+    <link href="https://leay.net/ying-feng-ni-feng-49361/"/>
     <published>2026-06-20T20:47:12.000Z</published>
-    <updated>2026-06-20T20:47:12.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>迎风逆风在夏天都让人感到惬意，张开双手，有时候会想象自己在奔跑，忘记已经不是身体年轻的少年。跑到红绿灯路口也不要停，继续跑，跑向北方。我奔往藏在山和森林，小时候最想离开的村庄。老师在讲台描绘未来，我们幼稚地还听不懂大人的话。木质的课桌坑坑洼洼，你抬起手臂看着皱巴巴的校服，袖口被课桌中间用粉笔划的那道线染上颜色，同桌愤怒地掐你说又越界了。</p><p>怎么会有人中午睡觉呢？这也是我们搞不懂的事情之一。趴在课桌上发呆，又开始想象出风头的剧情，记得双手插袋，还要说几句从电视剧里学习的口头禅。哦对了，今天放学不要和朋友在路上玩了，早点回去看动画片。一定要在朋友问的时候故意说一些陌生的名字，我们最喜欢靠向别人解释收获优越感。</p><p>「走，出去玩。」</p><p>「被人告老师怎么办？」</p><p>「你忘记昨天啦。」</p><p>我们轻声地笑，想起举报别人中午没睡觉的同学被老师反问那你怎么知道。</p><p>我们小心翼翼，好像整个世界都在监控我们有没有午睡。走小路，在河边踩水，捡起一个漂亮的石头，怀着期待把它打磨成爱心、菱形这样的形状，转头又无所谓地打起水漂。</p><p>我们怎么又站回操场中央，这样的正午太阳热烈。不同年级的男孩混杂在一起，两两组队，一个人背着另一个人，不同队伍互相推搡。谁倒地谁就认输。听说这是古老的游戏，曾在这上过学的父辈都玩过。不少人在这换了他的乳牙。</p><p>你在旁边的沟渠和朋友们围着那个有见识的同学听他讲真真假假的故事，第一次知道奥特曼居然有好多个。我们最喜欢比较不同故事里的英雄谁更厉害，然后扮演。我们都想做好人，相信正义，被按在地上也倔强地不肯低头。我们在沙堆里挖陷阱、堆坦克，累了就躺下。像病了一样躺下。躺在草地上，躺在石子上，躺在凳子上，躺在田里，望着蓝天，望着太阳——张目对日，课文里只道寻常。</p><p>望着天空变暗，听到有人的家长在大声喊他的名字，心虚地抓紧时间回家。</p><p>你学会了怎么用藤蔓编织成帽子遮阳。我玩闹着也要耕地，扶着犁，不知轻重地要举起枝条往牛身上抽，被大人一把抢下。农民爱牛就像爱自己的家人。听说在牛的眼睛里很小的东西也会看着很大，所以举起枝条吓一吓就行了。这是我学的第一节生物课。</p><p>我们怎么那么残忍，解剖了好多昆虫，捣毁了不少蚂蚁窝，弹弓把石子往移动的不移动的东西上砸。你喜欢和狗玩，不洗漱不换衣服往被窝里钻，搞不懂大人为什么说脏。猫喜欢晚上跳到我怀里，我把被子掀起一角，它就流畅地靠近我胸口。后来我再也没交过这么亲密的朋友。</p><p>我在柴房堆着的苞谷叶子上发现一窝小猫，第二天小猫就不见了。大人说猫就是这样，小猫被发现母猫就会换位置。后来看到母猫把小猫往人身边叼的故事，才知道它从来没信任过我。</p><p>地震那天我家的母猫半天不见，傍晚回来时奶奶给它喂了半袋方便面，它一口没吃，后来不知道去哪儿，再也没回来。过了好久我们敢进房子，才发现倒下的木柴轧死了好几只小猫。</p><p>我叹了口气，奶奶端出几片西瓜，从来没尝出过菜刀切过大蒜后遗留的味道。刚回到家的我要从缸里舀一勺井水，咕噜咕噜喝光。对着风扇狂吹，那架风扇直到现在还能用。</p><p>有时候奶奶发现天空远远经过一架飞机，喊你的时候你玩得再开心也要过来看。稀奇的玩意都容易吸引注意力，就像我们接触流行音乐的唯一途径是电视的彩铃广告。</p><p>「飞机往哪里飞呢？」</p><p>「很远的地方。」</p><p>「多远呢，外国吗？」</p><p>「等你长大就知道了。」</p><p>你长大了吗，小时候的问题还好奇吗。我望着飞机飞，比最高的山还高。那边是南方吗？我们好多人的父母据说是在南方打工。飞机会掉下来吗？看过的电视里有飞机掉下来，撒了好多钱的情节。</p><p>看着它消失在天际，我们就这样抬着头。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;迎风逆风在夏天都让人感到惬意，张开双手，有时候会想象自己在奔跑，忘记已经不是身体年轻的少年。跑到红绿灯路口也不要停，继续跑，跑向北方。我奔往藏在山和森林，小时候最想离开的村庄。老师在讲台描绘未来，我们幼稚地还听不懂大人的话。木质的课桌坑坑洼洼，你抬起手臂看着皱巴巴的校服，袖
-      
-    
+    <summary>
+      <![CDATA[<p>迎风逆风在夏天都让人感到惬意，张开双手，有时候会想象自己在奔跑，忘记已经不是身体年轻的少年。跑到红绿灯路口也不要停，继续跑，跑向北方。我奔往藏在山和森林，小时候最想离开的村庄。老师在讲台描绘未来，我们幼稚地还听不懂大人的话。木质的课桌坑坑洼洼，你抬起手臂看着皱巴巴的校服，袖]]>
     </summary>
-    
-    
-    
-      <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
-    
+    <title>迎风逆风</title>
+    <updated>2026-06-20T20:47:12.000Z</updated>
   </entry>
-  
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="细碎" scheme="https://leay.net/tags/%E7%BB%86%E7%A2%8E/"/>
+    <content>
+      <![CDATA[<p>梦是夜的借口<br>在不同的身体放声大哭</p>]]>
+    </content>
+    <id>https://leay.net/jie-kou-49266/</id>
+    <link href="https://leay.net/jie-kou-49266/"/>
+    <published>2026-06-20T18:03:29.000Z</published>
+    <summary>
+      <![CDATA[<p>梦是夜的借口<br>在不同的身体放声大哭</p>]]>
+    </summary>
+    <title>借口</title>
+    <updated>2026-06-20T18:03:29.000Z</updated>
+  </entry>
 </feed>

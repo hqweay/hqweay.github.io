@@ -9,7 +9,28 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-07-26T08:28:08.000Z</updated>
+  <updated>2026-07-26T13:42:17.000Z</updated>
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="阅读所思" scheme="https://leay.net/tags/%E9%98%85%E8%AF%BB%E6%89%80%E6%80%9D/"/>
+    <content>
+      <![CDATA[<blockquote><p>《智能简史》第二章；不严谨的部分都是我在胡说八道</p></blockquote><p>我们的大脑是由神经元通过电信号传播来感知世界的。由于电信号传播速度有限，自然环境的变化范围远远超过了神经元的发放率所能编码的范围。</p><p>神经元是怎么做的呢？它并没有固定自己的信号发放率与外界自然变量的关系，而是适应环境，调整发放率，不断重新定义自然界的变化与发放率之间的关系。</p><p>相当于它在适应环境时调整出一个基准，通过针对基准的变化，用变化的相对值让人类感受到自然的变化。</p><p>比如我们刚进入一个黑屋子，一开始什么都看不见，但一会儿后，开始看到东西了。这就是视觉系统在新环境降低响应阈值、提高增益的结果。</p><p>经常见到一些文章说<a href="https://leay.net/2023/07/15/dopamine">多巴胺</a>如何通过预测机制影响我们对快乐的感知，就简来讲，这套预测机制就是神经系统不断调整「外界变量 → 神经活动」之间映射关系的一种方式。</p><p>比方说我们频繁刷短视频，多巴胺告诉神经元拿起手机可能获得奖励，这个行为值得重复。反复强化后，与手机相关的神经通路变得更容易被激活。但由于长期高刺激，神经元响应的阈值已经被提高，普通刺激无法引起明显的响应。</p><p>于是越来越想刷，但越来越不快乐。</p><p>怎么调整呢？离开这个环境，减少高强度、快速变化、不可预测的奖励输入，让奖励系统重新校准。</p><p>于是我之前不大感冒的禁食、冥想也有点了道理——主动营造低刺激的基准。</p><p>《佛教》中有「白骨观」的说法，不就是将大脑（注意力）从外界的变化切换到感知本身——试着将刷短视频的「下一条会是什么」改为「此刻屏幕上的光如何流动」。</p><p>但大脑不是设计来「永远快乐」的，而是最大程度地活下去。当我们开始反思，也不过是「活下去」的基因编码在起作用。理性也是适应性的产物。</p><p>读书还是刷短视频？从来没有高低。清醒地选择就好，选择我们的自由。</p>]]>
+    </content>
+    <id>https://leay.net/how-the-brains-smartest-adaptive-mechanisms-in-turn-can-be-its-own-trap-53048/</id>
+    <link href="https://leay.net/how-the-brains-smartest-adaptive-mechanisms-in-turn-can-be-its-own-trap-53048/"/>
+    <published>2026-07-26T13:42:14.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p>《智能简史》第二章；不严谨的部分都是我在胡说八道</p>
+</blockquote>
+<p>我们的大脑是由神经元通过电信号传播来感知世界的。由于电信号传播速度有限，自然环境的变化范围远远超过了神经元的发放率所能编码的范围。</p>
+<p>神经元是怎]]>
+    </summary>
+    <title>大脑最聪明的适应机制，如何反过来成为自己的陷阱</title>
+    <updated>2026-07-26T13:42:17.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>hqweay</name>
@@ -164,25 +185,5 @@
     </summary>
     <title>慢慢来</title>
     <updated>2026-06-22T13:35:14.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>hqweay</name>
-    </author>
-    <category term="游戏" scheme="https://leay.net/tags/%E6%B8%B8%E6%88%8F/"/>
-    <content>
-      <![CDATA[<blockquote><p><a href="https://store.steampowered.com/app/504230/Celeste/">Celeste on Steam</a>：《蔚蓝》</p><p>从2023 年 5 月 1 日的日记翻出来</p></blockquote><p>Celeste，一个以难度著称的游戏，讲患抑郁症的小女孩 Madeline 登山的故事。</p><p>Madeline，她有能力，可以跳到所有地方；有勇气，不怕任何危险；有目标，所以不会为任何人停留。</p><p>她还很善良，但她不是勇者或骑士。因此她会无条件帮助路上遇到的人，但也会生气。而当别人阻碍到她继续登山，她会离开。别人也有自己的问题，而且必须自己解决。</p><p>所有道德中最危险的是同情。</p><p>故事的高潮始于 Madeline 距离山顶还有一步之遥时。她长呼了一口气，对着「黑化」版的自己说我已经准备好放下你了。</p><p>「放下我？」</p><p>Madeline 被愤怒的「黑我」摔到山底。</p><p>而玩家，需要重新来过。</p><p>所有同情中最糟糕的是同情自己。</p><p>我并不比十年前、二十年前的自己更优秀、更值得爱和被爱。我没法、也不必，去放下自己的愚蠢、不合时宜的笑话。</p><p>那也是我的一部分。</p><p>机制应用于叙事。一开始「黑我」作为反派驱赶 Madeline，而临近结束则是 Madeline 去追逐「黑我」。</p><p>成长意味着拥抱它。</p><p>当认识的新朋友 Theo 指着黑化的 Madeline 说「她就像一个超酷的朋克版的你。」</p><p>「这不是你的错。」</p><p>是这样吗？原来他们的愤怒、暴躁和冷漠，想要的不过一句对过去的认可。</p><p>诚挚的感情还是陈词滥调？</p><p>你对着新朋友微笑，感谢他的善良和慷慨。</p><p>假如你爱我，我希望你仍然是自己。假如你爱所有人，我希望你不会被任何人困扰。爱将人塑造成他们本来的样子，而不是反过来。</p><p>我们都会更强大。</p>]]>
-    </content>
-    <id>https://leay.net/ni-ye-dao-shan-ding-la--49600/</id>
-    <link href="https://leay.net/ni-ye-dao-shan-ding-la--49600/"/>
-    <published>2026-06-22T13:22:02.000Z</published>
-    <summary>
-      <![CDATA[<blockquote>
-<p><a href="https://store.steampowered.com/app/504230/Celeste/">Celeste on Steam</a>：《蔚蓝》</p>
-<p>从2023 年 5 月 1 日的日记翻出来</p>
-</bl]]>
-    </summary>
-    <title>你也到山顶，啦？</title>
-    <updated>2026-06-22T13:22:02.000Z</updated>
   </entry>
 </feed>

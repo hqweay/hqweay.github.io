@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://leay.net/tags/index.html</loc>
-    
-    <lastmod>2026-07-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://leay.net/about/index.html</loc>
     
     <lastmod>2026-07-26</lastmod>
@@ -20,7 +11,25 @@
   </url>
   
   <url>
+    <loc>https://leay.net/tags/index.html</loc>
+    
+    <lastmod>2026-07-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://leay.net/404.html</loc>
+    
+    <lastmod>2026-07-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://leay.net/contradictory-views-of-different-people-or-contradictory-views-of-the-same-person-chestnut-fallacy-53136/</loc>
     
     <lastmod>2026-07-26</lastmod>
     
@@ -1694,7 +1703,7 @@
   </url>
   
   <url>
-    <loc>https://leay.net/2022/02/27/sonny-boy/</loc>
+    <loc>https://leay.net/2022/02/27/rain-flower/</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -1703,7 +1712,7 @@
   </url>
   
   <url>
-    <loc>https://leay.net/2022/02/27/rain-flower/</loc>
+    <loc>https://leay.net/2022/02/27/sonny-boy/</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -2466,7 +2475,21 @@
   </url>
   
   <url>
+    <loc>https://leay.net/tags/%E7%90%86%E6%80%A7%E4%B8%BB%E4%B9%89/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://leay.net/tags/%E9%98%85%E8%AF%BB%E6%89%80%E6%80%9D/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://leay.net/tags/%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2495,20 +2518,6 @@
   
   <url>
     <loc>https://leay.net/tags/%E6%9D%82%E6%96%87/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://leay.net/tags/%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%93%8D%E4%BD%9C/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://leay.net/tags/%E7%90%86%E6%80%A7%E4%B8%BB%E4%B9%89/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2620,14 +2629,14 @@
   </url>
   
   <url>
-    <loc>https://leay.net/tags/%E5%9B%BE%E7%89%87%E6%89%80%E8%AE%B0/</loc>
+    <loc>https://leay.net/tags/%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://leay.net/tags/%E5%86%99%E4%BD%9C/</loc>
+    <loc>https://leay.net/tags/%E5%9B%BE%E7%89%87%E6%89%80%E8%AE%B0/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2655,6 +2664,13 @@
   </url>
   
   <url>
+    <loc>https://leay.net/tags/Linux/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://leay.net/tags/React/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -2670,13 +2686,6 @@
   
   <url>
     <loc>https://leay.net/tags/Java/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://leay.net/tags/Linux/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2739,6 +2748,13 @@
   </url>
   
   <url>
+    <loc>https://leay.net/tags/%E5%8F%8C%E9%93%BE%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://leay.net/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -2794,13 +2810,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://leay.net/tags/%E5%8F%8C%E9%93%BE%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -2846,14 +2855,14 @@
   </url>
   
   <url>
-    <loc>https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%9B%BE%E5%86%8C/</loc>
+    <loc>https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/%E7%BF%BB%E8%AF%91/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://leay.net/categories/%E5%AD%A6%E4%B9%A0%E6%8A%98%E8%85%BE/%E7%BF%BB%E8%AF%91/</loc>
+    <loc>https://leay.net/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%9B%BE%E5%86%8C/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

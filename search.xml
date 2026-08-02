@@ -33,9 +33,9 @@
       
         <tags>
             
-            <tag> 养恐龙 </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> 养恐龙 </tag>
             
         </tags>
       
@@ -707,7 +707,7 @@
       <link href="//20260120023137/"/>
       <url>//20260120023137/</url>
       
-        <content type="html"><![CDATA[<h1 id="虎鲸笔记插件恐龙工具箱"><a class="markdownIt-Anchor" href="#虎鲸笔记插件恐龙工具箱"></a> 虎鲸笔记插件：恐龙工具箱</h1><p>这是一个为 Orca Note (虎鲸笔记) 开发的增强插件集合，提供了一系列实用的增强工具，帮助你更高效地管理和组织笔记。</p><p>这是一只恐龙，路过的人必须夸它可爱。</p><h2 id="安装与使用"><a class="markdownIt-Anchor" href="#安装与使用"></a> 安装与使用</h2><ol><li>下载 Release 中的 <code>package.zip</code> 文件。</li><li>解压后，将整个文件夹复制到 Orca Note 的插件目录。</li><li>在软件设置中刷新并启用插件。插件集内包含的所有子功能均可在&quot;插件设置&quot;中单独开启或关闭。</li></ol><h2 id="功能列表"><a class="markdownIt-Anchor" href="#功能列表"></a> 功能列表</h2><h3 id="1-一键格式化-format-block"><a class="markdownIt-Anchor" href="#1-一键格式化-format-block"></a> 1. 📝 一键格式化 (Format Block)</h3><p>标准化当前块及子块的文本格式。自动修正中英文标点符号，优化中英文混排空格，规范化全角/半角字符。</p><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>将 <a href="http://voicenotes.com">voicenotes.com</a> 的录音笔记一键同步到虎鲸笔记中，自动归档到专属收件箱，支持增量与全量同步。</p><h3 id="3-导入工具-import"><a class="markdownIt-Anchor" href="#3-导入工具-import"></a> 3. 📂 导入工具 (Import)</h3><p>支持批量导入本地 Markdown 文件夹；支持将 CSV 表格数据智能导入并解析为笔记节点，可自动应用多模板标签。</p><h3 id="4-样式清除-remove-style"><a class="markdownIt-Anchor" href="#4-样式清除-remove-style"></a> 4. 🧹 样式清除 (Remove Style)</h3><p>快速清理富文本格式。支持一键移除行内样式（加粗、颜色）、将链接转为纯文本、删除空行，或将各种标题统一转为自动层级标题。</p><h3 id="5-块排序-sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序-sort-blocks"></a> 5. 🔃 块排序 (Sort Blocks)</h3><p>智能对选中的多个同级块进行排序。</p><ul><li><strong>多预设配置</strong>：支持在设置中创建无限个自定义排序预设（Profiles）。</li><li><strong>原生规则调序</strong>：支持通过上下箭头对不同类型块（任务、标题、媒体、空白块等数十种类型）的排序优先级进行灵活组合。</li><li><strong>智能菜单</strong>：如果只保留一个预设，右键一键即可秒速排序；如果有多个预设，右键菜单会自动变为子菜单供你选择具体的排序规则。</li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>将笔记一键发布为 Markdown 博客文章。自动提取并上传文中图片到图床，自动生成 Frontmatter 元数据。</p><h3 id="7-插件市集-bazaar"><a class="markdownIt-Anchor" href="#7-插件市集-bazaar"></a> 7. 🏪 插件市集 (Bazaar)</h3><p>Orca 社区插件市场。在应用内即可浏览、安装、更新和卸载社区插件，支持自定义第三方插件源。</p><h3 id="8-️-快捷标签-quick-tag"><a class="markdownIt-Anchor" href="#8-️-快捷标签-quick-tag"></a> 8. 🏷️ 快捷标签 (Quick Tag)</h3><p>使用快捷键一键在光标处插入常用标签，并可自动附加指定的属性（如状态、优先级等）。</p><h3 id="9-标题层级整理-heading-tree-saxz2"><a class="markdownIt-Anchor" href="#9-标题层级整理-heading-tree-saxz2"></a> 9. 🌳 标题层级整理 (Heading Tree) 🥰 <a href="https://github.com/SaXz2">SaXz2</a></h3><p>智能识别现有笔记的 H1-H4 标题层级，重组文档树结构，消除错误的阶梯式缩进，并将普通文本自动归属到最近的标题下。</p><h3 id="10-网页助手-web-assistant"><a class="markdownIt-Anchor" href="#10-网页助手-web-assistant"></a> 10. 🌐 网页助手 (Web Assistant)</h3><p>提供内置沉浸式浏览器。支持智能提取网页元数据（如豆瓣图书、电影），右键一键将选中的网页内容转换为 Markdown 剪藏到笔记中。</p><h3 id="11-记忆复习-srs"><a class="markdownIt-Anchor" href="#11-记忆复习-srs"></a> 11. 🧠 记忆复习 (SRS)</h3><p>集成 FSRS 算法的高效记忆工具。提供问答和沉浸式阅读两种复习模式，支持为任意标签或查询结果开启复习漫游。</p><h3 id="12-块嵌入子项增强-embed-children"><a class="markdownIt-Anchor" href="#12-块嵌入子项增强-embed-children"></a> 12. 🪞 块嵌入子项增强 (Embed Children)</h3><p>已并入「用户脚本 (lets-inject)」的模板库。在用户脚本设置页点击「块嵌入子项」模板即可一键插入到今日日志，插入后默认不启用：在 #脚本 标签属性中勾选 autoRun 可启动时自动加载，或勾选 headbar 等入口属性后从入口手动切换。效果为让带有特定标签的镜像引用块自动向下穿透并展示其子块内容。</p><h3 id="13-随机漫步-random-walk"><a class="markdownIt-Anchor" href="#13-随机漫步-random-walk"></a> 13. 🎲 随机漫步 (Random Walk)</h3><p>知识库漫游工具。自动抓取特定标签下的内容进行无重复发牌，帮助你随机探索和温习过去的知识片段。</p><h3 id="14-智能剪贴板注入-clipboard-injection"><a class="markdownIt-Anchor" href="#14-智能剪贴板注入-clipboard-injection"></a> 14. 📋 智能剪贴板注入 (Clipboard Injection)</h3><p>支持将外部复制的专属 JSON 数据直接解析为原生的虎鲸笔记节点。支持携带标签、属性，并可自动转存远程图片到本地。</p><h3 id="15-️-编辑器扩展命令-editor-commands"><a class="markdownIt-Anchor" href="#15-️-编辑器扩展命令-editor-commands"></a> 15. ⌨️ 编辑器扩展命令 (Editor Commands)</h3><p>选中任意文本即可使用命令将其&quot;复制为带有块引用的 JSON&quot;，在其他页面粘贴即可快速建立双向链接。</p><h3 id="16-️-块工具箱-block-tools"><a class="markdownIt-Anchor" href="#16-️-块工具箱-block-tools"></a> 16. 🛠️ 块工具箱 (Block Tools)</h3><p>提供丰富的块操作快捷菜单。支持一键将子块归集到原引用源、在父节点下置顶/置底，以及在链接和引用格式间快速转换。</p><h3 id="17-隐私块-privacy-block"><a class="markdownIt-Anchor" href="#17-隐私块-privacy-block"></a> 17. 🔒 隐私块 (Privacy Block)</h3><p>一键将块设为隐私状态。不仅在视觉上有锁形提示，底层也会向 AI 隐藏敏感内容，有效保护日记隐私，且不影响正常的编辑书写体验。</p><h3 id="18-块流转-block-flow"><a class="markdownIt-Anchor" href="#18-块流转-block-flow"></a> 18. 🌊 块流转 (Block Flow)</h3><p>右键快速将选中的块发送、移动或引用至「今日日志」、「明日日志」或你指定的「全局收件箱」。</p><h3 id="19-置顶块面板-pinned-blocks"><a class="markdownIt-Anchor" href="#19-置顶块面板-pinned-blocks"></a> 19. 📌 置顶块面板 (Pinned Blocks)</h3><p>为高频笔记打上特定标签，即可在侧边栏面板中将其固定，一键点击即可随时唤回核心工作区。</p><h3 id="20-arc-侧边栏-arc-tabs"><a class="markdownIt-Anchor" href="#20-arc-侧边栏-arc-tabs"></a> 20. 🪐 Arc 侧边栏 (Arc Tabs)</h3><p>媲美 Arc 浏览器的现代化侧边栏。支持多空间隔离、固定标签页自由拖拽排序，以及自动记录去重今天的历史浏览，告别多页面混乱。设置页可开启「在「更多」tab 显示最近访问」——在侧边栏「更多」tab 里列出最近访问的块（与 Arc 侧边栏共用数据），点击即可跳转。</p><h3 id="21-全局收集箱-roam-sidebar"><a class="markdownIt-Anchor" href="#21-全局收集箱-roam-sidebar"></a> 21. 📥 全局收集箱 (Roam Sidebar)</h3><p>复刻 Roam Research 的右侧边栏全局收集交互。底座为完全持久化的原生大纲块，支持跨页面随意拖拽收集、大纲折叠管理，状态永不丢失。</p><h3 id="22-链接工具-link-tools"><a class="markdownIt-Anchor" href="#22-链接工具-link-tools"></a> 22. 🔗 链接工具 (Link Tools)</h3><p>为原生链接提供快捷转换选项。右键超链接即可一键转为原生块引用，或者在图钉（📌）引用格式间灵活切换。</p><h3 id="23-大纲导航树-block-nav"><a class="markdownIt-Anchor" href="#23-大纲导航树-block-nav"></a> 23. 🌳 大纲导航树 (Block Nav)</h3><p>全局侧边栏大纲导航。支持点击平滑跳转、快捷下钻阅读；提供实时本地检索框，搜索结果瞬间过滤。底部提供层级展开按钮：左键展开侧边栏大纲，右键无缝联动主编辑器执行对应层级的精准折叠展开，<strong>按住 Alt / Shift + 左键则同时展开大纲与主编辑器</strong>。</p><h3 id="24-收集引用-gather-refs"><a class="markdownIt-Anchor" href="#24-收集引用-gather-refs"></a> 24. 🔗 收集引用 (Gather Refs)</h3><p>聚合当前文档的所有反向引用。支持通过命令面板 (<code>/gather</code>) 或右键菜单，自动提取所有引用了当前文档的顶级节点（如页面或卡片），并利用 Markdown 语法批量去重插入到光标位置，生成整洁美观的 MOC (Map of Content) 目录树，同时避免反向链接面板污染。</p><h3 id="25-编辑器层级折叠-editor-fold"><a class="markdownIt-Anchor" href="#25-编辑器层级折叠-editor-fold"></a> 25. 🧊 编辑器层级折叠 (Editor Fold)</h3><p>精准控制主编辑器的视觉层级。提供&quot;展开至此同级&quot;右键菜单以及支持快捷键绑定的全局命令，自动截断深层结构的展示，保持工作区绝对整洁。</p><h3 id="26-️-局部关系图谱-local-graph"><a class="markdownIt-Anchor" href="#26-️-局部关系图谱-local-graph"></a> 26. 🕸️ 局部关系图谱 (Local Graph)</h3><p>全局侧边栏局部网络关系图谱。实时跟踪编辑器导航轨迹，动态渲染当前活动块与足迹网络的邻居网络。提供对标签节点、大纲树父子层级关系、常规引用的快捷过滤选项；支持右键点击边缘节点进行定向本地拓展或折叠收起；内置防剧烈晃动的物理阻尼控制，让知识漫游更加丝滑稳定。新增回放探索模式，点击幻灯片图标进入回放，足迹节点按时序逐步呈现，相机自动跟随；用户拖拽后自动暂停跟随，退出时自动恢复录制状态。</p><h3 id="27-️-嵌入视图-embed-view"><a class="markdownIt-Anchor" href="#27-️-嵌入视图-embed-view"></a> 27. 🖼️ 嵌入视图 (Embed View)</h3><p>在笔记中直接嵌入网页、HTML 代码或 Twitter/X 内容。支持拖拽调整嵌入区域高度，网址嵌入时自动显示网站图标和域名，嵌入网页的登录状态可以保持不丢失。</p><h3 id="28-用户脚本-user-scripts"><a class="markdownIt-Anchor" href="#28-用户脚本-user-scripts"></a> 28. 📜 用户脚本 (User Scripts)</h3><p>用户脚本/样式管理系统：给代码块打上 <code>#脚本</code> 标签，即可享受以下全部能力：</p><ul><li><strong>CSS 注入</strong> — 代码块自动注入为 <code>&lt;style&gt;</code> 标签，刷新自动移除；支持点击切换加载/卸载</li><li><strong>JS 自动注入</strong> — 代码块在插件加载时自动执行；脚本用 <code>$inject.onUnload(fn)</code> 注册清理后，从入口再次触发即卸载（而非重复注入），再触发一次恢复加载</li><li><strong>右键菜单</strong> — <code>contextMenu</code> 属性勾选后，其他块的右键菜单出现「脚本」入口，可传入目标块 ID</li><li><strong>顶部栏按钮</strong> — <code>headbar</code> 属性勾选后，脚本出现在顶部栏的下拉菜单中，一键执行</li><li><strong>编辑器侧边栏</strong> — <code>sidetool</code> 属性勾选后，编辑区侧边栏出现脚本按钮</li><li><strong>全局快捷键</strong> — <code>shortcut</code> 属性填写快捷键（如 <code>ctrl+shift+k</code>），即可全局绑定</li><li><strong>多入口统一</strong> — 同一脚本可同时绑定到多个入口（headbar + sidetool + shortcut + contextMenu）</li><li><strong>模板库</strong> — 设置页内置「块嵌入子项」「快捷打标签」「侧边栏布局」「小番茄钟」「全局字体颜色」等模板，一键插入今日日志，开箱即用</li><li><strong>侧边栏「更多」tab</strong> — 两种形态：<ul><li><code>sidebar</code> 属性：脚本作为<strong>启动器条目</strong>列出（点击 = 加载/卸载切换，行内状态点区分加载态，悬停出现「在笔记中定位」）</li><li><code>$inject.registerSidebarGroup</code>：脚本注册<strong>组/挂件</strong>（<code>render</code> 模式在聚焦视图整栏渲染自定义内容，如番茄钟；<code>status</code> 行内快照实时更新）</li></ul></li><li><strong>文件夹组织</strong> — <code>group</code> 标签属性统一控制启动器条目与挂件的文件夹归属，<code>displayName</code> 统一控制显示名（在属性面板改，无需碰脚本代码）</li><li><strong>脚本元数据</strong> — <code>$inject</code> 提供 <code>blockId</code> / <code>scriptName</code> / <code>scriptGroup</code>，脚本可感知自身（定位、归文件夹、改名）</li><li><strong>CD 变量</strong> — <code>$inject.targetBlockIds</code> / <code>applyTag</code> / <code>aiChat</code> / <code>registerSidebarGroup</code> / <code>blockId</code> / <code>scriptName</code> / <code>scriptGroup</code></li></ul><p>执行环境自动注入 <code>orca</code>、<code>window</code>、<code>document</code>、<code>$inject</code> 四个变量，无需额外配置。</p><hr /><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>本项目采用模块化架构：</p><ul><li><code>src/lets-*</code>：每个目录对应一个子插件，功能相互独立。</li><li><code>main.tsx</code>：负责管理与动态加载所有启用的子插件。</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="虎鲸笔记插件恐龙工具箱"><a class="markdownIt-Anchor" href="#虎鲸笔记插件恐龙工具箱"></a> 虎鲸笔记插件：恐龙工具箱</h1><p>这是一个为 Orca Note (虎鲸笔记) 开发的增强插件集合，提供了一系列实用的增强工具，帮助你更高效地管理和组织笔记。</p><p>这是一只恐龙，路过的人必须夸它可爱。</p><h2 id="安装与使用"><a class="markdownIt-Anchor" href="#安装与使用"></a> 安装与使用</h2><ol><li>下载 Release 中的 <code>package.zip</code> 文件。</li><li>解压后，将整个文件夹复制到 Orca Note 的插件目录。</li><li>在软件设置中刷新并启用插件。插件集内包含的所有子功能均可在&quot;插件设置&quot;中单独开启或关闭。</li></ol><h2 id="功能列表"><a class="markdownIt-Anchor" href="#功能列表"></a> 功能列表</h2><h3 id="1-一键格式化-format-block"><a class="markdownIt-Anchor" href="#1-一键格式化-format-block"></a> 1. 📝 一键格式化 (Format Block)</h3><p>标准化当前块及子块的文本格式。自动修正中英文标点符号，优化中英文混排空格，规范化全角/半角字符。</p><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>将 <a href="http://voicenotes.com">voicenotes.com</a> 的录音笔记一键同步到虎鲸笔记中，自动归档到专属收件箱，支持增量与全量同步。</p><h3 id="3-导入工具-import"><a class="markdownIt-Anchor" href="#3-导入工具-import"></a> 3. 📂 导入工具 (Import)</h3><p>支持批量导入本地 Markdown 文件夹；支持将 CSV 表格数据智能导入并解析为笔记节点，可自动应用多模板标签。</p><h3 id="4-样式清除-remove-style"><a class="markdownIt-Anchor" href="#4-样式清除-remove-style"></a> 4. 🧹 样式清除 (Remove Style)</h3><p>快速清理富文本格式。支持一键移除行内样式（加粗、颜色）、将链接转为纯文本、删除空行，或将各种标题统一转为自动层级标题。</p><h3 id="5-块排序-sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序-sort-blocks"></a> 5. 🔃 块排序 (Sort Blocks)</h3><p>智能对选中的多个同级块进行排序。</p><ul><li><strong>多预设配置</strong>：支持在设置中创建无限个自定义排序预设（Profiles）。</li><li><strong>原生规则调序</strong>：支持通过上下箭头对不同类型块（任务、标题、媒体、空白块等数十种类型）的排序优先级进行灵活组合。</li><li><strong>智能菜单</strong>：如果只保留一个预设，右键一键即可秒速排序；如果有多个预设，右键菜单会自动变为子菜单供你选择具体的排序规则。</li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>将笔记一键发布为 Markdown 博客文章。自动提取并上传文中图片到图床，自动生成 Frontmatter 元数据。</p><h3 id="7-插件市集-bazaar"><a class="markdownIt-Anchor" href="#7-插件市集-bazaar"></a> 7. 🏪 插件市集 (Bazaar)</h3><p>Orca 社区插件市场。在应用内即可浏览、安装、更新和卸载社区插件，支持自定义第三方插件源。</p><h3 id="8-️-快捷标签-quick-tag"><a class="markdownIt-Anchor" href="#8-️-快捷标签-quick-tag"></a> 8. 🏷️ 快捷标签 (Quick Tag)</h3><p>使用快捷键一键在光标处插入常用标签，并可自动附加指定的属性（如状态、优先级等）。</p><h3 id="9-标题层级整理-heading-tree-saxz2"><a class="markdownIt-Anchor" href="#9-标题层级整理-heading-tree-saxz2"></a> 9. 🌳 标题层级整理 (Heading Tree) 🥰 <a href="https://github.com/SaXz2">SaXz2</a></h3><p>智能识别现有笔记的 H1-H4 标题层级，重组文档树结构，消除错误的阶梯式缩进，并将普通文本自动归属到最近的标题下。</p><h3 id="10-网页助手-web-assistant"><a class="markdownIt-Anchor" href="#10-网页助手-web-assistant"></a> 10. 🌐 网页助手 (Web Assistant)</h3><p>提供内置沉浸式浏览器。支持智能提取网页元数据（如豆瓣图书、电影），右键一键将选中的网页内容转换为 Markdown 剪藏到笔记中。</p><h3 id="11-记忆复习-srs"><a class="markdownIt-Anchor" href="#11-记忆复习-srs"></a> 11. 🧠 记忆复习 (SRS)</h3><p>集成 FSRS 算法的高效记忆工具。提供问答和沉浸式阅读两种复习模式，支持为任意标签或查询结果开启复习漫游。</p><h3 id="12-块嵌入子项增强-embed-children"><a class="markdownIt-Anchor" href="#12-块嵌入子项增强-embed-children"></a> 12. 🪞 块嵌入子项增强 (Embed Children)</h3><p>已并入「用户脚本 (lets-inject)」的模板库。在用户脚本设置页点击「块嵌入子项」模板即可一键插入到今日日志，插入后默认不启用：在 #脚本 标签属性中勾选 autoRun 可启动时自动加载，或勾选 headbar 等入口属性后从入口手动切换。效果为让带有特定标签的镜像引用块自动向下穿透并展示其子块内容。</p><h3 id="13-随机漫步-random-walk"><a class="markdownIt-Anchor" href="#13-随机漫步-random-walk"></a> 13. 🎲 随机漫步 (Random Walk)</h3><p>知识库漫游工具。自动抓取特定标签下的内容进行无重复发牌，帮助你随机探索和温习过去的知识片段。</p><h3 id="14-智能剪贴板注入-clipboard-injection"><a class="markdownIt-Anchor" href="#14-智能剪贴板注入-clipboard-injection"></a> 14. 📋 智能剪贴板注入 (Clipboard Injection)</h3><p>支持将外部复制的专属 JSON 数据直接解析为原生的虎鲸笔记节点。支持携带标签、属性，并可自动转存远程图片到本地。</p><h3 id="15-️-编辑器扩展命令-editor-commands"><a class="markdownIt-Anchor" href="#15-️-编辑器扩展命令-editor-commands"></a> 15. ⌨️ 编辑器扩展命令 (Editor Commands)</h3><p>选中任意文本即可使用命令将其&quot;复制为带有块引用的 JSON&quot;，在其他页面粘贴即可快速建立双向链接。</p><h3 id="16-️-块工具箱-block-tools"><a class="markdownIt-Anchor" href="#16-️-块工具箱-block-tools"></a> 16. 🛠️ 块工具箱 (Block Tools)</h3><p>提供丰富的块操作快捷菜单。支持一键将子块归集到原引用源、在父节点下置顶/置底，以及在链接和引用格式间快速转换。</p><h3 id="17-隐私块-privacy-block"><a class="markdownIt-Anchor" href="#17-隐私块-privacy-block"></a> 17. 🔒 隐私块 (Privacy Block)</h3><p>一键将块设为隐私状态。不仅在视觉上有锁形提示，底层也会向 AI 隐藏敏感内容，有效保护日记隐私，且不影响正常的编辑书写体验。</p><h3 id="18-块流转-block-flow"><a class="markdownIt-Anchor" href="#18-块流转-block-flow"></a> 18. 🌊 块流转 (Block Flow)</h3><p>右键快速将选中的块发送、移动或引用至「今日日志」、「明日日志」或你指定的「全局收件箱」。</p><h3 id="19-置顶块面板-pinned-blocks"><a class="markdownIt-Anchor" href="#19-置顶块面板-pinned-blocks"></a> 19. 📌 置顶块面板 (Pinned Blocks)</h3><p>为高频笔记打上特定标签，即可在侧边栏面板中将其固定，一键点击即可随时唤回核心工作区。</p><h3 id="20-arc-侧边栏-arc-tabs"><a class="markdownIt-Anchor" href="#20-arc-侧边栏-arc-tabs"></a> 20. 🪐 Arc 侧边栏 (Arc Tabs)</h3><p>媲美 Arc 浏览器的现代化侧边栏。支持多空间隔离、固定标签页自由拖拽排序，以及自动记录去重今天的历史浏览，告别多页面混乱。设置页可开启「在「更多」tab 显示最近访问」——在侧边栏「更多」tab 里列出最近访问的块（与 Arc 侧边栏共用数据），点击即可跳转。</p><h3 id="21-全局收集箱-roam-sidebar"><a class="markdownIt-Anchor" href="#21-全局收集箱-roam-sidebar"></a> 21. 📥 全局收集箱 (Roam Sidebar)</h3><p>复刻 Roam Research 的右侧边栏全局收集交互。底座为完全持久化的原生大纲块，支持跨页面随意拖拽收集、大纲折叠管理，状态永不丢失。</p><h3 id="22-链接工具-link-tools"><a class="markdownIt-Anchor" href="#22-链接工具-link-tools"></a> 22. 🔗 链接工具 (Link Tools)</h3><p>为原生链接提供快捷转换选项。右键超链接即可一键转为原生块引用，或者在图钉（📌）引用格式间灵活切换。</p><h3 id="23-大纲导航树-block-nav"><a class="markdownIt-Anchor" href="#23-大纲导航树-block-nav"></a> 23. 🌳 大纲导航树 (Block Nav)</h3><p>全局侧边栏大纲导航。支持点击平滑跳转、快捷下钻阅读；提供实时本地检索框，搜索结果瞬间过滤。底部提供层级展开按钮：左键展开侧边栏大纲，右键无缝联动主编辑器执行对应层级的精准折叠展开，<strong>按住 Alt / Shift + 左键则同时展开大纲与主编辑器</strong>。</p><h3 id="24-收集引用-gather-refs"><a class="markdownIt-Anchor" href="#24-收集引用-gather-refs"></a> 24. 🔗 收集引用 (Gather Refs)</h3><p>聚合当前文档的所有反向引用。支持通过命令面板 (<code>/gather</code>) 或右键菜单，自动提取所有引用了当前文档的顶级节点（如页面或卡片），并利用 Markdown 语法批量去重插入到光标位置，生成整洁美观的 MOC (Map of Content) 目录树，同时避免反向链接面板污染。</p><h3 id="25-编辑器层级折叠-editor-fold"><a class="markdownIt-Anchor" href="#25-编辑器层级折叠-editor-fold"></a> 25. 🧊 编辑器层级折叠 (Editor Fold)</h3><p>精准控制主编辑器的视觉层级。提供&quot;展开至此同级&quot;右键菜单以及支持快捷键绑定的全局命令，自动截断深层结构的展示，保持工作区绝对整洁。</p><h3 id="26-️-局部关系图谱-local-graph"><a class="markdownIt-Anchor" href="#26-️-局部关系图谱-local-graph"></a> 26. 🕸️ 局部关系图谱 (Local Graph)</h3><p>全局侧边栏局部网络关系图谱。实时跟踪编辑器导航轨迹，动态渲染当前活动块与足迹网络的邻居网络。提供对标签节点、大纲树父子层级关系、常规引用的快捷过滤选项；支持右键点击边缘节点进行定向本地拓展或折叠收起；内置防剧烈晃动的物理阻尼控制，让知识漫游更加丝滑稳定。新增回放探索模式，点击幻灯片图标进入回放，足迹节点按时序逐步呈现，相机自动跟随；用户拖拽后自动暂停跟随，退出时自动恢复录制状态。</p><h3 id="27-️-嵌入视图-embed-view"><a class="markdownIt-Anchor" href="#27-️-嵌入视图-embed-view"></a> 27. 🖼️ 嵌入视图 (Embed View)</h3><p>在笔记中直接嵌入网页、HTML 代码或 Twitter/X 内容。支持拖拽调整嵌入区域高度，网址嵌入时自动显示网站图标和域名，嵌入网页的登录状态可以保持不丢失。</p><h3 id="28-用户脚本-user-scripts"><a class="markdownIt-Anchor" href="#28-用户脚本-user-scripts"></a> 28. 📜 用户脚本 (User Scripts)</h3><p>用户脚本/样式管理系统：给代码块打上 <code>#脚本</code> 标签，即可享受以下全部能力：</p><ul><li><strong>CSS 注入</strong> — 代码块自动注入为 <code>&lt;style&gt;</code> 标签，刷新自动移除；支持点击切换加载/卸载</li><li><strong>JS 自动注入</strong> — 代码块在插件加载时自动执行；脚本用 <code>$inject.onUnload(fn)</code> 注册清理后，从入口再次触发即卸载（而非重复注入），再触发一次恢复加载</li><li><strong>右键菜单</strong> — <code>contextMenu</code> 属性勾选后，其他块的右键菜单出现「脚本」入口，可传入目标块 ID</li><li><strong>顶部栏按钮</strong> — <code>headbar</code> 属性勾选后，脚本出现在顶部栏的下拉菜单中，一键执行</li><li><strong>编辑器侧边栏</strong> — <code>sidetool</code> 属性勾选后，编辑区侧边栏出现脚本按钮</li><li><strong>全局快捷键</strong> — <code>shortcut</code> 属性填写快捷键（如 <code>ctrl+shift+k</code>），即可全局绑定</li><li><strong>多入口统一</strong> — 同一脚本可同时绑定到多个入口（headbar + sidetool + shortcut + contextMenu）</li><li><strong>模板库</strong> — 设置页内置「块嵌入子项」「快捷打标签」「侧边栏布局」「小番茄钟」「全局字体颜色」等模板，一键插入今日日志，开箱即用</li><li><strong>侧边栏「更多」tab</strong> — 两种形态：<ul><li><code>sidebar</code> 属性：脚本作为<strong>启动器条目</strong>列出（点击 = 加载/卸载切换，行内状态点区分加载态，悬停出现「在笔记中定位」）</li><li><code>$inject.registerSidebarGroup</code>：脚本注册<strong>组/挂件</strong>（<code>render</code> 模式在聚焦视图整栏渲染自定义内容，如番茄钟；<code>status</code> 行内快照实时更新）</li></ul></li><li><strong>文件夹组织</strong> — <code>group</code> 标签属性统一控制启动器条目与挂件的文件夹归属，<code>displayName</code> 统一控制显示名（在属性面板改，无需碰脚本代码）</li><li><strong>脚本元数据</strong> — <code>$inject</code> 提供 <code>blockId</code> / <code>scriptName</code> / <code>scriptGroup</code>，脚本可感知自身（定位、归文件夹、改名）</li><li><strong>CD 变量</strong> — <code>$inject.targetBlockIds</code> / <code>applyTag</code> / <code>aiChat</code> / <code>registerSidebarGroup</code> / <code>blockId</code> / <code>scriptName</code> / <code>scriptGroup</code></li></ul><p>执行环境自动注入 <code>orca</code>、<code>window</code>、<code>document</code>、<code>$inject</code> 四个变量，无需额外配置。</p><h3 id="29-ai-助手-ai"><a class="markdownIt-Anchor" href="#29-ai-助手-ai"></a> 29. 🤖 AI 助手 (AI)</h3><p>选中文本后通过 AI 进行解释、翻译、润色等自定义处理，结果以子块形式预览并可一键插入：</p><ul><li><strong>数据驱动的动作</strong> — 在配置的 Prompt 标签的块内写提示词，即注册一个 AI 动作；块的标签属性可控制显示名、图标、是否独立按钮，不用改代码</li><li><strong>内置动作</strong> — 无需配置即可用「解释含义 / 润色 / 翻译」，可在设置中启用或停用；空白选区或自定义指令都可用斜杠/菜单触发</li><li><strong>流式预览</strong> — 生成过程实时呈现在锚定选中文本的浮层中，支持 Markdown、KaTeX 公式与代码高亮</li><li><strong>结构化插入</strong> — 接受后以「分组头 + 子内容」两层插入：分组头带动作名（可选项：加自定义 AI 生成标签），子块保留来源引用（blockquote 忠实呈现选中原文）+ AI 结构化 Markdown 输出</li><li><strong>AI 生成标签</strong> — 设置项可自定义，回退到主设置的内置 AI 标签，留空则不打标签</li></ul><hr /><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>本项目采用模块化架构：</p><ul><li><code>src/lets-*</code>：每个目录对应一个子插件，功能相互独立。</li><li><code>main.tsx</code>：负责管理与动态加载所有启用的子插件。</li></ul>]]></content>
       
       
       
@@ -1579,9 +1579,9 @@
             
             <tag> 阅读所思 </tag>
             
-            <tag> 女性主义 </tag>
-            
             <tag> 爱 </tag>
+            
+            <tag> 女性主义 </tag>
             
             <tag> 亲密关系 </tag>
             
@@ -1602,9 +1602,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -1913,9 +1913,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 杂文 </tag>
             
@@ -2600,11 +2600,11 @@
     
     
     <entry>
-      <title>我亲爱的甜橙树</title>
-      <link href="//2023/12/20/sweet/"/>
-      <url>//2023/12/20/sweet/</url>
+      <title>你的夏天还好吗？</title>
+      <link href="//2023/12/20/summer/"/>
+      <url>//2023/12/20/summer/</url>
       
-        <content type="html"><![CDATA[<p>有时候我们寻找一个故事，陶醉进它构造的悲伤里。那是一种甜蜜的苦楚，像一个被暗恋的女孩牵着鼻子走的少年。</p><p>我流着眼泪读完这本书。</p><p>我想到了一部电影《佛罗里达乐园》，电影的叙述始终保持着孩子的视角，故事在美国的贫民窟打转，结局镜头升高，原来这一切都发生在一所超大的迪斯尼游乐园旁边。</p><p>美国电影里的贫穷也如同饭里的沙砾或者生鱼片里未净的刺。</p><p>《我亲爱的甜橙树》讲述的是我的佛罗里达乐园。两者也有着类似的结构。文字和故事都刻意用着小孩的风格，一切事情都透过层天真展现。</p><p>随着故事继续，当我们（读者）的眼眶湿润。才意识到现实一直在试图进入文本，那扎进小说的刺也穿透了孩子的梦、穿过故事、穿向我们的心脏。</p><p>那是我们也有过的五岁，擅长敏感和伤害。<br />我们也曾渴望犯了错事后可以皱着眉头祈求，然后就有人回应我们的眼神说没关系。<br />我们也曾故意漏出伤疤，在想象中不断上演释放委屈的戏码。<br />当然，我们爱他们，虽然也伤害他们。<br />有时候我们不是故意的，只是我们不懂。如果你们能教，也许我们能学会。我们担心自己不够聪明。</p><p>伤害是一种小偷躲警察的游戏，获得的喜悦在于逃避了多少代价。<br />爱是耕种的游戏，种子不会埋下就发芽。埋下种子需要一个契机，爱需要期待，期待会带来快乐也会带来痛苦。但不了解（感受过）爱的人也自然不会有期待。</p><p>有些人出现在我们的生命里就是为了教会我们这些事。<br />我们会更加强大。</p>]]></content>
+        <content type="html"><![CDATA[<p>（试图）通过阅读来解决问题是我们笨蛋的自我修养，接触文学作品来缓解情绪上的匮乏是最常见的一种。我们过着一种嫁接的生活，而生活本身尚未孕育出属于它自己的作品。于是年轻人们往往都不得不去感受数年、数百年前的生活，或者（甚至）将自己抛入陌生的文化背景，去体会他们的困境、与之对话，尝试找到应对自己遭遇的具体的抉择的判断。</p><p>我们需要中文书写的关于当下、符合目前时代困境的故事。</p><p>什么是「目前时代困境」？——我不知道，但作者如果能写出来，我一定一眼就能看出来。</p><p>这是创作者的天分。一篇小说就是一把手术刀，文字锋利地对生活进行精准的解剖，将我们与世界、文化间的参差赤裸地揭露出来。</p><p>创作者带领我们去「看见」。</p><p>情感当然是共通的。但我还是希望能读到些亲切的、从我们的生活派生的东西。而让人更难过的是，这本韩国的短篇集读起来居然亲切得要命。</p><p>现在终于出现了一个文化背景相似的人来到面前询问「你的夏天还好吗？」</p><p>你大哭一场，想起自己也曾有一肚子的话，只是从来没有人提过。</p>]]></content>
       
       
       <categories>
@@ -2629,11 +2629,11 @@
     
     
     <entry>
-      <title>你的夏天还好吗？</title>
-      <link href="//2023/12/20/summer/"/>
-      <url>//2023/12/20/summer/</url>
+      <title>我亲爱的甜橙树</title>
+      <link href="//2023/12/20/sweet/"/>
+      <url>//2023/12/20/sweet/</url>
       
-        <content type="html"><![CDATA[<p>（试图）通过阅读来解决问题是我们笨蛋的自我修养，接触文学作品来缓解情绪上的匮乏是最常见的一种。我们过着一种嫁接的生活，而生活本身尚未孕育出属于它自己的作品。于是年轻人们往往都不得不去感受数年、数百年前的生活，或者（甚至）将自己抛入陌生的文化背景，去体会他们的困境、与之对话，尝试找到应对自己遭遇的具体的抉择的判断。</p><p>我们需要中文书写的关于当下、符合目前时代困境的故事。</p><p>什么是「目前时代困境」？——我不知道，但作者如果能写出来，我一定一眼就能看出来。</p><p>这是创作者的天分。一篇小说就是一把手术刀，文字锋利地对生活进行精准的解剖，将我们与世界、文化间的参差赤裸地揭露出来。</p><p>创作者带领我们去「看见」。</p><p>情感当然是共通的。但我还是希望能读到些亲切的、从我们的生活派生的东西。而让人更难过的是，这本韩国的短篇集读起来居然亲切得要命。</p><p>现在终于出现了一个文化背景相似的人来到面前询问「你的夏天还好吗？」</p><p>你大哭一场，想起自己也曾有一肚子的话，只是从来没有人提过。</p>]]></content>
+        <content type="html"><![CDATA[<p>有时候我们寻找一个故事，陶醉进它构造的悲伤里。那是一种甜蜜的苦楚，像一个被暗恋的女孩牵着鼻子走的少年。</p><p>我流着眼泪读完这本书。</p><p>我想到了一部电影《佛罗里达乐园》，电影的叙述始终保持着孩子的视角，故事在美国的贫民窟打转，结局镜头升高，原来这一切都发生在一所超大的迪斯尼游乐园旁边。</p><p>美国电影里的贫穷也如同饭里的沙砾或者生鱼片里未净的刺。</p><p>《我亲爱的甜橙树》讲述的是我的佛罗里达乐园。两者也有着类似的结构。文字和故事都刻意用着小孩的风格，一切事情都透过层天真展现。</p><p>随着故事继续，当我们（读者）的眼眶湿润。才意识到现实一直在试图进入文本，那扎进小说的刺也穿透了孩子的梦、穿过故事、穿向我们的心脏。</p><p>那是我们也有过的五岁，擅长敏感和伤害。<br />我们也曾渴望犯了错事后可以皱着眉头祈求，然后就有人回应我们的眼神说没关系。<br />我们也曾故意漏出伤疤，在想象中不断上演释放委屈的戏码。<br />当然，我们爱他们，虽然也伤害他们。<br />有时候我们不是故意的，只是我们不懂。如果你们能教，也许我们能学会。我们担心自己不够聪明。</p><p>伤害是一种小偷躲警察的游戏，获得的喜悦在于逃避了多少代价。<br />爱是耕种的游戏，种子不会埋下就发芽。埋下种子需要一个契机，爱需要期待，期待会带来快乐也会带来痛苦。但不了解（感受过）爱的人也自然不会有期待。</p><p>有些人出现在我们的生命里就是为了教会我们这些事。<br />我们会更加强大。</p>]]></content>
       
       
       <categories>
@@ -3278,6 +3278,33 @@
     
     
     <entry>
+      <title>《绝叫》</title>
+      <link href="//2023/04/02/sakebigoe/"/>
+      <url>//2023/04/02/sakebigoe/</url>
+      
+        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>你是哪一种女权主义者</title>
       <link href="//2023/04/02/feminist/"/>
       <url>//2023/04/02/feminist/</url>
@@ -3299,33 +3326,6 @@
             <tag> 阅读所思 </tag>
             
             <tag> 女性主义 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《绝叫》</title>
-      <link href="//2023/04/02/sakebigoe/"/>
-      <url>//2023/04/02/sakebigoe/</url>
-      
-        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -3665,9 +3665,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -4175,9 +4175,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -4969,9 +4969,9 @@
       
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> React </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
       
@@ -5926,6 +5926,33 @@
     
     
     <entry>
+      <title>Spring Boot 项目打包为 Docker 镜像</title>
+      <link href="//2019/04/02/springboot-docker/"/>
+      <url>//2019/04/02/springboot-docker/</url>
+      
+        <content type="html"><![CDATA[<h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>先提一下整个流程。</p><p>Spring Boot 项目构建 jar 包，Docker 再把 jar 包打包为 Docker image。</p><p>流程是这样，再提一下细节。</p><ul><li>jar 包可以在 java 环境直接执行 <code>java -jar appname.jar</code> 启动。而 Docker 的任务就相当于封装 jar 包，java 环境， 以及 <code>java -jar appname.jar</code> 这条指令。</li><li>Docker 打包 jar 包需要一个 Dockerfile 文件，这个文件相当于一个配置，告诉 Docker 应该如何打包，如何启动 jar 包。</li><li>本地生成了 Docker image，想要把这个镜像部署到服务器，需要把 image 导出。这属于 Docker 命令了，这里不提。</li></ul><p>既然知道流程了，怎么实现呢?</p><p>两种方式，第一种很直观，自己构建 jar 包，然后在本地手动打包镜像。</p><p>第二种，则是通过配置（这里使用 Gradle），实现整个打包的流程。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><p>流程大致可以分为两步，生成 jar 包，生成镜像。每一步都会遇到坑，慢慢来……</p><p>首先确保生成的 jar 包可以通过 <code>java -jar appname.jar</code> 执行。</p><blockquote><p>可能会遇到 找不到主类等错误……</p></blockquote><h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一"></a> 方式一</h2><h3 id="一-构建-jar-包"><a class="markdownIt-Anchor" href="#一-构建-jar-包"></a> 一 构建 jar 包</h3><p>首先构建 jar 包，</p><p>可以 build artifacts。</p><p>建议在根目录下执行 <code>gradle build</code> 或者 <code>gradlew build</code> 。</p><p>先测试一下 jar 包能不能正常运行。</p><p><code>java -jar appname.jar</code></p><p>可能会出现找不到主类之类的问题。</p><h3 id="二-创建镜像"><a class="markdownIt-Anchor" href="#二-创建镜像"></a> 二 创建镜像</h3><p>然后把 jar 包与 Dockerfile 放在同一目录下</p><p>如</p><p>docker/blog.jar</p><p>docker/Dockerfile</p><p>执行</p><blockquote><p>docker build -t [要生成的镜像名] .</p></blockquote><p>注意哈，后面有个点「.」。</p><p>Dockerfile 是打包 docker image 所需的配置文件</p><p>比如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">## Dockerfile</span><br><span class="line">FROM aglover/java8-pier</span><br><span class="line">VOLUME [&quot;/tmp&quot;]</span><br><span class="line">ADD blog.jar app.jar</span><br><span class="line">## blog.jar 是目录下的 jar 包</span><br><span class="line">## app.jar 是 jar 包存放在 Docker 里的名字</span><br><span class="line">ENTRYPOINT [&quot;java&quot;, &quot;-Djava.security.egd=file:/dev/./urandom&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]</span><br><span class="line">## 这一条就是 Docker 里执行 jar 包，相应的 后面的 app.jar 就是 Docker 内 jar 包名</span><br><span class="line">EXPOSE 8082</span><br><span class="line">## 暴露端口 无所谓吧，Docker 启动容器可以自定义</span><br></pre></td></tr></table></figure><p>这里很明显也能看出 Docker 内部还是用的 <code>java -jar appname.jar</code> 来运行。</p><h3 id="三-运行"><a class="markdownIt-Anchor" href="#三-运行"></a> 三 运行</h3><p>注意，运行需要指明 REPOSITORY TAG，</p><p><code>docker run -p 8082:8082 -t REPOSITORY:TAG</code></p><p>如</p><p><code>docker run -p 8082:8082 -t cn.hqweay/blog-backend:1.0</code></p><blockquote><p>注意啊，不这样会启动失败……这问题搞了好久。</p></blockquote><h3 id="疑问"><a class="markdownIt-Anchor" href="#疑问"></a> 疑问</h3><p>我在操作过程中去除了创建 Spring Boot 项目时自带的 Tomcat 依赖，不去不知道能不能行。</p><h2 id="方式二"><a class="markdownIt-Anchor" href="#方式二"></a> 方式二</h2><h3 id="springboot-gradle-docker-配置"><a class="markdownIt-Anchor" href="#springboot-gradle-docker-配置"></a> springboot + gradle + docker 配置</h3><h3 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h3><p><a href="https://juejin.im/post/5b27b7ac51882574c32c6588"><a href="https://juejin.im/post/5b27b7ac51882574c32c6588">https://juejin.im/post/5b27b7ac51882574c32c6588</a></a></p><h3 id="说明-2"><a class="markdownIt-Anchor" href="#说明-2"></a> 说明</h3><p>这里配置可以根据项目信息自动生成 Dockerfile，也可以指定本地 Dockerfile。</p><p>配置的主要目的是解决了手动把 jar 包打包为镜像。</p><h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3><p>见仓库配置文件 <a href="https://github.com/hqweay/blog-backend/blob/master/build.gradle">https://github.com/hqweay/blog-backend/blob/master/build.gradle</a></p><p>根目录执行</p><p><code> ./gradlew clean build dockerBuilder --info</code></p><p>即可打包。</p><p><code>./gradlew build</code> 这条命令是构建 jar 包。</p><p>能看出，整条命令就是先打 jar 包，再执行 dockerBuilder 生成 Dockerfile 文件（或者使用指定的 Dockerfile 文件），再打包为 Docker image。</p><p>当然，本地安装了 Docker，就会使用本地 Docker 来完成打包。</p><p>如果本地没有 Docker ，idea 可能会自动引入吧。我没试过……</p><h3 id="注意-2"><a class="markdownIt-Anchor" href="#注意-2"></a> 注意</h3><p>理解打包的这个流程，配置中的各项就很清晰了……照搬配置会出很多问题的……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 配置与操作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 配置与操作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue CLI3 使用 Marked 渲染 Markdown 格式数据</title>
       <link href="//2019/04/02/marked/"/>
       <url>//2019/04/02/marked/</url>
@@ -5947,33 +5974,6 @@
             <tag> 配置与操作 </tag>
             
             <tag> 前端 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Spring Boot 项目打包为 Docker 镜像</title>
-      <link href="//2019/04/02/springboot-docker/"/>
-      <url>//2019/04/02/springboot-docker/</url>
-      
-        <content type="html"><![CDATA[<h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>先提一下整个流程。</p><p>Spring Boot 项目构建 jar 包，Docker 再把 jar 包打包为 Docker image。</p><p>流程是这样，再提一下细节。</p><ul><li>jar 包可以在 java 环境直接执行 <code>java -jar appname.jar</code> 启动。而 Docker 的任务就相当于封装 jar 包，java 环境， 以及 <code>java -jar appname.jar</code> 这条指令。</li><li>Docker 打包 jar 包需要一个 Dockerfile 文件，这个文件相当于一个配置，告诉 Docker 应该如何打包，如何启动 jar 包。</li><li>本地生成了 Docker image，想要把这个镜像部署到服务器，需要把 image 导出。这属于 Docker 命令了，这里不提。</li></ul><p>既然知道流程了，怎么实现呢?</p><p>两种方式，第一种很直观，自己构建 jar 包，然后在本地手动打包镜像。</p><p>第二种，则是通过配置（这里使用 Gradle），实现整个打包的流程。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><p>流程大致可以分为两步，生成 jar 包，生成镜像。每一步都会遇到坑，慢慢来……</p><p>首先确保生成的 jar 包可以通过 <code>java -jar appname.jar</code> 执行。</p><blockquote><p>可能会遇到 找不到主类等错误……</p></blockquote><h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一"></a> 方式一</h2><h3 id="一-构建-jar-包"><a class="markdownIt-Anchor" href="#一-构建-jar-包"></a> 一 构建 jar 包</h3><p>首先构建 jar 包，</p><p>可以 build artifacts。</p><p>建议在根目录下执行 <code>gradle build</code> 或者 <code>gradlew build</code> 。</p><p>先测试一下 jar 包能不能正常运行。</p><p><code>java -jar appname.jar</code></p><p>可能会出现找不到主类之类的问题。</p><h3 id="二-创建镜像"><a class="markdownIt-Anchor" href="#二-创建镜像"></a> 二 创建镜像</h3><p>然后把 jar 包与 Dockerfile 放在同一目录下</p><p>如</p><p>docker/blog.jar</p><p>docker/Dockerfile</p><p>执行</p><blockquote><p>docker build -t [要生成的镜像名] .</p></blockquote><p>注意哈，后面有个点「.」。</p><p>Dockerfile 是打包 docker image 所需的配置文件</p><p>比如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">## Dockerfile</span><br><span class="line">FROM aglover/java8-pier</span><br><span class="line">VOLUME [&quot;/tmp&quot;]</span><br><span class="line">ADD blog.jar app.jar</span><br><span class="line">## blog.jar 是目录下的 jar 包</span><br><span class="line">## app.jar 是 jar 包存放在 Docker 里的名字</span><br><span class="line">ENTRYPOINT [&quot;java&quot;, &quot;-Djava.security.egd=file:/dev/./urandom&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]</span><br><span class="line">## 这一条就是 Docker 里执行 jar 包，相应的 后面的 app.jar 就是 Docker 内 jar 包名</span><br><span class="line">EXPOSE 8082</span><br><span class="line">## 暴露端口 无所谓吧，Docker 启动容器可以自定义</span><br></pre></td></tr></table></figure><p>这里很明显也能看出 Docker 内部还是用的 <code>java -jar appname.jar</code> 来运行。</p><h3 id="三-运行"><a class="markdownIt-Anchor" href="#三-运行"></a> 三 运行</h3><p>注意，运行需要指明 REPOSITORY TAG，</p><p><code>docker run -p 8082:8082 -t REPOSITORY:TAG</code></p><p>如</p><p><code>docker run -p 8082:8082 -t cn.hqweay/blog-backend:1.0</code></p><blockquote><p>注意啊，不这样会启动失败……这问题搞了好久。</p></blockquote><h3 id="疑问"><a class="markdownIt-Anchor" href="#疑问"></a> 疑问</h3><p>我在操作过程中去除了创建 Spring Boot 项目时自带的 Tomcat 依赖，不去不知道能不能行。</p><h2 id="方式二"><a class="markdownIt-Anchor" href="#方式二"></a> 方式二</h2><h3 id="springboot-gradle-docker-配置"><a class="markdownIt-Anchor" href="#springboot-gradle-docker-配置"></a> springboot + gradle + docker 配置</h3><h3 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h3><p><a href="https://juejin.im/post/5b27b7ac51882574c32c6588"><a href="https://juejin.im/post/5b27b7ac51882574c32c6588">https://juejin.im/post/5b27b7ac51882574c32c6588</a></a></p><h3 id="说明-2"><a class="markdownIt-Anchor" href="#说明-2"></a> 说明</h3><p>这里配置可以根据项目信息自动生成 Dockerfile，也可以指定本地 Dockerfile。</p><p>配置的主要目的是解决了手动把 jar 包打包为镜像。</p><h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3><p>见仓库配置文件 <a href="https://github.com/hqweay/blog-backend/blob/master/build.gradle">https://github.com/hqweay/blog-backend/blob/master/build.gradle</a></p><p>根目录执行</p><p><code> ./gradlew clean build dockerBuilder --info</code></p><p>即可打包。</p><p><code>./gradlew build</code> 这条命令是构建 jar 包。</p><p>能看出，整条命令就是先打 jar 包，再执行 dockerBuilder 生成 Dockerfile 文件（或者使用指定的 Dockerfile 文件），再打包为 Docker image。</p><p>当然，本地安装了 Docker，就会使用本地 Docker 来完成打包。</p><p>如果本地没有 Docker ，idea 可能会自动引入吧。我没试过……</p><h3 id="注意-2"><a class="markdownIt-Anchor" href="#注意-2"></a> 注意</h3><p>理解打包的这个流程，配置中的各项就很清晰了……照搬配置会出很多问题的……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习折腾 </category>
-          
-          <category> 配置与操作 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 配置与操作 </tag>
             
         </tags>
       

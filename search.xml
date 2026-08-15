@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>DeepSeek Harness 与 AGI</title>
+      <link href="//deepseek-harness-vs-agi-55404/"/>
+      <url>//deepseek-harness-vs-agi-55404/</url>
+      
+        <content type="html"><![CDATA[<p>梁文峰在 7 月份泄露的发言录音稿里讲到他们对 AGI 路线的看法：</p><p>语言模型 → CoT（思维链）→ Agent → 持续学习 → 自我迭代奇点 → 具身智能/AGI</p><p>说当时已经是 Agent 阶段。</p><p>那么现在可能要开始「持续学习」阶段了。</p><p>反过来看这条链条。</p><p>实现 AGI 需要让 AI 持续学习；为了能持续学习 AI Agent 应当能持续运行、更新自己，无或尽量无须人工监督；自更新需要保证安全——</p><p>然后就有了「一切皆插件」可热更新的框架 DeepSeek Harness，以及数学上证明如何安全热更新的 88 页论文<a href="https://github.com/cordiverse/paper/blob/main/paper.pdf">A Programming Paradigm for Spatiotemporal Composability</a>。</p><p>梁文峰提到他们的愿景是实现 AGI，像提供网页聊天、API 都只是把攀登这个台阶时的副产物顺便分享出来。讲去年 DeepSeek 的爆火说「甚至一度我们都不想维护那些用户了，但是用户赶都赶不走。」</p><p>由此公测版 DeepSeek Harness 的极客、「普通用户」不友好就是可以理解的了。他们或许真的不大 care。至少现阶段不 care。</p><p>热更新在工程上不是什么新鲜的东西，也有人批评他们搞出 80 页的论文是「真空中的理论产物」——但目前工程上的实践都是经验性的，且依赖开发者自律。</p><p>如果要 AI 自己来迭代，那么一个形式化的理论支撑就很有必要了。</p><p>话说回来，我很欣赏 DeepSeek Harness 的理念，一切皆插件。<a href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/">系统内的元素应该是统一的，然后以家族相似的方式区分。</a>能看出 Emacs 身上那种老式的设计上的优美。我很喜欢这点。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> DeepSeek </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>速不通 LLM</title>
       <link href="//fast-llm-54549/"/>
       <url>//fast-llm-54549/</url>
@@ -14,9 +35,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> AI </tag>
             
         </tags>
       
@@ -54,9 +75,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 养恐龙 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -231,9 +252,9 @@
             
             <tag> Project </tag>
             
-            <tag> 插件 </tag>
-            
             <tag> 思源笔记 </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -347,9 +368,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> AI </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -370,9 +391,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> AI </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -795,9 +816,9 @@
       
         <tags>
             
-            <tag> 虎鲸笔记 </tag>
-            
             <tag> 折腾 </tag>
+            
+            <tag> 虎鲸笔记 </tag>
             
         </tags>
       
@@ -972,9 +993,9 @@
             
             <tag> Project </tag>
             
-            <tag> 插件 </tag>
-            
             <tag> 思源笔记 </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -1623,9 +1644,9 @@
       
         <tags>
             
-            <tag> 理性主义 </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> 理性主义 </tag>
             
         </tags>
       
@@ -1682,9 +1703,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 爱 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -1934,13 +1955,13 @@
       
         <tags>
             
-            <tag> 理性主义 </tag>
-            
             <tag> 阅读所思 </tag>
             
-            <tag> 杂文 </tag>
+            <tag> 理性主义 </tag>
             
             <tag> 心理治疗 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -2001,9 +2022,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 女性主义 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -2307,9 +2328,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 爱 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -3516,9 +3537,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 爱 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -3686,9 +3707,9 @@
       
         <tags>
             
-            <tag> 理性主义 </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> 理性主义 </tag>
             
         </tags>
       
@@ -3912,9 +3933,9 @@
             
             <tag> 理性主义 </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 女性主义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 讲道理 </tag>
             
@@ -4196,9 +4217,9 @@
       
         <tags>
             
-            <tag> 理性主义 </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> 理性主义 </tag>
             
         </tags>
       

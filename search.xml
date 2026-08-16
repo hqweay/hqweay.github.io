@@ -252,9 +252,9 @@
             
             <tag> Project </tag>
             
-            <tag> 插件 </tag>
-            
             <tag> 思源笔记 </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -749,7 +749,7 @@
       <link href="//20260120023137/"/>
       <url>//20260120023137/</url>
       
-        <content type="html"><![CDATA[<h1 id="虎鲸笔记插件恐龙工具箱"><a class="markdownIt-Anchor" href="#虎鲸笔记插件恐龙工具箱"></a> 虎鲸笔记插件：恐龙工具箱</h1><p>一个为 <a href="https://orca.pet">Orca Note</a> 打造的增强插件集合。日常笔记里那些繁琐、重复的操作——排版、归档、回顾、发布、收集——这里都有对应的开箱即用工具。</p><p><strong>一句话</strong>：不用切到别的软件，在虎鲸笔记里就能完成记笔记之外的大部分事。</p><h2 id="安装与使用"><a class="markdownIt-Anchor" href="#安装与使用"></a> 安装与使用</h2><ol><li>下载 Release 中的 <code>package.zip</code>。</li><li>解压后，将整个文件夹复制到 Orca Note 的插件目录。</li><li>在软件设置中刷新并启用插件。所有子功能均可在「插件设置」中单独开启或关闭。</li></ol><h2 id="功能一览"><a class="markdownIt-Anchor" href="#功能一览"></a> 功能一览</h2><h3 id="1-一键格式化-format-block"><a class="markdownIt-Anchor" href="#1-一键格式化-format-block"></a> 1. 📝 一键格式化 (Format Block)</h3><p>解决中文排版问题：标点、空格、全半角一键规范化。</p><ul><li>自动修正中英文标点</li><li>优化中英文混排空格</li><li>规范化全角 / 半角字符</li></ul><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>把 <a href="http://voicenotes.com">voicenotes.com</a> 的录音笔记同步进虎鲸笔记，自动归档。</p><ul><li>一键全量或增量同步</li><li>自动归档到专属收件箱</li></ul><h3 id="3-导入工具-import"><a class="markdownIt-Anchor" href="#3-导入工具-import"></a> 3. 📂 导入工具 (Import)</h3><p>把已有资料搬进虎鲸笔记。</p><ul><li>批量导入本地 Markdown 文件夹</li><li>CSV 表格智能解析为笔记节点，可自动套用模板标签</li></ul><h3 id="4-样式清除-remove-style"><a class="markdownIt-Anchor" href="#4-样式清除-remove-style"></a> 4. 🧹 样式清除 (Remove Style)</h3><p>快速清理富文本格式。</p><ul><li>一键移除加粗、颜色等行内样式</li><li>链接转纯文本、删除空行</li><li>各种标题统一转为自动层级标题</li></ul><h3 id="5-块排序-sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序-sort-blocks"></a> 5. 🔃 块排序 (Sort Blocks)</h3><p>智能排序多个同级块。</p><ul><li>支持创建多个自定义排序预设</li><li>通过上下箭头自由组合数十种块类型的排序优先级</li><li>单个预设时右键一键排序，多个预设自动变成子菜单</li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>把笔记一键发布成博客文章。</p><ul><li>自动提取并上传文中图片到图床</li><li>自动生成 Frontmatter 元数据</li></ul><h3 id="7-插件市集-bazaar"><a class="markdownIt-Anchor" href="#7-插件市集-bazaar"></a> 7. 🏪 插件市集 (Bazaar)</h3><p>应用内的社区插件市场。</p><ul><li>浏览、安装、更新、卸载社区插件</li><li>支持自定义第三方插件源</li></ul><h3 id="8-️-快捷标签-quick-tag"><a class="markdownIt-Anchor" href="#8-️-快捷标签-quick-tag"></a> 8. 🏷️ 快捷标签 (Quick Tag)</h3><p>快捷键一键插入常用标签。</p><ul><li>光标处即插即用</li><li>可自动附带状态、优先级等属性</li></ul><h3 id="9-标题层级整理-heading-tree"><a class="markdownIt-Anchor" href="#9-标题层级整理-heading-tree"></a> 9. 🌳 标题层级整理 (Heading Tree)</h3><p>修复混乱的文档层级。</p><ul><li>自动识别 H1–H4 标题，重组文档树</li><li>消除错误的阶梯式缩进，普通文本自动归属到最近的标题下</li></ul><h3 id="10-网页助手-web-assistant"><a class="markdownIt-Anchor" href="#10-网页助手-web-assistant"></a> 10. 🌐 网页助手 (Web Assistant)</h3><p>把网页内容变成笔记。</p><ul><li>内置沉浸式浏览器</li><li>智能提取网页元数据（如豆瓣图书、电影）</li><li>右键一键将网页内容转为 Markdown 剪藏</li></ul><h3 id="11-记忆复习-srs"><a class="markdownIt-Anchor" href="#11-记忆复习-srs"></a> 11. 🧠 记忆复习 (SRS)</h3><p>基于 FSRS 算法的记忆工具，对抗遗忘。</p><ul><li>问答与沉浸式阅读两种复习模式</li><li>为任意标签或查询结果开启复习漫游</li></ul><h3 id="12-块嵌入子项增强-embed-children"><a class="markdownIt-Anchor" href="#12-块嵌入子项增强-embed-children"></a> 12. 🪞 块嵌入子项增强 (Embed Children)</h3><p>让镜像引用块自动展示子块内容。</p><ul><li>随「用户脚本」模板库一键插入使用</li><li>可设置启动时自动加载，或从顶部栏等入口手动切换</li></ul><h3 id="13-随机漫步-random-walk"><a class="markdownIt-Anchor" href="#13-随机漫步-random-walk"></a> 13. 🎲 随机漫步 (Random Walk)</h3><p>随机探索知识库，重温过去的知识片段。</p><ul><li>自动抓取指定标签下的内容</li><li>无重复发牌，越翻越有惊喜</li></ul><h3 id="14-智能剪贴板注入-clipboard-injection"><a class="markdownIt-Anchor" href="#14-智能剪贴板注入-clipboard-injection"></a> 14. 📋 智能剪贴板注入 (Clipboard Injection)</h3><p>外部 JSON 数据直接粘贴为原生笔记节点。</p><ul><li>支持携带标签、属性</li><li>自动转存远程图片到本地</li></ul><h3 id="15-️-编辑器扩展命令-editor-commands"><a class="markdownIt-Anchor" href="#15-️-编辑器扩展命令-editor-commands"></a> 15. ⌨️ 编辑器扩展命令 (Editor Commands)</h3><p>选中文本一键「复制为带块引用的 JSON」，粘贴即建双向链接。</p><h3 id="16-️-块工具箱-block-tools"><a class="markdownIt-Anchor" href="#16-️-块工具箱-block-tools"></a> 16. 🛠️ 块工具箱 (Block Tools)</h3><p>常用块操作的快捷菜单。</p><ul><li>子块一键归集到原引用源</li><li>父节点下置顶 / 置底</li><li>链接与引用格式快速互转</li></ul><h3 id="17-隐私块-privacy-block"><a class="markdownIt-Anchor" href="#17-隐私块-privacy-block"></a> 17. 🔒 隐私块 (Privacy Block)</h3><p>一键把敏感内容藏起来。</p><ul><li>视觉上有锁形提示</li><li>底层向 AI 隐藏隐私内容，不影响日常编辑</li></ul><h3 id="18-块流转-block-flow"><a class="markdownIt-Anchor" href="#18-块流转-block-flow"></a> 18. 🌊 块流转 (Block Flow)</h3><p>右键把选中的块快速流转。</p><ul><li>发送 / 移动 / 引用至今日、明日日志或全局收件箱</li></ul><h3 id="19-置顶块面板-pinned-blocks"><a class="markdownIt-Anchor" href="#19-置顶块面板-pinned-blocks"></a> 19. 📌 置顶块面板 (Pinned Blocks)</h3><p>高频笔记打上特定标签即固定到侧边栏，随时唤回。</p><h3 id="20-arc-侧边栏-arc-tabs"><a class="markdownIt-Anchor" href="#20-arc-侧边栏-arc-tabs"></a> 20. 🪐 Arc 侧边栏 (Arc Tabs)</h3><p>媲美 Arc 浏览器的现代侧边栏。</p><ul><li>多空间隔离、固定标签自由拖拽排序</li><li>自动记录去重今天的历史浏览</li><li>可在「更多」tab 查看最近访问，点击即跳转</li></ul><h3 id="21-全局收集箱-roam-sidebar"><a class="markdownIt-Anchor" href="#21-全局收集箱-roam-sidebar"></a> 21. 📥 全局收集箱 (Roam Sidebar)</h3><p>复刻 Roam Research 的全局收集交互。</p><ul><li>完全持久化的原生大纲块，跨页面随意拖拽收集</li><li>大纲折叠管理，状态永不丢失</li></ul><h3 id="22-链接工具-link-tools"><a class="markdownIt-Anchor" href="#22-链接工具-link-tools"></a> 22. 🔗 链接工具 (Link Tools)</h3><p>链接的快捷转换。</p><ul><li>右键超链接一键转为原生块引用</li><li>在图钉（📌）引用格式间灵活切换</li></ul><h3 id="23-大纲导航树-block-nav"><a class="markdownIt-Anchor" href="#23-大纲导航树-block-nav"></a> 23. 🌳 大纲导航树 (Block Nav)</h3><p>侧边栏大纲导航，长文档也能快速定位。</p><ul><li>点击平滑跳转、快捷下钻阅读</li><li>实时本地检索，结果瞬间过滤</li><li>底部按钮联动主编辑器，一键精准展开 / 折叠</li></ul><h3 id="24-收集引用-gather-refs"><a class="markdownIt-Anchor" href="#24-收集引用-gather-refs"></a> 24. 🔗 收集引用 (Gather Refs)</h3><p>一键生成当前文档的反向引用汇总。</p><ul><li>通过 <code>/gather</code> 或右键菜单触发</li><li>自动去重生成整洁的 MOC 目录树</li></ul><h3 id="25-编辑器层级折叠-editor-fold"><a class="markdownIt-Anchor" href="#25-编辑器层级折叠-editor-fold"></a> 25. 🧊 编辑器层级折叠 (Editor Fold)</h3><p>保持工作区整洁。</p><ul><li>「展开至此同级」右键菜单</li><li>支持快捷键绑定的全局命令，自动截断深层结构展示</li></ul><h3 id="26-️-局部关系图谱-local-graph"><a class="markdownIt-Anchor" href="#26-️-局部关系图谱-local-graph"></a> 26. 🕸️ 局部关系图谱 (Local Graph)</h3><p>侧边栏实时关系图谱，跟随你的足迹生长。</p><ul><li>动态渲染当前活动块的邻居网络</li><li>快捷过滤标签、层级关系与常规引用</li><li>右键边缘节点定向拓展 / 折叠，物理阻尼防抖动</li><li>回放探索模式：足迹按时序重播，相机自动跟随</li></ul><h3 id="27-️-嵌入视图-embed-view"><a class="markdownIt-Anchor" href="#27-️-嵌入视图-embed-view"></a> 27. 🖼️ 嵌入视图 (Embed View)</h3><p>在笔记里嵌入网页、HTML 或 Twitter/X 内容。</p><ul><li>拖拽调整嵌入区域高度</li><li>网址嵌入自动显示图标与域名，登录状态不丢失</li></ul><h3 id="28-用户脚本-user-scripts"><a class="markdownIt-Anchor" href="#28-用户脚本-user-scripts"></a> 28. 📜 用户脚本 (User Scripts)</h3><p>给代码块打上 <code>#脚本</code> 标签，代码立刻变成可注入的脚本 / 样式，深度定制你的 Orca。</p><ul><li><strong>注入即用</strong> — CSS 自动生效、JS 自动执行，点击即可加载 / 卸载，刷新自动清理</li><li><strong>多种入口</strong> — 右键菜单、顶部栏、编辑器侧边栏、AI 菜单、全局快捷键，可同时绑定多个</li><li><strong>侧边栏挂件</strong> — 脚本能在「更多」tab 注册自定义挂件（如番茄钟）或启动器条目，支持文件夹分组</li><li><strong>接收块拖拽</strong> — 挂件可设为笔记块的投放目标，拖入即处理</li><li><strong>模板库</strong> — 内置块嵌入子项、快捷打标签、侧边栏布局、番茄钟、暂存箱、AI 知识熔炉等模板，一键插入、开箱即用</li></ul><h3 id="29-ai-助手-ai"><a class="markdownIt-Anchor" href="#29-ai-助手-ai"></a> 29. 🤖 AI 助手 (AI)</h3><p>选中文本，用 AI 解释、翻译、润色、打标签或执行自定义指令。</p><ul><li><strong>开箱即用</strong> — 内置「解释含义 / 润色 / 翻译 / 打标签」，无需任何配置</li><li><strong>打标签</strong> — 根据选中内容给目标块打上简洁准确的标签；跨块选中时，每一个被选中的块都会打上相同标签</li><li><strong>自定义动作</strong> — 在指定标签的块里写提示词即注册一个新动作；名字、图标在属性面板改，不用写代码</li><li><strong>流式预览</strong> — 生成过程实时显示在可拖拽的浮动面板，支持 Markdown、公式与代码高亮</li><li><strong>结构化插入</strong> — 结果以「分组头 + 子内容」插入，自动附上选中的原文引用</li><li><strong>工具调用即时可见</strong> — 模型调用 MCP 工具（如写入今日日志）后，界面自动刷新，写入结果无需手动刷新即可看到</li><li><strong>与用户脚本联动</strong> — 勾选 <code>aiMenu</code> 的脚本会出现在 AI 菜单中，实现「选中即跳转 / 查询」</li></ul><h3 id="30-️-时间统计-time-log"><a class="markdownIt-Anchor" href="#30-️-时间统计-time-log"></a> 30. ⏱️ 时间统计 (Time Log)</h3><p>给带时间属性的标签打点，自动聚合成时间线与统计。</p><ul><li><strong>多视图</strong> — 日 / 周 / 月时间线，加上统计页（总时长、日均、连续、时段 / 年分布、月报），支持全屏展开</li><li><strong>无结束自动推断</strong> — 同一标签一天内的相邻打点自动连成一段；可配置相邻上限与「今日实时」统计，粗粒度打点也能获得准确概览</li><li><strong>仅时间点</strong> — 只配置开始时间的标签组（如碎碎念）在时间线上以彩色圆点标记，悬停查看内容与时间、点击跳转，不计入时长</li><li><strong>月视图点组圆点</strong> — 仅时间点组在月历格子里同样以彩色圆点标记（最多 4 个，超出折叠为 +N）</li><li><strong>目标进度</strong> — 可为标签组设置每日 / 每周 / 每月目标时长，日 / 周 / 月视图顶部显示进度条；月视图达成每日目标的日子标 ✓</li><li><strong>时间线拖选放大</strong> — 在日 / 周时间线空白处拖选一段即放大到该区间，左侧缩放滑轨可一键清除回到自适应</li><li><strong>专注与环比</strong> — 统计页新增「专注」指标（≥45 分钟连续记录占比）与「环比上月」卡片（总时长、活跃天数、分组增量）</li><li><strong>AI 分析</strong> — 一键让 AI 基于当月统计快照生成文字洞察（统计概览与当月记录文本发送给已配置的 AI 提供商）</li><li><strong>AI 图表</strong> — 让 AI 生成内联 SVG 统计图表；分析与图表产物持久化为列表，每条可单独删除</li><li><strong>图例开关</strong> — 各组可在图例里点击隐藏，只影响展示不影响数据</li><li><strong>统计页导航</strong> — 年分布上移至统计页顶部作「选月导航」（点击月柱切换、当前月高亮），下方即所选月份的报表；周规律标注「全年平均」与月口径区分</li><li><strong>按时长 / 按块数</strong> — 统计页顶部一键切换统计口径：看「每类事花了多久」选时长，看「记了多少内容」选块数；整页图表跟随切换并记住你的选择</li><li><strong>右键打点 / 安排</strong> — 在时间线上右键点一下记录时刻（打点）；按住右键上下拖动按起止安排一段（范围）。安排在未来时间会自动带上提醒标记；打点用的标签可在设置里指定或只记提醒</li><li><strong>提醒计划 (Reminder)</strong> — 未来安排的记录以虚线计划条 / 计划点显示在时间线上，预览接下来一整天的安排；时刻已过的提醒不再出现、不进统计</li><li><strong>创建即定位</strong> — 打点 / 安排出的记录会自动定位（已在当前页面就滚动过去，否则跳转），方便立刻改内容；左键点击记录也是智能定位</li><li><strong>创建可撤销</strong> — 新记录创建后弹出的通知可一键撤销删除；新记录即时出现在当日日记里</li></ul><hr /><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>模块化架构，每个功能独立成 <code>src/lets-*</code> 目录，由 <code>main.tsx</code> 动态加载启用的子插件。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="虎鲸笔记插件恐龙工具箱"><a class="markdownIt-Anchor" href="#虎鲸笔记插件恐龙工具箱"></a> 虎鲸笔记插件：恐龙工具箱</h1><p>一个为 <a href="https://orca.pet">Orca Note</a> 打造的增强插件集合。日常笔记里那些繁琐、重复的操作——排版、归档、回顾、发布、收集——这里都有对应的开箱即用工具。</p><p><strong>一句话</strong>：不用切到别的软件，在虎鲸笔记里就能完成记笔记之外的大部分事。</p><h2 id="安装与使用"><a class="markdownIt-Anchor" href="#安装与使用"></a> 安装与使用</h2><ol><li>下载 Release 中的 <code>package.zip</code>。</li><li>解压后，将整个文件夹复制到 Orca Note 的插件目录。</li><li>在软件设置中刷新并启用插件。所有子功能均可在「插件设置」中单独开启或关闭。</li></ol><h2 id="功能一览"><a class="markdownIt-Anchor" href="#功能一览"></a> 功能一览</h2><h3 id="1-一键格式化-format-block"><a class="markdownIt-Anchor" href="#1-一键格式化-format-block"></a> 1. 📝 一键格式化 (Format Block)</h3><p>解决中文排版问题：标点、空格、全半角一键规范化。</p><ul><li>自动修正中英文标点</li><li>优化中英文混排空格</li><li>规范化全角 / 半角字符</li></ul><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>把 <a href="http://voicenotes.com">voicenotes.com</a> 的录音笔记同步进虎鲸笔记，自动归档。</p><ul><li>一键全量或增量同步</li><li>自动归档到专属收件箱</li></ul><h3 id="3-导入工具-import"><a class="markdownIt-Anchor" href="#3-导入工具-import"></a> 3. 📂 导入工具 (Import)</h3><p>把已有资料搬进虎鲸笔记。</p><ul><li>批量导入本地 Markdown 文件夹</li><li>CSV 表格智能解析为笔记节点，可自动套用模板标签</li></ul><h3 id="4-样式清除-remove-style"><a class="markdownIt-Anchor" href="#4-样式清除-remove-style"></a> 4. 🧹 样式清除 (Remove Style)</h3><p>快速清理富文本格式。</p><ul><li>一键移除加粗、颜色等行内样式</li><li>链接转纯文本、删除空行</li><li>各种标题统一转为自动层级标题</li></ul><h3 id="5-块排序-sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序-sort-blocks"></a> 5. 🔃 块排序 (Sort Blocks)</h3><p>智能排序多个同级块。</p><ul><li>支持创建多个自定义排序预设</li><li>通过上下箭头自由组合数十种块类型的排序优先级</li><li>单个预设时右键一键排序，多个预设自动变成子菜单</li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>把笔记一键发布成博客文章。</p><ul><li>自动提取并上传文中图片到图床</li><li>自动生成 Frontmatter 元数据</li></ul><h3 id="7-插件市集-bazaar"><a class="markdownIt-Anchor" href="#7-插件市集-bazaar"></a> 7. 🏪 插件市集 (Bazaar)</h3><p>应用内的社区插件市场。</p><ul><li>浏览、安装、更新、卸载社区插件</li><li>支持自定义第三方插件源</li></ul><h3 id="8-️-快捷标签-quick-tag"><a class="markdownIt-Anchor" href="#8-️-快捷标签-quick-tag"></a> 8. 🏷️ 快捷标签 (Quick Tag)</h3><p>快捷键一键插入常用标签。</p><ul><li>光标处即插即用</li><li>可自动附带状态、优先级等属性</li></ul><h3 id="9-标题层级整理-heading-tree"><a class="markdownIt-Anchor" href="#9-标题层级整理-heading-tree"></a> 9. 🌳 标题层级整理 (Heading Tree)</h3><p>修复混乱的文档层级。</p><ul><li>自动识别 H1–H4 标题，重组文档树</li><li>消除错误的阶梯式缩进，普通文本自动归属到最近的标题下</li></ul><h3 id="10-网页助手-web-assistant"><a class="markdownIt-Anchor" href="#10-网页助手-web-assistant"></a> 10. 🌐 网页助手 (Web Assistant)</h3><p>把网页内容变成笔记。</p><ul><li>内置沉浸式浏览器</li><li>智能提取网页元数据（如豆瓣图书、电影）</li><li>右键一键将网页内容转为 Markdown 剪藏</li></ul><h3 id="11-记忆复习-srs"><a class="markdownIt-Anchor" href="#11-记忆复习-srs"></a> 11. 🧠 记忆复习 (SRS)</h3><p>基于 FSRS 算法的记忆工具，对抗遗忘。</p><ul><li>问答与沉浸式阅读两种复习模式</li><li>为任意标签或查询结果开启复习漫游</li></ul><h3 id="12-块嵌入子项增强-embed-children"><a class="markdownIt-Anchor" href="#12-块嵌入子项增强-embed-children"></a> 12. 🪞 块嵌入子项增强 (Embed Children)</h3><p>让镜像引用块自动展示子块内容。</p><ul><li>随「用户脚本」模板库一键插入使用</li><li>可设置启动时自动加载，或从顶部栏等入口手动切换</li></ul><h3 id="13-随机漫步-random-walk"><a class="markdownIt-Anchor" href="#13-随机漫步-random-walk"></a> 13. 🎲 随机漫步 (Random Walk)</h3><p>随机探索知识库，重温过去的知识片段。</p><ul><li>自动抓取指定标签下的内容</li><li>无重复发牌，越翻越有惊喜</li></ul><h3 id="14-智能剪贴板注入-clipboard-injection"><a class="markdownIt-Anchor" href="#14-智能剪贴板注入-clipboard-injection"></a> 14. 📋 智能剪贴板注入 (Clipboard Injection)</h3><p>外部 JSON 数据直接粘贴为原生笔记节点。</p><ul><li>支持携带标签、属性</li><li>自动转存远程图片到本地</li></ul><h3 id="15-️-块工具箱-block-tools"><a class="markdownIt-Anchor" href="#15-️-块工具箱-block-tools"></a> 15. 🛠️ 块工具箱 (Block Tools)</h3><p>常用块操作的快捷菜单。</p><ul><li>子块一键归集到原引用源</li><li>父节点下置顶 / 置底</li><li>链接与引用格式快速互转</li></ul><h3 id="16-隐私块-privacy-block"><a class="markdownIt-Anchor" href="#16-隐私块-privacy-block"></a> 16. 🔒 隐私块 (Privacy Block)</h3><p>一键把敏感内容藏起来。</p><ul><li>视觉上有锁形提示</li><li>底层向 AI 隐藏隐私内容，不影响日常编辑</li></ul><h3 id="17-块流转-block-flow"><a class="markdownIt-Anchor" href="#17-块流转-block-flow"></a> 17. 🌊 块流转 (Block Flow)</h3><p>右键把选中的块快速流转。</p><ul><li>发送 / 移动 / 引用至今日、明日日志或全局收件箱</li></ul><h3 id="18-置顶块面板-pinned-blocks"><a class="markdownIt-Anchor" href="#18-置顶块面板-pinned-blocks"></a> 18. 📌 置顶块面板 (Pinned Blocks)</h3><p>高频笔记打上特定标签即固定到侧边栏，随时唤回。</p><h3 id="19-arc-侧边栏-arc-tabs"><a class="markdownIt-Anchor" href="#19-arc-侧边栏-arc-tabs"></a> 19. 🪐 Arc 侧边栏 (Arc Tabs)</h3><p>媲美 Arc 浏览器的现代侧边栏。</p><ul><li>多空间隔离、固定标签自由拖拽排序</li><li>自动记录去重今天的历史浏览</li><li>可在「更多」tab 查看最近访问，点击即跳转</li></ul><h3 id="20-全局收集箱-roam-sidebar"><a class="markdownIt-Anchor" href="#20-全局收集箱-roam-sidebar"></a> 20. 📥 全局收集箱 (Roam Sidebar)</h3><p>复刻 Roam Research 的全局收集交互。</p><ul><li>完全持久化的原生大纲块，跨页面随意拖拽收集</li><li>大纲折叠管理，状态永不丢失</li></ul><h3 id="21-链接工具-link-tools"><a class="markdownIt-Anchor" href="#21-链接工具-link-tools"></a> 21. 🔗 链接工具 (Link Tools)</h3><p>链接的快捷转换。</p><ul><li>右键超链接一键转为原生块引用</li><li>在图钉（📌）引用格式间灵活切换</li></ul><h3 id="22-大纲导航树-block-nav"><a class="markdownIt-Anchor" href="#22-大纲导航树-block-nav"></a> 22. 🌳 大纲导航树 (Block Nav)</h3><p>侧边栏大纲导航，长文档也能快速定位。</p><ul><li>点击平滑跳转、快捷下钻阅读</li><li>实时本地检索，结果瞬间过滤</li><li>底部按钮联动主编辑器，一键精准展开 / 折叠</li></ul><h3 id="23-收集引用-gather-refs"><a class="markdownIt-Anchor" href="#23-收集引用-gather-refs"></a> 23. 🔗 收集引用 (Gather Refs)</h3><p>一键生成当前文档的反向引用汇总。</p><ul><li>通过 <code>/gather</code> 或右键菜单触发</li><li>自动去重生成整洁的 MOC 目录树</li></ul><h3 id="24-编辑器层级折叠-editor-fold"><a class="markdownIt-Anchor" href="#24-编辑器层级折叠-editor-fold"></a> 24. 🧊 编辑器层级折叠 (Editor Fold)</h3><p>保持工作区整洁。</p><ul><li>「展开至此同级」右键菜单</li><li>支持快捷键绑定的全局命令，自动截断深层结构展示</li></ul><h3 id="25-️-局部关系图谱-local-graph"><a class="markdownIt-Anchor" href="#25-️-局部关系图谱-local-graph"></a> 25. 🕸️ 局部关系图谱 (Local Graph)</h3><p>侧边栏实时关系图谱，跟随你的足迹生长。</p><ul><li>动态渲染当前活动块的邻居网络</li><li>快捷过滤标签、层级关系与常规引用</li><li>右键边缘节点定向拓展 / 折叠，物理阻尼防抖动</li><li>回放探索模式：足迹按时序重播，相机自动跟随</li></ul><h3 id="26-️-嵌入视图-embed-view"><a class="markdownIt-Anchor" href="#26-️-嵌入视图-embed-view"></a> 26. 🖼️ 嵌入视图 (Embed View)</h3><p>在笔记里嵌入网页、HTML 或 Twitter/X 内容。</p><ul><li>拖拽调整嵌入区域高度</li><li>网址嵌入自动显示图标与域名，登录状态不丢失</li></ul><h3 id="27-用户脚本-user-scripts"><a class="markdownIt-Anchor" href="#27-用户脚本-user-scripts"></a> 27. 📜 用户脚本 (User Scripts)</h3><p>给代码块打上 <code>#脚本</code> 标签，代码立刻变成可注入的脚本 / 样式，深度定制你的 Orca。</p><ul><li><strong>注入即用</strong> — CSS 自动生效、JS 自动执行，点击即可加载 / 卸载，刷新自动清理</li><li><strong>多种入口</strong> — 右键菜单、顶部栏、编辑器侧边栏、AI 菜单、全局快捷键，可同时绑定多个</li><li><strong>侧边栏挂件</strong> — 脚本能在「更多」tab 注册自定义挂件（如番茄钟）或启动器条目，支持文件夹分组</li><li><strong>接收块拖拽</strong> — 挂件可设为笔记块的投放目标，拖入即处理</li><li><strong>模板库</strong> — 内置块嵌入子项、快捷打标签、粘贴选中文本为块引用、侧边栏布局、番茄钟、暂存箱、AI 知识熔炉等模板，一键插入、开箱即用</li></ul><h3 id="28-ai-助手-ai"><a class="markdownIt-Anchor" href="#28-ai-助手-ai"></a> 28. 🤖 AI 助手 (AI)</h3><p>选中文本，用 AI 解释、翻译、润色、打标签或执行自定义指令。</p><ul><li><strong>开箱即用</strong> — 内置「解释含义 / 润色 / 翻译 / 打标签」，无需任何配置</li><li><strong>打标签</strong> — 根据选中内容给目标块打上简洁准确的标签；跨块选中时，每一个被选中的块都会打上相同标签</li><li><strong>自定义动作</strong> — 在指定标签的块里写提示词即注册一个新动作；名字、图标在属性面板改，不用写代码</li><li><strong>流式预览</strong> — 生成过程实时显示在可拖拽的浮动面板，支持 Markdown、公式与代码高亮</li><li><strong>结构化插入</strong> — 结果以「分组头 + 子内容」插入，自动附上选中的原文引用</li><li><strong>工具调用即时可见</strong> — 模型调用 MCP 工具（如写入今日日志）后，界面自动刷新，写入结果无需手动刷新即可看到</li><li><strong>与用户脚本联动</strong> — 勾选 <code>aiMenu</code> 的脚本会出现在 AI 菜单中，实现「选中即跳转 / 查询」</li></ul><h3 id="29-️-时间统计-time-log"><a class="markdownIt-Anchor" href="#29-️-时间统计-time-log"></a> 29. ⏱️ 时间统计 (Time Log)</h3><p>给带时间属性的标签打点，自动聚合成时间线与统计。</p><ul><li><strong>多视图</strong> — 日 / 周 / 月时间线，加上统计页（总时长、日均、连续、时段 / 年分布、月报），支持全屏展开</li><li><strong>无结束自动推断</strong> — 同一标签一天内的相邻打点自动连成一段；可配置相邻上限与「今日实时」统计，粗粒度打点也能获得准确概览</li><li><strong>仅时间点</strong> — 只配置开始时间的标签组（如碎碎念）在时间线上以彩色圆点标记，悬停查看内容与时间、点击跳转，不计入时长</li><li><strong>月视图点组圆点</strong> — 仅时间点组在月历格子里同样以彩色圆点标记（最多 4 个，超出折叠为 +N）</li><li><strong>目标进度</strong> — 可为标签组设置每日 / 每周 / 每月目标时长，日 / 周 / 月视图顶部显示进度条；月视图达成每日目标的日子标 ✓</li><li><strong>范围过滤与缩放</strong> — 右键框选 ≥2 小时设自定义范围过滤；左侧缩放滑轨竖直拖拽 / 滚轮缩放，双击或一键清除回到自适应</li><li><strong>专注与环比</strong> — 统计页新增「专注」指标（≥45 分钟连续记录占比）与「环比上月」卡片（总时长、活跃天数、分组增量）</li><li><strong>AI 分析</strong> — 一键让 AI 基于当月统计快照生成文字洞察（统计概览与当月记录文本发送给已配置的 AI 提供商）</li><li><strong>AI 图表</strong> — 让 AI 生成内联 SVG 统计图表；分析与图表产物持久化为列表，每条可单独删除</li><li><strong>图例开关</strong> — 各组可在图例里点击隐藏，只影响展示不影响数据</li><li><strong>统计页导航</strong> — 年分布上移至统计页顶部作「选月导航」（点击月柱切换、当前月高亮），下方即所选月份的报表；周规律标注「全年平均」与月口径区分</li><li><strong>按时长 / 按块数</strong> — 统计页顶部一键切换统计口径：看「每类事花了多久」选时长，看「记了多少内容」选块数；整页图表跟随切换并记住你的选择</li><li><strong>左键打点 / 安排</strong> — 在时间线空白处左键单击记录时刻（打点），按住左键上下拖动按起止安排一段（范围，≥2 分钟）。安排在未来时间会自动带上提醒标记；打点用的默认标签可在设置里指定或只记提醒</li><li><strong>日历界面补记数据 (Backfill)</strong> — 漏记了？直接在日历的过去时刻左键打点 / 拖拽安排，会弹出「补标记」浮层让你选记到哪个标签组（点记点组、段记时长组），选中即写入当天日记，时间线、统计即时更新 —— 再也不用翻回当天手写补录</li><li><strong>创建记录写入干净</strong> — 打点 / 安排出的新记录文本只带 <code>#标签</code> 尾巴（与编辑器内一致），时间属性挂在标签上而非写进文本，之后在编辑器里随意改内容都不影响时间数据</li><li><strong>提醒计划 (Reminder)</strong> — 未来安排的记录以虚线计划条 / 计划点显示在时间线上，预览接下来一整天的安排；时刻已过的提醒不再出现、不进统计</li><li><strong>创建即定位</strong> — 打点 / 安排出的记录会自动定位（已在当前页面就滚动过去，否则跳转），方便立刻改内容；左键点击记录也是智能定位</li><li><strong>创建可撤销</strong> — 新记录创建后弹出的通知可一键撤销删除；新记录即时出现在当日日记里</li><li><strong>拖拽调整时间段</strong> — 直接拖时间条就能改：拖中部整体移动，拖上缘改开始、下缘改结束（仅时长段）；未来计划段不可拖。改动即时生效，通知可一键撤销</li></ul><hr /><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>模块化架构，每个功能独立成 <code>src/lets-*</code> 目录，由 <code>main.tsx</code> 动态加载启用的子插件。</p>]]></content>
       
       
       
@@ -795,9 +795,9 @@
       
         <tags>
             
-            <tag> 思源笔记 </tag>
-            
             <tag> 折腾 </tag>
+            
+            <tag> 思源笔记 </tag>
             
         </tags>
       
@@ -816,9 +816,9 @@
       
         <tags>
             
-            <tag> 虎鲸笔记 </tag>
-            
             <tag> 折腾 </tag>
+            
+            <tag> 虎鲸笔记 </tag>
             
         </tags>
       
@@ -993,9 +993,9 @@
             
             <tag> Project </tag>
             
-            <tag> 插件 </tag>
-            
             <tag> 思源笔记 </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -1621,9 +1621,9 @@
             
             <tag> 阅读所思 </tag>
             
-            <tag> 爱 </tag>
-            
             <tag> 女性主义 </tag>
+            
+            <tag> 爱 </tag>
             
             <tag> 亲密关系 </tag>
             
@@ -1747,9 +1747,9 @@
             
             <tag> 阅读所思 </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -3320,33 +3320,6 @@
     
     
     <entry>
-      <title>《绝叫》</title>
-      <link href="//2023/04/02/sakebigoe/"/>
-      <url>//2023/04/02/sakebigoe/</url>
-      
-        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>你是哪一种女权主义者</title>
       <link href="//2023/04/02/feminist/"/>
       <url>//2023/04/02/feminist/</url>
@@ -3376,6 +3349,33 @@
     
     
     <entry>
+      <title>《绝叫》</title>
+      <link href="//2023/04/02/sakebigoe/"/>
+      <url>//2023/04/02/sakebigoe/</url>
+      
+        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从过去到命运</title>
       <link href="//2023/03/01/dazzling/"/>
       <url>//2023/03/01/dazzling/</url>
@@ -3394,9 +3394,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -3479,9 +3479,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -3593,9 +3593,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -3844,9 +3844,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -4110,35 +4110,6 @@
     
     
     <entry>
-      <title>心理学作为科学</title>
-      <link href="//2022/05/02/psychology/"/>
-      <url>//2022/05/02/psychology/</url>
-      
-        <content type="html"><![CDATA[<p>广义上讲，一切系统的知识均可称之为科学；狭义上的科学，则专指西方文艺复兴以来出现的探索知识的一种方式，这种方式是以物理学为榜样，是由伽利略所开创的、牛顿奠基的科学原理和方法体系，强调以实验和数学的方法观察总结客观事物发展过程中具有普遍性的本质及联系。通常对科学的理解，是指狭义的科学。事实上，<mark>并非所有的知识都能称为科学。</mark> 因为在「知识」、「学科」和「科学」之间，存在包含关系。具体而言，系统的知识构成学科 (discipline)，学科包括人文学科 (humanities)、自然科学 (science)、社会科学 (social science) 等。在各学科中，只有那些以实证精神为核心，基于近代自然科学构建的探究方法所形成的学科体系，才能被称为科学，因此，科学主要指实证意义上的自然科学和社会科学。</p><p>依据狭义科学的定义，哲学、逻辑学都被排除在科学的范畴之外。</p><p>对心理学知识的科学性的划界，不能等同于对心理学与伪心理学的划界，这个划界标准不能作为判定心理学知识合法性的标准。正是从这个意义上讲，精神分析属于非科学心理学，但却不属于伪心理学。<mark>心理学作为一个独立的学科体系，它的合理结构既需要「科学」成分，也需要「非科学」成分。</mark></p><p>在心理学科内部，导致方法论误用的根本原因，在于将科学心理学的知识视为了心理学知识的全部，并用评判科学与非科学的标准，来评判所有心理学知识的「真伪」。</p><p>对心理学而言，要走出这个困境，首先要改变通过方法来界定学科的现状。<mark>本学科的独特价值不取决于共有的方法，而是独特的研究对象。</mark> 人性论取向才构成心理学作为独立学科的合法前提，而不是方法论。</p><p><mark>人性论为心理学提供了属于本学科的本体论承诺<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</mark> 要获得这个本体论承诺，心理学需要重新审视「人性」与「物性」的本质区别，才能在此基础上重新审视并设计出更加适合探究人性的方法论基础和具体的研究技术，才能让本学科在本体论承诺方面实现理论自觉，才会让心理学不会满足于对其他成熟自然科学的外在模仿，从而建构起作为独立学科的坚实基础。</p><p>至于<mark>本体论承诺从何而得</mark>，除了考察「人性」与「物性」的区别之外，借助历史上重要心理学思想家们的观点，可能为我们提供更多的启发。</p><blockquote><p>摘录自 <a href="https://journal.psych.ac.cn/xlxb/CN/10.3724/SP.J.1041.2019.01068">「操作性定义」和「证伪标准」不足以为心理学奠基</a></p></blockquote><hr class="footnotes-sep" /><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>蒯因《论何物存在》 <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
-            
-            <tag> 心理治疗 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>《地下室手记》——哲学病</title>
       <link href="//2022/05/02/problem/"/>
       <url>//2022/05/02/problem/</url>
@@ -4160,6 +4131,35 @@
             <tag> 阅读所思 </tag>
             
             <tag> 人生的意义 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>心理学作为科学</title>
+      <link href="//2022/05/02/psychology/"/>
+      <url>//2022/05/02/psychology/</url>
+      
+        <content type="html"><![CDATA[<p>广义上讲，一切系统的知识均可称之为科学；狭义上的科学，则专指西方文艺复兴以来出现的探索知识的一种方式，这种方式是以物理学为榜样，是由伽利略所开创的、牛顿奠基的科学原理和方法体系，强调以实验和数学的方法观察总结客观事物发展过程中具有普遍性的本质及联系。通常对科学的理解，是指狭义的科学。事实上，<mark>并非所有的知识都能称为科学。</mark> 因为在「知识」、「学科」和「科学」之间，存在包含关系。具体而言，系统的知识构成学科 (discipline)，学科包括人文学科 (humanities)、自然科学 (science)、社会科学 (social science) 等。在各学科中，只有那些以实证精神为核心，基于近代自然科学构建的探究方法所形成的学科体系，才能被称为科学，因此，科学主要指实证意义上的自然科学和社会科学。</p><p>依据狭义科学的定义，哲学、逻辑学都被排除在科学的范畴之外。</p><p>对心理学知识的科学性的划界，不能等同于对心理学与伪心理学的划界，这个划界标准不能作为判定心理学知识合法性的标准。正是从这个意义上讲，精神分析属于非科学心理学，但却不属于伪心理学。<mark>心理学作为一个独立的学科体系，它的合理结构既需要「科学」成分，也需要「非科学」成分。</mark></p><p>在心理学科内部，导致方法论误用的根本原因，在于将科学心理学的知识视为了心理学知识的全部，并用评判科学与非科学的标准，来评判所有心理学知识的「真伪」。</p><p>对心理学而言，要走出这个困境，首先要改变通过方法来界定学科的现状。<mark>本学科的独特价值不取决于共有的方法，而是独特的研究对象。</mark> 人性论取向才构成心理学作为独立学科的合法前提，而不是方法论。</p><p><mark>人性论为心理学提供了属于本学科的本体论承诺<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</mark> 要获得这个本体论承诺，心理学需要重新审视「人性」与「物性」的本质区别，才能在此基础上重新审视并设计出更加适合探究人性的方法论基础和具体的研究技术，才能让本学科在本体论承诺方面实现理论自觉，才会让心理学不会满足于对其他成熟自然科学的外在模仿，从而建构起作为独立学科的坚实基础。</p><p>至于<mark>本体论承诺从何而得</mark>，除了考察「人性」与「物性」的区别之外，借助历史上重要心理学思想家们的观点，可能为我们提供更多的启发。</p><blockquote><p>摘录自 <a href="https://journal.psych.ac.cn/xlxb/CN/10.3724/SP.J.1041.2019.01068">「操作性定义」和「证伪标准」不足以为心理学奠基</a></p></blockquote><hr class="footnotes-sep" /><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>蒯因《论何物存在》 <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
+            
+            <tag> 心理治疗 </tag>
             
         </tags>
       
@@ -4532,9 +4532,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -5206,9 +5206,9 @@
             
             <tag> 杂文 </tag>
             
-            <tag> 电影 </tag>
-            
             <tag> 观点 </tag>
+            
+            <tag> 电影 </tag>
             
         </tags>
       

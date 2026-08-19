@@ -271,9 +271,9 @@
             
             <tag> Project </tag>
             
-            <tag> 插件 </tag>
-            
             <tag> 思源笔记 </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -768,7 +768,7 @@
       <link href="//20260120023137/"/>
       <url>//20260120023137/</url>
       
-        <content type="html"><![CDATA[<h1 id="虎鲸笔记插件恐龙工具箱"><a class="markdownIt-Anchor" href="#虎鲸笔记插件恐龙工具箱"></a> 虎鲸笔记插件：恐龙工具箱</h1><p>一个为 <a href="https://orca.pet">Orca Note</a> 打造的增强插件集合。日常笔记里那些繁琐、重复的操作——排版、归档、回顾、发布、收集——这里都有对应的开箱即用工具。</p><p><strong>一句话</strong>：不用切到别的软件，在虎鲸笔记里就能完成记笔记之外的大部分事。</p><h2 id="安装与使用"><a class="markdownIt-Anchor" href="#安装与使用"></a> 安装与使用</h2><ol><li>下载 Release 中的 <code>package.zip</code>。</li><li>解压后，将整个文件夹复制到 Orca Note 的插件目录。</li><li>在软件设置中刷新并启用插件。所有子功能均可在「插件设置」中单独开启或关闭。</li></ol><h2 id="功能一览"><a class="markdownIt-Anchor" href="#功能一览"></a> 功能一览</h2><h3 id="1-一键格式化-format-block"><a class="markdownIt-Anchor" href="#1-一键格式化-format-block"></a> 1. 📝 一键格式化 (Format Block)</h3><p>解决中文排版问题：标点、空格、全半角一键规范化。</p><ul><li>自动修正中英文标点</li><li>优化中英文混排空格</li><li>规范化全角 / 半角字符</li></ul><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>把 <a href="http://voicenotes.com">voicenotes.com</a> 的录音笔记同步进虎鲸笔记，自动归档。</p><ul><li>一键全量或增量同步</li><li>自动归档到专属收件箱</li></ul><h3 id="3-导入工具-import"><a class="markdownIt-Anchor" href="#3-导入工具-import"></a> 3. 📂 导入工具 (Import)</h3><p>把已有资料搬进虎鲸笔记。</p><ul><li>批量导入本地 Markdown 文件夹</li><li>CSV 表格智能解析为笔记节点，可自动套用模板标签</li></ul><h3 id="4-样式清除-remove-style"><a class="markdownIt-Anchor" href="#4-样式清除-remove-style"></a> 4. 🧹 样式清除 (Remove Style)</h3><p>快速清理富文本格式。</p><ul><li>一键移除加粗、颜色等行内样式</li><li>链接转纯文本、删除空行</li><li>各种标题统一转为自动层级标题</li></ul><h3 id="5-块排序-sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序-sort-blocks"></a> 5. 🔃 块排序 (Sort Blocks)</h3><p>智能排序多个同级块。</p><ul><li>支持创建多个自定义排序预设</li><li>通过上下箭头自由组合数十种块类型的排序优先级</li><li>单个预设时右键一键排序，多个预设自动变成子菜单</li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>把笔记一键发布成博客文章。</p><ul><li>自动提取并上传文中图片到图床</li><li>自动生成 Frontmatter 元数据</li></ul><h3 id="7-插件市集-bazaar"><a class="markdownIt-Anchor" href="#7-插件市集-bazaar"></a> 7. 🏪 插件市集 (Bazaar)</h3><p>应用内的社区插件市场。</p><ul><li>浏览、安装、更新、卸载社区插件</li><li>支持自定义第三方插件源</li></ul><h3 id="8-️-快捷标签-quick-tag"><a class="markdownIt-Anchor" href="#8-️-快捷标签-quick-tag"></a> 8. 🏷️ 快捷标签 (Quick Tag)</h3><p>快捷键一键插入常用标签。</p><ul><li>光标处即插即用</li><li>可自动附带状态、优先级等属性</li></ul><h3 id="9-标题层级整理-heading-tree"><a class="markdownIt-Anchor" href="#9-标题层级整理-heading-tree"></a> 9. 🌳 标题层级整理 (Heading Tree)</h3><p>修复混乱的文档层级。</p><ul><li>自动识别 H1–H4 标题，重组文档树</li><li>消除错误的阶梯式缩进，普通文本自动归属到最近的标题下</li></ul><h3 id="10-网页助手-web-assistant"><a class="markdownIt-Anchor" href="#10-网页助手-web-assistant"></a> 10. 🌐 网页助手 (Web Assistant)</h3><p>把网页内容变成笔记。</p><ul><li>内置沉浸式浏览器</li><li>智能提取网页元数据（如豆瓣图书、电影）</li><li>右键一键将网页内容转为 Markdown 剪藏</li></ul><h3 id="11-记忆复习-srs"><a class="markdownIt-Anchor" href="#11-记忆复习-srs"></a> 11. 🧠 记忆复习 (SRS)</h3><p>基于 FSRS 算法的记忆工具，对抗遗忘。</p><ul><li>问答与沉浸式阅读两种复习模式</li><li>为任意标签或查询结果开启复习漫游</li></ul><h3 id="12-块嵌入子项增强-embed-children"><a class="markdownIt-Anchor" href="#12-块嵌入子项增强-embed-children"></a> 12. 🪞 块嵌入子项增强 (Embed Children)</h3><p>让镜像引用块自动展示子块内容。</p><ul><li>随「用户脚本」模板库一键插入使用</li><li>可设置启动时自动加载，或从顶部栏等入口手动切换</li></ul><h3 id="13-随机漫步-random-walk"><a class="markdownIt-Anchor" href="#13-随机漫步-random-walk"></a> 13. 🎲 随机漫步 (Random Walk)</h3><p>随机探索知识库，重温过去的知识片段。</p><ul><li>自动抓取指定标签下的内容</li><li>无重复发牌，越翻越有惊喜</li></ul><h3 id="14-智能剪贴板注入-clipboard-injection"><a class="markdownIt-Anchor" href="#14-智能剪贴板注入-clipboard-injection"></a> 14. 📋 智能剪贴板注入 (Clipboard Injection)</h3><p>外部 JSON 数据直接粘贴为原生笔记节点。</p><ul><li>支持携带标签、属性</li><li>自动转存远程图片到本地</li></ul><h3 id="15-️-块工具箱-block-tools"><a class="markdownIt-Anchor" href="#15-️-块工具箱-block-tools"></a> 15. 🛠️ 块工具箱 (Block Tools)</h3><p>常用块操作的快捷菜单。</p><ul><li>子块一键归集到原引用源</li><li>父节点下置顶 / 置底</li><li>链接与引用格式快速互转</li></ul><h3 id="16-隐私块-privacy-block"><a class="markdownIt-Anchor" href="#16-隐私块-privacy-block"></a> 16. 🔒 隐私块 (Privacy Block)</h3><p>一键把敏感内容藏起来。</p><ul><li>视觉上有锁形提示</li><li>底层向 AI 隐藏隐私内容，不影响日常编辑</li></ul><h3 id="17-块流转-block-flow"><a class="markdownIt-Anchor" href="#17-块流转-block-flow"></a> 17. 🌊 块流转 (Block Flow)</h3><p>右键把选中的块快速流转。</p><ul><li>发送 / 移动 / 引用至今日、明日日志或全局收件箱</li></ul><h3 id="18-置顶块面板-pinned-blocks"><a class="markdownIt-Anchor" href="#18-置顶块面板-pinned-blocks"></a> 18. 📌 置顶块面板 (Pinned Blocks)</h3><p>高频笔记打上特定标签即固定到侧边栏，随时唤回。</p><h3 id="19-arc-侧边栏-arc-tabs"><a class="markdownIt-Anchor" href="#19-arc-侧边栏-arc-tabs"></a> 19. 🪐 Arc 侧边栏 (Arc Tabs)</h3><p>媲美 Arc 浏览器的现代侧边栏。</p><ul><li>多空间隔离、固定标签自由拖拽排序</li><li>自动记录去重今天的历史浏览</li><li>可在「更多」tab 查看最近访问，点击即跳转</li></ul><h3 id="20-全局收集箱-roam-sidebar"><a class="markdownIt-Anchor" href="#20-全局收集箱-roam-sidebar"></a> 20. 📥 全局收集箱 (Roam Sidebar)</h3><p>复刻 Roam Research 的全局收集交互。</p><ul><li>完全持久化的原生大纲块，跨页面随意拖拽收集</li><li>大纲折叠管理，状态永不丢失</li></ul><h3 id="21-链接工具-link-tools"><a class="markdownIt-Anchor" href="#21-链接工具-link-tools"></a> 21. 🔗 链接工具 (Link Tools)</h3><p>链接的快捷转换。</p><ul><li>右键超链接一键转为原生块引用</li><li>在图钉（📌）引用格式间灵活切换</li></ul><h3 id="22-大纲导航树-block-nav"><a class="markdownIt-Anchor" href="#22-大纲导航树-block-nav"></a> 22. 🌳 大纲导航树 (Block Nav)</h3><p>侧边栏大纲导航，长文档也能快速定位。</p><ul><li>点击平滑跳转、快捷下钻阅读</li><li>实时本地检索，结果瞬间过滤</li><li>底部按钮联动主编辑器，一键精准展开 / 折叠</li></ul><h3 id="23-收集引用-gather-refs"><a class="markdownIt-Anchor" href="#23-收集引用-gather-refs"></a> 23. 🔗 收集引用 (Gather Refs)</h3><p>一键生成当前文档的反向引用汇总。</p><ul><li>通过 <code>/gather</code> 或右键菜单触发</li><li>自动去重生成整洁的 MOC 目录树</li></ul><h3 id="24-编辑器层级折叠-editor-fold"><a class="markdownIt-Anchor" href="#24-编辑器层级折叠-editor-fold"></a> 24. 🧊 编辑器层级折叠 (Editor Fold)</h3><p>保持工作区整洁。</p><ul><li>「展开至此同级」右键菜单</li><li>支持快捷键绑定的全局命令，自动截断深层结构展示</li></ul><h3 id="25-️-局部关系图谱-local-graph"><a class="markdownIt-Anchor" href="#25-️-局部关系图谱-local-graph"></a> 25. 🕸️ 局部关系图谱 (Local Graph)</h3><p>侧边栏实时关系图谱，跟随你的足迹生长。</p><ul><li>动态渲染当前活动块的邻居网络</li><li>快捷过滤标签、层级关系与常规引用</li><li>右键边缘节点定向拓展 / 折叠，物理阻尼防抖动</li><li>回放探索模式：足迹按时序重播，相机自动跟随</li></ul><h3 id="26-️-嵌入视图-embed-view"><a class="markdownIt-Anchor" href="#26-️-嵌入视图-embed-view"></a> 26. 🖼️ 嵌入视图 (Embed View)</h3><p>在笔记里嵌入网页、HTML 或 Twitter/X 内容。</p><ul><li>拖拽调整嵌入区域高度</li><li>网址嵌入自动显示图标与域名，登录状态不丢失</li></ul><h3 id="27-用户脚本-user-scripts"><a class="markdownIt-Anchor" href="#27-用户脚本-user-scripts"></a> 27. 📜 用户脚本 (User Scripts)</h3><p>给代码块打上 <code>#脚本</code> 标签，代码立刻变成可注入的脚本 / 样式，深度定制你的 Orca。</p><ul><li><strong>注入即用</strong> — CSS 自动生效、JS 自动执行，点击即可加载 / 卸载，刷新自动清理</li><li><strong>多种入口</strong> — 右键菜单、顶部栏、编辑器侧边栏、AI 菜单、全局快捷键，可同时绑定多个</li><li><strong>侧边栏挂件</strong> — 脚本能在「更多」tab 注册自定义挂件（如番茄钟）或启动器条目，支持文件夹分组</li><li><strong>接收块拖拽</strong> — 挂件可设为笔记块的投放目标，拖入即处理</li><li><strong>模板库</strong> — 内置块嵌入子项、快捷打标签、粘贴选中文本为块引用、侧边栏布局、番茄钟、暂存箱、AI 知识熔炉等模板，一键插入、开箱即用</li></ul><h3 id="28-ai-助手-ai"><a class="markdownIt-Anchor" href="#28-ai-助手-ai"></a> 28. 🤖 AI 助手 (AI)</h3><p>选中文本，用 AI 解释、翻译、润色、打标签或执行自定义指令。</p><ul><li><strong>开箱即用</strong> — 内置「解释含义 / 润色 / 翻译 / 打标签」，无需任何配置</li><li><strong>打标签</strong> — 根据选中内容给目标块打上简洁准确的标签；跨块选中时，每一个被选中的块都会打上相同标签</li><li><strong>自定义动作</strong> — 在指定标签的块里写提示词即注册一个新动作；名字、图标在属性面板改，不用写代码</li><li><strong>流式预览</strong> — 生成过程实时显示在可拖拽的浮动面板，支持 Markdown、公式与代码高亮</li><li><strong>结构化插入</strong> — 结果以「分组头 + 子内容」插入，自动附上选中的原文引用</li><li><strong>工具调用即时可见</strong> — 模型调用 MCP 工具（如写入今日日志）后，界面自动刷新，写入结果无需手动刷新即可看到</li><li><strong>与用户脚本联动</strong> — 勾选 <code>aiMenu</code> 的脚本会出现在 AI 菜单中，实现「选中即跳转 / 查询」</li></ul><h3 id="29-️-时间统计-time-log"><a class="markdownIt-Anchor" href="#29-️-时间统计-time-log"></a> 29. ⏱️ 时间统计 (Time Log)</h3><p>给带时间属性的标签打点，自动聚合成时间线与统计。</p><ul><li><strong>多视图</strong> — 日 / 周 / 月时间线，加上统计页（总时长、日均、连续、时段 / 年分布、月报），支持全屏展开</li><li><strong>无结束自动推断</strong> — 同一标签一天内的相邻打点自动连成一段；可配置相邻上限与「今日实时」统计，粗粒度打点也能获得准确概览</li><li><strong>仅时间点</strong> — 只配置开始时间的标签组（如碎碎念）在时间线上以彩色圆点标记，悬停查看内容与时间、点击跳转，不计入时长</li><li><strong>月视图点组圆点</strong> — 仅时间点组在月历格子里同样以彩色圆点标记（最多 4 个，超出折叠为 +N）</li><li><strong>目标进度</strong> — 可为标签组设置每日 / 每周 / 每月目标时长，日 / 周 / 月视图顶部显示进度条；月视图达成每日目标的日子标 ✓</li><li><strong>范围过滤与缩放</strong> — 右键框选 ≥2 小时设自定义范围过滤；左侧缩放滑轨竖直拖拽 / 滚轮缩放，双击或一键清除回到自适应</li><li><strong>专注与环比</strong> — 统计页新增「专注」指标（≥45 分钟连续记录占比）与「环比上月」卡片（总时长、活跃天数、分组增量）</li><li><strong>AI 分析</strong> — 一键让 AI 基于当月统计快照生成文字洞察（统计概览与当月记录文本发送给已配置的 AI 提供商）</li><li><strong>AI 图表</strong> — 让 AI 生成内联 SVG 统计图表；分析与图表产物持久化为列表，每条可单独删除</li><li><strong>图例开关</strong> — 各组可在图例里点击隐藏，只影响展示不影响数据</li><li><strong>统计页导航</strong> — 年分布上移至统计页顶部作「选月导航」（点击月柱切换、当前月高亮），下方即所选月份的报表；周规律标注「全年平均」与月口径区分</li><li><strong>按时长 / 按块数</strong> — 统计页顶部一键切换统计口径：看「每类事花了多久」选时长，看「记了多少内容」选块数；整页图表跟随切换并记住你的选择</li><li><strong>左键打点 / 安排</strong> — 在时间线空白处左键单击记录时刻（打点），按住左键上下拖动按起止安排一段（范围，≥2 分钟）。安排在未来时间会自动带上提醒标记；打点用的默认标签可在设置里指定或只记提醒</li><li><strong>日历界面补记数据 (Backfill)</strong> — 漏记了？直接在日历的过去时刻左键打点 / 拖拽安排，会弹出「补标记」浮层让你选记到哪个标签组（点记点组、段记时长组），选中即写入当天日记，时间线、统计即时更新 —— 再也不用翻回当天手写补录</li><li><strong>创建记录写入干净</strong> — 打点 / 安排出的新记录文本只带 <code>#标签</code> 尾巴（与编辑器内一致），时间属性挂在标签上而非写进文本，之后在编辑器里随意改内容都不影响时间数据</li><li><strong>提醒计划 (Reminder)</strong> — 未来安排的记录以虚线计划条 / 计划点显示在时间线上，预览接下来一整天的安排；时刻已过的提醒不再出现、不进统计</li><li><strong>创建即定位</strong> — 打点 / 安排出的记录会自动定位（已在当前页面就滚动过去，否则跳转），方便立刻改内容；左键点击记录也是智能定位</li><li><strong>创建可撤销</strong> — 新记录创建后弹出的通知可一键撤销删除；新记录即时出现在当日日记里</li><li><strong>拖拽调整时间段</strong> — 直接拖时间条就能改：拖中部整体移动，拖上缘改开始、下缘改结束（仅时长段）；未来计划段不可拖。改动即时生效，通知可一键撤销</li></ul><h3 id="30-️-工作台-workbench"><a class="markdownIt-Anchor" href="#30-️-工作台-workbench"></a> 30. 🛠️ 工作台 (Workbench)</h3><p>用一句话描述想要的信息面板，AI 帮你拼出图表、卡片与原生组件。</p><ul><li><strong>AI 组装面板</strong> — 描述需求（如「加一个本周任务完成情况图表，把待办列表放进来」），AI 调用工具增删组件并即时落盘</li><li><strong>原生组件库</strong> — 内置倒数日、进度环、待办列表等块组件，AI 也能直接创建与更新</li><li><strong>笔记数据卡片</strong> — AI 生成嵌入视图卡片，用 window.orca 实时查询笔记（如统计 #任务 块数量），也能 fetch 外部 API 做天气等自包含卡片</li><li><strong>标题自动生成</strong> — 嵌入卡片自动带正常标题（如「成都天气」），由嵌入视图生成器兜底，不再落下无意义占位</li><li><strong>卡片生成复用嵌入视图 AI</strong> — 工作台只传描述，HTML、API 查询与标题由嵌入视图生成器完成（含 API 签名查询与 HTML 校验）</li></ul><hr /><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>模块化架构，每个功能独立成 <code>src/lets-*</code> 目录，由 <code>main.tsx</code> 动态加载启用的子插件。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="虎鲸笔记插件恐龙工具箱"><a class="markdownIt-Anchor" href="#虎鲸笔记插件恐龙工具箱"></a> 虎鲸笔记插件：恐龙工具箱</h1><p>一个为 <a href="https://orca.pet">Orca Note</a> 打造的增强插件集合。日常笔记里那些繁琐、重复的操作——排版、归档、回顾、发布、收集——这里都有对应的开箱即用工具。</p><p><strong>一句话</strong>：不用切到别的软件，在虎鲸笔记里就能完成记笔记之外的大部分事。</p><h2 id="安装与使用"><a class="markdownIt-Anchor" href="#安装与使用"></a> 安装与使用</h2><ol><li>下载 Release 中的 <code>package.zip</code>。</li><li>解压后，将整个文件夹复制到 Orca Note 的插件目录。</li><li>在软件设置中刷新并启用插件。所有子功能均可在「插件设置」中单独开启或关闭。</li></ol><h2 id="功能一览"><a class="markdownIt-Anchor" href="#功能一览"></a> 功能一览</h2><h3 id="1-一键格式化-format-block"><a class="markdownIt-Anchor" href="#1-一键格式化-format-block"></a> 1. 📝 一键格式化 (Format Block)</h3><p>解决中文排版问题：标点、空格、全半角一键规范化。</p><ul><li>自动修正中英文标点</li><li>优化中英文混排空格</li><li>规范化全角 / 半角字符</li></ul><h3 id="2-️-voicenotes-同步"><a class="markdownIt-Anchor" href="#2-️-voicenotes-同步"></a> 2. 🎙️ VoiceNotes 同步</h3><p>把 <a href="http://voicenotes.com">voicenotes.com</a> 的录音笔记同步进虎鲸笔记，自动归档。</p><ul><li>一键全量或增量同步</li><li>自动归档到专属收件箱</li></ul><h3 id="3-导入工具-import"><a class="markdownIt-Anchor" href="#3-导入工具-import"></a> 3. 📂 导入工具 (Import)</h3><p>把已有资料搬进虎鲸笔记。</p><ul><li>批量导入本地 Markdown 文件夹</li><li>CSV 表格智能解析为笔记节点，可自动套用模板标签</li></ul><h3 id="4-样式清除-remove-style"><a class="markdownIt-Anchor" href="#4-样式清除-remove-style"></a> 4. 🧹 样式清除 (Remove Style)</h3><p>快速清理富文本格式。</p><ul><li>一键移除加粗、颜色等行内样式</li><li>链接转纯文本、删除空行</li><li>各种标题统一转为自动层级标题</li></ul><h3 id="5-块排序-sort-blocks"><a class="markdownIt-Anchor" href="#5-块排序-sort-blocks"></a> 5. 🔃 块排序 (Sort Blocks)</h3><p>智能排序多个同级块。</p><ul><li>支持创建多个自定义排序预设</li><li>通过上下箭头自由组合数十种块类型的排序优先级</li><li>单个预设时右键一键排序，多个预设自动变成子菜单</li></ul><h3 id="6-发布到-github-publish"><a class="markdownIt-Anchor" href="#6-发布到-github-publish"></a> 6. 📤 发布到 GitHub (Publish)</h3><p>把笔记一键发布成博客文章。</p><ul><li>自动提取并上传文中图片到图床</li><li>自动生成 Frontmatter 元数据</li></ul><h3 id="7-插件市集-bazaar"><a class="markdownIt-Anchor" href="#7-插件市集-bazaar"></a> 7. 🏪 插件市集 (Bazaar)</h3><p>应用内的社区插件市场。</p><ul><li>浏览、安装、更新、卸载社区插件</li><li>支持自定义第三方插件源</li></ul><h3 id="8-️-快捷标签-quick-tag"><a class="markdownIt-Anchor" href="#8-️-快捷标签-quick-tag"></a> 8. 🏷️ 快捷标签 (Quick Tag)</h3><p>快捷键一键插入常用标签。</p><ul><li>光标处即插即用</li><li>可自动附带状态、优先级等属性</li></ul><h3 id="9-标题层级整理-heading-tree"><a class="markdownIt-Anchor" href="#9-标题层级整理-heading-tree"></a> 9. 🌳 标题层级整理 (Heading Tree)</h3><p>修复混乱的文档层级。</p><ul><li>自动识别 H1–H4 标题，重组文档树</li><li>消除错误的阶梯式缩进，普通文本自动归属到最近的标题下</li></ul><h3 id="10-网页助手-web-assistant"><a class="markdownIt-Anchor" href="#10-网页助手-web-assistant"></a> 10. 🌐 网页助手 (Web Assistant)</h3><p>把网页内容变成笔记。</p><ul><li>内置沉浸式浏览器</li><li>智能提取网页元数据（如豆瓣图书、电影）</li><li>右键一键将网页内容转为 Markdown 剪藏</li></ul><h3 id="11-记忆复习-srs"><a class="markdownIt-Anchor" href="#11-记忆复习-srs"></a> 11. 🧠 记忆复习 (SRS)</h3><p>基于 FSRS 算法的记忆工具，对抗遗忘。</p><ul><li>问答与沉浸式阅读两种复习模式</li><li>为任意标签或查询结果开启复习漫游</li></ul><h3 id="12-块嵌入子项增强-embed-children"><a class="markdownIt-Anchor" href="#12-块嵌入子项增强-embed-children"></a> 12. 🪞 块嵌入子项增强 (Embed Children)</h3><p>让镜像引用块自动展示子块内容。</p><ul><li>随「用户脚本」模板库一键插入使用</li><li>可设置启动时自动加载，或从顶部栏等入口手动切换</li></ul><h3 id="13-随机漫步-random-walk"><a class="markdownIt-Anchor" href="#13-随机漫步-random-walk"></a> 13. 🎲 随机漫步 (Random Walk)</h3><p>随机探索知识库，重温过去的知识片段。</p><ul><li>自动抓取指定标签下的内容</li><li>无重复发牌，越翻越有惊喜</li></ul><h3 id="14-智能剪贴板注入-clipboard-injection"><a class="markdownIt-Anchor" href="#14-智能剪贴板注入-clipboard-injection"></a> 14. 📋 智能剪贴板注入 (Clipboard Injection)</h3><p>外部 JSON 数据直接粘贴为原生笔记节点。</p><ul><li>支持携带标签、属性</li><li>自动转存远程图片到本地</li></ul><h3 id="15-️-块工具箱-block-tools"><a class="markdownIt-Anchor" href="#15-️-块工具箱-block-tools"></a> 15. 🛠️ 块工具箱 (Block Tools)</h3><p>常用块操作的快捷菜单。</p><ul><li>子块一键归集到原引用源</li><li>父节点下置顶 / 置底</li><li>链接与引用格式快速互转</li></ul><h3 id="16-隐私块-privacy-block"><a class="markdownIt-Anchor" href="#16-隐私块-privacy-block"></a> 16. 🔒 隐私块 (Privacy Block)</h3><p>一键把敏感内容藏起来。</p><ul><li>视觉上有锁形提示</li><li>底层向 AI 隐藏隐私内容，不影响日常编辑</li></ul><h3 id="17-块流转-block-flow"><a class="markdownIt-Anchor" href="#17-块流转-block-flow"></a> 17. 🌊 块流转 (Block Flow)</h3><p>右键把选中的块快速流转。</p><ul><li>发送 / 移动 / 引用至今日、明日日志或全局收件箱</li></ul><h3 id="18-置顶块面板-pinned-blocks"><a class="markdownIt-Anchor" href="#18-置顶块面板-pinned-blocks"></a> 18. 📌 置顶块面板 (Pinned Blocks)</h3><p>高频笔记打上特定标签即固定到侧边栏，随时唤回。</p><h3 id="19-arc-侧边栏-arc-tabs"><a class="markdownIt-Anchor" href="#19-arc-侧边栏-arc-tabs"></a> 19. 🪐 Arc 侧边栏 (Arc Tabs)</h3><p>媲美 Arc 浏览器的现代侧边栏。</p><ul><li>多空间隔离、固定标签自由拖拽排序</li><li>自动记录去重今天的历史浏览</li><li>可在「更多」tab 查看最近访问，点击即跳转</li></ul><h3 id="20-全局收集箱-roam-sidebar"><a class="markdownIt-Anchor" href="#20-全局收集箱-roam-sidebar"></a> 20. 📥 全局收集箱 (Roam Sidebar)</h3><p>复刻 Roam Research 的全局收集交互。</p><ul><li>完全持久化的原生大纲块，跨页面随意拖拽收集</li><li>大纲折叠管理，状态永不丢失</li></ul><h3 id="21-链接工具-link-tools"><a class="markdownIt-Anchor" href="#21-链接工具-link-tools"></a> 21. 🔗 链接工具 (Link Tools)</h3><p>链接的快捷转换。</p><ul><li>右键超链接一键转为原生块引用</li><li>在图钉（📌）引用格式间灵活切换</li></ul><h3 id="22-大纲导航树-block-nav"><a class="markdownIt-Anchor" href="#22-大纲导航树-block-nav"></a> 22. 🌳 大纲导航树 (Block Nav)</h3><p>侧边栏大纲导航，长文档也能快速定位。</p><ul><li>点击平滑跳转、快捷下钻阅读</li><li>实时本地检索，结果瞬间过滤</li><li>底部按钮联动主编辑器，一键精准展开 / 折叠</li></ul><h3 id="23-收集引用-gather-refs"><a class="markdownIt-Anchor" href="#23-收集引用-gather-refs"></a> 23. 🔗 收集引用 (Gather Refs)</h3><p>一键生成当前文档的反向引用汇总。</p><ul><li>通过 <code>/gather</code> 或右键菜单触发</li><li>自动去重生成整洁的 MOC 目录树</li></ul><h3 id="24-编辑器层级折叠-editor-fold"><a class="markdownIt-Anchor" href="#24-编辑器层级折叠-editor-fold"></a> 24. 🧊 编辑器层级折叠 (Editor Fold)</h3><p>保持工作区整洁。</p><ul><li>「展开至此同级」右键菜单</li><li>支持快捷键绑定的全局命令，自动截断深层结构展示</li></ul><h3 id="25-️-局部关系图谱-local-graph"><a class="markdownIt-Anchor" href="#25-️-局部关系图谱-local-graph"></a> 25. 🕸️ 局部关系图谱 (Local Graph)</h3><p>侧边栏实时关系图谱，跟随你的足迹生长。</p><ul><li>动态渲染当前活动块的邻居网络</li><li>快捷过滤标签、层级关系与常规引用</li><li>右键边缘节点定向拓展 / 折叠，物理阻尼防抖动</li><li>回放探索模式：足迹按时序重播，相机自动跟随</li></ul><h3 id="26-️-嵌入视图-embed-view"><a class="markdownIt-Anchor" href="#26-️-嵌入视图-embed-view"></a> 26. 🖼️ 嵌入视图 (Embed View)</h3><p>在笔记里嵌入网页、HTML 或 Twitter/X 内容。</p><ul><li>拖拽调整嵌入区域高度</li><li>网址嵌入自动显示图标与域名，登录状态不丢失</li></ul><h3 id="27-用户脚本-user-scripts"><a class="markdownIt-Anchor" href="#27-用户脚本-user-scripts"></a> 27. 📜 用户脚本 (User Scripts)</h3><p>给代码块打上 <code>#脚本</code> 标签，代码立刻变成可注入的脚本 / 样式，深度定制你的 Orca。</p><ul><li><strong>注入即用</strong> — CSS 自动生效、JS 自动执行，点击即可加载 / 卸载，刷新自动清理</li><li><strong>多种入口</strong> — 右键菜单、顶部栏、编辑器侧边栏、AI 菜单、全局快捷键，可同时绑定多个</li><li><strong>侧边栏挂件</strong> — 脚本能在「更多」tab 注册自定义挂件（如番茄钟）或启动器条目，支持文件夹分组</li><li><strong>接收块拖拽</strong> — 挂件可设为笔记块的投放目标，拖入即处理</li><li><strong>模板库</strong> — 内置块嵌入子项、快捷打标签、粘贴选中文本为块引用、侧边栏布局、番茄钟、暂存箱、AI 知识熔炉等模板，一键插入、开箱即用</li></ul><h3 id="28-ai-助手-ai"><a class="markdownIt-Anchor" href="#28-ai-助手-ai"></a> 28. 🤖 AI 助手 (AI)</h3><p>选中文本，用 AI 解释、翻译、润色、打标签或执行自定义指令。</p><ul><li><strong>开箱即用</strong> — 内置「解释含义 / 润色 / 翻译 / 打标签」，无需任何配置</li><li><strong>打标签</strong> — 根据选中内容给目标块打上简洁准确的标签；跨块选中时，每一个被选中的块都会打上相同标签</li><li><strong>自定义动作</strong> — 在指定标签的块里写提示词即注册一个新动作；名字、图标在属性面板改，不用写代码</li><li><strong>流式预览</strong> — 生成过程实时显示在可拖拽的浮动面板，支持 Markdown、公式与代码高亮</li><li><strong>结构化插入</strong> — 结果以「分组头 + 子内容」插入，自动附上选中的原文引用</li><li><strong>工具调用即时可见</strong> — 模型调用 MCP 工具（如写入今日日志）后，界面自动刷新，写入结果无需手动刷新即可看到</li><li><strong>与用户脚本联动</strong> — 勾选 <code>aiMenu</code> 的脚本会出现在 AI 菜单中，实现「选中即跳转 / 查询」</li></ul><h3 id="29-️-时间统计-time-log"><a class="markdownIt-Anchor" href="#29-️-时间统计-time-log"></a> 29. ⏱️ 时间统计 (Time Log)</h3><p>给带时间属性的标签打点，自动聚合成时间线与统计。</p><ul><li><strong>多视图</strong> — 日 / 周 / 月时间线，加上统计页（总时长、日均、连续、时段 / 年分布、月报），支持全屏展开</li><li><strong>无结束自动推断</strong> — 同一标签一天内的相邻打点自动连成一段；可配置相邻上限与「今日实时」统计，粗粒度打点也能获得准确概览</li><li><strong>仅时间点</strong> — 只配置开始时间的标签组（如碎碎念）在时间线上以彩色圆点标记，悬停查看内容与时间、点击跳转，不计入时长</li><li><strong>月视图点组圆点</strong> — 仅时间点组在月历格子里同样以彩色圆点标记（最多 4 个，超出折叠为 +N）</li><li><strong>目标进度</strong> — 可为标签组设置每日 / 每周 / 每月目标时长，日 / 周 / 月视图顶部显示进度条；月视图达成每日目标的日子标 ✓</li><li><strong>范围过滤与缩放</strong> — 右键框选 ≥2 小时设自定义范围过滤；左侧缩放滑轨竖直拖拽 / 滚轮缩放，双击或一键清除回到自适应</li><li><strong>专注与环比</strong> — 统计页新增「专注」指标（≥45 分钟连续记录占比）与「环比上月」卡片（总时长、活跃天数、分组增量）</li><li><strong>AI 分析</strong> — 一键让 AI 基于当月统计快照生成文字洞察（统计概览与当月记录文本发送给已配置的 AI 提供商）</li><li><strong>AI 图表</strong> — 让 AI 生成内联 SVG 统计图表；分析与图表产物持久化为列表，每条可单独删除</li><li><strong>图例开关</strong> — 各组可在图例里点击隐藏，只影响展示不影响数据</li><li><strong>统计页导航</strong> — 年分布上移至统计页顶部作「选月导航」（点击月柱切换、当前月高亮），下方即所选月份的报表；周规律标注「全年平均」与月口径区分</li><li><strong>按时长 / 按块数</strong> — 统计页顶部一键切换统计口径：看「每类事花了多久」选时长，看「记了多少内容」选块数；整页图表跟随切换并记住你的选择</li><li><strong>左键打点 / 安排</strong> — 在时间线空白处左键单击记录时刻（打点），按住左键上下拖动按起止安排一段（范围，≥2 分钟）。安排在未来时间会自动带上提醒标记；打点用的默认标签可在设置里指定或只记提醒</li><li><strong>日历界面补记数据 (Backfill)</strong> — 漏记了？直接在日历的过去时刻左键打点 / 拖拽安排，会弹出「补标记」浮层让你选记到哪个标签组（点记点组、段记时长组），选中即写入当天日记，时间线、统计即时更新 —— 再也不用翻回当天手写补录</li><li><strong>创建记录写入干净</strong> — 打点 / 安排出的新记录文本只带 <code>#标签</code> 尾巴（与编辑器内一致），时间属性挂在标签上而非写进文本，之后在编辑器里随意改内容都不影响时间数据</li><li><strong>提醒计划 (Reminder)</strong> — 未来安排的记录以虚线计划条 / 计划点显示在时间线上，预览接下来一整天的安排；时刻已过的提醒不再出现、不进统计</li><li><strong>创建即定位</strong> — 打点 / 安排出的记录会自动定位（已在当前页面就滚动过去，否则跳转），方便立刻改内容；左键点击记录也是智能定位</li><li><strong>创建可撤销</strong> — 新记录创建后弹出的通知可一键撤销删除；新记录即时出现在当日日记里</li><li><strong>拖拽调整时间段</strong> — 直接拖时间条就能改：拖中部整体移动，拖上缘改开始、下缘改结束（仅时长段）；未来计划段不可拖。改动即时生效，通知可一键撤销</li></ul><h3 id="30-️-工作台-workbench"><a class="markdownIt-Anchor" href="#30-️-工作台-workbench"></a> 30. 🛠️ 工作台 (Workbench)</h3><p>用一句话描述想要的信息面板，AI 帮你拼出图表、卡片与原生组件。</p><ul><li><strong>AI 组装面板</strong> — 描述需求（如「加一个本周任务完成情况图表，把待办列表放进来」），AI 调用工具增删组件并即时落盘</li><li><strong>原生组件库</strong> — 内置倒数日、进度环、待办列表等块组件，AI 也能直接创建与更新</li><li><strong>笔记数据卡片</strong> — AI 生成嵌入视图卡片，用 window.orca 实时查询笔记（如统计 #任务 块数量），也能 fetch 外部 API 做天气等自包含卡片</li><li><strong>标题自动生成</strong> — 嵌入卡片自动带正常标题（如「成都天气」），由嵌入视图生成器兜底，不再落下无意义占位</li><li><strong>卡片生成复用嵌入视图 AI</strong> — 工作台只传描述，HTML、API 查询与标题由嵌入视图生成器完成（含 API 签名查询与 HTML 校验）</li><li><strong>随机卡片</strong> — 拖入查询块 / 带标签的块 / 任意普通块作为数据源，「换一张」随机抽一条展示，点击跳转原块；查询与标签源走后端 <code>_random</code> 实时取 1 条，不拉全量</li><li><strong>天气</strong> — Open-Meteo 实时天气（当前 + 7 天预报），四种样式、摄氏/华氏、城市预设一键选，定时自动刷新</li></ul><hr /><h2 id="开发说明"><a class="markdownIt-Anchor" href="#开发说明"></a> 开发说明</h2><p>模块化架构，每个功能独立成 <code>src/lets-*</code> 目录，由 <code>main.tsx</code> 动态加载启用的子插件。</p>]]></content>
       
       
       
@@ -1012,9 +1012,9 @@
             
             <tag> Project </tag>
             
-            <tag> 插件 </tag>
-            
             <tag> 思源笔记 </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -1598,9 +1598,9 @@
             
             <tag> 阅读所思 </tag>
             
-            <tag> 爱 </tag>
-            
             <tag> 心理治疗 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -1766,9 +1766,9 @@
             
             <tag> 阅读所思 </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -1871,9 +1871,9 @@
             
             <tag> 阅读所思 </tag>
             
-            <tag> 爱 </tag>
-            
             <tag> 心理治疗 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -3254,11 +3254,11 @@
     
     
     <entry>
-      <title>《铃芽之旅》——不是影评啊</title>
-      <link href="//2023/04/08/suzume-tojimari/"/>
-      <url>//2023/04/08/suzume-tojimari/</url>
+      <title>《底特律：变人》——你是说 AI 使用语言时没有动机？</title>
+      <link href="//2023/04/07/detroit/"/>
+      <url>//2023/04/07/detroit/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>十五岁生日是最适合离家出走的时间。这以前过早，以后又太晚。——《海边的卡夫卡》</p></blockquote><p>中学的时候好羡慕那些长大了还在看动画的人，我在视频网站上看到许多粗糙的视频，拥挤的房间却有个架子摆了好多塑料小人，镜头前面真实的脸，热情洋溢的表情，说着些「此生无悔」的蠢话——噢不，当时我只觉得好酷。他们看过好多我连名字都没听说的作品，也一定知道好多我不知道的事。我也能这样顺利地成为靠谱的大人吗？</p><p>什么时候发现的呢？就像人生大道理一样，稍微有点年纪的老头谁都会讲两句。原来观影量这类数字的累积也不过是些顺着热情成章的事儿吗？</p><p>偶尔还能在以二次元起家的视频网站上看到「如果你不知道 XXX，就不会 XXX。」的标题。啊那句台词怎么说的？「如果你要用《泰坦尼克号》的台词表白，那对方也应该知道《泰坦尼克号》才有用吧。」</p><p>爱好是蹩脚的喻体？</p><p>我还记得《白箱》的头两集里一个女主也还在念书，说以后一定要去东京工作，住一个有空调的房间。想起自己中学毕业时把 Radwimps 为动画做的配乐翻来覆去地听，心想等去城里上学了一定要去电影院！</p><p>然后就是时间慢慢流淌，什么想法都变得普通。以前一起聊动画的朋友开始戏谑「我已经毕业了」的玩笑。我也蹩脚地试着讲些能显得自己聪明的话，不再诚实。上一部看完的新番好像是《青春期猪头少年不做兔女郎学姐的梦》，很不错的动画，但我在影评网站上打了不高的评分，一本正经地说「我已经是过来人了……怎么还在讲这些……」</p><p>这种想法也是真实的呀。只是我没搞懂啊，我完全没搞懂。</p><p>我想起看完《你的名字》那晚，回去的路上我兴奋地在输入框打字，把毫无组织的想法一股脑地塞进豆瓣的短评。在社交网站旁若无人地发动态倾诉着自己的快乐，啊你知道吗，那个导演哦，这次居然是 happy ending 也！我反复咀嚼着自己的感想以备将来，毫不怀疑自己短短几年就会忘记那些如数家珍的台词、名词、名字。</p><p>然后就是《天气之子》，我吐槽诚哥的恶趣味，前几十分钟平淡又急促的引入，靠设定推动的故事。我记得男主 16 岁，离家出走，包里装着一本《麦田里的守望者》——讲一个 15 岁的男孩离家出走的书。我为自己发现的细节沾沾自喜，然后又开始讲老套的傻话「好吧，毕竟是 16 岁的叛逆，16 岁才能做出的决定。」而那个时候我又才多大呢？</p><p>《铃芽之旅》呢？17 岁的女孩离家出走的故事？好像有点无聊啊……动画里居然把男主为了「拯救世界」放弃考教师资格证的剧情当作煽情的点塑造，啊喂啊喂啊喂。</p><p>嗯？我太苛刻了？</p><p>以现实为舞台的奇幻故事很好啊，它在故事里展现出与现实不同的逻辑，而故事里的人们并不会为此诧异，至少故事不呈现诧异——现实里的人类总是好笨，他们看不出来可能性，永远活在自己的逻辑，不知道生活还可以那样。</p><p>想到之前为了赶上上映当天这种时间点放弃了一些其它的事，当时觉得自己这种取舍的形象以后回顾一定很浪漫。我以为电影是造梦、人生、每秒 24 帧的真实。</p><p>记得第一次进电影院时，发现原来预告片里的画面出现在荧幕上会让人心情愉快。我以为电影院是个神圣的地方，一群需要安慰的人走进去，就能恢复和另一个世界的链接。后来才知道它还有嚼薯片的声音、衣服摩擦的声音、窃窃私语的声音，可恶的男孩给女孩剧透的声音，啊这也是电影的一部分。「一个人看什么电影？」「少看几分钟没关系。」「都放完了还坐着干嘛。」这也是电影的一部分。欢笑、抽泣、鼓掌，这也是电影的一部分。</p><p>我试图假装知道这些事儿做个可爱的人。可爱的人一定不会对自己认知外的事物表现出任何惊讶——除非他们想要你这样。</p><p>啊我明白了。电影不必深刻，它呈现、揭露。它可以只表达最浅显的那一层，故事开始了，结局就确定了。一个导演可以永远拍 16 岁的故事，因为这世界永远有人 16 岁，但今天的 16 岁可能会面临和十年前 16 岁不同的问题，而且 16 岁的难题并不就比 26 岁遇到的困境更容易。</p><p>这是重要的。</p><p>《大鱼》里有句台词「有些笑话是否因为听过太多次而忘了为何好笑。后来你又听到，突然间它像一个新笑话一样，你就想起一开始为什么喜欢它了。」</p><p>我想，当大人们开始为自己曾经的热诚而感到羞耻，我们应该对报以一点同情心，因为「所有的大人起先都是孩子」——他们只是忘记了过去。</p>]]></content>
+        <content type="html"><![CDATA[<p>我在想为什么故事里他们那么害怕机器人拥有「人性」，而且那些启蒙的机器人似乎总「想要拥有人性」。</p><p>想要爱、关心、被关心、自由？<br />还是想要担心、恐惧、悲伤？</p><p>啊我知道了。爱就是畏、是担心、是恐惧。是对另一个人的关心、害怕失去的焦虑。</p><p>「人性是个讨厌的累赘，对不对？」</p><p>我们离不开遗憾和失望，或者说，我们依赖它们。安慰自己说，回头看啊，正是那些挫折构成了我们。</p><p>人类中心主义。</p><p>故事里想讲的，就只是歌颂爱、自由、平等这些价值观而已。不管主角是几千年前的奴隶还是猩猩或是机器人，也不管反派是怪兽、外星人还是普普通通的我们。</p><p>一体两面，有爱就有不爱。而当人类阻止机器人去爱时，他们也就学会了如何爱。</p>]]></content>
       
       
       <categories>
@@ -3283,11 +3283,11 @@
     
     
     <entry>
-      <title>《底特律：变人》——你是说 AI 使用语言时没有动机？</title>
-      <link href="//2023/04/07/detroit/"/>
-      <url>//2023/04/07/detroit/</url>
+      <title>《铃芽之旅》——不是影评啊</title>
+      <link href="//2023/04/08/suzume-tojimari/"/>
+      <url>//2023/04/08/suzume-tojimari/</url>
       
-        <content type="html"><![CDATA[<p>我在想为什么故事里他们那么害怕机器人拥有「人性」，而且那些启蒙的机器人似乎总「想要拥有人性」。</p><p>想要爱、关心、被关心、自由？<br />还是想要担心、恐惧、悲伤？</p><p>啊我知道了。爱就是畏、是担心、是恐惧。是对另一个人的关心、害怕失去的焦虑。</p><p>「人性是个讨厌的累赘，对不对？」</p><p>我们离不开遗憾和失望，或者说，我们依赖它们。安慰自己说，回头看啊，正是那些挫折构成了我们。</p><p>人类中心主义。</p><p>故事里想讲的，就只是歌颂爱、自由、平等这些价值观而已。不管主角是几千年前的奴隶还是猩猩或是机器人，也不管反派是怪兽、外星人还是普普通通的我们。</p><p>一体两面，有爱就有不爱。而当人类阻止机器人去爱时，他们也就学会了如何爱。</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>十五岁生日是最适合离家出走的时间。这以前过早，以后又太晚。——《海边的卡夫卡》</p></blockquote><p>中学的时候好羡慕那些长大了还在看动画的人，我在视频网站上看到许多粗糙的视频，拥挤的房间却有个架子摆了好多塑料小人，镜头前面真实的脸，热情洋溢的表情，说着些「此生无悔」的蠢话——噢不，当时我只觉得好酷。他们看过好多我连名字都没听说的作品，也一定知道好多我不知道的事。我也能这样顺利地成为靠谱的大人吗？</p><p>什么时候发现的呢？就像人生大道理一样，稍微有点年纪的老头谁都会讲两句。原来观影量这类数字的累积也不过是些顺着热情成章的事儿吗？</p><p>偶尔还能在以二次元起家的视频网站上看到「如果你不知道 XXX，就不会 XXX。」的标题。啊那句台词怎么说的？「如果你要用《泰坦尼克号》的台词表白，那对方也应该知道《泰坦尼克号》才有用吧。」</p><p>爱好是蹩脚的喻体？</p><p>我还记得《白箱》的头两集里一个女主也还在念书，说以后一定要去东京工作，住一个有空调的房间。想起自己中学毕业时把 Radwimps 为动画做的配乐翻来覆去地听，心想等去城里上学了一定要去电影院！</p><p>然后就是时间慢慢流淌，什么想法都变得普通。以前一起聊动画的朋友开始戏谑「我已经毕业了」的玩笑。我也蹩脚地试着讲些能显得自己聪明的话，不再诚实。上一部看完的新番好像是《青春期猪头少年不做兔女郎学姐的梦》，很不错的动画，但我在影评网站上打了不高的评分，一本正经地说「我已经是过来人了……怎么还在讲这些……」</p><p>这种想法也是真实的呀。只是我没搞懂啊，我完全没搞懂。</p><p>我想起看完《你的名字》那晚，回去的路上我兴奋地在输入框打字，把毫无组织的想法一股脑地塞进豆瓣的短评。在社交网站旁若无人地发动态倾诉着自己的快乐，啊你知道吗，那个导演哦，这次居然是 happy ending 也！我反复咀嚼着自己的感想以备将来，毫不怀疑自己短短几年就会忘记那些如数家珍的台词、名词、名字。</p><p>然后就是《天气之子》，我吐槽诚哥的恶趣味，前几十分钟平淡又急促的引入，靠设定推动的故事。我记得男主 16 岁，离家出走，包里装着一本《麦田里的守望者》——讲一个 15 岁的男孩离家出走的书。我为自己发现的细节沾沾自喜，然后又开始讲老套的傻话「好吧，毕竟是 16 岁的叛逆，16 岁才能做出的决定。」而那个时候我又才多大呢？</p><p>《铃芽之旅》呢？17 岁的女孩离家出走的故事？好像有点无聊啊……动画里居然把男主为了「拯救世界」放弃考教师资格证的剧情当作煽情的点塑造，啊喂啊喂啊喂。</p><p>嗯？我太苛刻了？</p><p>以现实为舞台的奇幻故事很好啊，它在故事里展现出与现实不同的逻辑，而故事里的人们并不会为此诧异，至少故事不呈现诧异——现实里的人类总是好笨，他们看不出来可能性，永远活在自己的逻辑，不知道生活还可以那样。</p><p>想到之前为了赶上上映当天这种时间点放弃了一些其它的事，当时觉得自己这种取舍的形象以后回顾一定很浪漫。我以为电影是造梦、人生、每秒 24 帧的真实。</p><p>记得第一次进电影院时，发现原来预告片里的画面出现在荧幕上会让人心情愉快。我以为电影院是个神圣的地方，一群需要安慰的人走进去，就能恢复和另一个世界的链接。后来才知道它还有嚼薯片的声音、衣服摩擦的声音、窃窃私语的声音，可恶的男孩给女孩剧透的声音，啊这也是电影的一部分。「一个人看什么电影？」「少看几分钟没关系。」「都放完了还坐着干嘛。」这也是电影的一部分。欢笑、抽泣、鼓掌，这也是电影的一部分。</p><p>我试图假装知道这些事儿做个可爱的人。可爱的人一定不会对自己认知外的事物表现出任何惊讶——除非他们想要你这样。</p><p>啊我明白了。电影不必深刻，它呈现、揭露。它可以只表达最浅显的那一层，故事开始了，结局就确定了。一个导演可以永远拍 16 岁的故事，因为这世界永远有人 16 岁，但今天的 16 岁可能会面临和十年前 16 岁不同的问题，而且 16 岁的难题并不就比 26 岁遇到的困境更容易。</p><p>这是重要的。</p><p>《大鱼》里有句台词「有些笑话是否因为听过太多次而忘了为何好笑。后来你又听到，突然间它像一个新笑话一样，你就想起一开始为什么喜欢它了。」</p><p>我想，当大人们开始为自己曾经的热诚而感到羞耻，我们应该对报以一点同情心，因为「所有的大人起先都是孩子」——他们只是忘记了过去。</p>]]></content>
       
       
       <categories>
@@ -3413,9 +3413,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -3498,9 +3498,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -3612,9 +3612,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -3863,9 +3863,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             
@@ -4551,9 +4551,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 人生的意义 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
             

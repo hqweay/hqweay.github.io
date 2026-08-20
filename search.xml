@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>将工作台带到虎鲸笔记</title>
+      <link href="//take-the-workbench-to-the-killer-whale-notes-56031/"/>
+      <url>//take-the-workbench-to-the-killer-whale-notes-56031/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yjt9n73m15v5b.avif" alt="" /></p><p>思路：参考手机桌面布局的逻辑将面板分为 n*m 的小方块，可以拖拽创建任意宽高的卡片，并设置为组件。这样可以比较傻瓜化地排版出整洁的界面。</p><p>然后就是组件的设计了。作为一款笔记软件里的工作台，番茄钟、日历、天气……这些常见的小组件都与软件本身毫无关联，但比较能提供情绪价值。</p><p>不过如果为其一个个做开发，就是很无聊的搬砖工作。</p><p>所以我第一个想做的就是 AI 组件，实现一个 tool 交给 AI，让 AI 生成符合要求的组件。</p><p>既然已经能 AI 生成组件了，光生成与软件无关的卡片也没什么意思，于是再为其补充软件的 API，让其能调用软件本件的 API 做出一些能交互的或可视化组件。</p><p>比如常见的字数统计、任务统计图……这些与软件本体有关联，但场景很定制化。现在用 AI 都能很方便地生成。</p><p>其它还有些细节，但主要就聊聊 AI。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>下面我将论证 AI 有感情</title>
       <link href="//next-i-will-argue-that-ai-has-emotions-55690/"/>
       <url>//next-i-will-argue-that-ai-has-emotions-55690/</url>
@@ -1722,9 +1741,9 @@
       
         <tags>
             
-            <tag> 爱 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -1978,9 +1997,9 @@
             
             <tag> 理性主义 </tag>
             
-            <tag> 心理治疗 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 心理治疗 </tag>
             
         </tags>
       
@@ -2041,9 +2060,9 @@
       
         <tags>
             
-            <tag> 女性主义 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 女性主义 </tag>
             
         </tags>
       
@@ -2347,9 +2366,9 @@
       
         <tags>
             
-            <tag> 爱 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -3556,9 +3575,9 @@
       
         <tags>
             
-            <tag> 爱 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 爱 </tag>
             
         </tags>
       
@@ -3952,9 +3971,9 @@
             
             <tag> 理性主义 </tag>
             
-            <tag> 女性主义 </tag>
-            
             <tag> 杂文 </tag>
+            
+            <tag> 女性主义 </tag>
             
             <tag> 讲道理 </tag>
             

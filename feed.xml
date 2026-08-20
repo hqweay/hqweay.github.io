@@ -9,7 +9,24 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-08-20T13:59:36.000Z</updated>
+  <updated>2026-08-20T14:13:23.000Z</updated>
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <content>
+      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-u7psjp90oz52w.avif" alt="" /></p><p>有很多细节，融入了许多我对任务管理、时间管理的理解。</p><p>不过这两点一直是 productivity 社区的老生常谈与大坑。概念上不展开了，有机会再写吧。</p><p>话都在体验了。</p>]]>
+    </content>
+    <id>https://leay.net/take-time-statistics-to-orca-notes-56042/</id>
+    <link href="https://leay.net/take-time-statistics-to-orca-notes-56042/"/>
+    <published>2026-08-20T14:13:21.000Z</published>
+    <summary>
+      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p>
+<p><img src="https://raw.git]]>
+    </summary>
+    <title>将时间统计带到虎鲸笔记</title>
+    <updated>2026-08-20T14:13:23.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>hqweay</name>
@@ -168,24 +185,5 @@
     </summary>
     <title>大脑最聪明的适应机制，如何反过来成为自己的陷阱</title>
     <updated>2026-07-26T13:42:17.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>hqweay</name>
-    </author>
-    <category term="配置与操作" scheme="https://leay.net/tags/%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%93%8D%E4%BD%9C/"/>
-    <content>
-      <![CDATA[<p>LeanCloud 将于 2027 年 1 月 12 日停止服务，使用它部署的 Valine 支持了博客近 8 年的评论功能，一时有点恍惚。这种自己在用的东西，以后还是应该充钱支持下。</p><p>Valine 现在也不建议使用了，迁移到 Waline。</p><p>从七年前部署的 Valine 迁移到 Waline 一时没找到成熟的导出导入方案，把表结构和导出的数据格式交给 AI，一会就搞定了。</p><p>总结了个 SKILL：<a href="https://github.com/hqweay/valine-to-waline">https://github.com/hqweay/valine-to-waline</a></p><blockquote><p><a href="https://waline.js.org/">Waline | Waline</a></p><p><a href="https://waline.js.org/migration/valine.html#%E6%9B%B4%E5%AE%89%E5%85%A8">从 Valine 迁移 | Waline</a></p></blockquote>]]>
-    </content>
-    <id>https://leay.net/migrate-valines-leancloud-comment-data-to-walines-neon-53049/</id>
-    <link href="https://leay.net/migrate-valines-leancloud-comment-data-to-walines-neon-53049/"/>
-    <published>2026-07-26T08:28:07.000Z</published>
-    <summary>
-      <![CDATA[<p>LeanCloud 将于 2027 年 1 月 12 日停止服务，使用它部署的 Valine 支持了博客近 8 年的评论功能，一时有点恍惚。这种自己在用的东西，以后还是应该充钱支持下。</p>
-<p>Valine 现在也不建议使用了，迁移到 Waline。</p>
-<p>从]]>
-    </summary>
-    <title>迁移 Valine 的 LeanCloud 评论数据到 Waline 的 Neon</title>
-    <updated>2026-07-26T08:28:08.000Z</updated>
   </entry>
 </feed>

@@ -9,13 +9,14 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-08-20T14:13:23.000Z</updated>
+  <updated>2026-08-20T14:16:43.000Z</updated>
   <entry>
     <author>
       <name>hqweay</name>
     </author>
+    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <content>
-      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-u7psjp90oz52w.avif" alt="" /></p><p>有很多细节，融入了许多我对任务管理、时间管理的理解。</p><p>不过这两点一直是 productivity 社区的老生常谈与大坑。概念上不展开了，有机会再写吧。</p><p>话都在体验了。</p>]]>
+      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-u7psjp90oz52w.avif" alt="" /></p><p>有很多细节，融入了许多我对任务管理、时间管理的理解。</p><p>不过这两点一直是 productivity 社区的老生常谈与大坑。概念上不展开了，有机会再写吧。</p><p>话都在体验了。</p><p>聊聊 AI 的引入：</p><p>提供一个 skill，可以智能将待办安插在空闲时间段。</p><p>提供一个 AI 统计分析界面，生成文字分析、统计图表。</p>]]>
     </content>
     <id>https://leay.net/take-time-statistics-to-orca-notes-56042/</id>
     <link href="https://leay.net/take-time-statistics-to-orca-notes-56042/"/>
@@ -25,7 +26,7 @@
 <p><img src="https://raw.git]]>
     </summary>
     <title>将时间统计带到虎鲸笔记</title>
-    <updated>2026-08-20T14:13:23.000Z</updated>
+    <updated>2026-08-20T14:16:43.000Z</updated>
   </entry>
   <entry>
     <author>

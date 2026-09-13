@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>浏览器插件——顺手：会看场合的网页工具</title>
+      <link href="//browser-plug-ins-hands-on-web-tools-for-viewing-occasions-58119/"/>
+      <url>//browser-plug-ins-hands-on-web-tools-for-viewing-occasions-58119/</url>
+      
+        <content type="html"><![CDATA[<p>之前分享过一个用思源笔记数据库做网页信息收集的 demo（<a href="https://ld246.com/article/1757338753068">分享一个用数据库做网页信息收集的 demo - 链滴</a>）。</p><p>最近把它整理成了一个浏览器扩展，取名「顺手」，也把虎鲸笔记接了进来。</p><p>思路源于在不同的网页我想进行一些快捷操作——「顺手」就做了。</p><p>在豆瓣，帮你存下书、电影和游戏；在 B 站，收下视频；在公众号、文章和技术文档里，划一句话就能保存；需要分享时，再把内容变成一张干净的卡片。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-3r1xzzw661u52.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-dzkg43vqh0a2w.avif" alt="" /></p><p>实际使用时自由度很大，可以写脚本，用 AI 从网页里提取信息。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-prsxtovt6ncc1.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-uajbs50pjubak.avif" alt="" /></p><p>一些值得营销时提及，比较有意思的用法：使用 AI 总结当前网页信息并跳转推特、微博等发布。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-jgxe4crz5j470.avif" alt="" /></p><h2 id="核心思路"><a class="markdownIt-Anchor" href="#核心思路"></a> 核心思路</h2><p>架构上核心思路就六个词：</p><table><thead><tr><th>词</th><th>一句话</th></tr></thead><tbody><tr><td><strong>连接</strong>（接什么）</td><td>你自己的外部服务：内容去哪（虎鲸 / 思源）、模型用谁（AI）</td></tr><tr><td><strong>提取</strong>（拿什么）</td><td>从网页里挑出你要的信息</td></tr><tr><td><strong>能力</strong>（做什么）</td><td>动作的实现：复制 / 存笔记 / 分享图…</td></tr><tr><td><strong>配方</strong>（开箱怎么做）</td><td>能力 + 预设参数，就是开箱动作</td></tr><tr><td><strong>场景</strong>（哪类网页）</td><td>网址命中时，出现哪些动作</td></tr><tr><td><strong>模式</strong>（什么情境）</td><td>一组场景，一次只有一个生效</td></tr></tbody></table><p>这是我最满意的地方，依旧遵循<a href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/">俺的设计哲学</a>。</p><h2 id="详情"><a class="markdownIt-Anchor" href="#详情"></a> 详情</h2><p>安装方式、支持的网站、虎鲸 / 思源怎么连接、标签和列怎么自动创建……这些细节就不复述了：</p><ul><li><p><a href="https://github.com/hqweay/shunshou?utm_source=ld246.com">hqweay/shunshou: 顺手 · 会看场合的网页工具 —— 浏览器扩展 / 油猴脚本</a></p></li><li><p><a href="https://ld246.com/article/1789282050780">浏览器扩展 - 用思源数据库做网页信息收集 - 链滴</a></p></li><li><p><a href="https://pd.qq.com/g/hujingbiji/post/B_3b4aa66afecd05001441152193334183730X60?subc=726969480">浏览器扩展-虎鲸的标签属性收集网页信息｜虎鲸笔记｜腾讯频道</a></p></li></ul><h2 id="最后"><a class="markdownIt-Anchor" href="#最后"></a> 最后</h2><p>细节还很多，感兴趣的朋友们欢迎玩玩，enjoy～</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>恐龙的时代还是结束了</title>
       <link href="//the-age-of-the-dinosaurs-is-over-57823/"/>
       <url>//the-age-of-the-dinosaurs-is-over-57823/</url>
@@ -1726,9 +1739,9 @@
             
             <tag> 阅读所思 </tag>
             
-            <tag> 爱 </tag>
-            
             <tag> 女性主义 </tag>
+            
+            <tag> 爱 </tag>
             
             <tag> 亲密关系 </tag>
             
@@ -3425,33 +3438,6 @@
     
     
     <entry>
-      <title>《绝叫》</title>
-      <link href="//2023/04/02/sakebigoe/"/>
-      <url>//2023/04/02/sakebigoe/</url>
-      
-        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>你是哪一种女权主义者</title>
       <link href="//2023/04/02/feminist/"/>
       <url>//2023/04/02/feminist/</url>
@@ -3473,6 +3459,33 @@
             <tag> 阅读所思 </tag>
             
             <tag> 女性主义 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《绝叫》</title>
+      <link href="//2023/04/02/sakebigoe/"/>
+      <url>//2023/04/02/sakebigoe/</url>
+      
+        <content type="html"><![CDATA[<p>一开始是被这本书「第二人称」的噱头吸引进来的，前部分因为部分情绪的重叠产生了惊人的共情，感叹第二人称果然不仅仅是噱头。中间部分却只感到压抑，不忍细读。末尾才明白第二人称原来还包含诡计，又被作者骗了啊。</p><p>作者刻画细致入微，卖保险的技巧、职场 PUA…小说里一堆所谓的「实用心理学」细节。买卖利用熟人、上司利用下属、女性利用男人、政治家利用群众、骗保利用漏洞、所谓的非营利性机构利用底层人。它们有目标，问心无愧地利用一切。道德成了提高它们竞争优势的锁链——锁的是有良知的人。这样的世界多糟糕啊。</p><p>主角阳子在前 98% 的文本中没有自己做过决定，也没机会做决定——她被不断地「抛弃」。她被父亲抛弃，被母亲抛弃。跟着初恋去了东京，被抛弃；「恰好」被拉进保险业务，被抛弃；遇到小白脸，遇到神代。直到小说末尾，才终于有了「帮我杀人」的想法，「逃离神代控制」的计划。</p><p>小说多次以阳子弟弟鬼魂和其它形式提到说「一切都只是自然现象」，但阳子「心中还是会燃起热情，产生渴望」。既然都只是自然现象，生死算什么要紧事？为什么阳子还能在这样泥沼里活下去？因为她对这个世界还有期待——活着就已经是对这个世界最后的求爱。</p><p>直到她接触到神代，经历了第一次杀人骗保以及 311 地震，从「自然现象」归纳出「自由」——既然一切都只是自然现象，「善恶好坏因果报应」便毫无意义——对爱的渴望也毫无意义。</p><p>认识到「自由」的阳子才真正意识到作为一个人，她有选择的权利。</p><p>因此神代「只是一个可以利用的自然现象」，生命、一切，对阳子来说都不过是可以利用的资源。</p><p>为了自己的「自由」，最后阳子杀掉了精神上的父亲（神代），生理上的母亲。</p><p>嗯哼？读者会是什么感受？为什么？</p><p>看到阳子踏入一个又一个显而易见的泥坑时，总是怒其不争，小说里多次写阳子安慰是「自己选择的」去做了这些在读者看来很蠢的事——即便在「作为一个独立女性去购物，待在大城市有更多选择」的论调里，阳子自己也并没有什么意识。她尝试了，但很快这就沦为一种简单的对欲望的充盈。</p><p>啊？真的显而易见吗？哎……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       

@@ -9,11 +9,15 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-09-13T07:42:27.000Z</updated>
+  <updated>2026-09-13T07:43:14.000Z</updated>
   <entry>
     <author>
       <name>hqweay</name>
     </author>
+    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
+    <category term="思源笔记" scheme="https://leay.net/tags/%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/"/>
+    <category term="插件" scheme="https://leay.net/tags/%E6%8F%92%E4%BB%B6/"/>
+    <category term="Project" scheme="https://leay.net/tags/Project/"/>
     <content>
       <![CDATA[<p>之前分享过一个用思源笔记数据库做网页信息收集的 demo（<a href="https://ld246.com/article/1757338753068">分享一个用数据库做网页信息收集的 demo - 链滴</a>）。</p><p>最近把它整理成了一个浏览器扩展，取名「顺手」，也把虎鲸笔记接了进来。</p><p>思路源于在不同的网页我想进行一些快捷操作——「顺手」就做了。</p><p>在豆瓣，帮你存下书、电影和游戏；在 B 站，收下视频；在公众号、文章和技术文档里，划一句话就能保存；需要分享时，再把内容变成一张干净的卡片。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-3r1xzzw661u52.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-dzkg43vqh0a2w.avif" alt="" /></p><p>实际使用时自由度很大，可以写脚本，用 AI 从网页里提取信息。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-prsxtovt6ncc1.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-uajbs50pjubak.avif" alt="" /></p><p>一些值得营销时提及，比较有意思的用法：使用 AI 总结当前网页信息并跳转推特、微博等发布。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-jgxe4crz5j470.avif" alt="" /></p><h2 id="核心思路"><a class="markdownIt-Anchor" href="#核心思路"></a> 核心思路</h2><p>架构上核心思路就六个词：</p><table><thead><tr><th>词</th><th>一句话</th></tr></thead><tbody><tr><td><strong>连接</strong>（接什么）</td><td>你自己的外部服务：内容去哪（虎鲸 / 思源）、模型用谁（AI）</td></tr><tr><td><strong>提取</strong>（拿什么）</td><td>从网页里挑出你要的信息</td></tr><tr><td><strong>能力</strong>（做什么）</td><td>动作的实现：复制 / 存笔记 / 分享图…</td></tr><tr><td><strong>配方</strong>（开箱怎么做）</td><td>能力 + 预设参数，就是开箱动作</td></tr><tr><td><strong>场景</strong>（哪类网页）</td><td>网址命中时，出现哪些动作</td></tr><tr><td><strong>模式</strong>（什么情境）</td><td>一组场景，一次只有一个生效</td></tr></tbody></table><p>这是我最满意的地方，依旧遵循<a href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/">俺的设计哲学</a>。</p><h2 id="详情"><a class="markdownIt-Anchor" href="#详情"></a> 详情</h2><p>安装方式、支持的网站、虎鲸 / 思源怎么连接、标签和列怎么自动创建……这些细节就不复述了：</p><ul><li><p><a href="https://github.com/hqweay/shunshou?utm_source=ld246.com">hqweay/shunshou: 顺手 · 会看场合的网页工具 —— 浏览器扩展 / 油猴脚本</a></p></li><li><p><a href="https://ld246.com/article/1789282050780">浏览器扩展 - 用思源数据库做网页信息收集 - 链滴</a></p></li><li><p><a href="https://pd.qq.com/g/hujingbiji/post/B_3b4aa66afecd05001441152193334183730X60?subc=726969480">浏览器扩展-虎鲸的标签属性收集网页信息｜虎鲸笔记｜腾讯频道</a></p></li></ul><h2 id="最后"><a class="markdownIt-Anchor" href="#最后"></a> 最后</h2><p>细节还很多，感兴趣的朋友们欢迎玩玩，enjoy～</p>]]>
     </content>
@@ -25,7 +29,7 @@
 <p>最近把它整理成了一个浏览器扩展，取名]]>
     </summary>
     <title>浏览器插件——顺手：会看场合的网页工具</title>
-    <updated>2026-09-13T07:42:27.000Z</updated>
+    <updated>2026-09-13T07:43:14.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -70,8 +74,8 @@
     <author>
       <name>hqweay</name>
     </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
+    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <content>
       <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-u7psjp90oz52w.avif" alt="" /></p><p>有很多细节，融入了许多我对任务管理、时间管理的理解。</p><p>不过这两点一直是 productivity 社区的老生常谈与大坑。概念上不展开了，有机会再写吧。</p><p>话都在体验了。</p><p>聊聊 AI 的引入：</p><p>提供一个 skill，可以智能将待办安插在空闲时间段。</p><p>提供一个 AI 统计分析界面，生成文字分析、统计图表。</p>]]>
     </content>
@@ -89,8 +93,8 @@
     <author>
       <name>hqweay</name>
     </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
+    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <content>
       <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yjt9n73m15v5b.avif" alt="" /></p><p>思路：参考手机桌面布局的逻辑将面板分为 n*m 的小方块，可以拖拽创建任意宽高的卡片，并设置为组件。这样可以比较傻瓜化地排版出整洁的界面。</p><p>然后就是组件的设计了。作为一款笔记软件里的工作台，番茄钟、日历、天气……这些常见的小组件都与软件本身毫无关联，但比较能提供情绪价值。</p><p>不过如果为其一个个做开发，就是很无聊的搬砖工作。</p><p>所以我第一个想做的就是 AI 组件，实现一个 tool 交给 AI，让 AI 生成符合要求的组件。</p><p>既然已经能 AI 生成组件了，光生成与软件无关的卡片也没什么意思，于是再为其补充软件的 API，让其能调用软件本件的 API 做出一些能交互的或可视化组件。</p><p>比如常见的字数统计、任务统计图……这些与软件本体有关联，但场景很定制化。现在用 AI 都能很方便地生成。</p><p>其它还有些细节，但主要就聊聊 AI。</p>]]>
     </content>

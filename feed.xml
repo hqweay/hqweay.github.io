@@ -9,13 +9,13 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-09-17T15:24:23.000Z</updated>
+  <updated>2026-09-17T15:28:10.000Z</updated>
   <entry>
     <author>
       <name>hqweay</name>
     </author>
     <content>
-      <![CDATA[<h2 id="tldr"><a class="markdownIt-Anchor" href="#tldr"></a> TLDR</h2><ul><li><p>一个浏览器插件</p></li><li><p>根据打开的网页提供一些动作，可以实现划词翻译、多选元素截图分享、网页剪藏、简单的自动化等操作</p></li><li><p>这是 landing page: <a href="https://shunshou.leay.net/">顺手 · 会看场合的网页工具</a></p></li><li><p>当然，免费。仓库还没开源，先看看这个思路有没有人感兴趣……</p></li></ul><h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2><p>核心是根据打开的网页，把对应能顺手做的事放在旁边。所以引入了一个悬浮可展开的按钮和划词后的气泡。</p><p>先聊聊现在能做什么，一些场景示例</p><ol><li><p>划词翻译</p></li><li><p>将豆瓣图书、豆瓣电影、B 站视频的元数据保存到笔记软件。</p></li><li><p>剪藏内容放到笔记软件或保存 markdown 到本地。</p></li><li><p>任意选择网页上的元素并截图拼接分享。</p></li><li><p>将 Instagram、小红书的帖子整合为单图分享……</p></li><li><p>简单的自动化：打开豆瓣电影页自动保存元数据到笔记；打开某网站首页自动点击签到……</p></li><li><p>其它……</p></li></ol><p><img src="/Users/hqweay/Documents/orca/repos/8oh4ho4wioi90/assets/image-e7t6kdn9lue3n.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yew6hby6yiwu4.avif" alt="" /></p><h2 id="讲讲思路"><a class="markdownIt-Anchor" href="#讲讲思路"></a> 讲讲思路</h2><p>一如既往的自嗨产物。将整个流程抽象为：连接、提取、能力、配方、场景、模式。越抽象越上头……</p><p>首先把整个网页当作我们提取信息的上下文，通过点击的方式可视化获取任意 dom，然后将 dom 转换为我们需要的信息。比如对 dom 进行截图、或者转换为 markdown 文本、获取图片、链接……获取一些结构化的元数据。</p><p>划选也有语义，于是将划选文本，划选所在的段落都看作可以获取使用的信息。</p><p>这些被统一为扩展里的「变量」。</p><p>变量之间可以互相组合，搭配 AI，总之就是获取各种信息。</p><p>然后将这些信息再利用扩展提供的「能力」进行一些「动作」。</p><p>比如扩展提供了保存文本为文件的能力，搭配变量形成一个动作：提取网页的某个 dom 的文本保存为本地 markdown 文件。</p><p>比如扩展提供了保存数据到笔记软件的数据库的能力，搭配提取的变量就可以得到一个书签收集工具。</p><p>比如这是一个分享 Instagram 帖子的动作：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-rv6vmc9oh27mx.avif" alt="" /></p><p>这是一个任意选取内容，分享的动作：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-sxqhjgyfk7ewm.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-9w7tqdtqr4pzx.avif" alt="" /></p>]]>
+      <![CDATA[<h2 id="tldr"><a class="markdownIt-Anchor" href="#tldr"></a> TLDR</h2><ul><li><p>一个浏览器插件</p></li><li><p>根据打开的网页提供一些动作，可以实现划词翻译、多选元素截图分享、网页剪藏、简单的自动化等操作</p></li><li><p>这是 landing page: <a href="https://shunshou.leay.net/">顺手 · 会看场合的网页工具</a></p></li><li><p>当然，免费。仓库还没开源，先看看这个思路有没有人感兴趣……</p></li></ul><h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2><p>核心是根据打开的网页，把对应能顺手做的事放在旁边。所以引入了一个悬浮可展开的按钮和划词后的气泡。</p><p>先聊聊现在能做什么，一些场景示例</p><ol><li><p>划词翻译</p></li><li><p>将豆瓣图书、豆瓣电影、B 站视频的元数据保存到笔记软件。</p></li><li><p>剪藏内容放到笔记软件或保存 markdown 到本地。</p></li><li><p>任意选择网页上的元素并截图拼接分享。</p></li><li><p>将 Instagram、小红书的帖子整合为单图分享……</p></li><li><p>简单的自动化：打开豆瓣电影页自动保存元数据到笔记；打开某网站首页自动点击签到……</p></li><li><p>其它……</p></li></ol><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-e7t6kdn9lue3n.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yew6hby6yiwu4.avif" alt="" /></p><h2 id="讲讲思路"><a class="markdownIt-Anchor" href="#讲讲思路"></a> 讲讲思路</h2><p>一如既往的自嗨产物。将整个流程抽象为：连接、提取、能力、配方、场景、模式。越抽象越上头……</p><p>首先把整个网页当作我们提取信息的上下文，通过点击的方式可视化获取任意 dom，然后将 dom 转换为我们需要的信息。比如对 dom 进行截图、或者转换为 markdown 文本、获取图片、链接……获取一些结构化的元数据。</p><p>划选也有语义，于是将划选文本，划选所在的段落都看作可以获取使用的信息。</p><p>这些被统一为扩展里的「变量」。</p><p>变量之间可以互相组合，搭配 AI，总之就是获取各种信息。</p><p>然后将这些信息再利用扩展提供的「能力」进行一些「动作」。</p><p>比如扩展提供了保存文本为文件的能力，搭配变量形成一个动作：提取网页的某个 dom 的文本保存为本地 markdown 文件。</p><p>比如扩展提供了保存数据到笔记软件的数据库的能力，搭配提取的变量就可以得到一个书签收集工具。</p><p>比如这是一个分享 Instagram 帖子的动作：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-rv6vmc9oh27mx.avif" alt="" /></p><p>这是一个任意选取内容，分享的动作：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-sxqhjgyfk7ewm.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-9w7tqdtqr4pzx.avif" alt="" /></p>]]>
     </content>
     <id>https://leay.net/test-58769/</id>
     <link href="https://leay.net/test-58769/"/>
@@ -30,7 +30,7 @@
 <p>根据打开的网页提供一些动作，可以实现划词翻译、多选元素截图分]]>
     </summary>
     <title>test</title>
-    <updated>2026-09-17T15:24:23.000Z</updated>
+    <updated>2026-09-17T15:28:10.000Z</updated>
   </entry>
   <entry>
     <author>

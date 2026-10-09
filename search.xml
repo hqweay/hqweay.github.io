@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>顺手现在支持 AI 探查网页结构并保存为规则——以思源剪藏和数据库做信息收集为例</title>
+      <link href="//easy-now-supports-ai-to-probe-the-web-structure-and-save-it-as-a-rule-take-si-yuans-cutting-collection-and-database-as-an-example-to-collect-information-60345/"/>
+      <url>//easy-now-supports-ai-to-probe-the-web-structure-and-save-it-as-a-rule-take-si-yuans-cutting-collection-and-database-as-an-example-to-collect-information-60345/</url>
+      
+        <content type="html"><![CDATA[<h2 id="tldr"><a class="markdownIt-Anchor" href="#tldr"></a> TLDR</h2><ul><li><p><a href="https://leay.net/browser-plug-ins-hands-on-web-tools-for-viewing-occasions-58119/">前期我们提供了一个浏览器插件</a>，在访问网页时，一键剪藏或者提取网页中的信息保存至思源笔记。</p></li><li><p>现在<mark>支持用 AI 探查网页元素，并保存为规则</mark>。</p></li></ul><h2 id="一些场景"><a class="markdownIt-Anchor" href="#一些场景"></a> 一些场景</h2><ul><li><p>剪藏的网页无法精确识别正文</p></li><li><p>剪藏的评论区常常包含了用户头像等杂元素无法提取出干净的评论</p></li><li><p>从豆瓣电影这类结构化的网页提取名称、导演这类元数据并保存至思源笔记数据库，手动写规则太麻烦</p></li></ul><p>现在支持 AI 解析网页结构，识别字段，并保存为规则。后续即可一键收集！</p><p>与 AI 直接解析网页获取元数据不同的是，<mark>我们使用 AI 解析网页得到获取元数据的规则，后续一键复用。更快，不再耗 token。</mark></p><h2 id="例一将链滴社区的正文和评论剪藏到思源笔记"><a class="markdownIt-Anchor" href="#例一将链滴社区的正文和评论剪藏到思源笔记"></a> 例一：将链滴社区的正文和评论剪藏到思源笔记</h2><h3 id="一句话说明想达到的效果"><a class="markdownIt-Anchor" href="#一句话说明想达到的效果"></a> 一句话说明想达到的效果</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-axlioigro53o5.avif" alt="" /></p><h3 id="ai-进行分析并创建动作"><a class="markdownIt-Anchor" href="#ai-进行分析并创建动作"></a> AI 进行分析，并创建动作</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-9iipgwypvrd21.avif" alt="" /></p><h3 id="剪藏效果"><a class="markdownIt-Anchor" href="#剪藏效果"></a> 剪藏效果</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-qos80jt64jj93.avif" alt="" /></p><p>‍</p><h2 id="例二将-apple-store-的-app-获取元数据保存至思源笔记的数据库"><a class="markdownIt-Anchor" href="#例二将-apple-store-的-app-获取元数据保存至思源笔记的数据库"></a> 例二：将 Apple Store 的 App 获取元数据保存至思源笔记的数据库</h2><h3 id="一句话"><a class="markdownIt-Anchor" href="#一句话"></a> 一句话</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-7d2c3nmhqkxdk.avif" alt="" /></p><h3 id="ai-分析出多个取值可手动选择或者自己选择"><a class="markdownIt-Anchor" href="#ai-分析出多个取值可手动选择或者自己选择"></a> AI 分析出多个取值，可手动选择或者自己选择</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-gcq04jd4qblii.avif" alt="" /></p><h3 id="自动创建数据库列"><a class="markdownIt-Anchor" href="#自动创建数据库列"></a> 自动创建数据库列</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-kdw7m1xw8sv30.avif" alt="" /></p><h3 id="保存动作后配置选择下自己的数据库"><a class="markdownIt-Anchor" href="#保存动作后配置选择下自己的数据库"></a> 保存动作后配置选择下自己的数据库</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-od7fsb8np0j7h.avif" alt="" /></p><h3 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h3><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-1masulhlhb1wv.avif" alt="" /></p><h2 id="其它"><a class="markdownIt-Anchor" href="#其它"></a> 其它</h2><p>我比较满意的是生成的规则抓取评论区效果还不错，除了例一里链滴社区的剪藏，比如这是 v2ex 帖子的剪藏：</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-z6jkpri8ii5i1.avif" alt="" /></p><h2 id="安装使用"><a class="markdownIt-Anchor" href="#安装使用"></a> 安装使用</h2><ul><li><p><a href="https://ld246.com/forward?goto=https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2F%25E9%25A1%25BA%25E6%2589%258B-%25C2%25B7-%25E4%25BC%259A%25E7%259C%258B%25E5%259C%25BA%25E5%2590%2588%25E7%259A%2584%25E7%25BD%2591%25E9%25A1%25B5%25E5%25B7%25A5%25E5%2585%25B7%2Fadnmpjgdmlhncmdfmfniippjefekdhfl">Chrome 安装</a></p></li><li><p><a href="https://ld246.com/forward?goto=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fdetail%2Felhiacffkdkpkcegafabljaldcoimich">Edge 安装</a></p></li><li><p><a href="https://ld246.com/forward?goto=https%3A%2F%2Fgithub.com%2Fhqweay%2Fshunshou%2Freleases">手动下载安装</a></p></li><li><p><a href="https://shunshou.leay.net/">顺手 · 会看场合的网页工具</a></p></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 虎鲸笔记 </tag>
+            
+            <tag> 思源笔记 </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>看向我吧</title>
       <link href="//look-at-me-59864/"/>
       <url>//look-at-me-59864/</url>
@@ -102,9 +127,9 @@
       
         <tags>
             
-            <tag> 虎鲸笔记 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 虎鲸笔记 </tag>
             
         </tags>
       
@@ -123,9 +148,9 @@
       
         <tags>
             
-            <tag> 虎鲸笔记 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 虎鲸笔记 </tag>
             
         </tags>
       

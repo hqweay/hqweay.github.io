@@ -9,7 +9,27 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-10-09T15:58:46.000Z</updated>
+  <updated>2026-10-20T15:30:00.000Z</updated>
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    <category term="项目" scheme="https://leay.net/tags/%E9%A1%B9%E7%9B%AE/"/>
+    <content>
+      <![CDATA[<p>前阵子在写一个笔记软件。</p><p>起因是自己那点长年累月的拧巴：大纲笔记好在能把一件事拆得很细，表格好在能排序，日记好在按天摊开，看板好在知道事情停在哪一步，图谱好在看得见结构。</p><p>于是我在这些软件之间来回倒腾。倒腾成了习惯，笔记本身反而越来越像仓库角落的纸箱，封着，落着灰。</p><p>有天忽然想明白：我缺的不是某一个功能，是让「同一件事」在不同视角下同时成立。</p><h2 id="一个东西几个名字"><a class="markdownIt-Anchor" href="#一个东西几个名字"></a> 一个东西，几个名字</h2><p>《庄子》里有个词叫「物化」。庄周做梦变成蝴蝶，醒来自己还是庄周。他问：不知周之梦为胡蝶与，胡蝶之梦为周与？</p><p>两样东西，两种活法。哪一个才是本来的那个？</p><p>笔记软件里其实一样。我写下「周五交报告」。它是一个待办，落在某个日期的格子里，是看板上的一张卡片，也是大纲里缩进了一行的那句话。四样东西，其实是一件事。</p><p>只是软件总把它当成四件事。建一个待办，建一个日程，建一张卡片，再复制一遍到大纲。四份数据，四个地方。然后靠同步、靠插件、靠我的记性把它们连起来。改一处，忘一处。</p><p>所以我想反过来问：假如库里只该有一个东西呢？</p><p>假如页、日记、标签、视图，都只是同一件事在不同位置上的不同呈现？</p><h2 id="库里只剩块"><a class="markdownIt-Anchor" href="#库里只剩块"></a> 库里只剩「块」</h2><p>做成块之后，很多问题忽然不用回答了。</p><p>页，是带着「页」这个角色的一块。日记，是带着「日记」角色的一块，内容就是日期。标签是一条指向边。视图，是对一棵真实的树的一次渲染——它不新增数据，只换一种看的方式。</p><p>反过来它要求我承认一件事：换个视角不是换层皮，是真的换了一个东西。同一张鸭兔图，看见了鸭子，就看不见兔子。</p><p>代价是，每加一个新功能都得先问一遍：它是新的一件东西，还是同一件东西的另一种看法？</p><p>我答错很多次，就推倒重来。但每推倒一次，模型都更薄一点。</p><h2 id="名字"><a class="markdownIt-Anchor" href="#名字"></a> 名字</h2><p>我给它取名「相」。相是不变的那个东西此刻呈现出来的样子。</p><p>英文名 Qua，取自拉丁语 <em>qua</em>——就其为、作为。同一个东西，就其为你此刻需要的那样。</p><p>「相是 Qua，Qua 是相。」这句写在项目自述里，很得意。其实是写给自己看的：它本来是一件东西，别在代码里造出第二件。</p><h2 id="剩下的"><a class="markdownIt-Anchor" href="#剩下的"></a> 剩下的</h2><p>不瞒你说，它现在还很糟。能写，能拆，能折叠，能开两个窗口——然后在某个时刻让你更烦躁。</p><p>只是「库里只有一个东西」这个念头，是我这几年写代码写得最不无聊的一次。我大概还是没找到属于自己的热情，但这件事够有趣，能让我在下班后安静一会儿。</p><p>其实人活着似乎也是这样。同一件事，站在今年的高度看，和十年前看，往往判若两事。同一段回忆，被反复翻检，慢慢长成了别的模样。</p><p>东西还是那个东西，只是换了个相。</p><p>我不过是在软件里把这件事又写了一遍。</p>]]>
+    </content>
+    <id>https://leay.net/yi-qie-jie-kuai-57120/</id>
+    <link href="https://leay.net/yi-qie-jie-kuai-57120/"/>
+    <published>2026-10-20T15:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>前阵子在写一个笔记软件。</p>
+<p>起因是自己那点长年累月的拧巴：大纲笔记好在能把一件事拆得很细，表格好在能排序，日记好在按天摊开，看板好在知道事情停在哪一步，图谱好在看得见结构。</p>
+<p>于是我在这些软件之间来回倒腾。倒腾成了习惯，笔记本身反而越来越像仓库角落的]]>
+    </summary>
+    <title>一切皆块</title>
+    <updated>2026-10-20T15:30:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>hqweay</name>
@@ -97,8 +117,8 @@
     </author>
     <category term="理性主义" scheme="https://leay.net/tags/%E7%90%86%E6%80%A7%E4%B8%BB%E4%B9%89/"/>
     <category term="AI" scheme="https://leay.net/tags/AI/"/>
-    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     <category term="讲道理" scheme="https://leay.net/tags/%E8%AE%B2%E9%81%93%E7%90%86/"/>
+    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     <content>
       <![CDATA[<blockquote><p>标题取自：<a href="https://music.163.com/song?id=2706630212&amp;uct2=U2FsdGVkX1+W54LlyxTZbCm2FSWz9Eu2CjGkoY40QCA=">蜂后与影子 - 蜷花（李子璇） - 单曲 - 网易云音乐</a></p></blockquote><p>你总能在任何一个社区的帖子看见这样的回复模板：</p><ul><li><p>「太长不看」</p></li><li><p>「看到【一个不影响全文的小点】就不想再读了」</p></li><li><p>「【一个流行词】」——嘉豪、普信男、中二病、杀马特</p></li><li><p>「【】有什么意义」</p></li><li><p>「这都不知道」</p></li><li><p>「急了」</p></li><li><p>「真正懂的人都知道……」</p></li><li><p>「你连 X 都做不到，还谈什么 Y」</p></li><li><p>……</p></li></ul><p>那我们也给出一个简单的结论：</p><ul><li><p>「太长不看」：把理解成本转化为价值判断</p></li><li><p>「看到【一个不影响全文的小点】就不想再读了」：以偏概全</p></li><li><p>「【一个流行词】」：标签化 / 人身攻击</p></li><li><p>「【】有什么意义」：要求表达承担额外的功利证明</p></li><li><p>「这都不知道」：诉诸常识 / 以无知作为羞辱</p></li><li><p>「急了」：诉诸动机 / 心理归因</p></li><li><p>「真正懂的人都知道……」：诉诸权威 / 诉诸群体认同</p></li><li><p>「你连 X 都做不到，还谈什么 Y」：不相干结论 / 以偏概全</p></li><li><p>……</p></li></ul><p>好啦，AI 时代捋条目出来已经没什么必要了。</p><p>既然是 AI 时代，更值得聊聊的现象其实是<a href="https://dontpastetheai.com/zh-cn">复制 AI 的回复</a>。上面这些句子反倒太过古典……没什么反驳的价值。</p><p>如果还有类似的话让你感到不舒服，将其发给 AI 就行了，它会帮你捋清楚——至少帮你做足心理按摩。</p><p>当人们做表达时，脑子里若是充满这样的声音，要么就不再说话了，要么就防御性地填满澄清。人都变得无聊普通。</p><p>当我们夸一朵花美时不必补充说当然另一朵花也很美。</p><p>一个表达式不必关联另一个表达式才起作用。</p><hr /><p>PS：</p><p>我强烈怀疑各种社区网站会主动制造机器人发表争议性的帖子和评论，可惜没相关证据。但至少社区确实存在机器人和水军制造争议内容，而且平台知道这种机制且算法会放大这些内容。</p><p>许多聪明人会怀疑一段文本是 AI 生成的，而怀疑它的作用。却总是为网上一段随机出现的内容生气。</p>]]>
     </content>
@@ -116,8 +136,8 @@
     <author>
       <name>hqweay</name>
     </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
+    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <content>
       <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-u7psjp90oz52w.avif" alt="" /></p><p>有很多细节，融入了许多我对任务管理、时间管理的理解。</p><p>不过这两点一直是 productivity 社区的老生常谈与大坑。概念上不展开了，有机会再写吧。</p><p>话都在体验了。</p><p>聊聊 AI 的引入：</p><p>提供一个 skill，可以智能将待办安插在空闲时间段。</p><p>提供一个 AI 统计分析界面，生成文字分析、统计图表。</p>]]>
     </content>
@@ -135,8 +155,8 @@
     <author>
       <name>hqweay</name>
     </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
+    <category term="AI" scheme="https://leay.net/tags/AI/"/>
     <content>
       <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yjt9n73m15v5b.avif" alt="" /></p><p>思路：参考手机桌面布局的逻辑将面板分为 n*m 的小方块，可以拖拽创建任意宽高的卡片，并设置为组件。这样可以比较傻瓜化地排版出整洁的界面。</p><p>然后就是组件的设计了。作为一款笔记软件里的工作台，番茄钟、日历、天气……这些常见的小组件都与软件本身毫无关联，但比较能提供情绪价值。</p><p>不过如果为其一个个做开发，就是很无聊的搬砖工作。</p><p>所以我第一个想做的就是 AI 组件，实现一个 tool 交给 AI，让 AI 生成符合要求的组件。</p><p>既然已经能 AI 生成组件了，光生成与软件无关的卡片也没什么意思，于是再为其补充软件的 API，让其能调用软件本件的 API 做出一些能交互的或可视化组件。</p><p>比如常见的字数统计、任务统计图……这些与软件本体有关联，但场景很定制化。现在用 AI 都能很方便地生成。</p><p>其它还有些细节，但主要就聊聊 AI。</p>]]>
     </content>
@@ -170,26 +190,5 @@
     </summary>
     <title>下面我将论证 AI 有感情</title>
     <updated>2026-08-17T12:50:08.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>hqweay</name>
-    </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
-    <category term="DeepSeek" scheme="https://leay.net/tags/DeepSeek/"/>
-    <content>
-      <![CDATA[<p>梁文峰在 7 月份泄露的发言录音稿里讲到他们对 AGI 路线的看法：</p><p>语言模型 → CoT（思维链）→ Agent → 持续学习 → 自我迭代奇点 → 具身智能/AGI</p><p>说当时已经是 Agent 阶段。</p><p>那么现在可能要开始「持续学习」阶段了。</p><p>反过来看这条链条。</p><p>实现 AGI 需要让 AI 持续学习；为了能持续学习 AI Agent 应当能持续运行、更新自己，无或尽量无须人工监督；自更新需要保证安全——</p><p>然后就有了「一切皆插件」可热更新的框架 DeepSeek Harness，以及数学上证明如何安全热更新的 88 页论文<a href="https://github.com/cordiverse/paper/blob/main/paper.pdf">A Programming Paradigm for Spatiotemporal Composability</a>。</p><p>梁文峰提到他们的愿景是实现 AGI，像提供网页聊天、API 都只是把攀登这个台阶时的副产物顺便分享出来。讲去年 DeepSeek 的爆火说「甚至一度我们都不想维护那些用户了，但是用户赶都赶不走。」</p><p>由此公测版 DeepSeek Harness 的极客、「普通用户」不友好就是可以理解的了。他们或许真的不大 care。至少现阶段不 care。</p><p>热更新在工程上不是什么新鲜的东西，也有人批评他们搞出 80 页的论文是「真空中的理论产物」——但目前工程上的实践都是经验性的，且依赖开发者自律。</p><p>如果要 AI 自己来迭代，那么一个形式化的理论支撑就很有必要了。</p><p>话说回来，我很欣赏 DeepSeek Harness 的理念，一切皆插件。<a href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/">系统内的元素应该是统一的，然后以家族相似的方式区分。</a>能看出 Emacs 身上那种老式的设计上的优美。我很喜欢这点。</p>]]>
-    </content>
-    <id>https://leay.net/deepseek-harness-vs-agi-55404/</id>
-    <link href="https://leay.net/deepseek-harness-vs-agi-55404/"/>
-    <published>2026-08-15T15:45:21.000Z</published>
-    <summary>
-      <![CDATA[<p>梁文峰在 7 月份泄露的发言录音稿里讲到他们对 AGI 路线的看法：</p>
-<p>语言模型 → CoT（思维链）→ Agent → 持续学习 → 自我迭代奇点 → 具身智能/AGI</p>
-<p>说当时已经是 Agent 阶段。</p>
-<p>那么现在可能要开始「持续学习]]>
-    </summary>
-    <title>DeepSeek Harness 与 AGI</title>
-    <updated>2026-08-15T15:45:26.000Z</updated>
   </entry>
 </feed>

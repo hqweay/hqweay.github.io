@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>finally，我开始搞双链笔记 App 了</title>
+      <link href="//finally-i-started-working-on-a-double-chain-note-taking-app-61301/"/>
+      <url>//finally-i-started-working-on-a-double-chain-note-taking-app-61301/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://github.com/hqweay/qua">hqweay/qua: 相（Qua）—— 块级大纲笔记：视角即本体。不同视角、不同形状、不同思维。</a></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-qsps20pl5klnb.avif" alt="" /></p><p>在笔记软件中，大纲列表、思维导图、看板、表格都可以抽象为图结构。或者，按流行的句式——「本质」上都是图。</p><p>那么，它们为什么/是怎么起作用的呢？</p><p>标题就是我的答案——Qua，有着「以……的身份」等含义。就像所谓「笔记」不过是一堆文字？你把一堆文字看作「笔记」就对自己来说有了意义。</p><p>同样的事物，看待它的方式不同，它就真的成了不同的东西。</p><p>这仍然是一次实验，且看我能在这个思路上走多远……</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 笔记软件 </tag>
+            
+            <tag> 项目 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>顺手现在支持 AI 探查网页结构并保存为规则——以思源剪藏和数据库做信息收集为例</title>
       <link href="//easy-now-supports-ai-to-probe-the-web-structure-and-save-it-as-a-rule-take-si-yuans-cutting-collection-and-database-as-an-example-to-collect-information-60345/"/>
       <url>//easy-now-supports-ai-to-probe-the-web-structure-and-save-it-as-a-rule-take-si-yuans-cutting-collection-and-database-as-an-example-to-collect-information-60345/</url>
@@ -106,9 +127,9 @@
             
             <tag> AI </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 讲道理 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -209,9 +230,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -249,9 +270,9 @@
       
         <tags>
             
-            <tag> 养恐龙 </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> 养恐龙 </tag>
             
         </tags>
       
@@ -542,9 +563,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -565,9 +586,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -1818,9 +1839,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -2129,9 +2150,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 杂文 </tag>
             
@@ -3301,33 +3322,6 @@
     
     
     <entry>
-      <title>《贪婪的多巴胺》</title>
-      <link href="//2023/07/15/dopamine/"/>
-      <url>//2023/07/15/dopamine/</url>
-      
-        <content type="html"><![CDATA[<p>最近读到最让人平静的一本书了。把一切拉到生物活动的层次——给人一种可以把握的感觉。我和别人提到说自己终于找到快乐的秘诀了！对方说怎么说？我说就是吃药！控制多巴胺的释放！</p><p>把快乐转换为代数计算。</p><p>里面一个观点说影响多巴胺变动的不是做某些事，而是对某些事物的预期。就是说，在生物学意义上提供了论据：快乐不是一个绝对值，而是一个相对值。</p><p>悲观来讲，就是没有希望就不会失望。</p><p>实践上就可以从时间、地点、人物、目的、方法上下手，主动去调整预期。</p><p>预期的满足——就是所谓的新鲜感吧。</p><p>亲密关系的维持就离不开新鲜感啊。而擅长让人失望的人啊有福啦，你们这些聪明人啊，总是盘算着无聊的计算后的水到渠成，而没有丝毫勇气去义无反顾地偏见。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 观与感 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读所思 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>冲浪与陌生人</title>
       <link href="//2023/07/15/suffering/"/>
       <url>//2023/07/15/suffering/</url>
@@ -3347,6 +3341,33 @@
         <tags>
             
             <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《贪婪的多巴胺》</title>
+      <link href="//2023/07/15/dopamine/"/>
+      <url>//2023/07/15/dopamine/</url>
+      
+        <content type="html"><![CDATA[<p>最近读到最让人平静的一本书了。把一切拉到生物活动的层次——给人一种可以把握的感觉。我和别人提到说自己终于找到快乐的秘诀了！对方说怎么说？我说就是吃药！控制多巴胺的释放！</p><p>把快乐转换为代数计算。</p><p>里面一个观点说影响多巴胺变动的不是做某些事，而是对某些事物的预期。就是说，在生物学意义上提供了论据：快乐不是一个绝对值，而是一个相对值。</p><p>悲观来讲，就是没有希望就不会失望。</p><p>实践上就可以从时间、地点、人物、目的、方法上下手，主动去调整预期。</p><p>预期的满足——就是所谓的新鲜感吧。</p><p>亲密关系的维持就离不开新鲜感啊。而擅长让人失望的人啊有福啦，你们这些聪明人啊，总是盘算着无聊的计算后的水到渠成，而没有丝毫勇气去义无反顾地偏见。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 观与感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -3881,9 +3902,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -4107,9 +4128,9 @@
             
             <tag> 理性主义 </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 讲道理 </tag>
+            
+            <tag> 杂文 </tag>
             
             <tag> 女性主义 </tag>
             
@@ -4391,9 +4412,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -4451,9 +4472,9 @@
             
             <tag> 理性主义 </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 讲道理 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -4592,9 +4613,9 @@
             
             <tag> 理性主义 </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 讲道理 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -4677,9 +4698,9 @@
             
             <tag> 理性主义 </tag>
             
-            <tag> 杂文 </tag>
-            
             <tag> 讲道理 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -6490,9 +6511,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 讲道理 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -6714,9 +6735,9 @@
       
         <tags>
             
-            <tag> 杂文 </tag>
-            
             <tag> 讲道理 </tag>
+            
+            <tag> 杂文 </tag>
             
         </tags>
       

@@ -9,7 +9,26 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-10-09T15:58:46.000Z</updated>
+  <updated>2026-10-20T16:56:26.000Z</updated>
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="笔记软件" scheme="https://leay.net/tags/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
+    <category term="项目" scheme="https://leay.net/tags/%E9%A1%B9%E7%9B%AE/"/>
+    <content>
+      <![CDATA[<p><a href="https://github.com/hqweay/qua">hqweay/qua: 相（Qua）—— 块级大纲笔记：视角即本体。不同视角、不同形状、不同思维。</a></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-qsps20pl5klnb.avif" alt="" /></p><p>在笔记软件中，大纲列表、思维导图、看板、表格都可以抽象为图结构。或者，按流行的句式——「本质」上都是图。</p><p>那么，它们为什么/是怎么起作用的呢？</p><p>标题就是我的答案——Qua，有着「以……的身份」等含义。就像所谓「笔记」不过是一堆文字？你把一堆文字看作「笔记」就对自己来说有了意义。</p><p>同样的事物，看待它的方式不同，它就真的成了不同的东西。</p><p>这仍然是一次实验，且看我能在这个思路上走多远……</p>]]>
+    </content>
+    <id>https://leay.net/finally-i-started-working-on-a-double-chain-note-taking-app-61301/</id>
+    <link href="https://leay.net/finally-i-started-working-on-a-double-chain-note-taking-app-61301/"/>
+    <published>2026-10-20T16:56:16.000Z</published>
+    <summary>
+      <![CDATA[<p><a href="https://github.com/hqweay/qua">hqweay/qua: 相（Qua）—— 块级大纲笔记：视角即本体。不同视角、不同形状、不同思维。</a></p>
+<p><img src="https://raw.githubusercont]]>
+    </summary>
+    <title>finally，我开始搞双链笔记 App 了</title>
+    <updated>2026-10-20T16:56:26.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>hqweay</name>
@@ -97,8 +116,8 @@
     </author>
     <category term="理性主义" scheme="https://leay.net/tags/%E7%90%86%E6%80%A7%E4%B8%BB%E4%B9%89/"/>
     <category term="AI" scheme="https://leay.net/tags/AI/"/>
-    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     <category term="讲道理" scheme="https://leay.net/tags/%E8%AE%B2%E9%81%93%E7%90%86/"/>
+    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     <content>
       <![CDATA[<blockquote><p>标题取自：<a href="https://music.163.com/song?id=2706630212&amp;uct2=U2FsdGVkX1+W54LlyxTZbCm2FSWz9Eu2CjGkoY40QCA=">蜂后与影子 - 蜷花（李子璇） - 单曲 - 网易云音乐</a></p></blockquote><p>你总能在任何一个社区的帖子看见这样的回复模板：</p><ul><li><p>「太长不看」</p></li><li><p>「看到【一个不影响全文的小点】就不想再读了」</p></li><li><p>「【一个流行词】」——嘉豪、普信男、中二病、杀马特</p></li><li><p>「【】有什么意义」</p></li><li><p>「这都不知道」</p></li><li><p>「急了」</p></li><li><p>「真正懂的人都知道……」</p></li><li><p>「你连 X 都做不到，还谈什么 Y」</p></li><li><p>……</p></li></ul><p>那我们也给出一个简单的结论：</p><ul><li><p>「太长不看」：把理解成本转化为价值判断</p></li><li><p>「看到【一个不影响全文的小点】就不想再读了」：以偏概全</p></li><li><p>「【一个流行词】」：标签化 / 人身攻击</p></li><li><p>「【】有什么意义」：要求表达承担额外的功利证明</p></li><li><p>「这都不知道」：诉诸常识 / 以无知作为羞辱</p></li><li><p>「急了」：诉诸动机 / 心理归因</p></li><li><p>「真正懂的人都知道……」：诉诸权威 / 诉诸群体认同</p></li><li><p>「你连 X 都做不到，还谈什么 Y」：不相干结论 / 以偏概全</p></li><li><p>……</p></li></ul><p>好啦，AI 时代捋条目出来已经没什么必要了。</p><p>既然是 AI 时代，更值得聊聊的现象其实是<a href="https://dontpastetheai.com/zh-cn">复制 AI 的回复</a>。上面这些句子反倒太过古典……没什么反驳的价值。</p><p>如果还有类似的话让你感到不舒服，将其发给 AI 就行了，它会帮你捋清楚——至少帮你做足心理按摩。</p><p>当人们做表达时，脑子里若是充满这样的声音，要么就不再说话了，要么就防御性地填满澄清。人都变得无聊普通。</p><p>当我们夸一朵花美时不必补充说当然另一朵花也很美。</p><p>一个表达式不必关联另一个表达式才起作用。</p><hr /><p>PS：</p><p>我强烈怀疑各种社区网站会主动制造机器人发表争议性的帖子和评论，可惜没相关证据。但至少社区确实存在机器人和水军制造争议内容，而且平台知道这种机制且算法会放大这些内容。</p><p>许多聪明人会怀疑一段文本是 AI 生成的，而怀疑它的作用。却总是为网上一段随机出现的内容生气。</p>]]>
     </content>
@@ -170,26 +189,5 @@
     </summary>
     <title>下面我将论证 AI 有感情</title>
     <updated>2026-08-17T12:50:08.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>hqweay</name>
-    </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
-    <category term="DeepSeek" scheme="https://leay.net/tags/DeepSeek/"/>
-    <content>
-      <![CDATA[<p>梁文峰在 7 月份泄露的发言录音稿里讲到他们对 AGI 路线的看法：</p><p>语言模型 → CoT（思维链）→ Agent → 持续学习 → 自我迭代奇点 → 具身智能/AGI</p><p>说当时已经是 Agent 阶段。</p><p>那么现在可能要开始「持续学习」阶段了。</p><p>反过来看这条链条。</p><p>实现 AGI 需要让 AI 持续学习；为了能持续学习 AI Agent 应当能持续运行、更新自己，无或尽量无须人工监督；自更新需要保证安全——</p><p>然后就有了「一切皆插件」可热更新的框架 DeepSeek Harness，以及数学上证明如何安全热更新的 88 页论文<a href="https://github.com/cordiverse/paper/blob/main/paper.pdf">A Programming Paradigm for Spatiotemporal Composability</a>。</p><p>梁文峰提到他们的愿景是实现 AGI，像提供网页聊天、API 都只是把攀登这个台阶时的副产物顺便分享出来。讲去年 DeepSeek 的爆火说「甚至一度我们都不想维护那些用户了，但是用户赶都赶不走。」</p><p>由此公测版 DeepSeek Harness 的极客、「普通用户」不友好就是可以理解的了。他们或许真的不大 care。至少现阶段不 care。</p><p>热更新在工程上不是什么新鲜的东西，也有人批评他们搞出 80 页的论文是「真空中的理论产物」——但目前工程上的实践都是经验性的，且依赖开发者自律。</p><p>如果要 AI 自己来迭代，那么一个形式化的理论支撑就很有必要了。</p><p>话说回来，我很欣赏 DeepSeek Harness 的理念，一切皆插件。<a href="https://leay.net/xiong-mao-zong-hui-dai-ni-hui-jia-ai-native-dao-hang-lan-de-yang-zi-si-yuan-bi-ji-dao-hang-cha-jian--51322/">系统内的元素应该是统一的，然后以家族相似的方式区分。</a>能看出 Emacs 身上那种老式的设计上的优美。我很喜欢这点。</p>]]>
-    </content>
-    <id>https://leay.net/deepseek-harness-vs-agi-55404/</id>
-    <link href="https://leay.net/deepseek-harness-vs-agi-55404/"/>
-    <published>2026-08-15T15:45:21.000Z</published>
-    <summary>
-      <![CDATA[<p>梁文峰在 7 月份泄露的发言录音稿里讲到他们对 AGI 路线的看法：</p>
-<p>语言模型 → CoT（思维链）→ Agent → 持续学习 → 自我迭代奇点 → 具身智能/AGI</p>
-<p>说当时已经是 Agent 阶段。</p>
-<p>那么现在可能要开始「持续学习]]>
-    </summary>
-    <title>DeepSeek Harness 与 AGI</title>
-    <updated>2026-08-15T15:45:26.000Z</updated>
   </entry>
 </feed>

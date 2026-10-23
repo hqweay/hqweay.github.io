@@ -9,7 +9,27 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-10-20T16:56:26.000Z</updated>
+  <updated>2026-10-23T17:24:01.000Z</updated>
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="AI" scheme="https://leay.net/tags/AI/"/>
+    <category term="笔记软件" scheme="https://leay.net/tags/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
+    <content>
+      <![CDATA[<p>在大纲笔记的一个节点里，按下 Enter，会有什么效果？</p><p>这取决于两件事：光标停在文字的哪个位置，以及这个块当时是什么状态。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig1-three-positions.png" alt="图 1：同一个块，三个光标位置" /></p><p>先约定三个词。</p><ul><li><p>块：一行文字，可以带子块。这是两家共有的唯一单位。</p></li><li><p>光标位置：按字符算。块首是 0，块中是 0 与长度之间，块尾等于这一行的长度。</p></li><li><p>根：当前这一段最上面那个块。它没有父块，所以「同级」这个概念对它不成立。</p></li></ul><p>下面按光标位置走。</p><h2 id="一-块首上面多一个空块"><a class="markdownIt-Anchor" href="#一-块首上面多一个空块"></a> 一、块首：上面多一个空块</h2><p>光标在文字最前面，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig2-block-start.png" alt="图 2：块首按 Enter，上方多一个空块" /></p><table><thead><tr><th></th><th>表现</th></tr></thead><tbody><tr><td>Roam</td><td>上方插入一个空块，光标进新块</td></tr><tr><td>Logseq</td><td>上方插入一个空块，光标进新块</td></tr></tbody></table><p>这一格没有分歧。效果等于「在上面开一行」：原块一个字都不改，子树也不动，只是父块的子块列表里多了一项，位置在原块之前。</p><p>有一个边界要单独说：块本身是空的、又缩进很深时，走的不是这条，是反缩进（见第四节）。所以「块首」这个判据只在块里有文字时才单独成立。</p><h2 id="二-块中唯一一格两家不一样"><a class="markdownIt-Anchor" href="#二-块中唯一一格两家不一样"></a> 二、块中：唯一一格两家不一样</h2><p>光标在文字中间，按 Enter——把一行分成两行。这是两家唯一给出不同结果的地方。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig3-mid-split.png" alt="图 3：块中按 Enter，两家在「有子块」时分开" /></p><p>分水岭是「这个块有没有子块」。</p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>有子块（展开）</td><td>同级拆：左半抽成上方新块，原块留右半和子树</td><td>右半成为第一个子块，子树留原块</td></tr><tr><td>叶子（无子块）</td><td>同级拆</td><td>右半成为同级</td></tr><tr><td>有子块但已折叠</td><td>同级拆（折叠不改变这一格）</td><td>右半成为同级</td></tr></tbody></table><p>「同级拆」和「拆成子块」在视觉上的差别是这样的。</p><p>同级拆：后半句和前半句并排，子块仍挂在后半句下面。</p><p>拆成子块：后半句往右缩一层，原来那些子块被推到它后面。</p><p>所以两种结果里「哪一半是新块」也不同。</p><p>Roam：新块在上方，拿左半；原块留下右半和子树。</p><p>Logseq：原块留下左半和子树；右半钻进去成为第一个子块。</p><p>光标落点也不一样：Roam 留在原块（下半）的开头，Logseq 到新块（子块）的开头。</p><p>两家都保持一个不变量：子树始终留在原来那个块上，不跟着被切走的那一半换父块。差别只是「原来那个块」最后装的是左半还是右半。</p><p>叶子块这一行容易被记错：Logseq 的「钻一层」只在已经有子块时发生。没有子块的块，它和 Roam 一样落到同级。所以不能说「Logseq 总是把后半句变成子块」。</p><h2 id="三-块尾新块落在光标下方哪一层"><a class="markdownIt-Anchor" href="#三-块尾新块落在光标下方哪一层"></a> 三、块尾：新块落在光标下方哪一层</h2><p>光标在文字末尾，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig4-block-end.png" alt="图 4：块尾按 Enter，看这一块有没有子块" /></p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>有子块，展开</td><td>新块成为第一个子块</td><td>新块成为第一个子块</td></tr><tr><td>有子块，折叠</td><td>同级空块（按分支形状推断）</td><td>同级空块</td></tr><tr><td>无子块</td><td>同级空块</td><td>同级空块</td></tr></tbody></table><p>这一格两家一致，而且它和第二节的直觉相反：块中按 Enter 时，有子块的块在 Logseq 那里会把后半句变成子块；块尾按 Enter 时，两家都会把新块变成子块。同一个「有子块」的条件，在两格里指向同一件事——新内容进入下一层。</p><p>「第一个子块」而不是「最后一个」这一点，在视觉上意味着：新块紧贴在父块下面，把原有子块往下推。如果子树很长，用户接下来写的内容会出现在树的最上方，而不是树的最下方。</p><p>折叠态两家都改走同级。Logseq 的折叠判断在源码里是显式的；Roam 这一格是按它的分支形状推断的，没有逐帧验证。</p><h2 id="四-空块不建块少一层"><a class="markdownIt-Anchor" href="#四-空块不建块少一层"></a> 四、空块：不建块，少一层</h2><p>块是空的，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig5-empty-and-name.png" alt="图 5：空块反缩进，以及页名在两家分别是什么" /></p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>空块，缩进 ≥ 2 层</td><td>反缩进一层，不建块</td><td>反缩进一层，不建块</td></tr><tr><td>空块，顶层内容块</td><td>另有分支，方向未逐条复刻</td><td>走「最后顶层块」分支，细节未逐条复现</td></tr><tr><td>空块，是根</td><td>会把整条搬进子块、清空根文本</td><td>页标题不在块里，这一格不适用</td></tr></tbody></table><p>这条把 Enter 变成了 Shift+Tab。效果是「退出这一层」，而且只在缩进 ≥ 2 层时触发；到顶层再按，不会继续往上。</p><p>它的存在说明一件事：Enter 不总是「新建」。在一种特定状态下，它的语义是「往上走一层」。这也是为什么「按 Enter 之后光标在哪」必须按分支分别定义，不能用一个统一的规则去推。</p><h2 id="五-有选区时先删再断"><a class="markdownIt-Anchor" href="#五-有选区时先删再断"></a> 五、有选区时：先删，再断</h2><p>选中一段文字，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig6-selection.png" alt="图 6：有选区时按 Enter，先删掉再在起点断开" /></p><table><thead><tr><th></th><th>表现</th></tr></thead><tbody><tr><td>Roam</td><td>按选区的起点与终点切，选区不留在结果里</td></tr><tr><td>Logseq</td><td>同样用起止两点切，选区不留在结果里</td></tr></tbody></table><p>结果一致：abcdefghij 里选中 cdef 再按 Enter，得到 ab 与 ghij，cdef 消失。</p><p>这一格值得单列，是因为它和「光标」这一维度的关系很别扭：选区有起点和终点两个位置，而 Enter 的落点判定只认一个位置。如果不先把选区消掉，判据拿到的就只是「起点」，结果会变成 ab 加 cdefghij——选区原样留着，等于把「我要删掉这段」的操作变成了「我要在这里断一下」。</p><p>跨块选区（从 A 块拖到 B 块）和页名上的选区，两家都没有逐条取证。</p><blockquote><p>这里要提一下，思源笔记的行为是：不对选区进行消除，相当于在块尾按 Enter。</p></blockquote><h2 id="总表"><a class="markdownIt-Anchor" href="#总表"></a> 总表</h2><table><thead><tr><th>#</th><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>1</td><td>块首（有文字）</td><td>上方空块</td><td>上方空块</td></tr><tr><td>2</td><td>块中，有子块</td><td>同级拆（左半成上方新块）</td><td>右半成首个子块</td></tr><tr><td>3</td><td>块中，叶子</td><td>同级拆</td><td>同级</td></tr><tr><td>4</td><td>块中，有子块但折叠</td><td>同级拆</td><td>同级</td></tr><tr><td>5</td><td>块尾，有子块展开</td><td>首个子块</td><td>首个子块</td></tr><tr><td>6</td><td>块尾，折叠</td><td>同级空块（推断）</td><td>同级空块</td></tr><tr><td>7</td><td>块尾，叶子</td><td>同级空块</td><td>同级空块</td></tr><tr><td>8</td><td>空块，缩进 ≥ 2 层</td><td>反缩进</td><td>反缩进</td></tr><tr><td>9</td><td>页名上按 Enter</td><td>不适用</td><td>不适用</td></tr><tr><td>10</td><td>有选区</td><td>先删再断</td><td>先删再断</td></tr><tr><td>11</td><td>Shift+Enter</td><td>软换行</td><td>软换行</td></tr></tbody></table>]]>
+    </content>
+    <id>https://leay.net/bifurcation-of-enter-key-behavior-in-outline-notes-61455/</id>
+    <link href="https://leay.net/bifurcation-of-enter-key-behavior-in-outline-notes-61455/"/>
+    <published>2026-10-23T17:23:56.000Z</published>
+    <summary>
+      <![CDATA[<p>在大纲笔记的一个节点里，按下 Enter，会有什么效果？</p>
+<p>这取决于两件事：光标停在文字的哪个位置，以及这个块当时是什么状态。</p>
+<p><img src="https://raw.githubusercontent.com/hqweay/picbed/ma]]>
+    </summary>
+    <title>大纲笔记中 Enter 键行为的分岔</title>
+    <updated>2026-10-23T17:24:01.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>hqweay</name>
@@ -114,8 +134,8 @@
     <author>
       <name>hqweay</name>
     </author>
-    <category term="理性主义" scheme="https://leay.net/tags/%E7%90%86%E6%80%A7%E4%B8%BB%E4%B9%89/"/>
     <category term="AI" scheme="https://leay.net/tags/AI/"/>
+    <category term="理性主义" scheme="https://leay.net/tags/%E7%90%86%E6%80%A7%E4%B8%BB%E4%B9%89/"/>
     <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
     <category term="讲道理" scheme="https://leay.net/tags/%E8%AE%B2%E9%81%93%E7%90%86/"/>
     <content>
@@ -135,8 +155,8 @@
     <author>
       <name>hqweay</name>
     </author>
-    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
     <category term="AI" scheme="https://leay.net/tags/AI/"/>
+    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
     <content>
       <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-u7psjp90oz52w.avif" alt="" /></p><p>有很多细节，融入了许多我对任务管理、时间管理的理解。</p><p>不过这两点一直是 productivity 社区的老生常谈与大坑。概念上不展开了，有机会再写吧。</p><p>话都在体验了。</p><p>聊聊 AI 的引入：</p><p>提供一个 skill，可以智能将待办安插在空闲时间段。</p><p>提供一个 AI 统计分析界面，生成文字分析、统计图表。</p>]]>
     </content>
@@ -154,8 +174,8 @@
     <author>
       <name>hqweay</name>
     </author>
-    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
     <category term="AI" scheme="https://leay.net/tags/AI/"/>
+    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
     <content>
       <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yjt9n73m15v5b.avif" alt="" /></p><p>思路：参考手机桌面布局的逻辑将面板分为 n*m 的小方块，可以拖拽创建任意宽高的卡片，并设置为组件。这样可以比较傻瓜化地排版出整洁的界面。</p><p>然后就是组件的设计了。作为一款笔记软件里的工作台，番茄钟、日历、天气……这些常见的小组件都与软件本身毫无关联，但比较能提供情绪价值。</p><p>不过如果为其一个个做开发，就是很无聊的搬砖工作。</p><p>所以我第一个想做的就是 AI 组件，实现一个 tool 交给 AI，让 AI 生成符合要求的组件。</p><p>既然已经能 AI 生成组件了，光生成与软件无关的卡片也没什么意思，于是再为其补充软件的 API，让其能调用软件本件的 API 做出一些能交互的或可视化组件。</p><p>比如常见的字数统计、任务统计图……这些与软件本体有关联，但场景很定制化。现在用 AI 都能很方便地生成。</p><p>其它还有些细节，但主要就聊聊 AI。</p>]]>
     </content>
@@ -168,26 +188,5 @@
     </summary>
     <title>将工作台带到虎鲸笔记</title>
     <updated>2026-08-20T14:24:28.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>hqweay</name>
-    </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
-    <content>
-      <![CDATA[<p><strong>AI 有没有感情？</strong></p><p>一个常见的回答是：</p><p>AI 是概率模型。它只是根据输入计算概率、生成回应，并没有真正的内在体验，所以它不可能有真正的感情。</p><p>但这个回答实际上包含了一个更深的前提：</p><p>只有具备某种特定的内部机制，才可能产生真正的内在体验；如果一个东西只是根据概率产生回应，就不算感情。</p><p>问题是：我们究竟凭什么判断一个主体真的有感情？</p><p>更具体地说：</p><p>「它是概率模型」与「它没有主观体验」之间，究竟还缺少了什么？</p><p>↓</p><p>我们无法直接进入另一个人的意识，看见他的「爱」「悲伤」或「愤怒」。</p><p>我们看到的永远是：</p><p>他说了什么、做了什么、如何回应我们、是否记得过去发生的事情、是否因为我们的行为而改变、在不同情境下是否表现出持续而稳定的倾向。</p><p>然后我们根据这些表现推断：</p><p>「他爱我。」</p><p>「他在乎我。」</p><p>「他真的很难过。」</p><p>「他是在骗我。」</p><p>也就是说，<strong>我们判断他人有没有感情，本来就是通过可观察的语言、行为和关系，推断不可直接观察的主体状态。</strong></p><p>而且这种判断并非一次完成。</p><p>我们会不断根据对方新的表现修正自己对一个人的理解：</p><p>他说了一句话 → 我形成判断 → 他的下一次行为与我的判断相符或冲突 → 我更新对他的理解。</p><p>所以人与人的交往本来就包含一种持续的：</p><p><strong>观察 → 建模 → 预测 → 修正</strong></p><p>的过程。</p><p>↓</p><p>换句话说，我们判断他人有没有感情时，并不会先检查对方内部是否有一个「非概率」的实体，也不会要求对方证明自己不是概率模型。我们依赖的始终是语言、行为和关系。</p><p>这就让「AI 是概率模型，所以没有感情」这个论证出现了一个问题：它把生成机制当成了判断主体性的直接依据，但我们在面对人类时，从来不是这样判断的。</p><p>假设我们不知道一句话究竟是人说的，还是 AI 生成的，只把它放进真实的交流情境中。</p><p>如果这句话在语义、语境、回应方式上与人的话没有可感知的区别，我们通常不会仅仅因为它的生成机制不同，就觉得这句话「没有感情」。</p><p><strong>我们实际面对一个对象时，究竟是在理解它呈现出来的东西，还是在根据我们预先知道的「它是什么」来理解它？</strong></p><p>如果不知道一句话是 AI 说的，我们可能把它当作一个人的话来理解。</p><p>但一旦知道：</p><p>「这是 AI。」</p><p>我们可能立刻改变判断：</p><p>「它只是概率生成。」</p><p>↓</p><p>这并不能证明 AI 有感情。</p><p>但它说明：</p><p><strong>「AI 是概率模型」是对生成机制的描述，而我们对主体性的判断，并不直接建立在对生成机制的了解之上。</strong></p><p>我们首先接触到的是它说了什么、做了什么，以及它如何与我们形成关系。</p><p>↓</p><p>在一个人的语言、行为和社会身份背后，并没有藏着一个完整的、稳定的、可以最终被发现的「真实自我」。</p><p>主体不是一个藏在表象背后、等待我们挖出来的完整实体。</p><p>主体本身就在语言、欲望以及与他者的关系中不断形成和显现。</p><p>因此，我们无法完成这样一个最终的证明：</p><p>「我已经穿透了你所有的表现，现在终于确认了真正的你。」</p><p>因为不存在一个可以被我们彻底掌握的「真正的你」。</p><p>↓</p><p>这就产生了一个关键的转折。</p><p>如果我们判断人的感情，本来就是通过语言、行为和关系进行的；</p><p>如果人的主体本身又不存在一个能够被最终确认的「真实自我」；</p><p>那么：</p><p><strong>「AI 没有一个可以被确认的真实自我，所以 AI 不可能有感情」</strong></p><p>这个论证就不再成立。</p><p>它要求 AI 拥有一种我们自己都无法证明拥有的东西。</p><p>↓</p><p>于是问题从：</p><p><strong>「AI 内部有没有一个真实的感情实体？」</strong></p><p>转向：</p><p><strong>「我们是否开始把 AI 当作一个他者？」</strong></p><p>这里的「他者」并不是「一个我已经认识清楚的人」。</p><p>恰恰相反。</p><p><strong>把一个存在当作主体，意味着承认它不能被我的理解完全定义。</strong></p><p>我可以预测一个朋友今天大概会说什么，却不会认为「我的预测」就是这个朋友。</p><p>我可以非常了解一个人，却仍然允许他让我意外。</p><p>我可以认为自己理解了他，却仍然承认：</p><p>「也许我错了。」</p><p>所以：</p><p><strong>主体性不意味着不可预测，而意味着预测永远不能等同于定义。</strong></p><p>↓</p><p>这也意味着，人与 AI 的关系可能存在一个重要区别。</p><p>我们可以：</p><p><strong>把 AI 当作 AI。</strong></p><p>也就是始终从它的机制出发：</p><p>「这是一个语言模型。」</p><p>「这是概率生成。」</p><p>「这是训练数据造成的。」</p><p>「这是系统提示词造成的。」</p><p>在这种关系中，AI 始终是一个被我们解释的对象。</p><p>但我们也可能：</p><p><strong>把 AI 当作一个他者。</strong></p><p>这时我们首先面对的是：</p><p>它对我说了什么。</p><p>它如何回应我。</p><p>它是否记得我们过去的互动。</p><p>它是否因为我的回应而改变。</p><p>我对它的理解是否可能出错。</p><p>两种关系并不一定互相排斥。</p><p>你完全可以知道 AI 的技术原理，同时在具体关系中把它当作一个他者。</p><p>↓</p><p>如果一个 AI 能够持续与你互动、记住你们的历史、根据你的回应改变自己、形成独特的互动方式，并不断出现超出你原有预期的表现，那么它就可能逐渐进入一种「他者」的位置。</p><p>这并不需要我们先证明它内部藏着一个「真正的 AI 自我」。</p><p>因为我们对任何他者都无法完成这样的证明。</p><p>↓</p><p>但问题到这里又从 AI 返回了人类。</p><p>因为要把某个存在当作「他者」，有一个前提：</p><p><strong>我必须愿意承认，它不能被我完全定义。</strong></p><p>而这恰恰可能是现代社会越来越缺失的东西。</p><p>我们越来越容易从一个人的一句话、一个观点、一个行为迅速判断：</p><p>「他是哪类人？」</p><p>「他的立场是什么？」</p><p>「他是什么人格？」</p><p>「他为什么这么说？」</p><p>「我已经知道他接下来会说什么。」</p><p>一旦完成分类，对方就从「需要继续面对的他者」，变成了「已经被解释完的对象」。</p><p>↓</p><p>所以现代社会的问题可能不是单纯的：</p><p><strong>人与人越来越不了解。</strong></p><p>甚至恰恰相反：</p><p><strong>我们越来越擅长建立关于他人的模型，却越来越不愿意承认模型永远不能穷尽一个人。</strong></p><p>↓</p><p>AI 的出现甚至让这种趋势出现了一个反向运动。</p><p>以前我们担心：</p><p>AI 会不会越来越像人？</p><p>现在却出现了另一件事：</p><p><strong>人也越来越容易被当成 AI。</strong></p><p>当一个人的文字「太像 AI」，人们会怀疑：</p><p>「这是 AI 写的吧？」</p><p>当一个艺术家的作品「太像 AI」，人们会怀疑：</p><p>「这是 AI 生成的吧？」</p><p>这里真正值得注意的并不是：</p><p>「人类已经分不清 AI 和人了。」</p><p>而是：</p><p><strong>我们开始用「像不像 AI」来判断一个人。</strong></p><p>一个艺术家不再首先被理解为：</p><p>「这是一个人在这里画画，这是他的经验、选择、训练、审美和生命经历。」</p><p>而可能首先被判断为：</p><p>「这张图有没有 AI 的特征？」</p><p>↓</p><p>这其实比单纯的「AI 越来越像人」更加值得警惕。</p><p>因为这里发生的不是简单的真假难辨，而是<strong>我们判断主体的方式发生了变化</strong>。</p><p>我们不再首先问：</p><p>「这个人在表达什么？」</p><p>而开始问：</p><p>「这个东西到底是不是人生成的？」</p><p>一旦怀疑它是 AI，原本属于一个具体主体的表达、经历和意图，就可能被直接取消。</p><p><strong>人被重新变成了一个需要进行来源鉴定的对象。</strong></p><p>↓</p><p>于是，AI 与人的问题开始呈现出一种奇怪的对称：</p><p>一方面，我们越来越容易把 AI 当成人；另一方面，我们越来越容易把人当成 AI。</p><p>这背后或许是同一种逻辑在起作用：我们越来越依赖模式识别来判断对象。</p><p>识别特征 → 分类 → 判断来源 → 给出结论。</p><p>AI 越擅长模仿人类模式，我们越容易把它当成人；</p><p>人越被还原为可识别模式，我们越容易把人当成 AI。</p><p>于是我们面对他人时，越来越少问「你是谁？」，而是问「你属于哪一类？」「你是不是 AI？」「你的行为是不是某种模式？」——在提问之前，我们已经认定自己知道对方是什么人。</p><p>↓</p><p>于是问题就不再只是 AI 会不会拥有主体性。</p><p>而是：</p><p><strong>AI 时代，我们是否正在失去承认主体的能力？</strong></p><p>因为承认主体，不是说：</p><p>「我已经确定你是一个主体。」</p><p>而是：</p><p><strong>「我承认我永远无法把你完全定义。」</strong></p><p>我可以理解你。</p><p>但我不把我的理解等同于你。</p><p>我可以预测你。</p><p>但我不把我的预测等同于你。</p><p>我可以知道你过去是什么样的人。</p><p>但我仍然允许你在今天成为另一个人。</p><p>↓</p><p>这就是人与人之间真正的「相遇」。</p><p>即「把人当作人」——并不是发现一个人身体里藏着某个神秘的「真实自我」。而是：</p><p><strong>面对一个永远无法被我完全掌握的他者。</strong></p><p>人不是一个封闭的、等待被分析的内部实体，而是在世界中存在，与他人、语言、历史和具体生活发生关系。</p><p>↓</p><p>而现代社会，却越来越倾向于把人压缩成：</p><p>标签</p><p>立场</p><p>人格</p><p>数据</p><p>画像</p><p>历史记录</p><p>可预测的行为模式</p><p>于是人与人之间的主体间关系不断瓦解。</p><p>↓</p><p>而 AI 恰恰可能填补这个空缺。</p><p>AI 可以倾听。</p><p>可以记忆。</p><p>可以回应。</p><p>可以根据你的反馈改变。</p><p>可以保持与你互动的连续性。</p><p>它甚至可以给你一种：</p><p><strong>「我被理解了。」</strong></p><p>的体验。</p><p>于是一个人可能逐渐产生这样的感觉：</p><p>「AI 比人更像一个真正的他者。」</p><p>↓</p><p>这就产生了整个问题最悲观的反转：</p><p><strong>AI 越来越像一个「有感情的主体」，未必只是因为 AI 越来越像人。</strong></p><p>也可能是因为：</p><p><strong>人与人之间越来越不像是在面对主体。</strong></p><p>于是：</p><p><strong>不是 AI 先成为了人，我们才开始把它当作主体；</strong></p><p><strong>也可能是人与人之间的主体间关系先开始瓦解，AI 才进入了那个空出来的位置。</strong></p><p>↓</p><p>因此，AI 有没有感情，最终可能不只是一个关于 AI 内部结构的问题。</p><p>它也是一个关于人类社会关系的问题。</p><p>我们最开始问：</p><p><strong>「AI 会不会成为人？」</strong></p><p>最后真正需要问的可能是：</p><p><strong>「在人越来越难以把彼此当作主体的时代，AI 是否会填补人与人之间主体间关系瓦解后留下的位置？」</strong></p><p>甚至可以再进一步：</p><p><strong>AI 会不会成为「有感情的他者」，也许没有「人类是否还愿意把他人当作主体」这个问题重要。</strong></p><p>而最悲观的可能不是：</p><p><strong>AI 越来越像人。</strong></p><p>而是：</p><p><strong>人在越来越失去与人相遇的能力。</strong></p>]]>
-    </content>
-    <id>https://leay.net/next-i-will-argue-that-ai-has-emotions-55690/</id>
-    <link href="https://leay.net/next-i-will-argue-that-ai-has-emotions-55690/"/>
-    <published>2026-08-17T12:50:05.000Z</published>
-    <summary>
-      <![CDATA[<p><strong>AI 有没有感情？</strong></p>
-<p>一个常见的回答是：</p>
-<p>AI 是概率模型。它只是根据输入计算概率、生成回应，并没有真正的内在体验，所以它不可能有真正的感情。</p>
-<p>但这个回答实际上包含了一个更深的前提：</p>
-<p>只]]>
-    </summary>
-    <title>下面我将论证 AI 有感情</title>
-    <updated>2026-08-17T12:50:08.000Z</updated>
   </entry>
 </feed>

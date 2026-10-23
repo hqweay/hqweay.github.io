@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>大纲笔记中 Enter 键行为的分岔</title>
+      <link href="//bifurcation-of-enter-key-behavior-in-outline-notes-61455/"/>
+      <url>//bifurcation-of-enter-key-behavior-in-outline-notes-61455/</url>
+      
+        <content type="html"><![CDATA[<p>在大纲笔记的一个节点里，按下 Enter，会有什么效果？</p><p>这取决于两件事：光标停在文字的哪个位置，以及这个块当时是什么状态。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig1-three-positions.png" alt="图 1：同一个块，三个光标位置" /></p><p>先约定三个词。</p><ul><li><p>块：一行文字，可以带子块。这是两家共有的唯一单位。</p></li><li><p>光标位置：按字符算。块首是 0，块中是 0 与长度之间，块尾等于这一行的长度。</p></li><li><p>根：当前这一段最上面那个块。它没有父块，所以「同级」这个概念对它不成立。</p></li></ul><p>下面按光标位置走。</p><h2 id="一-块首上面多一个空块"><a class="markdownIt-Anchor" href="#一-块首上面多一个空块"></a> 一、块首：上面多一个空块</h2><p>光标在文字最前面，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig2-block-start.png" alt="图 2：块首按 Enter，上方多一个空块" /></p><table><thead><tr><th></th><th>表现</th></tr></thead><tbody><tr><td>Roam</td><td>上方插入一个空块，光标进新块</td></tr><tr><td>Logseq</td><td>上方插入一个空块，光标进新块</td></tr></tbody></table><p>这一格没有分歧。效果等于「在上面开一行」：原块一个字都不改，子树也不动，只是父块的子块列表里多了一项，位置在原块之前。</p><p>有一个边界要单独说：块本身是空的、又缩进很深时，走的不是这条，是反缩进（见第四节）。所以「块首」这个判据只在块里有文字时才单独成立。</p><h2 id="二-块中唯一一格两家不一样"><a class="markdownIt-Anchor" href="#二-块中唯一一格两家不一样"></a> 二、块中：唯一一格两家不一样</h2><p>光标在文字中间，按 Enter——把一行分成两行。这是两家唯一给出不同结果的地方。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig3-mid-split.png" alt="图 3：块中按 Enter，两家在「有子块」时分开" /></p><p>分水岭是「这个块有没有子块」。</p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>有子块（展开）</td><td>同级拆：左半抽成上方新块，原块留右半和子树</td><td>右半成为第一个子块，子树留原块</td></tr><tr><td>叶子（无子块）</td><td>同级拆</td><td>右半成为同级</td></tr><tr><td>有子块但已折叠</td><td>同级拆（折叠不改变这一格）</td><td>右半成为同级</td></tr></tbody></table><p>「同级拆」和「拆成子块」在视觉上的差别是这样的。</p><p>同级拆：后半句和前半句并排，子块仍挂在后半句下面。</p><p>拆成子块：后半句往右缩一层，原来那些子块被推到它后面。</p><p>所以两种结果里「哪一半是新块」也不同。</p><p>Roam：新块在上方，拿左半；原块留下右半和子树。</p><p>Logseq：原块留下左半和子树；右半钻进去成为第一个子块。</p><p>光标落点也不一样：Roam 留在原块（下半）的开头，Logseq 到新块（子块）的开头。</p><p>两家都保持一个不变量：子树始终留在原来那个块上，不跟着被切走的那一半换父块。差别只是「原来那个块」最后装的是左半还是右半。</p><p>叶子块这一行容易被记错：Logseq 的「钻一层」只在已经有子块时发生。没有子块的块，它和 Roam 一样落到同级。所以不能说「Logseq 总是把后半句变成子块」。</p><h2 id="三-块尾新块落在光标下方哪一层"><a class="markdownIt-Anchor" href="#三-块尾新块落在光标下方哪一层"></a> 三、块尾：新块落在光标下方哪一层</h2><p>光标在文字末尾，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig4-block-end.png" alt="图 4：块尾按 Enter，看这一块有没有子块" /></p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>有子块，展开</td><td>新块成为第一个子块</td><td>新块成为第一个子块</td></tr><tr><td>有子块，折叠</td><td>同级空块（按分支形状推断）</td><td>同级空块</td></tr><tr><td>无子块</td><td>同级空块</td><td>同级空块</td></tr></tbody></table><p>这一格两家一致，而且它和第二节的直觉相反：块中按 Enter 时，有子块的块在 Logseq 那里会把后半句变成子块；块尾按 Enter 时，两家都会把新块变成子块。同一个「有子块」的条件，在两格里指向同一件事——新内容进入下一层。</p><p>「第一个子块」而不是「最后一个」这一点，在视觉上意味着：新块紧贴在父块下面，把原有子块往下推。如果子树很长，用户接下来写的内容会出现在树的最上方，而不是树的最下方。</p><p>折叠态两家都改走同级。Logseq 的折叠判断在源码里是显式的；Roam 这一格是按它的分支形状推断的，没有逐帧验证。</p><h2 id="四-空块不建块少一层"><a class="markdownIt-Anchor" href="#四-空块不建块少一层"></a> 四、空块：不建块，少一层</h2><p>块是空的，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig5-empty-and-name.png" alt="图 5：空块反缩进，以及页名在两家分别是什么" /></p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>空块，缩进 ≥ 2 层</td><td>反缩进一层，不建块</td><td>反缩进一层，不建块</td></tr><tr><td>空块，顶层内容块</td><td>另有分支，方向未逐条复刻</td><td>走「最后顶层块」分支，细节未逐条复现</td></tr><tr><td>空块，是根</td><td>会把整条搬进子块、清空根文本</td><td>页标题不在块里，这一格不适用</td></tr></tbody></table><p>这条把 Enter 变成了 Shift+Tab。效果是「退出这一层」，而且只在缩进 ≥ 2 层时触发；到顶层再按，不会继续往上。</p><p>它的存在说明一件事：Enter 不总是「新建」。在一种特定状态下，它的语义是「往上走一层」。这也是为什么「按 Enter 之后光标在哪」必须按分支分别定义，不能用一个统一的规则去推。</p><h2 id="五-有选区时先删再断"><a class="markdownIt-Anchor" href="#五-有选区时先删再断"></a> 五、有选区时：先删，再断</h2><p>选中一段文字，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig6-selection.png" alt="图 6：有选区时按 Enter，先删掉再在起点断开" /></p><table><thead><tr><th></th><th>表现</th></tr></thead><tbody><tr><td>Roam</td><td>按选区的起点与终点切，选区不留在结果里</td></tr><tr><td>Logseq</td><td>同样用起止两点切，选区不留在结果里</td></tr></tbody></table><p>结果一致：abcdefghij 里选中 cdef 再按 Enter，得到 ab 与 ghij，cdef 消失。</p><p>这一格值得单列，是因为它和「光标」这一维度的关系很别扭：选区有起点和终点两个位置，而 Enter 的落点判定只认一个位置。如果不先把选区消掉，判据拿到的就只是「起点」，结果会变成 ab 加 cdefghij——选区原样留着，等于把「我要删掉这段」的操作变成了「我要在这里断一下」。</p><p>跨块选区（从 A 块拖到 B 块）和页名上的选区，两家都没有逐条取证。</p><blockquote><p>这里要提一下，思源笔记的行为是：不对选区进行消除，相当于在块尾按 Enter。</p></blockquote><h2 id="总表"><a class="markdownIt-Anchor" href="#总表"></a> 总表</h2><table><thead><tr><th>#</th><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>1</td><td>块首（有文字）</td><td>上方空块</td><td>上方空块</td></tr><tr><td>2</td><td>块中，有子块</td><td>同级拆（左半成上方新块）</td><td>右半成首个子块</td></tr><tr><td>3</td><td>块中，叶子</td><td>同级拆</td><td>同级</td></tr><tr><td>4</td><td>块中，有子块但折叠</td><td>同级拆</td><td>同级</td></tr><tr><td>5</td><td>块尾，有子块展开</td><td>首个子块</td><td>首个子块</td></tr><tr><td>6</td><td>块尾，折叠</td><td>同级空块（推断）</td><td>同级空块</td></tr><tr><td>7</td><td>块尾，叶子</td><td>同级空块</td><td>同级空块</td></tr><tr><td>8</td><td>空块，缩进 ≥ 2 层</td><td>反缩进</td><td>反缩进</td></tr><tr><td>9</td><td>页名上按 Enter</td><td>不适用</td><td>不适用</td></tr><tr><td>10</td><td>有选区</td><td>先删再断</td><td>先删再断</td></tr><tr><td>11</td><td>Shift+Enter</td><td>软换行</td><td>软换行</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> 笔记软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>finally，我开始搞双链笔记 App 了</title>
       <link href="//finally-i-started-working-on-a-double-chain-note-taking-app-61301/"/>
       <url>//finally-i-started-working-on-a-double-chain-note-taking-app-61301/</url>
@@ -123,9 +144,9 @@
       
         <tags>
             
-            <tag> 理性主义 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 理性主义 </tag>
             
             <tag> 杂文 </tag>
             
@@ -148,9 +169,9 @@
       
         <tags>
             
-            <tag> 虎鲸笔记 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 虎鲸笔记 </tag>
             
         </tags>
       
@@ -169,9 +190,9 @@
       
         <tags>
             
-            <tag> 虎鲸笔记 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 虎鲸笔记 </tag>
             
         </tags>
       

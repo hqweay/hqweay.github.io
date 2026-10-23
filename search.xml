@@ -4,27 +4,6 @@
   
     
     <entry>
-      <title>Untitled</title>
-      <link href="//20261024001029/"/>
-      <url>//20261024001029/</url>
-      
-        <content type="html"><![CDATA[<p>在大纲笔记的一个节点里，按下 Enter，会有什么效果？</p><p>这取决于两件事：光标停在文字的哪个位置，以及这个块当时是什么状态。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig1-three-positions.png" alt="图 1：同一个块，三个光标位置" /></p><p>先约定三个词。</p><ul><li><p>块：一行文字，可以带子块。这是两家共有的唯一单位。</p></li><li><p>光标位置：按字符算。块首是 0，块中是 0 与长度之间，块尾等于这一行的长度。</p></li><li><p>根：当前这一段最上面那个块。它没有父块，所以「同级」这个概念对它不成立。</p></li></ul><p>下面按光标位置走。</p><h2 id="一-块首上面多一个空块"><a class="markdownIt-Anchor" href="#一-块首上面多一个空块"></a> 一、块首：上面多一个空块</h2><p>光标在文字最前面，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig2-block-start.png" alt="图 2：块首按 Enter，上方多一个空块" /></p><table><thead><tr><th></th><th>表现</th></tr></thead><tbody><tr><td>Roam</td><td>上方插入一个空块，光标进新块</td></tr><tr><td>Logseq</td><td>上方插入一个空块，光标进新块</td></tr></tbody></table><p>这一格没有分歧。效果等于「在上面开一行」：原块一个字都不改，子树也不动，只是父块的子块列表里多了一项，位置在原块之前。</p><p>有一个边界要单独说：块本身是空的、又缩进很深时，走的不是这条，是反缩进（见第四节）。所以「块首」这个判据只在块里有文字时才单独成立。</p><h2 id="二-块中唯一一格两家不一样"><a class="markdownIt-Anchor" href="#二-块中唯一一格两家不一样"></a> 二、块中：唯一一格两家不一样</h2><p>光标在文字中间，按 Enter——把一行分成两行。这是两家唯一给出不同结果的地方。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig3-mid-split.png" alt="图 3：块中按 Enter，两家在「有子块」时分开" /></p><p>分水岭是「这个块有没有子块」。</p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>有子块（展开）</td><td>同级拆：左半抽成上方新块，原块留右半和子树</td><td>右半成为第一个子块，子树留原块</td></tr><tr><td>叶子（无子块）</td><td>同级拆</td><td>右半成为同级</td></tr><tr><td>有子块但已折叠</td><td>同级拆（折叠不改变这一格）</td><td>右半成为同级</td></tr></tbody></table><p>「同级拆」和「拆成子块」在视觉上的差别是这样的。</p><p>同级拆：后半句和前半句并排，子块仍挂在后半句下面。</p><p>拆成子块：后半句往右缩一层，原来那些子块被推到它后面。</p><p>所以两种结果里「哪一半是新块」也不同。</p><p>Roam：新块在上方，拿左半；原块留下右半和子树。</p><p>Logseq：原块留下左半和子树；右半钻进去成为第一个子块。</p><p>光标落点也不一样：Roam 留在原块（下半）的开头，Logseq 到新块（子块）的开头。</p><p>两家都保持一个不变量：子树始终留在原来那个块上，不跟着被切走的那一半换父块。差别只是「原来那个块」最后装的是左半还是右半。</p><p>叶子块这一行容易被记错：Logseq 的「钻一层」只在已经有子块时发生。没有子块的块，它和 Roam 一样落到同级。所以不能说「Logseq 总是把后半句变成子块」。</p><h2 id="三-块尾新块落在光标下方哪一层"><a class="markdownIt-Anchor" href="#三-块尾新块落在光标下方哪一层"></a> 三、块尾：新块落在光标下方哪一层</h2><p>光标在文字末尾，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig4-block-end.png" alt="图 4：块尾按 Enter，看这一块有没有子块" /></p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>有子块，展开</td><td>新块成为第一个子块</td><td>新块成为第一个子块</td></tr><tr><td>有子块，折叠</td><td>同级空块（按分支形状推断）</td><td>同级空块</td></tr><tr><td>无子块</td><td>同级空块</td><td>同级空块</td></tr></tbody></table><p>这一格两家一致，而且它和第二节的直觉相反：块中按 Enter 时，有子块的块在 Logseq 那里会把后半句变成子块；块尾按 Enter 时，两家都会把新块变成子块。同一个「有子块」的条件，在两格里指向同一件事——新内容进入下一层。</p><p>「第一个子块」而不是「最后一个」这一点，在视觉上意味着：新块紧贴在父块下面，把原有子块往下推。如果子树很长，用户接下来写的内容会出现在树的最上方，而不是树的最下方。</p><p>折叠态两家都改走同级。Logseq 的折叠判断在源码里是显式的；Roam 这一格是按它的分支形状推断的，没有逐帧验证。</p><h2 id="四-空块不建块少一层"><a class="markdownIt-Anchor" href="#四-空块不建块少一层"></a> 四、空块：不建块，少一层</h2><p>块是空的，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig5-empty-and-name.png" alt="图 5：空块反缩进，以及页名在两家分别是什么" /></p><table><thead><tr><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>空块，缩进 ≥ 2 层</td><td>反缩进一层，不建块</td><td>反缩进一层，不建块</td></tr><tr><td>空块，顶层内容块</td><td>另有分支，方向未逐条复刻</td><td>走「最后顶层块」分支，细节未逐条复现</td></tr><tr><td>空块，是根</td><td>会把整条搬进子块、清空根文本</td><td>页标题不在块里，这一格不适用</td></tr></tbody></table><p>这条把 Enter 变成了 Shift+Tab。效果是「退出这一层」，而且只在缩进 ≥ 2 层时触发；到顶层再按，不会继续往上。</p><p>它的存在说明一件事：Enter 不总是「新建」。在一种特定状态下，它的语义是「往上走一层」。这也是为什么「按 Enter 之后光标在哪」必须按分支分别定义，不能用一个统一的规则去推。</p><h2 id="五-有选区时先删再断"><a class="markdownIt-Anchor" href="#五-有选区时先删再断"></a> 五、有选区时：先删，再断</h2><p>选中一段文字，按 Enter。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/enter-key-fig6-selection.png" alt="图 6：有选区时按 Enter，先删掉再在起点断开" /></p><table><thead><tr><th></th><th>表现</th></tr></thead><tbody><tr><td>Roam</td><td>按选区的起点与终点切，选区不留在结果里</td></tr><tr><td>Logseq</td><td>同样用起止两点切，选区不留在结果里</td></tr></tbody></table><p>结果一致：abcdefghij 里选中 cdef 再按 Enter，得到 ab 与 ghij，cdef 消失。</p><p>这一格值得单列，是因为它和「光标」这一维度的关系很别扭：选区有起点和终点两个位置，而 Enter 的落点判定只认一个位置。如果不先把选区消掉，判据拿到的就只是「起点」，结果会变成 ab 加 cdefghij——选区原样留着，等于把「我要删掉这段」的操作变成了「我要在这里断一下」。</p><p>跨块选区（从 A 块拖到 B 块）和页名上的选区，两家都没有逐条取证。</p><blockquote><p>这里要提一下，思源笔记的行为是：不对选区进行消除，相当于在块尾按 Enter。</p></blockquote><h2 id="总表"><a class="markdownIt-Anchor" href="#总表"></a> 总表</h2><table><thead><tr><th>#</th><th>场景</th><th>Roam</th><th>Logseq</th></tr></thead><tbody><tr><td>1</td><td>块首（有文字）</td><td>上方空块</td><td>上方空块</td></tr><tr><td>2</td><td>块中，有子块</td><td>同级拆（左半成上方新块）</td><td>右半成首个子块</td></tr><tr><td>3</td><td>块中，叶子</td><td>同级拆</td><td>同级</td></tr><tr><td>4</td><td>块中，有子块但折叠</td><td>同级拆</td><td>同级</td></tr><tr><td>5</td><td>块尾，有子块展开</td><td>首个子块</td><td>首个子块</td></tr><tr><td>6</td><td>块尾，折叠</td><td>同级空块（推断）</td><td>同级空块</td></tr><tr><td>7</td><td>块尾，叶子</td><td>同级空块</td><td>同级空块</td></tr><tr><td>8</td><td>空块，缩进 ≥ 2 层</td><td>反缩进</td><td>反缩进</td></tr><tr><td>9</td><td>页名上按 Enter</td><td>不适用</td><td>不适用</td></tr><tr><td>10</td><td>有选区</td><td>先删再断</td><td>先删再断</td></tr><tr><td>11</td><td>Shift+Enter</td><td>软换行</td><td>软换行</td></tr></tbody></table>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> AI </tag>
-            
-            <tag> 笔记软件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>finally，我开始搞双链笔记 App 了</title>
       <link href="//finally-i-started-working-on-a-double-chain-note-taking-app-61301/"/>
       <url>//finally-i-started-working-on-a-double-chain-note-taking-app-61301/</url>
@@ -144,9 +123,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> AI </tag>
             
             <tag> 杂文 </tag>
             
@@ -169,9 +148,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 虎鲸笔记 </tag>
+            
+            <tag> AI </tag>
             
         </tags>
       
@@ -190,9 +169,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 虎鲸笔记 </tag>
+            
+            <tag> AI </tag>
             
         </tags>
       
@@ -251,9 +230,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> AI </tag>
             
         </tags>
       
@@ -584,9 +563,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> AI </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -607,9 +586,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> AI </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -4645,11 +4624,11 @@
     
     
     <entry>
-      <title>在人间漂流</title>
-      <link href="//2022/02/27/sonny-boy/"/>
-      <url>//2022/02/27/sonny-boy/</url>
+      <title>评《花束》与《雨天》</title>
+      <link href="//2022/02/27/rain-flower/"/>
+      <url>//2022/02/27/rain-flower/</url>
       
-        <content type="html"><![CDATA[<p>《漂流少年》是一部形式优秀到容易让人忽略其内容也很扎实的作品，以下是我对它的一些想法——这注定肤浅无力，但代表了我对它的喜爱和真实感受。</p><p>前三集让我以为动画在借设定暗喻校园里那些似乎只有当事人知道的事——霸凌、歧视……明明都是些陈词滥调，但不知道为什么，周围的人，即便是那些大人，都觉得是你的问题。他们又不是没当过小孩，为什么要假装不知道呢？</p><p>四五集被叙事引导，以为要讲「错的不是我而是这个世界」的故事，随着这个念头被动画自己否定，又觉得这个故事是对社会的侧写。</p><p>动画里的「初中毕业生」角色们不仅仅是个符号，而是作为这个故事必不可少的载体。初三——面临着「重大的」抉择，无限的可能性由此展开，未来充满希望。但真的度过那个阶段回头看，其实最美好的日子已经在期待中逝去了。万事万物似乎都如此，最美好的永远是期待。</p><p>在这种看法里，故事里的「超能力」就成了一个简单不过的喻体。像是明星——这个有着政治家境的男孩，有着「不愧是特权阶级」的手段（无论是漂流前还是漂流后）；学生会长波妮，被抛入了另一个世界还在做题；也有漂流后如鱼得水（获得攻击性超能力）的不坦率小哥朝风——离开学校后反倒比较吃得开。</p><p>第六集故事从「漂流」转向类平行宇宙的世界观加上电影剪辑这一迷影设定让故事变得更加有趣了。「把我们剪辑回去」——回去。这是不是意味着那个剪辑版里的故事才是真实世界所发生的呢？我们在剪辑版里看到主角长良它糟糕的家庭环境、没有第一集里那么贴心的班主任、被误解……还有希的死亡。希说她的能力是指南针，可以看到别人看不到的「光」。在观看剪辑版时，希说感觉到很强烈的光，那么「光」代表的是我们所经历过的那些「真实」吗？回到整个故事看，既然剪辑版里希的死亡是真实的，那么我们也有理由相信前面那些内容是真实的。希显然是区分现实的一把尺子。</p><p>也许希本打算在楼顶撕完书后跳楼自杀——我可以牵强出一些佐证：希和长良类似，也成长在一个不太和谐的家庭；第一集（朝楼外奔跑）、第三集（跳下水坑）、第九集（掉入深渊）的三次坠落；在楼顶遇到长良然后开始漂流的这条世界线上，希从第一集（漂流后）就开始主动接触长良；而从第六集我们可以看到，在没有遇到长良的那条线上，希仍然在楼顶撕了书，但在毕业典礼已经死去了。</p><p>希和长良在整部剧集就表现出这种互相拯救的关系——明线是希在照顾长良，让长良找到了「光」；暗线是长良「这次换我让你看到光。」（第十集）</p><p>接下来的七、八、九、十集酣畅淋漓，隐喻的单元剧交代了几个主要角色，每集都有意料之外情理之中的点子。长良作为「罪人」进入了一个颠倒的巴别塔——如西西弗斯般反复将塔上的水泥往下搬运；山彦开口讲述 5000 年前他还是人类时的故事（<mark>这单集做的太好了，我爆哭。</mark>）；庄和诚司这对双胞胎兄弟的对决，瑞穗猫咪的背景；希、朝风、骨折三人的羁绊。</p><p>最后两集回程。发明家小哥拉吉塔尼讲了两个故事，一个关于「思乡病」；一个关于「发明死亡的男人」。我对这两个故事的解读是：一，人会欺骗自己的记忆，偏向于认为以前很美好。拉吉塔尼选择留在漂流的世界，大概是因为他对「现实」没有光环。二，把时间拉长看，一切都毫无意义。</p><p>但拉吉塔尼在第二个故事说「人生就是永无止境的徒劳。但我想就是因为毫无意义，因此活着的这瞬间才会如此光辉宝石。」以及最后一集长良说到「因为那就是希看见的光」，这两个说法其实很模糊，同义反复。角色有想清楚他们的困境吗？或许创作者也没想清楚。当然，不清楚也无所谓——如果我们更在乎这部动画带给我们的感受。显然《漂流少年》也是朝着这一目的创作的。</p><p>分别前希对长良说「<mark>就由还记得的人来说『我们做朋友吧！』，我一定不会拒绝你。</mark>」但离开漂流到了另一个世界的长良，在接触到这个世界的希后却什么也没做。</p><p>我把这也看作暗喻——人的心意，短时间的是不会改变的。我相信这是动画想要表达的一部分，我也很喜欢这一点——它没有止步于故事的高潮。但我讨厌它把高潮后的东西逃过去了一大半，理由是「还有其他重要的事」——这句台词出现过两次，一次是回程前瑞穗对拉吉塔尼解释为什么想回去；一次是回去后瑞穗问「要不要去打工呢？租一间房把猫接回来」，长良用来安慰对方。</p><p>真的还有其他重要的事吗？什么其他的、重要的事呢？</p><p>诚然，人会后悔，然后忘记曾后悔过继续后悔。但我感受不到为什么「这是希看见的未来」，也怀疑主角把「这是我的选择」当作偷懒。</p><p>从形式上看，第一集前两分钟给了时钟两次走到十二点整的镜头；第十一集 20 min 左右的几次视角变幻（每一次镜头的切换都无法让人把当前的空间与之前对应起来）——也许这一切有所暗喻——但到此为止吧。我很喜欢这部动画营造的那种氛围，特别音乐总是插入得很在点子上。我从这种氛围感受到的乐趣要比从逻辑上理解它多得多。</p>]]></content>
+        <content type="html"><![CDATA[<p>【会涉及剧情】</p><p>点进豆瓣搜索栏的热词发现《花束般的恋爱》和《纽约的一个雨天》都在国内上映了，两者显然是冲着情侣档去的，分别在海报打出了「我想见你」和「遇到对的人」这样的标语——而它们都是内核劝分不劝和的片子。这一反差让我感到有点戏谑。</p><p>《雨天》描绘主角盖茨比在纽约见到他的高中同学托勒时，进行了一段长达几分钟的频繁切镜——当你感到眩晕并开始怀疑是不是主角太过大牌，需要通过剪辑手段营造对话时，两人终于告别，并在镜头同框，又迅速走了出去。我有理由怀疑导演在利用这种方式让观众体会到盖茨比与周围人相处时的别扭。</p><p>《花束》则着重于表现男女主的合拍，爱好、打扮、习惯……即便在分手后偶遇的那个场景，两人仍对各自的伴侣表达着相似的观点，然后同时站起身试图去劝说一对分享耳机听歌的情侣。</p><p>我们从盖茨比的嘴里听到一个个名字、名词、典故，这些显然不是他脑袋里的一潭死水，盖茨比对它们有着足够的了解。也因此觉得如今的纽约肤浅，怀念并追求着老纽约。怀念旧的，是因为对现状的不满，文化总是举着复古的旗号对现有的秩序发起进攻。《雨天》的主题不是恋爱，而是文化。</p><p>虽然《花束》的男女主在这个文化秩序里有着巧合到电影才可能出现的一致，但双方的爱好本身并没有被刻画得很深——这不是一部聊两个亚文化的同好谈恋爱的片子。于是我们看到两人能举出很多一致的名词，对事物有一样的感叹，却没有表现出更深的交流——直到男主麦展示自己为爱好所创造的电影时才表达了这种不一致，女主娟看着这部电影睡过去了。</p><p>当谈到与现实接触时，《花束》中父亲撤去了给麦的生活费；而《雨天》里纽约女孩茜反驳盖茨比说「我察觉到你也没有拒绝过家里给你的钱」时，盖茨比绕过了这一点，微笑着回答「你太坏了。」伍迪艾伦经常在作品里通过年轻女孩的坦率话语来揶揄主角的一些想法。如果我们严格一点，这里显然是对盖茨比——盖茨比所代表的这一类人，年轻的、新的「知识分子」的讽刺。</p><p>《雨天》对待角色要温柔得多；《花束》里的角色则要面对现实的困境。</p><p>我们看到一系列细腻的生活——买了却没时间玩的游戏、停在第七卷的漫画、工作打乱的约定、疲惫到无暇性生活的夜晚、一个更幽默/体贴的男人……在《花束》里，每个有所追求的人在面对现实时都干脆利落地失败了。这很容易让观众得出「爱好、爱情，或者因爱好导致的爱情在现实面前很脆弱」这类结论，但我们换个角度则能发现，其实电影的主题是「现实」。</p><p>在两人去海边游玩时，电影就表现了娟的不安全感——麦去买食物不见了，娟抱怨说「你别突然消失啊」。后面两人在电车上谈起那对纹了一样纹身的情侣，麦问「难道你（对我们的爱情）没信心吗？」娟开玩笑说「你也可能会出轨」。</p><p>娟一直抱着悲观的期待去积极地参与，她能够看到现实下会发生什么，但她还是投入进去了——也许我们可以看出这一点：悲观的人做事反倒更能坚定初心，因为他们的初心是在看到可能的结局后确定下来的。</p><p>把这部电影的主题从「契合」转到「现实」故事就很好理解了——我们不需要讨论男女主是真契合还是假契合，我们关注男女主对待现实、生活的态度。娟一直到结局也没有改变自己对生活的理解——从故事中能看出娟显然是个有执行力并且果断的人，起了考会计证书的念头就备考且很快考上了，有了新的想法后迅速地从医院辞职。</p><p>比起《花束》推演角色如何应对现实的困境，《雨天》则更像是一个过来人从他日记里抽出一段格言式的句子。最后盖茨比选择留在纽约，这个至少还拥有浪漫的地方。我们看到伍迪艾伦，这个狡猾的老头，明明有一口袋糖果却只愿意留下一毛钱——我们怎么还能期待更多呢。</p>]]></content>
       
       
       <categories>
@@ -4672,11 +4651,11 @@
     
     
     <entry>
-      <title>评《花束》与《雨天》</title>
-      <link href="//2022/02/27/rain-flower/"/>
-      <url>//2022/02/27/rain-flower/</url>
+      <title>在人间漂流</title>
+      <link href="//2022/02/27/sonny-boy/"/>
+      <url>//2022/02/27/sonny-boy/</url>
       
-        <content type="html"><![CDATA[<p>【会涉及剧情】</p><p>点进豆瓣搜索栏的热词发现《花束般的恋爱》和《纽约的一个雨天》都在国内上映了，两者显然是冲着情侣档去的，分别在海报打出了「我想见你」和「遇到对的人」这样的标语——而它们都是内核劝分不劝和的片子。这一反差让我感到有点戏谑。</p><p>《雨天》描绘主角盖茨比在纽约见到他的高中同学托勒时，进行了一段长达几分钟的频繁切镜——当你感到眩晕并开始怀疑是不是主角太过大牌，需要通过剪辑手段营造对话时，两人终于告别，并在镜头同框，又迅速走了出去。我有理由怀疑导演在利用这种方式让观众体会到盖茨比与周围人相处时的别扭。</p><p>《花束》则着重于表现男女主的合拍，爱好、打扮、习惯……即便在分手后偶遇的那个场景，两人仍对各自的伴侣表达着相似的观点，然后同时站起身试图去劝说一对分享耳机听歌的情侣。</p><p>我们从盖茨比的嘴里听到一个个名字、名词、典故，这些显然不是他脑袋里的一潭死水，盖茨比对它们有着足够的了解。也因此觉得如今的纽约肤浅，怀念并追求着老纽约。怀念旧的，是因为对现状的不满，文化总是举着复古的旗号对现有的秩序发起进攻。《雨天》的主题不是恋爱，而是文化。</p><p>虽然《花束》的男女主在这个文化秩序里有着巧合到电影才可能出现的一致，但双方的爱好本身并没有被刻画得很深——这不是一部聊两个亚文化的同好谈恋爱的片子。于是我们看到两人能举出很多一致的名词，对事物有一样的感叹，却没有表现出更深的交流——直到男主麦展示自己为爱好所创造的电影时才表达了这种不一致，女主娟看着这部电影睡过去了。</p><p>当谈到与现实接触时，《花束》中父亲撤去了给麦的生活费；而《雨天》里纽约女孩茜反驳盖茨比说「我察觉到你也没有拒绝过家里给你的钱」时，盖茨比绕过了这一点，微笑着回答「你太坏了。」伍迪艾伦经常在作品里通过年轻女孩的坦率话语来揶揄主角的一些想法。如果我们严格一点，这里显然是对盖茨比——盖茨比所代表的这一类人，年轻的、新的「知识分子」的讽刺。</p><p>《雨天》对待角色要温柔得多；《花束》里的角色则要面对现实的困境。</p><p>我们看到一系列细腻的生活——买了却没时间玩的游戏、停在第七卷的漫画、工作打乱的约定、疲惫到无暇性生活的夜晚、一个更幽默/体贴的男人……在《花束》里，每个有所追求的人在面对现实时都干脆利落地失败了。这很容易让观众得出「爱好、爱情，或者因爱好导致的爱情在现实面前很脆弱」这类结论，但我们换个角度则能发现，其实电影的主题是「现实」。</p><p>在两人去海边游玩时，电影就表现了娟的不安全感——麦去买食物不见了，娟抱怨说「你别突然消失啊」。后面两人在电车上谈起那对纹了一样纹身的情侣，麦问「难道你（对我们的爱情）没信心吗？」娟开玩笑说「你也可能会出轨」。</p><p>娟一直抱着悲观的期待去积极地参与，她能够看到现实下会发生什么，但她还是投入进去了——也许我们可以看出这一点：悲观的人做事反倒更能坚定初心，因为他们的初心是在看到可能的结局后确定下来的。</p><p>把这部电影的主题从「契合」转到「现实」故事就很好理解了——我们不需要讨论男女主是真契合还是假契合，我们关注男女主对待现实、生活的态度。娟一直到结局也没有改变自己对生活的理解——从故事中能看出娟显然是个有执行力并且果断的人，起了考会计证书的念头就备考且很快考上了，有了新的想法后迅速地从医院辞职。</p><p>比起《花束》推演角色如何应对现实的困境，《雨天》则更像是一个过来人从他日记里抽出一段格言式的句子。最后盖茨比选择留在纽约，这个至少还拥有浪漫的地方。我们看到伍迪艾伦，这个狡猾的老头，明明有一口袋糖果却只愿意留下一毛钱——我们怎么还能期待更多呢。</p>]]></content>
+        <content type="html"><![CDATA[<p>《漂流少年》是一部形式优秀到容易让人忽略其内容也很扎实的作品，以下是我对它的一些想法——这注定肤浅无力，但代表了我对它的喜爱和真实感受。</p><p>前三集让我以为动画在借设定暗喻校园里那些似乎只有当事人知道的事——霸凌、歧视……明明都是些陈词滥调，但不知道为什么，周围的人，即便是那些大人，都觉得是你的问题。他们又不是没当过小孩，为什么要假装不知道呢？</p><p>四五集被叙事引导，以为要讲「错的不是我而是这个世界」的故事，随着这个念头被动画自己否定，又觉得这个故事是对社会的侧写。</p><p>动画里的「初中毕业生」角色们不仅仅是个符号，而是作为这个故事必不可少的载体。初三——面临着「重大的」抉择，无限的可能性由此展开，未来充满希望。但真的度过那个阶段回头看，其实最美好的日子已经在期待中逝去了。万事万物似乎都如此，最美好的永远是期待。</p><p>在这种看法里，故事里的「超能力」就成了一个简单不过的喻体。像是明星——这个有着政治家境的男孩，有着「不愧是特权阶级」的手段（无论是漂流前还是漂流后）；学生会长波妮，被抛入了另一个世界还在做题；也有漂流后如鱼得水（获得攻击性超能力）的不坦率小哥朝风——离开学校后反倒比较吃得开。</p><p>第六集故事从「漂流」转向类平行宇宙的世界观加上电影剪辑这一迷影设定让故事变得更加有趣了。「把我们剪辑回去」——回去。这是不是意味着那个剪辑版里的故事才是真实世界所发生的呢？我们在剪辑版里看到主角长良它糟糕的家庭环境、没有第一集里那么贴心的班主任、被误解……还有希的死亡。希说她的能力是指南针，可以看到别人看不到的「光」。在观看剪辑版时，希说感觉到很强烈的光，那么「光」代表的是我们所经历过的那些「真实」吗？回到整个故事看，既然剪辑版里希的死亡是真实的，那么我们也有理由相信前面那些内容是真实的。希显然是区分现实的一把尺子。</p><p>也许希本打算在楼顶撕完书后跳楼自杀——我可以牵强出一些佐证：希和长良类似，也成长在一个不太和谐的家庭；第一集（朝楼外奔跑）、第三集（跳下水坑）、第九集（掉入深渊）的三次坠落；在楼顶遇到长良然后开始漂流的这条世界线上，希从第一集（漂流后）就开始主动接触长良；而从第六集我们可以看到，在没有遇到长良的那条线上，希仍然在楼顶撕了书，但在毕业典礼已经死去了。</p><p>希和长良在整部剧集就表现出这种互相拯救的关系——明线是希在照顾长良，让长良找到了「光」；暗线是长良「这次换我让你看到光。」（第十集）</p><p>接下来的七、八、九、十集酣畅淋漓，隐喻的单元剧交代了几个主要角色，每集都有意料之外情理之中的点子。长良作为「罪人」进入了一个颠倒的巴别塔——如西西弗斯般反复将塔上的水泥往下搬运；山彦开口讲述 5000 年前他还是人类时的故事（<mark>这单集做的太好了，我爆哭。</mark>）；庄和诚司这对双胞胎兄弟的对决，瑞穗猫咪的背景；希、朝风、骨折三人的羁绊。</p><p>最后两集回程。发明家小哥拉吉塔尼讲了两个故事，一个关于「思乡病」；一个关于「发明死亡的男人」。我对这两个故事的解读是：一，人会欺骗自己的记忆，偏向于认为以前很美好。拉吉塔尼选择留在漂流的世界，大概是因为他对「现实」没有光环。二，把时间拉长看，一切都毫无意义。</p><p>但拉吉塔尼在第二个故事说「人生就是永无止境的徒劳。但我想就是因为毫无意义，因此活着的这瞬间才会如此光辉宝石。」以及最后一集长良说到「因为那就是希看见的光」，这两个说法其实很模糊，同义反复。角色有想清楚他们的困境吗？或许创作者也没想清楚。当然，不清楚也无所谓——如果我们更在乎这部动画带给我们的感受。显然《漂流少年》也是朝着这一目的创作的。</p><p>分别前希对长良说「<mark>就由还记得的人来说『我们做朋友吧！』，我一定不会拒绝你。</mark>」但离开漂流到了另一个世界的长良，在接触到这个世界的希后却什么也没做。</p><p>我把这也看作暗喻——人的心意，短时间的是不会改变的。我相信这是动画想要表达的一部分，我也很喜欢这一点——它没有止步于故事的高潮。但我讨厌它把高潮后的东西逃过去了一大半，理由是「还有其他重要的事」——这句台词出现过两次，一次是回程前瑞穗对拉吉塔尼解释为什么想回去；一次是回去后瑞穗问「要不要去打工呢？租一间房把猫接回来」，长良用来安慰对方。</p><p>真的还有其他重要的事吗？什么其他的、重要的事呢？</p><p>诚然，人会后悔，然后忘记曾后悔过继续后悔。但我感受不到为什么「这是希看见的未来」，也怀疑主角把「这是我的选择」当作偷懒。</p><p>从形式上看，第一集前两分钟给了时钟两次走到十二点整的镜头；第十一集 20 min 左右的几次视角变幻（每一次镜头的切换都无法让人把当前的空间与之前对应起来）——也许这一切有所暗喻——但到此为止吧。我很喜欢这部动画营造的那种氛围，特别音乐总是插入得很在点子上。我从这种氛围感受到的乐趣要比从逻辑上理解它多得多。</p>]]></content>
       
       
       <categories>
@@ -6184,33 +6163,6 @@
     
     
     <entry>
-      <title>Spring Boot 项目打包为 Docker 镜像</title>
-      <link href="//2019/04/02/springboot-docker/"/>
-      <url>//2019/04/02/springboot-docker/</url>
-      
-        <content type="html"><![CDATA[<h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>先提一下整个流程。</p><p>Spring Boot 项目构建 jar 包，Docker 再把 jar 包打包为 Docker image。</p><p>流程是这样，再提一下细节。</p><ul><li>jar 包可以在 java 环境直接执行 <code>java -jar appname.jar</code> 启动。而 Docker 的任务就相当于封装 jar 包，java 环境， 以及 <code>java -jar appname.jar</code> 这条指令。</li><li>Docker 打包 jar 包需要一个 Dockerfile 文件，这个文件相当于一个配置，告诉 Docker 应该如何打包，如何启动 jar 包。</li><li>本地生成了 Docker image，想要把这个镜像部署到服务器，需要把 image 导出。这属于 Docker 命令了，这里不提。</li></ul><p>既然知道流程了，怎么实现呢?</p><p>两种方式，第一种很直观，自己构建 jar 包，然后在本地手动打包镜像。</p><p>第二种，则是通过配置（这里使用 Gradle），实现整个打包的流程。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><p>流程大致可以分为两步，生成 jar 包，生成镜像。每一步都会遇到坑，慢慢来……</p><p>首先确保生成的 jar 包可以通过 <code>java -jar appname.jar</code> 执行。</p><blockquote><p>可能会遇到 找不到主类等错误……</p></blockquote><h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一"></a> 方式一</h2><h3 id="一-构建-jar-包"><a class="markdownIt-Anchor" href="#一-构建-jar-包"></a> 一 构建 jar 包</h3><p>首先构建 jar 包，</p><p>可以 build artifacts。</p><p>建议在根目录下执行 <code>gradle build</code> 或者 <code>gradlew build</code> 。</p><p>先测试一下 jar 包能不能正常运行。</p><p><code>java -jar appname.jar</code></p><p>可能会出现找不到主类之类的问题。</p><h3 id="二-创建镜像"><a class="markdownIt-Anchor" href="#二-创建镜像"></a> 二 创建镜像</h3><p>然后把 jar 包与 Dockerfile 放在同一目录下</p><p>如</p><p>docker/blog.jar</p><p>docker/Dockerfile</p><p>执行</p><blockquote><p>docker build -t [要生成的镜像名] .</p></blockquote><p>注意哈，后面有个点「.」。</p><p>Dockerfile 是打包 docker image 所需的配置文件</p><p>比如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">## Dockerfile</span><br><span class="line">FROM aglover/java8-pier</span><br><span class="line">VOLUME [&quot;/tmp&quot;]</span><br><span class="line">ADD blog.jar app.jar</span><br><span class="line">## blog.jar 是目录下的 jar 包</span><br><span class="line">## app.jar 是 jar 包存放在 Docker 里的名字</span><br><span class="line">ENTRYPOINT [&quot;java&quot;, &quot;-Djava.security.egd=file:/dev/./urandom&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]</span><br><span class="line">## 这一条就是 Docker 里执行 jar 包，相应的 后面的 app.jar 就是 Docker 内 jar 包名</span><br><span class="line">EXPOSE 8082</span><br><span class="line">## 暴露端口 无所谓吧，Docker 启动容器可以自定义</span><br></pre></td></tr></table></figure><p>这里很明显也能看出 Docker 内部还是用的 <code>java -jar appname.jar</code> 来运行。</p><h3 id="三-运行"><a class="markdownIt-Anchor" href="#三-运行"></a> 三 运行</h3><p>注意，运行需要指明 REPOSITORY TAG，</p><p><code>docker run -p 8082:8082 -t REPOSITORY:TAG</code></p><p>如</p><p><code>docker run -p 8082:8082 -t cn.hqweay/blog-backend:1.0</code></p><blockquote><p>注意啊，不这样会启动失败……这问题搞了好久。</p></blockquote><h3 id="疑问"><a class="markdownIt-Anchor" href="#疑问"></a> 疑问</h3><p>我在操作过程中去除了创建 Spring Boot 项目时自带的 Tomcat 依赖，不去不知道能不能行。</p><h2 id="方式二"><a class="markdownIt-Anchor" href="#方式二"></a> 方式二</h2><h3 id="springboot-gradle-docker-配置"><a class="markdownIt-Anchor" href="#springboot-gradle-docker-配置"></a> springboot + gradle + docker 配置</h3><h3 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h3><p><a href="https://juejin.im/post/5b27b7ac51882574c32c6588"><a href="https://juejin.im/post/5b27b7ac51882574c32c6588">https://juejin.im/post/5b27b7ac51882574c32c6588</a></a></p><h3 id="说明-2"><a class="markdownIt-Anchor" href="#说明-2"></a> 说明</h3><p>这里配置可以根据项目信息自动生成 Dockerfile，也可以指定本地 Dockerfile。</p><p>配置的主要目的是解决了手动把 jar 包打包为镜像。</p><h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3><p>见仓库配置文件 <a href="https://github.com/hqweay/blog-backend/blob/master/build.gradle">https://github.com/hqweay/blog-backend/blob/master/build.gradle</a></p><p>根目录执行</p><p><code> ./gradlew clean build dockerBuilder --info</code></p><p>即可打包。</p><p><code>./gradlew build</code> 这条命令是构建 jar 包。</p><p>能看出，整条命令就是先打 jar 包，再执行 dockerBuilder 生成 Dockerfile 文件（或者使用指定的 Dockerfile 文件），再打包为 Docker image。</p><p>当然，本地安装了 Docker，就会使用本地 Docker 来完成打包。</p><p>如果本地没有 Docker ，idea 可能会自动引入吧。我没试过……</p><h3 id="注意-2"><a class="markdownIt-Anchor" href="#注意-2"></a> 注意</h3><p>理解打包的这个流程，配置中的各项就很清晰了……照搬配置会出很多问题的……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习折腾 </category>
-          
-          <category> 配置与操作 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 配置与操作 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Vue CLI3 使用 Marked 渲染 Markdown 格式数据</title>
       <link href="//2019/04/02/marked/"/>
       <url>//2019/04/02/marked/</url>
@@ -6232,6 +6184,33 @@
             <tag> 配置与操作 </tag>
             
             <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Spring Boot 项目打包为 Docker 镜像</title>
+      <link href="//2019/04/02/springboot-docker/"/>
+      <url>//2019/04/02/springboot-docker/</url>
+      
+        <content type="html"><![CDATA[<h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><p>先提一下整个流程。</p><p>Spring Boot 项目构建 jar 包，Docker 再把 jar 包打包为 Docker image。</p><p>流程是这样，再提一下细节。</p><ul><li>jar 包可以在 java 环境直接执行 <code>java -jar appname.jar</code> 启动。而 Docker 的任务就相当于封装 jar 包，java 环境， 以及 <code>java -jar appname.jar</code> 这条指令。</li><li>Docker 打包 jar 包需要一个 Dockerfile 文件，这个文件相当于一个配置，告诉 Docker 应该如何打包，如何启动 jar 包。</li><li>本地生成了 Docker image，想要把这个镜像部署到服务器，需要把 image 导出。这属于 Docker 命令了，这里不提。</li></ul><p>既然知道流程了，怎么实现呢?</p><p>两种方式，第一种很直观，自己构建 jar 包，然后在本地手动打包镜像。</p><p>第二种，则是通过配置（这里使用 Gradle），实现整个打包的流程。</p><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><p>流程大致可以分为两步，生成 jar 包，生成镜像。每一步都会遇到坑，慢慢来……</p><p>首先确保生成的 jar 包可以通过 <code>java -jar appname.jar</code> 执行。</p><blockquote><p>可能会遇到 找不到主类等错误……</p></blockquote><h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一"></a> 方式一</h2><h3 id="一-构建-jar-包"><a class="markdownIt-Anchor" href="#一-构建-jar-包"></a> 一 构建 jar 包</h3><p>首先构建 jar 包，</p><p>可以 build artifacts。</p><p>建议在根目录下执行 <code>gradle build</code> 或者 <code>gradlew build</code> 。</p><p>先测试一下 jar 包能不能正常运行。</p><p><code>java -jar appname.jar</code></p><p>可能会出现找不到主类之类的问题。</p><h3 id="二-创建镜像"><a class="markdownIt-Anchor" href="#二-创建镜像"></a> 二 创建镜像</h3><p>然后把 jar 包与 Dockerfile 放在同一目录下</p><p>如</p><p>docker/blog.jar</p><p>docker/Dockerfile</p><p>执行</p><blockquote><p>docker build -t [要生成的镜像名] .</p></blockquote><p>注意哈，后面有个点「.」。</p><p>Dockerfile 是打包 docker image 所需的配置文件</p><p>比如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">## Dockerfile</span><br><span class="line">FROM aglover/java8-pier</span><br><span class="line">VOLUME [&quot;/tmp&quot;]</span><br><span class="line">ADD blog.jar app.jar</span><br><span class="line">## blog.jar 是目录下的 jar 包</span><br><span class="line">## app.jar 是 jar 包存放在 Docker 里的名字</span><br><span class="line">ENTRYPOINT [&quot;java&quot;, &quot;-Djava.security.egd=file:/dev/./urandom&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]</span><br><span class="line">## 这一条就是 Docker 里执行 jar 包，相应的 后面的 app.jar 就是 Docker 内 jar 包名</span><br><span class="line">EXPOSE 8082</span><br><span class="line">## 暴露端口 无所谓吧，Docker 启动容器可以自定义</span><br></pre></td></tr></table></figure><p>这里很明显也能看出 Docker 内部还是用的 <code>java -jar appname.jar</code> 来运行。</p><h3 id="三-运行"><a class="markdownIt-Anchor" href="#三-运行"></a> 三 运行</h3><p>注意，运行需要指明 REPOSITORY TAG，</p><p><code>docker run -p 8082:8082 -t REPOSITORY:TAG</code></p><p>如</p><p><code>docker run -p 8082:8082 -t cn.hqweay/blog-backend:1.0</code></p><blockquote><p>注意啊，不这样会启动失败……这问题搞了好久。</p></blockquote><h3 id="疑问"><a class="markdownIt-Anchor" href="#疑问"></a> 疑问</h3><p>我在操作过程中去除了创建 Spring Boot 项目时自带的 Tomcat 依赖，不去不知道能不能行。</p><h2 id="方式二"><a class="markdownIt-Anchor" href="#方式二"></a> 方式二</h2><h3 id="springboot-gradle-docker-配置"><a class="markdownIt-Anchor" href="#springboot-gradle-docker-配置"></a> springboot + gradle + docker 配置</h3><h3 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h3><p><a href="https://juejin.im/post/5b27b7ac51882574c32c6588"><a href="https://juejin.im/post/5b27b7ac51882574c32c6588">https://juejin.im/post/5b27b7ac51882574c32c6588</a></a></p><h3 id="说明-2"><a class="markdownIt-Anchor" href="#说明-2"></a> 说明</h3><p>这里配置可以根据项目信息自动生成 Dockerfile，也可以指定本地 Dockerfile。</p><p>配置的主要目的是解决了手动把 jar 包打包为镜像。</p><h3 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h3><p>见仓库配置文件 <a href="https://github.com/hqweay/blog-backend/blob/master/build.gradle">https://github.com/hqweay/blog-backend/blob/master/build.gradle</a></p><p>根目录执行</p><p><code> ./gradlew clean build dockerBuilder --info</code></p><p>即可打包。</p><p><code>./gradlew build</code> 这条命令是构建 jar 包。</p><p>能看出，整条命令就是先打 jar 包，再执行 dockerBuilder 生成 Dockerfile 文件（或者使用指定的 Dockerfile 文件），再打包为 Docker image。</p><p>当然，本地安装了 Docker，就会使用本地 Docker 来完成打包。</p><p>如果本地没有 Docker ，idea 可能会自动引入吧。我没试过……</p><h3 id="注意-2"><a class="markdownIt-Anchor" href="#注意-2"></a> 注意</h3><p>理解打包的这个流程，配置中的各项就很清晰了……照搬配置会出很多问题的……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 配置与操作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 配置与操作 </tag>
             
         </tags>
       

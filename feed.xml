@@ -9,7 +9,28 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-10-23T17:24:01.000Z</updated>
+  <updated>2026-10-25T05:32:46.000Z</updated>
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="杂文" scheme="https://leay.net/tags/%E6%9D%82%E6%96%87/"/>
+    <category term="游戏" scheme="https://leay.net/tags/%E6%B8%B8%E6%88%8F/"/>
+    <content>
+      <![CDATA[<p>游戏里有「空气墙」的概念，通过限制玩家的操作来维持游戏的正常运行。</p><p>玩家会对「空气墙」反感，而「墙」说起来也不过一个水平轴方向的概念——几乎不会有玩家会对垂直轴方向上不了天、下不了地有什么意见。</p><p>这是怎么回事呢？</p><p>很简单。产品的设计要符合用户「生活」中的直觉——生活中我能往那走，你却用空气墙把我挡住。</p><p>负面体验。</p><p>这种「直觉」也是被训练出来的。</p><p>一个10年后出生的小孩面对屏幕的第一直觉是用手去触碰点击——这对在这之前出生的人来说并没有那么「直觉」。</p><p>一款游戏、一款产品要做的，就是引导用户在产品内部形成这种直觉。</p><p>游戏里的一个问号；软件里的一个「点击订阅！」按钮。强信号的引导。</p><p>《超级玛丽》通过放置金币让玩家产生按金币路线行走的冲动；一个网页通过排版让用户的视觉自然浏览信息。自然的引导。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/48534DD9-3311-46AB-8BE8-E2090948204D_1_105_c-mc305p22xqbb3.avif" alt="" /></p><p>产品需要设计一套机制而非限制；如果有限制，需要包装成机制。</p><p>所以<a href="https://flomoapp.com/">flomo · 浮墨笔记</a>的极简需要<a href="https://help.flomoapp.com/thinking/start.html">一整套笔记方法论</a>来背书，或者说训练用户，或者说给用户做心理按摩。</p><p>用户的「直觉」往往和现实并不完全一致。</p><p>比方游戏里玩家看到「90%的概率」，心理预期几乎都是「几乎每次都能得手」。而如果连续两次没触发，就会觉得游戏出 bug 了。</p><p>「屏幕往上划就能获得新的刺激」——短视频的工作机制。</p><p>游戏需要迎合用户；软件呢？一款产品呢？</p><p>手机提供限制用户屏幕使用时长的功能；烟盒上提示「吸烟有害健康」；短视频刷到提示早点休息的广告。</p><p>然而这些手段几乎无效。手机不会真的想让你停止使用，如果一款手机真的做了限制，那你会换另一款。</p><p>伟大的产品不能只看留存率。</p>]]>
+    </content>
+    <id>https://leay.net/mechanisms-and-limitations-61893/</id>
+    <link href="https://leay.net/mechanisms-and-limitations-61893/"/>
+    <published>2026-10-25T05:32:42.000Z</published>
+    <summary>
+      <![CDATA[<p>游戏里有「空气墙」的概念，通过限制玩家的操作来维持游戏的正常运行。</p>
+<p>玩家会对「空气墙」反感，而「墙」说起来也不过一个水平轴方向的概念——几乎不会有玩家会对垂直轴方向上不了天、下不了地有什么意见。</p>
+<p>这是怎么回事呢？</p>
+<p>很简单。产品的设计]]>
+    </summary>
+    <title>机制与限制</title>
+    <updated>2026-10-25T05:32:46.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>hqweay</name>
@@ -169,24 +190,5 @@
     </summary>
     <title>将时间统计带到虎鲸笔记</title>
     <updated>2026-08-20T14:24:35.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>hqweay</name>
-    </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
-    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
-    <content>
-      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yjt9n73m15v5b.avif" alt="" /></p><p>思路：参考手机桌面布局的逻辑将面板分为 n*m 的小方块，可以拖拽创建任意宽高的卡片，并设置为组件。这样可以比较傻瓜化地排版出整洁的界面。</p><p>然后就是组件的设计了。作为一款笔记软件里的工作台，番茄钟、日历、天气……这些常见的小组件都与软件本身毫无关联，但比较能提供情绪价值。</p><p>不过如果为其一个个做开发，就是很无聊的搬砖工作。</p><p>所以我第一个想做的就是 AI 组件，实现一个 tool 交给 AI，让 AI 生成符合要求的组件。</p><p>既然已经能 AI 生成组件了，光生成与软件无关的卡片也没什么意思，于是再为其补充软件的 API，让其能调用软件本件的 API 做出一些能交互的或可视化组件。</p><p>比如常见的字数统计、任务统计图……这些与软件本体有关联，但场景很定制化。现在用 AI 都能很方便地生成。</p><p>其它还有些细节，但主要就聊聊 AI。</p>]]>
-    </content>
-    <id>https://leay.net/take-the-workbench-to-the-killer-whale-notes-56031/</id>
-    <link href="https://leay.net/take-the-workbench-to-the-killer-whale-notes-56031/"/>
-    <published>2026-08-20T13:59:32.000Z</published>
-    <summary>
-      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-yjt9n73m15v5b.avif" alt="" /></p>
-<p>思路：参考手机桌面布局的逻辑将面板分为 n*m 的]]>
-    </summary>
-    <title>将工作台带到虎鲸笔记</title>
-    <updated>2026-08-20T14:24:28.000Z</updated>
   </entry>
 </feed>

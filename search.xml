@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>机制与限制</title>
+      <link href="//mechanisms-and-limitations-61893/"/>
+      <url>//mechanisms-and-limitations-61893/</url>
+      
+        <content type="html"><![CDATA[<p>游戏里有「空气墙」的概念，通过限制玩家的操作来维持游戏的正常运行。</p><p>玩家会对「空气墙」反感，而「墙」说起来也不过一个水平轴方向的概念——几乎不会有玩家会对垂直轴方向上不了天、下不了地有什么意见。</p><p>这是怎么回事呢？</p><p>很简单。产品的设计要符合用户「生活」中的直觉——生活中我能往那走，你却用空气墙把我挡住。</p><p>负面体验。</p><p>这种「直觉」也是被训练出来的。</p><p>一个10年后出生的小孩面对屏幕的第一直觉是用手去触碰点击——这对在这之前出生的人来说并没有那么「直觉」。</p><p>一款游戏、一款产品要做的，就是引导用户在产品内部形成这种直觉。</p><p>游戏里的一个问号；软件里的一个「点击订阅！」按钮。强信号的引导。</p><p>《超级玛丽》通过放置金币让玩家产生按金币路线行走的冲动；一个网页通过排版让用户的视觉自然浏览信息。自然的引导。</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/48534DD9-3311-46AB-8BE8-E2090948204D_1_105_c-mc305p22xqbb3.avif" alt="" /></p><p>产品需要设计一套机制而非限制；如果有限制，需要包装成机制。</p><p>所以<a href="https://flomoapp.com/">flomo · 浮墨笔记</a>的极简需要<a href="https://help.flomoapp.com/thinking/start.html">一整套笔记方法论</a>来背书，或者说训练用户，或者说给用户做心理按摩。</p><p>用户的「直觉」往往和现实并不完全一致。</p><p>比方游戏里玩家看到「90%的概率」，心理预期几乎都是「几乎每次都能得手」。而如果连续两次没触发，就会觉得游戏出 bug 了。</p><p>「屏幕往上划就能获得新的刺激」——短视频的工作机制。</p><p>游戏需要迎合用户；软件呢？一款产品呢？</p><p>手机提供限制用户屏幕使用时长的功能；烟盒上提示「吸烟有害健康」；短视频刷到提示早点休息的广告。</p><p>然而这些手段几乎无效。手机不会真的想让你停止使用，如果一款手机真的做了限制，那你会换另一款。</p><p>伟大的产品不能只看留存率。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 杂文 </tag>
+            
+            <tag> 游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>大纲笔记中 Enter 键行为的分岔</title>
       <link href="//bifurcation-of-enter-key-behavior-in-outline-notes-61455/"/>
       <url>//bifurcation-of-enter-key-behavior-in-outline-notes-61455/</url>
@@ -251,9 +272,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -291,9 +312,9 @@
       
         <tags>
             
-            <tag> 养恐龙 </tag>
-            
             <tag> 阅读所思 </tag>
+            
+            <tag> 养恐龙 </tag>
             
         </tags>
       
@@ -584,9 +605,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -607,9 +628,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 人生的意义 </tag>
             
@@ -630,9 +651,9 @@
       
         <tags>
             
-            <tag> 折腾 </tag>
-            
             <tag> 观点 </tag>
+            
+            <tag> 折腾 </tag>
             
             <tag> 笔记 </tag>
             
@@ -1879,9 +1900,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -2190,9 +2211,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
             <tag> 杂文 </tag>
             
@@ -3024,33 +3045,6 @@
     
     
     <entry>
-      <title>回家</title>
-      <link href="//2023/09/26/home/"/>
-      <url>//2023/09/26/home/</url>
-      
-        <content type="html"><![CDATA[<div style="display: flex;justify-content: center;">我以火车的速度远离<br/>像一件被城市退回的货物<br/>装满耻辱与乡愁<br/></div><blockquote><p><a href="http://www.chinawriter.com.cn/n1/2023/0727/c418989-40045137.html">《草原》2023年第6期｜王计兵 ：退行的火车（组诗）–新作品–中国作家网</a></p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 细碎 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 细碎 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人生其中的一页罢了</title>
       <link href="//2023/09/26/leaping/"/>
       <url>//2023/09/26/leaping/</url>
@@ -3072,6 +3066,33 @@
             <tag> 杂文 </tag>
             
             <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>回家</title>
+      <link href="//2023/09/26/home/"/>
+      <url>//2023/09/26/home/</url>
+      
+        <content type="html"><![CDATA[<div style="display: flex;justify-content: center;">我以火车的速度远离<br/>像一件被城市退回的货物<br/>装满耻辱与乡愁<br/></div><blockquote><p><a href="http://www.chinawriter.com.cn/n1/2023/0727/c418989-40045137.html">《草原》2023年第6期｜王计兵 ：退行的火车（组诗）–新作品–中国作家网</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 细碎 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 细碎 </tag>
             
         </tags>
       
@@ -3470,11 +3491,11 @@
     
     
     <entry>
-      <title>《铃芽之旅》——不是影评啊</title>
-      <link href="//2023/04/08/suzume-tojimari/"/>
-      <url>//2023/04/08/suzume-tojimari/</url>
+      <title>《底特律：变人》——你是说 AI 使用语言时没有动机？</title>
+      <link href="//2023/04/07/detroit/"/>
+      <url>//2023/04/07/detroit/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>十五岁生日是最适合离家出走的时间。这以前过早，以后又太晚。——《海边的卡夫卡》</p></blockquote><p>中学的时候好羡慕那些长大了还在看动画的人，我在视频网站上看到许多粗糙的视频，拥挤的房间却有个架子摆了好多塑料小人，镜头前面真实的脸，热情洋溢的表情，说着些「此生无悔」的蠢话——噢不，当时我只觉得好酷。他们看过好多我连名字都没听说的作品，也一定知道好多我不知道的事。我也能这样顺利地成为靠谱的大人吗？</p><p>什么时候发现的呢？就像人生大道理一样，稍微有点年纪的老头谁都会讲两句。原来观影量这类数字的累积也不过是些顺着热情成章的事儿吗？</p><p>偶尔还能在以二次元起家的视频网站上看到「如果你不知道 XXX，就不会 XXX。」的标题。啊那句台词怎么说的？「如果你要用《泰坦尼克号》的台词表白，那对方也应该知道《泰坦尼克号》才有用吧。」</p><p>爱好是蹩脚的喻体？</p><p>我还记得《白箱》的头两集里一个女主也还在念书，说以后一定要去东京工作，住一个有空调的房间。想起自己中学毕业时把 Radwimps 为动画做的配乐翻来覆去地听，心想等去城里上学了一定要去电影院！</p><p>然后就是时间慢慢流淌，什么想法都变得普通。以前一起聊动画的朋友开始戏谑「我已经毕业了」的玩笑。我也蹩脚地试着讲些能显得自己聪明的话，不再诚实。上一部看完的新番好像是《青春期猪头少年不做兔女郎学姐的梦》，很不错的动画，但我在影评网站上打了不高的评分，一本正经地说「我已经是过来人了……怎么还在讲这些……」</p><p>这种想法也是真实的呀。只是我没搞懂啊，我完全没搞懂。</p><p>我想起看完《你的名字》那晚，回去的路上我兴奋地在输入框打字，把毫无组织的想法一股脑地塞进豆瓣的短评。在社交网站旁若无人地发动态倾诉着自己的快乐，啊你知道吗，那个导演哦，这次居然是 happy ending 也！我反复咀嚼着自己的感想以备将来，毫不怀疑自己短短几年就会忘记那些如数家珍的台词、名词、名字。</p><p>然后就是《天气之子》，我吐槽诚哥的恶趣味，前几十分钟平淡又急促的引入，靠设定推动的故事。我记得男主 16 岁，离家出走，包里装着一本《麦田里的守望者》——讲一个 15 岁的男孩离家出走的书。我为自己发现的细节沾沾自喜，然后又开始讲老套的傻话「好吧，毕竟是 16 岁的叛逆，16 岁才能做出的决定。」而那个时候我又才多大呢？</p><p>《铃芽之旅》呢？17 岁的女孩离家出走的故事？好像有点无聊啊……动画里居然把男主为了「拯救世界」放弃考教师资格证的剧情当作煽情的点塑造，啊喂啊喂啊喂。</p><p>嗯？我太苛刻了？</p><p>以现实为舞台的奇幻故事很好啊，它在故事里展现出与现实不同的逻辑，而故事里的人们并不会为此诧异，至少故事不呈现诧异——现实里的人类总是好笨，他们看不出来可能性，永远活在自己的逻辑，不知道生活还可以那样。</p><p>想到之前为了赶上上映当天这种时间点放弃了一些其它的事，当时觉得自己这种取舍的形象以后回顾一定很浪漫。我以为电影是造梦、人生、每秒 24 帧的真实。</p><p>记得第一次进电影院时，发现原来预告片里的画面出现在荧幕上会让人心情愉快。我以为电影院是个神圣的地方，一群需要安慰的人走进去，就能恢复和另一个世界的链接。后来才知道它还有嚼薯片的声音、衣服摩擦的声音、窃窃私语的声音，可恶的男孩给女孩剧透的声音，啊这也是电影的一部分。「一个人看什么电影？」「少看几分钟没关系。」「都放完了还坐着干嘛。」这也是电影的一部分。欢笑、抽泣、鼓掌，这也是电影的一部分。</p><p>我试图假装知道这些事儿做个可爱的人。可爱的人一定不会对自己认知外的事物表现出任何惊讶——除非他们想要你这样。</p><p>啊我明白了。电影不必深刻，它呈现、揭露。它可以只表达最浅显的那一层，故事开始了，结局就确定了。一个导演可以永远拍 16 岁的故事，因为这世界永远有人 16 岁，但今天的 16 岁可能会面临和十年前 16 岁不同的问题，而且 16 岁的难题并不就比 26 岁遇到的困境更容易。</p><p>这是重要的。</p><p>《大鱼》里有句台词「有些笑话是否因为听过太多次而忘了为何好笑。后来你又听到，突然间它像一个新笑话一样，你就想起一开始为什么喜欢它了。」</p><p>我想，当大人们开始为自己曾经的热诚而感到羞耻，我们应该对报以一点同情心，因为「所有的大人起先都是孩子」——他们只是忘记了过去。</p>]]></content>
+        <content type="html"><![CDATA[<p>我在想为什么故事里他们那么害怕机器人拥有「人性」，而且那些启蒙的机器人似乎总「想要拥有人性」。</p><p>想要爱、关心、被关心、自由？<br />还是想要担心、恐惧、悲伤？</p><p>啊我知道了。爱就是畏、是担心、是恐惧。是对另一个人的关心、害怕失去的焦虑。</p><p>「人性是个讨厌的累赘，对不对？」</p><p>我们离不开遗憾和失望，或者说，我们依赖它们。安慰自己说，回头看啊，正是那些挫折构成了我们。</p><p>人类中心主义。</p><p>故事里想讲的，就只是歌颂爱、自由、平等这些价值观而已。不管主角是几千年前的奴隶还是猩猩或是机器人，也不管反派是怪兽、外星人还是普普通通的我们。</p><p>一体两面，有爱就有不爱。而当人类阻止机器人去爱时，他们也就学会了如何爱。</p>]]></content>
       
       
       <categories>
@@ -3499,11 +3520,11 @@
     
     
     <entry>
-      <title>《底特律：变人》——你是说 AI 使用语言时没有动机？</title>
-      <link href="//2023/04/07/detroit/"/>
-      <url>//2023/04/07/detroit/</url>
+      <title>《铃芽之旅》——不是影评啊</title>
+      <link href="//2023/04/08/suzume-tojimari/"/>
+      <url>//2023/04/08/suzume-tojimari/</url>
       
-        <content type="html"><![CDATA[<p>我在想为什么故事里他们那么害怕机器人拥有「人性」，而且那些启蒙的机器人似乎总「想要拥有人性」。</p><p>想要爱、关心、被关心、自由？<br />还是想要担心、恐惧、悲伤？</p><p>啊我知道了。爱就是畏、是担心、是恐惧。是对另一个人的关心、害怕失去的焦虑。</p><p>「人性是个讨厌的累赘，对不对？」</p><p>我们离不开遗憾和失望，或者说，我们依赖它们。安慰自己说，回头看啊，正是那些挫折构成了我们。</p><p>人类中心主义。</p><p>故事里想讲的，就只是歌颂爱、自由、平等这些价值观而已。不管主角是几千年前的奴隶还是猩猩或是机器人，也不管反派是怪兽、外星人还是普普通通的我们。</p><p>一体两面，有爱就有不爱。而当人类阻止机器人去爱时，他们也就学会了如何爱。</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>十五岁生日是最适合离家出走的时间。这以前过早，以后又太晚。——《海边的卡夫卡》</p></blockquote><p>中学的时候好羡慕那些长大了还在看动画的人，我在视频网站上看到许多粗糙的视频，拥挤的房间却有个架子摆了好多塑料小人，镜头前面真实的脸，热情洋溢的表情，说着些「此生无悔」的蠢话——噢不，当时我只觉得好酷。他们看过好多我连名字都没听说的作品，也一定知道好多我不知道的事。我也能这样顺利地成为靠谱的大人吗？</p><p>什么时候发现的呢？就像人生大道理一样，稍微有点年纪的老头谁都会讲两句。原来观影量这类数字的累积也不过是些顺着热情成章的事儿吗？</p><p>偶尔还能在以二次元起家的视频网站上看到「如果你不知道 XXX，就不会 XXX。」的标题。啊那句台词怎么说的？「如果你要用《泰坦尼克号》的台词表白，那对方也应该知道《泰坦尼克号》才有用吧。」</p><p>爱好是蹩脚的喻体？</p><p>我还记得《白箱》的头两集里一个女主也还在念书，说以后一定要去东京工作，住一个有空调的房间。想起自己中学毕业时把 Radwimps 为动画做的配乐翻来覆去地听，心想等去城里上学了一定要去电影院！</p><p>然后就是时间慢慢流淌，什么想法都变得普通。以前一起聊动画的朋友开始戏谑「我已经毕业了」的玩笑。我也蹩脚地试着讲些能显得自己聪明的话，不再诚实。上一部看完的新番好像是《青春期猪头少年不做兔女郎学姐的梦》，很不错的动画，但我在影评网站上打了不高的评分，一本正经地说「我已经是过来人了……怎么还在讲这些……」</p><p>这种想法也是真实的呀。只是我没搞懂啊，我完全没搞懂。</p><p>我想起看完《你的名字》那晚，回去的路上我兴奋地在输入框打字，把毫无组织的想法一股脑地塞进豆瓣的短评。在社交网站旁若无人地发动态倾诉着自己的快乐，啊你知道吗，那个导演哦，这次居然是 happy ending 也！我反复咀嚼着自己的感想以备将来，毫不怀疑自己短短几年就会忘记那些如数家珍的台词、名词、名字。</p><p>然后就是《天气之子》，我吐槽诚哥的恶趣味，前几十分钟平淡又急促的引入，靠设定推动的故事。我记得男主 16 岁，离家出走，包里装着一本《麦田里的守望者》——讲一个 15 岁的男孩离家出走的书。我为自己发现的细节沾沾自喜，然后又开始讲老套的傻话「好吧，毕竟是 16 岁的叛逆，16 岁才能做出的决定。」而那个时候我又才多大呢？</p><p>《铃芽之旅》呢？17 岁的女孩离家出走的故事？好像有点无聊啊……动画里居然把男主为了「拯救世界」放弃考教师资格证的剧情当作煽情的点塑造，啊喂啊喂啊喂。</p><p>嗯？我太苛刻了？</p><p>以现实为舞台的奇幻故事很好啊，它在故事里展现出与现实不同的逻辑，而故事里的人们并不会为此诧异，至少故事不呈现诧异——现实里的人类总是好笨，他们看不出来可能性，永远活在自己的逻辑，不知道生活还可以那样。</p><p>想到之前为了赶上上映当天这种时间点放弃了一些其它的事，当时觉得自己这种取舍的形象以后回顾一定很浪漫。我以为电影是造梦、人生、每秒 24 帧的真实。</p><p>记得第一次进电影院时，发现原来预告片里的画面出现在荧幕上会让人心情愉快。我以为电影院是个神圣的地方，一群需要安慰的人走进去，就能恢复和另一个世界的链接。后来才知道它还有嚼薯片的声音、衣服摩擦的声音、窃窃私语的声音，可恶的男孩给女孩剧透的声音，啊这也是电影的一部分。「一个人看什么电影？」「少看几分钟没关系。」「都放完了还坐着干嘛。」这也是电影的一部分。欢笑、抽泣、鼓掌，这也是电影的一部分。</p><p>我试图假装知道这些事儿做个可爱的人。可爱的人一定不会对自己认知外的事物表现出任何惊讶——除非他们想要你这样。</p><p>啊我明白了。电影不必深刻，它呈现、揭露。它可以只表达最浅显的那一层，故事开始了，结局就确定了。一个导演可以永远拍 16 岁的故事，因为这世界永远有人 16 岁，但今天的 16 岁可能会面临和十年前 16 岁不同的问题，而且 16 岁的难题并不就比 26 岁遇到的困境更容易。</p><p>这是重要的。</p><p>《大鱼》里有句台词「有些笑话是否因为听过太多次而忘了为何好笑。后来你又听到，突然间它像一个新笑话一样，你就想起一开始为什么喜欢它了。」</p><p>我想，当大人们开始为自己曾经的热诚而感到羞耻，我们应该对报以一点同情心，因为「所有的大人起先都是孩子」——他们只是忘记了过去。</p>]]></content>
       
       
       <categories>
@@ -3942,9 +3963,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -4452,9 +4473,9 @@
       
         <tags>
             
-            <tag> 阅读所思 </tag>
-            
             <tag> 理性主义 </tag>
+            
+            <tag> 阅读所思 </tag>
             
         </tags>
       
@@ -4633,6 +4654,37 @@
     
     
     <entry>
+      <title>还能说什么</title>
+      <link href="//2022/02/27/hai-neng-shuo-shen-me/"/>
+      <url>//2022/02/27/hai-neng-shuo-shen-me/</url>
+      
+        <content type="html"><![CDATA[<p>吃饭时同事聊到一件时事，然后吐槽说对象如何如何，被什么什么洗脑了。——常在影视剧里见到夫妻两人揶揄对方的政治观点来着，还是第一次在生活中见到这种吐槽。</p><p>既然已经建立了亲密关系，那么就说明两人要么之前能接受这种不一致，要么建立关系时没考虑过这一点——不觉得这一点很重要。但这一点究竟重不重要呢？在已建立的亲密关系里，会不会出现因意识到双方意识形态不一样而分别的情况呢？</p><p>会有。但就大部分情况来说，应该没那么重要。</p><p>网络上的讨论总给我一种政治很重要的感觉，这种感觉也渐渐在现实生活里感受到了。我猜测这是因为我随着年龄的增长不可避免地会接触到关心它们的人。政治重要吗？当然重要。难道我不关心吗？难道我不对它感到热血或者困惑吗？当然不是。只是我觉得对它的讨论不需要在生活中达到一个非常高的精度——有些模糊是可以接受的。</p><p>一群人甩开膀子在烧烤摊讨论国际形势——难道我会觉得他们肤浅吗？不，我觉得这个场面很生活。</p><p>我的困惑在于，当我参与进这类游戏后，稀里糊涂地花去几个小时，有得出什么新鲜的结论吗？对我有什么实质的影响吗？</p><p>即便没有那些事件，大家也都能说出些类似的陈词滥调；光是看到一些文章的标题就能想象到作者会举出什么例子，得到何种结论，有怎样的反驳。</p><p>把视角拉向我自己，除了情绪在不断地起伏——我还得到什么？</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活志 </category>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 理性主义 </tag>
+            
+            <tag> 杂文 </tag>
+            
+            <tag> 讲道理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>评《花束》与《雨天》</title>
       <link href="//2022/02/27/rain-flower/"/>
       <url>//2022/02/27/rain-flower/</url>
@@ -4679,37 +4731,6 @@
         <tags>
             
             <tag> 看片所想 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>还能说什么</title>
-      <link href="//2022/02/27/hai-neng-shuo-shen-me/"/>
-      <url>//2022/02/27/hai-neng-shuo-shen-me/</url>
-      
-        <content type="html"><![CDATA[<p>吃饭时同事聊到一件时事，然后吐槽说对象如何如何，被什么什么洗脑了。——常在影视剧里见到夫妻两人揶揄对方的政治观点来着，还是第一次在生活中见到这种吐槽。</p><p>既然已经建立了亲密关系，那么就说明两人要么之前能接受这种不一致，要么建立关系时没考虑过这一点——不觉得这一点很重要。但这一点究竟重不重要呢？在已建立的亲密关系里，会不会出现因意识到双方意识形态不一样而分别的情况呢？</p><p>会有。但就大部分情况来说，应该没那么重要。</p><p>网络上的讨论总给我一种政治很重要的感觉，这种感觉也渐渐在现实生活里感受到了。我猜测这是因为我随着年龄的增长不可避免地会接触到关心它们的人。政治重要吗？当然重要。难道我不关心吗？难道我不对它感到热血或者困惑吗？当然不是。只是我觉得对它的讨论不需要在生活中达到一个非常高的精度——有些模糊是可以接受的。</p><p>一群人甩开膀子在烧烤摊讨论国际形势——难道我会觉得他们肤浅吗？不，我觉得这个场面很生活。</p><p>我的困惑在于，当我参与进这类游戏后，稀里糊涂地花去几个小时，有得出什么新鲜的结论吗？对我有什么实质的影响吗？</p><p>即便没有那些事件，大家也都能说出些类似的陈词滥调；光是看到一些文章的标题就能想象到作者会举出什么例子，得到何种结论，有怎样的反驳。</p><p>把视角拉向我自己，除了情绪在不断地起伏——我还得到什么？</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活志 </category>
-          
-          <category> 杂文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 理性主义 </tag>
-            
-            <tag> 杂文 </tag>
-            
-            <tag> 讲道理 </tag>
             
         </tags>
       
@@ -5441,9 +5462,9 @@
             
             <tag> 杂文 </tag>
             
-            <tag> 观点 </tag>
-            
             <tag> 电影 </tag>
+            
+            <tag> 观点 </tag>
             
         </tags>
       
@@ -6533,33 +6554,6 @@
     
     
     <entry>
-      <title>我理解的预测与推荐</title>
-      <link href="//2018/05/27/recommendation/"/>
-      <url>//2018/05/27/recommendation/</url>
-      
-        <content type="html"><![CDATA[<h2 id="推荐"><a class="markdownIt-Anchor" href="#推荐"></a> 推荐</h2><p>怎么做推荐呢？实际开发过程中，我们一边学习推荐相关的知识，一边先按直觉做了几个 demo。</p><p>在第一个版本中，用模糊查询实现。根据用户的相关信息到数据查询。大概是因为逻辑判断太多了，速度非常慢。</p><p>第二个版本，尝试优化查询语句，建立索引。</p><p>第三个版本。因为前面已经通过多元回归计算出了用户的工资区间（虽然很不准确就是了），我们拍脑袋觉得对于一份工作来说，工资是很重要的，于是直接按工资区间到数据库查询…</p><p>前两个版本，模糊查询的推荐结果还不错，至少能一眼看出与用户的信息有关。但是速度实在太慢了。</p><p>第三个版本，因为前面做的预测结果本来就不准，所以效果更差劲…而且这个思路太想当然了。</p><p>但至少现在已经有这样一个功能模块了!!于是接着尝试真正的推荐。</p><h2 id="我理解的推荐"><a class="markdownIt-Anchor" href="#我理解的推荐"></a> 我理解的推荐</h2><p>因为水平不到位，不能从比较宏观的角度解释，下面都只是我在这个项目中的感受。所以，推荐以「推荐 Job」为例…</p><p>我理解的推荐，就是为用户建立一个模型——「我最喜欢的 Job」。系统不断优化这个模型，试图找到用户心中最中意的那个 Job。（这只是个理想化的模型，实际的系统当中可能并不存在）然后从系统中找出与这个模型最匹配的 Job，推荐给用户。</p><p>那么问题来了，计算机怎么判断用户是不是中意某个 Job 呢？</p><p>我们看看协同过滤算法中的基于用户的推荐算法。</p><h3 id="基于用户的推荐算法"><a class="markdownIt-Anchor" href="#基于用户的推荐算法"></a> 基于用户的推荐算法</h3><p>最简单的一种，如下:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">小明 喜欢 A、B、C。</span><br><span class="line">小红 喜欢 A、B、C、D。</span><br></pre></td></tr></table></figure><p>我们发现小红的喜欢和小明的喜欢重叠度很高，小明可能也会喜欢 D，所以把 D 推荐给他。</p><p>但是这种判断的粒度太大了，再细一点可以这样:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">小明 非常喜欢 A</span><br><span class="line">小明 有点喜欢 B</span><br><span class="line"></span><br><span class="line">小红 非常喜欢 B</span><br><span class="line">小红 有点喜欢 A</span><br></pre></td></tr></table></figure><p>在计算机中，可以简化为这样的三元组 <code>&lt; 用户 ID， 物品 ID， 用户偏好 &gt;</code> 表示:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">用户   JobID   偏好值(权重)</span><br><span class="line">小明    <span class="number">001</span>    <span class="number">15</span></span><br><span class="line">小明    <span class="number">002</span>     <span class="number">0</span></span><br><span class="line"></span><br><span class="line">小红    <span class="number">001</span>     <span class="number">0</span></span><br><span class="line">小红    <span class="number">002</span>     <span class="number">15</span></span><br></pre></td></tr></table></figure><p>那么这个偏好值怎么来呢？</p><p>肯定需要严格的算法…</p><p>我们可以粗略举个例子来理解，比如用户点击一次某个职位，我们假定他是被这个职位所吸引，把他与这个职位的权重相应增加。</p><p>这样在计算机内部就得到用户与 Job 的关系。</p><p>用这样的数值来量化之后，我们就可以通过做一些矩阵运算，根据用户自己的列表和别的用户的列表，把口味相似的用户关注的职位推荐给用户。</p><p>好了！暂且到这一步。</p><p>我们回过头来看，基于用户的推荐算法，需要满足两项。</p><ol><li>用户（使用推荐功能的用户）的喜好</li><li>别的用户的喜好</li></ol><p><strong>这就是冷启动需要解决的问题。</strong></p><p>它不仅需要用户自己有信息，还需要别的用户有信息…</p><p>考虑到我们做的这个小项目根本不可能有那么多用户，测试起来也麻烦，看来这个方式不合适…</p><h3 id="基于内容的推荐算法"><a class="markdownIt-Anchor" href="#基于内容的推荐算法"></a> 基于内容的推荐算法</h3><p>基于用户的推荐算法，是通过比较各个用户的喜好，把别的用户关注的东西推荐给有共同喜好的用户。</p><p>而基于内容的推荐算法，就是把用户的喜好直接与 Job （物品）比较。</p><p>还是看个最简单的:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">小红       喜欢 哲学书籍</span><br><span class="line">《大问题》  是   哲学书籍</span><br></pre></td></tr></table></figure><p>所以把《大问题》推荐给小红。</p><p>同样，我们可以更细粒度一点:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">小红       非常喜欢   哲学书籍</span><br><span class="line">小红       有点喜欢   小说</span><br><span class="line"></span><br><span class="line">《大问题》   是       哲学书籍</span><br><span class="line">《爱的教育》 是       小说</span><br></pre></td></tr></table></figure><p>我们优先推荐《大问题》给小红…</p><p>而在计算机内，可能是这样表示的:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">用户标签权重</span><br><span class="line">小红Java <span class="number">10</span></span><br><span class="line">小红Web  <span class="number">9</span></span><br><span class="line"></span><br><span class="line">Job标签权重</span><br><span class="line"><span class="number">001</span>Java <span class="number">0</span></span><br><span class="line"><span class="number">001</span>Web<span class="number">10</span></span><br><span class="line"><span class="number">002</span>Java<span class="number">10</span></span><br><span class="line"><span class="number">002</span>Web<span class="number">9</span></span><br></pre></td></tr></table></figure><p>通过计算向量距离，得出用户和 Job 的相似度，生成推荐。</p><p>基于内容的推荐需要解决两个问题。</p><p>第一个仍然是<strong>冷启动</strong>，用户需要打上标签。我们考虑过根据用户的行为——历史记录，点击记录等来生成用户标签。</p><p><strong>不过都没时间做…</strong>（太真实了）</p><p>其实提到这个场景，我想到的是各种信息流 app，注册时让用户选择一堆感兴趣的话题，相当于打上标签。于是我也模仿这样做了个…</p><p>我们只做到了用户和某个标签产生联系，如标签 <code>Hadoop</code> ， <code>Java</code> …</p><p>存在数据库里 :</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用户 ID标签Id有无 <span class="operator">/</span><span class="operator">/</span> 标志用户有没有选择某个标签。。。</span><br><span class="line"><span class="number">001</span><span class="number">001</span><span class="number">0</span></span><br><span class="line"><span class="number">001</span><span class="number">002</span><span class="number">1</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure><p>第二个问题就是提取出 Job 的标签，并且提取权重。</p><p>这个是重点也是难点…</p><p>从抽象的角度来看，Job 其实也只是一串文本描述的一样物品。</p><p>粗略地做，我们可以进行简单的词频统计…</p><p><strong>常用的更标准的方式是使用 TF-IDF。</strong></p><h3 id="比较"><a class="markdownIt-Anchor" href="#比较"></a> 比较</h3><p>SQL 模糊查询是基于元数据的推荐。比如推荐书，紧紧按出版年份来推荐是不太合适的。(大多数情况下)</p><p>而协同过滤，是基于标签，更合理些(理论上)。</p><p>我们做出来的效果，感觉模糊查询似乎看起来科学点…至少能在推荐的结果找到我们的输入的信息。</p><p>通过后面的方式得到的推荐结果（因为我们技术不到位的原因）看起来有点没头没脑…</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习折腾 </category>
-          
-          <category> 自己浅见 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Project </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>真相不重要</title>
       <link href="//2018/05/27/truth/"/>
       <url>//2018/05/27/truth/</url>
@@ -6581,6 +6575,33 @@
             <tag> 杂文 </tag>
             
             <tag> 讲道理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我理解的预测与推荐</title>
+      <link href="//2018/05/27/recommendation/"/>
+      <url>//2018/05/27/recommendation/</url>
+      
+        <content type="html"><![CDATA[<h2 id="推荐"><a class="markdownIt-Anchor" href="#推荐"></a> 推荐</h2><p>怎么做推荐呢？实际开发过程中，我们一边学习推荐相关的知识，一边先按直觉做了几个 demo。</p><p>在第一个版本中，用模糊查询实现。根据用户的相关信息到数据查询。大概是因为逻辑判断太多了，速度非常慢。</p><p>第二个版本，尝试优化查询语句，建立索引。</p><p>第三个版本。因为前面已经通过多元回归计算出了用户的工资区间（虽然很不准确就是了），我们拍脑袋觉得对于一份工作来说，工资是很重要的，于是直接按工资区间到数据库查询…</p><p>前两个版本，模糊查询的推荐结果还不错，至少能一眼看出与用户的信息有关。但是速度实在太慢了。</p><p>第三个版本，因为前面做的预测结果本来就不准，所以效果更差劲…而且这个思路太想当然了。</p><p>但至少现在已经有这样一个功能模块了!!于是接着尝试真正的推荐。</p><h2 id="我理解的推荐"><a class="markdownIt-Anchor" href="#我理解的推荐"></a> 我理解的推荐</h2><p>因为水平不到位，不能从比较宏观的角度解释，下面都只是我在这个项目中的感受。所以，推荐以「推荐 Job」为例…</p><p>我理解的推荐，就是为用户建立一个模型——「我最喜欢的 Job」。系统不断优化这个模型，试图找到用户心中最中意的那个 Job。（这只是个理想化的模型，实际的系统当中可能并不存在）然后从系统中找出与这个模型最匹配的 Job，推荐给用户。</p><p>那么问题来了，计算机怎么判断用户是不是中意某个 Job 呢？</p><p>我们看看协同过滤算法中的基于用户的推荐算法。</p><h3 id="基于用户的推荐算法"><a class="markdownIt-Anchor" href="#基于用户的推荐算法"></a> 基于用户的推荐算法</h3><p>最简单的一种，如下:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">小明 喜欢 A、B、C。</span><br><span class="line">小红 喜欢 A、B、C、D。</span><br></pre></td></tr></table></figure><p>我们发现小红的喜欢和小明的喜欢重叠度很高，小明可能也会喜欢 D，所以把 D 推荐给他。</p><p>但是这种判断的粒度太大了，再细一点可以这样:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">小明 非常喜欢 A</span><br><span class="line">小明 有点喜欢 B</span><br><span class="line"></span><br><span class="line">小红 非常喜欢 B</span><br><span class="line">小红 有点喜欢 A</span><br></pre></td></tr></table></figure><p>在计算机中，可以简化为这样的三元组 <code>&lt; 用户 ID， 物品 ID， 用户偏好 &gt;</code> 表示:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">用户   JobID   偏好值(权重)</span><br><span class="line">小明    <span class="number">001</span>    <span class="number">15</span></span><br><span class="line">小明    <span class="number">002</span>     <span class="number">0</span></span><br><span class="line"></span><br><span class="line">小红    <span class="number">001</span>     <span class="number">0</span></span><br><span class="line">小红    <span class="number">002</span>     <span class="number">15</span></span><br></pre></td></tr></table></figure><p>那么这个偏好值怎么来呢？</p><p>肯定需要严格的算法…</p><p>我们可以粗略举个例子来理解，比如用户点击一次某个职位，我们假定他是被这个职位所吸引，把他与这个职位的权重相应增加。</p><p>这样在计算机内部就得到用户与 Job 的关系。</p><p>用这样的数值来量化之后，我们就可以通过做一些矩阵运算，根据用户自己的列表和别的用户的列表，把口味相似的用户关注的职位推荐给用户。</p><p>好了！暂且到这一步。</p><p>我们回过头来看，基于用户的推荐算法，需要满足两项。</p><ol><li>用户（使用推荐功能的用户）的喜好</li><li>别的用户的喜好</li></ol><p><strong>这就是冷启动需要解决的问题。</strong></p><p>它不仅需要用户自己有信息，还需要别的用户有信息…</p><p>考虑到我们做的这个小项目根本不可能有那么多用户，测试起来也麻烦，看来这个方式不合适…</p><h3 id="基于内容的推荐算法"><a class="markdownIt-Anchor" href="#基于内容的推荐算法"></a> 基于内容的推荐算法</h3><p>基于用户的推荐算法，是通过比较各个用户的喜好，把别的用户关注的东西推荐给有共同喜好的用户。</p><p>而基于内容的推荐算法，就是把用户的喜好直接与 Job （物品）比较。</p><p>还是看个最简单的:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">小红       喜欢 哲学书籍</span><br><span class="line">《大问题》  是   哲学书籍</span><br></pre></td></tr></table></figure><p>所以把《大问题》推荐给小红。</p><p>同样，我们可以更细粒度一点:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">小红       非常喜欢   哲学书籍</span><br><span class="line">小红       有点喜欢   小说</span><br><span class="line"></span><br><span class="line">《大问题》   是       哲学书籍</span><br><span class="line">《爱的教育》 是       小说</span><br></pre></td></tr></table></figure><p>我们优先推荐《大问题》给小红…</p><p>而在计算机内，可能是这样表示的:</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">用户标签权重</span><br><span class="line">小红Java <span class="number">10</span></span><br><span class="line">小红Web  <span class="number">9</span></span><br><span class="line"></span><br><span class="line">Job标签权重</span><br><span class="line"><span class="number">001</span>Java <span class="number">0</span></span><br><span class="line"><span class="number">001</span>Web<span class="number">10</span></span><br><span class="line"><span class="number">002</span>Java<span class="number">10</span></span><br><span class="line"><span class="number">002</span>Web<span class="number">9</span></span><br></pre></td></tr></table></figure><p>通过计算向量距离，得出用户和 Job 的相似度，生成推荐。</p><p>基于内容的推荐需要解决两个问题。</p><p>第一个仍然是<strong>冷启动</strong>，用户需要打上标签。我们考虑过根据用户的行为——历史记录，点击记录等来生成用户标签。</p><p><strong>不过都没时间做…</strong>（太真实了）</p><p>其实提到这个场景，我想到的是各种信息流 app，注册时让用户选择一堆感兴趣的话题，相当于打上标签。于是我也模仿这样做了个…</p><p>我们只做到了用户和某个标签产生联系，如标签 <code>Hadoop</code> ， <code>Java</code> …</p><p>存在数据库里 :</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用户 ID标签Id有无 <span class="operator">/</span><span class="operator">/</span> 标志用户有没有选择某个标签。。。</span><br><span class="line"><span class="number">001</span><span class="number">001</span><span class="number">0</span></span><br><span class="line"><span class="number">001</span><span class="number">002</span><span class="number">1</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure><p>第二个问题就是提取出 Job 的标签，并且提取权重。</p><p>这个是重点也是难点…</p><p>从抽象的角度来看，Job 其实也只是一串文本描述的一样物品。</p><p>粗略地做，我们可以进行简单的词频统计…</p><p><strong>常用的更标准的方式是使用 TF-IDF。</strong></p><h3 id="比较"><a class="markdownIt-Anchor" href="#比较"></a> 比较</h3><p>SQL 模糊查询是基于元数据的推荐。比如推荐书，紧紧按出版年份来推荐是不太合适的。(大多数情况下)</p><p>而协同过滤，是基于标签，更合理些(理论上)。</p><p>我们做出来的效果，感觉模糊查询似乎看起来科学点…至少能在推荐的结果找到我们的输入的信息。</p><p>通过后面的方式得到的推荐结果（因为我们技术不到位的原因）看起来有点没头没脑…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习折腾 </category>
+          
+          <category> 自己浅见 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
             
         </tags>
       

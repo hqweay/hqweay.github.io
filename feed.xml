@@ -9,7 +9,27 @@
   <link href="https://leay.net/feed.xml" rel="self"/>
   <rights>All rights reserved 2026, hqweay</rights>
   <title>养恐龙</title>
-  <updated>2026-10-25T05:32:46.000Z</updated>
+  <updated>2026-10-29T13:49:05.000Z</updated>
+  <entry>
+    <author>
+      <name>hqweay</name>
+    </author>
+    <category term="笔记软件" scheme="https://leay.net/tags/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
+    <category term="项目" scheme="https://leay.net/tags/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="Qua" scheme="https://leay.net/tags/Qua/"/>
+    <content>
+      <![CDATA[<p>侧边栏很有价值，但是固定功能项的左侧边栏我一直很不喜欢。几个 tab，底部是设置，千篇一律。偶尔很浪费空间。</p><p>所以我在<a href="https://qua.leay.net/">相 · 视角即本体</a>将侧边栏做成一个可组合的工作区，里面的条目可以瀑布流排列。</p><p>当用户需要专注某一个卡片时也可以展开聚焦。</p><p>未来的软件界面一定是生成式的，用户直觉下的软件界面将是一个可任意组合排列的面板。</p><p>这样的侧边栏会提供很大的可玩性。</p><p>让我继续尝试……</p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-h864vo5knguk4.avif" alt="" /></p>]]>
+    </content>
+    <id>https://leay.net/killed-my-nasty-fixed-left-sidebar-61970/</id>
+    <link href="https://leay.net/killed-my-nasty-fixed-left-sidebar-61970/"/>
+    <published>2026-10-29T13:48:59.000Z</published>
+    <summary>
+      <![CDATA[<p>侧边栏很有价值，但是固定功能项的左侧边栏我一直很不喜欢。几个 tab，底部是设置，千篇一律。偶尔很浪费空间。</p>
+<p>所以我在<a href="https://qua.leay.net/">相 · 视角即本体</a>将侧边栏做成一个可组合的工作区，里面的条目可以瀑布流]]>
+    </summary>
+    <title>干掉了我很讨厌的固定左侧边栏</title>
+    <updated>2026-10-29T13:49:05.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>hqweay</name>
@@ -171,24 +191,5 @@
     </summary>
     <title>蜂后与影子</title>
     <updated>2026-08-29T08:36:17.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>hqweay</name>
-    </author>
-    <category term="AI" scheme="https://leay.net/tags/AI/"/>
-    <category term="虎鲸笔记" scheme="https://leay.net/tags/%E8%99%8E%E9%B2%B8%E7%AC%94%E8%AE%B0/"/>
-    <content>
-      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p><p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-u7psjp90oz52w.avif" alt="" /></p><p>有很多细节，融入了许多我对任务管理、时间管理的理解。</p><p>不过这两点一直是 productivity 社区的老生常谈与大坑。概念上不展开了，有机会再写吧。</p><p>话都在体验了。</p><p>聊聊 AI 的引入：</p><p>提供一个 skill，可以智能将待办安插在空闲时间段。</p><p>提供一个 AI 统计分析界面，生成文字分析、统计图表。</p>]]>
-    </content>
-    <id>https://leay.net/take-time-statistics-to-orca-notes-56042/</id>
-    <link href="https://leay.net/take-time-statistics-to-orca-notes-56042/"/>
-    <published>2026-08-20T14:13:21.000Z</published>
-    <summary>
-      <![CDATA[<p><img src="https://raw.githubusercontent.com/hqweay/picbed/master/img/image-nutaal5vug2mb.avif" alt="" /></p>
-<p><img src="https://raw.git]]>
-    </summary>
-    <title>将时间统计带到虎鲸笔记</title>
-    <updated>2026-08-20T14:24:35.000Z</updated>
   </entry>
 </feed>
